@@ -14,7 +14,7 @@ def main():
     parser.add_argument("--config", type=Path, default=root / "config.yaml")
     parser.add_argument("--output-dir", type=Path, default=root, help="Root for data/, reports/ and PAPERS.md")
     parser.add_argument("--sources", default="", help="Comma-separated source names: dblp,arxiv,eprint")
-    parser.add_argument("--since", type=date.fromisoformat, help="Override the preprint start date for a backfill (YYYY-MM-DD)")
+    parser.add_argument("--since", type=date.fromisoformat, help="Quiet historical backfill from this date (YYYY-MM-DD); no new-paper alerts")
     parser.add_argument("--dry-run", action="store_true", help="Fetch and summarize without writing cache or files")
     parser.add_argument("--no-enrich", action="store_true", help="Skip optional Crossref/translation calls")
     args = parser.parse_args()

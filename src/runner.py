@@ -10,7 +10,7 @@ from pathlib import Path
 
 import yaml
 
-from .core import PaperStore, classify, read_json, write_json
+from .core import PaperStore, classify, read_json, write_json, year_bounds, in_year_range
 from .enrichment import enrich
 from .output import write_outputs
 from .sources import COLLECTORS, HttpClient
@@ -28,9 +28,12 @@ def load_config(path: Path) -> dict:
     for topic in config["topics"].values():
         for pattern in topic["patterns"] + [topic["acronym_pattern"], topic["context_pattern"]]:
             re.compile(pattern)
-    for key in ("years_back", "years_ahead", "overlap_days", "initial_lookback_days"):
-        if not isinstance(config["tracking"][key], int) or config["tracking"][key] < 0:
+    for key in ("years_ahead", "overlap_days", "years_back", "initial_lookback_days"):
+        if key in config["tracking"] and (type(config["tracking"][key]) is not int or config["tracking"][key] < 0):
             raise ValueError(f"tracking.{key} must be a nonnegative integer")
+    first_year = config["tracking"].get("start_year")
+    if first_year is not None and (type(first_year) is not int or not 1000 <= first_year <= date.today().year):
+        raise ValueError("tracking.start_year must be a valid publication year, no later than this year")
     return config
 
 
@@ -40,18 +43,21 @@ def run(root: Path, config: dict, selected: list[str] | None = None, since: date
     now = now or datetime.now(timezone.utc)
     stamp = now.isoformat(timespec="seconds")
     today = now.date()
+    first_year, last_year = year_bounds(config, today)
+    first_date = date(first_year, 1, 1)
+    backfill = since is not None
     cache = read_json(root / "data" / "papers.json", {"schema_version": 1, "papers": {}})
     state = read_json(root / "data" / "state.json", {"schema_version": 1, "sources": {}, "pending": []})
     if cache.get("schema_version") != 1 or state.get("schema_version") != 1:
         raise ValueError("Unsupported cache schema; refusing to overwrite")
     store = PaperStore(cache["papers"])
     pending = set(state.get("pending", []))
-    report = {"started_at": stamp, "sources": {}, "enrichment_errors": []}
+    report = {"started_at": stamp, "start_year": first_year, "backfill": backfill, "sources": {}, "enrichment_errors": []}
     collectors = collectors or COLLECTORS
     # Reapply user exclusions after config edits, without migrating unrelated FL cache.
     for identifier, paper in list(store.papers.items()):
         matched = classify(paper, config)
-        if not matched:
+        if not matched or not in_year_range(paper, first_year, last_year):
             del store.papers[identifier]
             pending.discard(identifier)
         else:
@@ -66,25 +72,32 @@ def run(root: Path, config: dict, selected: list[str] | None = None, since: date
         if previous.get("last_success", "")[:10] == today.isoformat() and since is None:
             report["sources"][name] = {"status": "cached", "message": "Already completed today (UTC)"}
             continue
-        if name == "eprint" and previous.get("last_success", "")[:10] == today.isoformat():
-            report["sources"][name] = {"status": "cached", "message": "ePrint is refreshed at most once per day"}
-            continue
         lower_bound = since or (date.fromisoformat(previous["last_success"][:10]) - timedelta(days=config["tracking"]["overlap_days"])
-                                if previous.get("last_success") else today - timedelta(days=config["tracking"]["initial_lookback_days"]))
+                                if previous.get("last_success") else first_date)
+        lower_bound = max(first_date, lower_bound)
+        if backfill and previous.get("last_success", "")[:10] == today.isoformat() and previous.get("coverage_start", "9999-12-31") <= lower_bound.isoformat():
+            report["sources"][name] = {"status": "cached", "message": "Requested historical interval already completed today"}
+            continue
+        upper_bound = today
+        if name == "eprint" and previous.get("last_success", "")[:10] == today.isoformat():
+            # A requested historical backfill is a different, older OAI interval; do not
+            # refresh the recently scanned daily window a second time today.
+            upper_bound = today - timedelta(days=config["tracking"]["overlap_days"] + 1)
+            if not backfill or lower_bound > upper_bound:
+                report["sources"][name] = {"status": "cached", "message": "ePrint daily window already scanned; no older backfill interval"}
+                continue
         staged = PaperStore(store.papers)
         staged_pending = set(pending)
         received = matched_count = new_count = 0
         LOG.info("Scanning %s since %s", name, lower_bound)
         try:
             client = client_factory(name, source_cfg["interval_seconds"], config["project"].get("contact_email", ""))
-            for paper in collectors[name](config, client, today, lower_bound):
+            for paper in collectors[name](config, client, upper_bound, lower_bound):
                 received += 1
                 if not paper.get("title") or not paper.get("records"):
                     raise ValueError(f"{name} returned an incomplete record")
-                if name == "dblp":
-                    year = int(paper["records"][0]["year"])
-                    if not today.year - config["tracking"]["years_back"] <= year <= today.year + config["tracking"]["years_ahead"]:
-                        continue
+                if not in_year_range(paper, first_year, last_year):
+                    continue
                 matched = classify(paper, config)
                 if not matched:
                     continue
@@ -92,13 +105,16 @@ def run(root: Path, config: dict, selected: list[str] | None = None, since: date
                 matched_count += 1
                 identifier, is_new = staged.add(paper, stamp)
                 new_count += int(is_new)
-                if is_new and (previous.get("last_success") or config["notifications"]["notify_on_first_run"]):
+                if is_new and not backfill and (previous.get("last_success") or config["notifications"]["notify_on_first_run"]):
                     staged_pending.add(identifier)
             store = staged
             pending = {store.resolve(identifier) for identifier in staged_pending}
-            state["sources"][name] = {"last_success": stamp, "last_attempt": stamp, "status": "ok"}
+            covered_from = first_date if name == "dblp" else lower_bound
+            coverage_start = min(previous.get("coverage_start", covered_from.isoformat()), covered_from.isoformat())
+            state["sources"][name] = {"last_success": stamp, "last_attempt": stamp, "status": "ok", "coverage_start": coverage_start}
             report["sources"][name] = {"status": "ok", "received": received, "matched": matched_count,
-                                       "new": new_count, "baseline": not bool(previous.get("last_success")), "since": lower_bound.isoformat()}
+                                       "new": new_count, "baseline": backfill or not bool(previous.get("last_success")),
+                                       "since": lower_bound.isoformat(), "until": upper_bound.isoformat()}
         except Exception as error:
             # Commit nothing from an incomplete source scan; retry the same window later.
             message = str(error)[:700]

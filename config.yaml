@@ -5,9 +5,9 @@ project:
   timezone: Asia/Shanghai
   contact_email: ""
 tracking:
-  years_back: 3
+  # Fixed publication-year floor; does not move forward in future years.
+  start_year: 2020
   years_ahead: 1
-  initial_lookback_days: 31
   overlap_days: 3
   # Keep relevant FL + MPC/TEE crossovers; true excludes explicit FL mentions.
   exclude_federated_learning: false
@@ -145,6 +145,7 @@ sources:
     enabled: true
     url: https://export.arxiv.org/api/query
     page_size: 100
+    backfill_page_size: 500
     max_pages_per_query: 100
     interval_seconds: 3.1
     query_batch_size: 6

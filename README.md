@@ -18,9 +18,9 @@ Yanio9 的个人论文追踪器：**安全多方计算（MPC）与可信执行�
 
 | 来源 | 获取方式 | 默认范围 |
 |---|---|---|
-| DBLP | 官方 SPARQL API，按关键词、年份和会议/期刊分页查询 | 当前年份 −3 至 +1；密码学、安全、系统、数据库及相关 ML 会议 |
-| arXiv | 官方 Atom API，在标题和摘要中检索 | 首次回溯 31 天，此后从上次成功时间向前重叠 3 天；按更新日期分页 |
-| IACR ePrint | 官方 OAI-PMH，支持日期范围和续传令牌 | 首次回溯 31 天，此后增量扫描并重叠 3 天 |
+| DBLP | 官方 SPARQL API，按关键词、年份和会议/期刊分页查询 | 固定从 **2020 年**到当前年份 +1；密码学、安全、系统、数据库及相关 ML 会议 |
+| arXiv | 官方 Atom API，在标题和摘要中检索 | 首次从 **2020-01-01** 回补，此后从上次成功时间向前重叠 3 天 |
+| IACR ePrint | 官方 OAI-PMH，支持日期范围和续传令牌 | 首次从 **2020-01-01** 回补，此后增量扫描并重叠 3 天 |
 
 DBLP 包括 CRYPTO、EUROCRYPT、ASIACRYPT、TCC、PKC、Journal of Cryptology、ToSC/TCHES，以及 S&P、CCS、USENIX Security、NDSS、PoPETs、OSDI、SOSP、EuroSys、ASPLOS 等，完整可编辑列表见 `config.yaml`。
 
@@ -31,8 +31,8 @@ DBLP 包括 CRYPTO、EUROCRYPT、ASIACRYPT、TCC、PKC、Journal of Cryptology�
 - 每天 **北京时间 09:17** 计划运行（GitHub 调度可能延迟）。
 - 首次成功扫描各来源时只建立基线，避免历史论文刷屏；后续新增论文创建汇总 Issue。
 - 点击本仓库 **Watch → Custom → Issues** 订阅论文提醒；GitHub 的邮件通知取决于你的账户通知设置。
-- 在 **Actions → Track MPC and TEE papers → Run workflow** 手动运行。可填 `since`（例如 `2026-01-01`）回补预印本；DBLP 年份范围由配置控制。
-- 同一天已经成功的来源默认不重复抓取。ePrint 每天至多成功刷新一次；失败来源保留原成功时间，下次继续补抓。
+- 在 **Actions → Track MPC and TEE papers → Run workflow** 手动运行。填 `since: 2020-01-01` 可安静回补历史论文，不发送补录提醒；DBLP 固定起点由 `tracking.start_year` 控制。
+- 同一天已经成功的来源默认不重复抓取。ePrint 每天至多刷新一次近期窗口；明确请求的历史回补只查询更早的区间。失败来源保留原成功时间，下次继续补抓。
 - 来源失败会写入运行报告，并让工作流显示失败；其他成功来源仍保存结果。反爬验证页不会被当成零篇论文。
 
 无需付费 API key 即可采集。arXiv/ePrint 摘要随元数据获取；DBLP 的缺失摘要可选用 Crossref 补充。若需要中文翻译，在本仓库 **Settings → Secrets and variables → Actions** 添加自己的 `DASHSCOPE_API_KEY`；翻译会使用你账户的 Qwen-MT-plus 配额。默认未提供 key 时跳过翻译，不影响采集。
@@ -66,6 +66,8 @@ python -m src.main --dry-run --no-enrich
 这是基于元数据和规则的论文发现工具，不保证查全率或精确率。DBLP 通常没有摘要，标题未明确提到相关技术时可能漏检；预印本可能只在相关工作中提到 MPC/TEE 而被命中。缩写必须带安全/密码学上下文，避免将控制领域 MPC、医学 TEE 等误收录。
 
 增删 `topics.*.dblp_terms` / `arxiv_terms` 可以调整发现范围；修改 `topics.*.patterns` 和缩写上下文规则可调整筛选标准。新增会议仅修改 DBLP 的 `venues`，不会因为缺少硬编码分类映射而在输出时丢失论文。
+
+发表年份起点固定为 `tracking.start_year: 2020`，不会随当前年份向后滚动。预印本以首次提交年份判断是否在范围内，早于 2020 年、仅在近期修订的预印本不会单独收录。历史 arXiv 查询按提交年份分段，减少单次查询过大造成的截断。
 
 ## 来源与许可
 

@@ -19,9 +19,9 @@ Python 3.11+, requests, PyYAML; standard-library XML parsing and unittest. Entry
 
 Both MPC and TEE always scan independently. No primary-keyword gating. Generic FL is excluded; a paper that also matches MPC/TEE is included unless the explicit FL exclusion is enabled. Avoid standalone MPC/TEE/SEV/TDX matches without appropriate context.
 
-DBLP window is `[current_year - years_back, current_year + years_ahead]`, defaults -3/+1. Preprints use source update dates, initially 31 days, then previous success minus a 3-day overlap. Revisions update metadata, not new-paper notifications.
+The publication-year floor is fixed at `tracking.start_year: 2020`, with upper bound `current_year + years_ahead` (default +1). It must not roll forward with the current year. Preprints initially backfill from January 1 of that year, then use the previous successful update date minus a 3-day overlap. Exclude preprints originally submitted before the start year even when recently revised. Historical arXiv queries are partitioned by submission year. Explicit `--since` backfills are quiet and must not queue historical notifications. Revisions update metadata, not new-paper notifications.
 
-Keep DBLP request pacing at least 6 seconds plus 0.5–2.5 seconds jitter, and arXiv/ePrint at least 3 seconds. Respect Retry-After. Do not solve or bypass anti-bot challenges. ePrint refreshes at most once per day after a successful scan.
+Keep DBLP request pacing at least 6 seconds plus 0.5–2.5 seconds jitter, and arXiv/ePrint at least 3 seconds. Respect Retry-After. Do not solve or bypass anti-bot challenges. ePrint refreshes the daily window at most once per day; explicitly requested historical backfills may query an older disjoint date interval on the same day. Retain completed coverage_start checkpoints and skip repeated same-day backfills that are already covered.
 
 The daily action runs at 01:17 UTC / 09:17 Asia/Shanghai, with contents and issues write permissions only. Use ordinary pushes, never force pushes. Persist the notification queue before posting Issues; detect already-posted markers on retry. Do not interpolate paper metadata into shell code.
 

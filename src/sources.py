@@ -7,12 +7,12 @@ import random
 import re
 import time
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
 
 import requests
 
-from .core import canonical_arxiv, clean_text
+from .core import canonical_arxiv, clean_text, year_bounds
 
 LOG = logging.getLogger(__name__)
 ATOM = {"a": "http://www.w3.org/2005/Atom", "open": "http://a9.com/-/spec/opensearch/1.1/", "arxiv": "http://arxiv.org/schemas/atom"}
@@ -105,7 +105,8 @@ def collect_dblp(config: dict, client, today, since=None):
         return
     if cfg.get("backend", "search") != "search":
         raise SourceError("Unknown DBLP backend")
-    years = range(today.year - config["tracking"]["years_back"], today.year + config["tracking"]["years_ahead"] + 1)
+    min_year, max_year = year_bounds(config, today)
+    years = range(min_year, max_year + 1)
     terms = list(dict.fromkeys(term for topic in config["topics"].values() for term in topic["dblp_terms"]))
     size = min(1000, cfg["page_size"])
     for year in years:
@@ -149,8 +150,7 @@ def sparql_query(config: dict, today, offset: int) -> str:
         expressions.append("(" + " && ".join(and_parts) + ")")
     if not expressions:
         raise ValueError("DBLP requires at least one search term")
-    min_year = today.year - config["tracking"]["years_back"]
-    max_year = today.year + config["tracking"]["years_ahead"]
+    min_year, max_year = year_bounds(config, today)
     size = int(cfg.get("sparql_page_size", 500))
     return f'''
 PREFIX dblp: <https://dblp.org/rdf/schema#>
@@ -241,10 +241,18 @@ def arxiv_queries(config: dict):
 
 def collect_arxiv(config: dict, client, today, since):
     cfg = config["sources"]["arxiv"]
-    for query in arxiv_queries(config):
+    first_year, _ = year_bounds(config, today)
+    historical = since.year < today.year
+    # Annual submission windows keep historical queries below arXiv's result limits.
+    windows = [(date(year, 1, 1), min(date(year, 12, 31), today)) for year in range(first_year, today.year + 1)] if historical else [(date(first_year, 1, 1), today)]
+    page_size = cfg.get("backfill_page_size", cfg["page_size"]) if historical else cfg["page_size"]
+    queries = [(f"({query}) AND submittedDate:[{start:%Y%m%d}0000 TO {end:%Y%m%d}2359]", start, end)
+               for query in arxiv_queries(config) for start, end in windows]
+    for query, start_date, end_date in queries:
         offset = 0
         for _ in range(cfg["max_pages_per_query"]):
-            response = client.get(cfg["url"], {"search_query": query, "start": offset, "max_results": cfg["page_size"],
+            LOG.info("arXiv submissions %s to %s, offset %s", start_date, end_date, offset)
+            response = client.get(cfg["url"], {"search_query": query, "start": offset, "max_results": page_size,
                                               "sortBy": "lastUpdatedDate", "sortOrder": "descending"})
             papers, total = parse_arxiv(response.text)
             # Sorting by update date also catches revisions and late discoverability.
@@ -302,7 +310,8 @@ def collect_eprint(config: dict, client, today, since):
     cfg = config["sources"]["eprint"]
     params = {"verb": "ListRecords", "metadataPrefix": "oai_dc", "from": since.isoformat(), "until": today.isoformat()}
     seen_tokens = set()
-    for _ in range(cfg["max_pages"]):
+    for page in range(cfg["max_pages"]):
+        LOG.info("ePrint OAI interval %s to %s, page %s", since, today, page + 1)
         papers, token = parse_eprint(client.get(cfg["url"], params).text)
         yield from papers
         if not token:

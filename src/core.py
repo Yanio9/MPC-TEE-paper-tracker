@@ -11,6 +11,17 @@ from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 
+def year_bounds(config: dict, today) -> tuple[int, int]:
+    tracking = config["tracking"]
+    first = tracking["start_year"] if "start_year" in tracking else today.year - tracking.get("years_back", 3)
+    return first, today.year + tracking["years_ahead"]
+
+
+def in_year_range(paper: dict, first: int, last: int) -> bool:
+    return any(str(record.get("year", "")).isdigit() and first <= int(record["year"]) <= last
+               for record in paper.get("records", []))
+
+
 def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]*>", " ", str(value or "")))).strip()
 

@@ -20,7 +20,9 @@ DBLP 默认使用官方 SPARQL API（`https://sparql.dblp.org/sparql`），完�
 
 arXiv 标题/摘要检索按最近更新排序，直到翻过时间边界。每篇保留最早提交时间和版本更新时间；版本 ID 去除 `vN` 后去重。IACR ePrint 使用 OAI-PMH `from` / `until` 和 `resumptionToken`，可以回补较长中断期间的记录。超出页数上限会报错而非静默截断。
 
-预印本首次默认回溯 31 天。之后从该来源上次成功日期减去 3 天开始，缓解索引与时区边界延迟；停机多日后不会仅检查最近一天。首次成功扫描某来源不发送历史条目；可设 `notifications.notify_on_first_run: true` 改变此行为。
+所有来源采用固定的 `tracking.start_year: 2020`，不会随当前年份滚动。预印本首次从 2020-01-01 回补，之后从该来源上次成功日期减去 3 天开始，缓解索引与时区边界延迟；停机多日后不会仅检查最近一天。首次成功扫描某来源不发送历史条目；显式 `--since` 历史回补也不将补录条目加入通知队列。
+
+arXiv 历史回补按提交年份拆分查询，每页最多 500 条；正常增量查询每页 100 条，按更新时间停止。只收录首次提交年份在配置范围内的预印本。ePrint 在同一天已完成近期扫描时，历史回补结束于最近扫描重叠窗口之前，避免重新刷新近期窗口。`coverage_start` 记录已完成的历史起点，同日重复提交已覆盖的回补请求会跳过。
 
 ## 状态与故障
 
@@ -39,17 +41,17 @@ tracking:
   exclude_federated_learning: true
 ```
 
-更长的首轮预印本时间范围：
+固定的发表年份起点：
 
 ```yaml
 tracking:
-  initial_lookback_days: 90
+  start_year: 2020
 ```
 
-显式历史回补（ePrint 同一天成功刷新后仍会跳过）：
+显式历史回补（安静补录，不发送历史论文提醒）：
 
 ```bash
-python -m src.main --sources arxiv,eprint --since 2026-01-01
+python -m src.main --since 2020-01-01
 ```
 
 在独立目录验证，不修改正式缓存：

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       since:
-        description: 'Optional preprint backfill start date (YYYY-MM-DD)'
+        description: 'Quiet historical backfill start date (YYYY-MM-DD, e.g. 2020-01-01)'
         required: false
         type: string
   schedule:

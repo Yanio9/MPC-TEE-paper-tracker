@@ -7,7 +7,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import patch
 
-from src.core import PaperStore, canonical_doi, classify, read_json, write_json
+from src.core import PaperStore, canonical_doi, classify, read_json, write_json, year_bounds
 from src.output import render_library
 from src.runner import load_config, run
 from src.sources import SourceError, collect_arxiv, collect_dblp, collect_eprint, parse_arxiv, parse_dblp, parse_eprint, parse_dblp_sparql, sparql_query
@@ -160,7 +160,7 @@ class SourceTests(unittest.TestCase):
     def test_dblp_pagination_and_venue_filter(self):
         cfg = load_config(ROOT / "config.yaml")
         cfg["sources"]["dblp"]["backend"] = "search"
-        cfg["tracking"].update(years_back=0, years_ahead=0)
+        cfg["tracking"].update(start_year=2026, years_ahead=0)
         cfg["topics"] = {"MPC": {"dblp_terms": ["secure comput"]}}
         def data(key):
             return {"result": {"hits": {"@total": "2", "hit": [{"info": {"key": key, "title": "Secure computation", "year": "2026",
@@ -186,7 +186,7 @@ class SourceTests(unittest.TestCase):
         self.assertEqual(len(papers), 1)
         self.assertEqual(papers[0]["authors"], ["Alice", "Bob"])
         self.assertIn("OFFSET 1", client.calls[1][1]["query"])
-        self.assertIn('"2023"^^xsd:gYear', client.calls[0][1]["query"])
+        self.assertIn('"2020"^^xsd:gYear', client.calls[0][1]["query"])
 
     def test_sparql_query_contains_both_independent_topics(self):
         cfg = load_config(ROOT / "config.yaml")
@@ -195,6 +195,20 @@ class SourceTests(unittest.TestCase):
         self.assertIn("SGX", query)
         self.assertIn("streams/conf/crypto", query)
         self.assertNotIn("federate", query)
+
+    def test_start_year_remains_2020_in_future_runs(self):
+        cfg = load_config(ROOT / "config.yaml")
+        self.assertEqual(year_bounds(cfg, date(2030, 1, 1)), (2020, 2031))
+        self.assertIn('"2020"^^xsd:gYear', sparql_query(cfg, date(2030, 1, 1), 0))
+
+    def test_arxiv_history_partitions_submission_years(self):
+        cfg = load_config(ROOT / "config.yaml")
+        cfg["topics"] = {"MPC": {"arxiv_terms": ['"secure computation"']}}
+        client = Client([Response(text=atom([])) for _ in range(7)])
+        self.assertEqual(list(collect_arxiv(cfg, client, NOW.date(), date(2020, 1, 1))), [])
+        self.assertEqual(len(client.calls), 7)
+        self.assertIn("submittedDate:[202001010000 TO 202012312359]", client.calls[0][1]["search_query"])
+        self.assertIn("submittedDate:[202601010000 TO 202610292359]", client.calls[-1][1]["search_query"])
 
 
 class PipelineTests(unittest.TestCase):
@@ -243,6 +257,40 @@ class PipelineTests(unittest.TestCase):
             raise AssertionError("Collector must not run twice today")
         result = self.call({name: never for name in ("dblp", "arxiv", "eprint")})
         self.assertTrue(all(status["status"] == "cached" for status in result["sources"].values()))
+
+    def test_initial_scan_starts_at_2020_for_all_sources(self):
+        windows = []
+        def collector(config, client, upper, lower):
+            windows.append((lower, upper))
+            return []
+        self.call({name: collector for name in ("dblp", "arxiv", "eprint")})
+        self.assertEqual(windows, [(date(2020, 1, 1), NOW.date())] * 3)
+
+    def test_explicit_backfill_is_quiet_and_does_not_refresh_eprint_daily_window(self):
+        self.call({name: lambda *args: [] for name in ("dblp", "arxiv", "eprint")})
+        state_path = self.root / "data/state.json"
+        state = read_json(state_path, {})
+        state["sources"]["eprint"]["coverage_start"] = "2026-09-28"
+        write_json(state_path, state)
+        windows = []
+        def historical(config, client, upper, lower):
+            windows.append((lower, upper))
+            return [paper("A 2020 secure computation protocol", source="eprint", identifier="2020/1234")]
+        result = self.call({"eprint": historical}, selected=["eprint"], since=date(2020, 1, 1))
+        self.assertEqual(result["pending"], 0)
+        self.assertEqual(result["total_papers"], 1)
+        self.assertEqual(windows, [(date(2020, 1, 1), date(2026, 10, 25))])
+        again = self.call({"eprint": historical}, selected=["eprint"], since=date(2020, 1, 1))
+        self.assertEqual(again["sources"]["eprint"]["status"], "cached")
+        self.assertEqual(len(windows), 1)
+
+    def test_pre_2020_preprints_are_filtered_even_when_recently_revised(self):
+        old = paper("Secret sharing before 2020", identifier="1901.1")
+        old["records"][0]["year"] = "2019"
+        boundary = paper("Secure computation from 2020", identifier="2001.1")
+        boundary["records"][0]["year"] = "2020"
+        result = self.call({"arxiv": lambda *args: [old, boundary]}, selected=["arxiv"])
+        self.assertEqual(result["total_papers"], 1)
 
     def test_unknown_venue_still_renders(self):
         p = paper(source="dblp")
