@@ -43,7 +43,8 @@ DBLP 包括 CRYPTO、EUROCRYPT、ASIACRYPT、TCC、PKC、Journal of Cryptology�
 - 首次成功扫描各来源时只建立基线，避免历史论文刷屏；后续新增论文创建汇总 Issue。
 - 点击本仓库 **Watch → Custom → Issues** 订阅论文提醒；GitHub 的邮件通知取决于你的账户通知设置。
 - 在 **Actions → Track MPC and TEE papers → Run workflow** 手动运行。填 `since: 2020-01-01` 可安静回补历史论文，不发送补录提醒；DBLP 固定起点由 `tracking.start_year` 控制。
-- 同一天已经成功的来源默认不重复抓取。ePrint 每天至多刷新一次近期窗口；明确请求的历史回补只查询更早的区间。失败来源保留原成功时间，下次继续补抓。
+- 同一天已经成功的来源默认不重复抓取。需要立即重查时，在手动运行中勾选 `refresh`，或本地运行 `python -m src.main --refresh`；它保留历史覆盖、去重与请求间隔，重新查询当前增量窗口。
+- 默认 ePrint 每天只刷新一次近期窗口；未勾选 `refresh` 的历史回补只查询更早区间。失败来源保留原成功时间，下次继续补抓。
 - 来源失败会写入运行报告，并让工作流显示失败；其他成功来源仍保存结果。反爬验证页不会被当成零篇论文。
 
 无需付费 API key 即可采集。arXiv/ePrint 摘要随元数据获取；DBLP 的缺失摘要可选用 Crossref 补充。若需要中文翻译，在本仓库 **Settings → Secrets and variables → Actions** 添加自己的 `DASHSCOPE_API_KEY`；翻译会使用你账户的 Qwen-MT-plus 配额。默认未提供 key 时跳过翻译，不影响采集。

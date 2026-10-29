@@ -3,6 +3,11 @@ name: Track MPC and TEE papers
 on:
   workflow_dispatch:
     inputs:
+      refresh:
+        description: 'Recheck sources now even if already scanned today'
+        required: false
+        default: false
+        type: boolean
       since:
         description: 'Quiet historical backfill start date (YYYY-MM-DD, e.g. 2020-01-01)'
         required: false
@@ -44,9 +49,11 @@ jobs:
         continue-on-error: true
         env:
           BACKFILL_SINCE: ${{ inputs.since }}
+          REFRESH_NOW: ${{ inputs.refresh }}
         run: |
           args=()
           if [ -n "$BACKFILL_SINCE" ]; then args+=(--since "$BACKFILL_SINCE"); fi
+          if [ "$REFRESH_NOW" = 'true' ]; then args+=(--refresh); fi
           python -m src.main "${args[@]}"
       - name: Persist results and pending notifications
         if: always() && steps.collect.outcome != 'skipped'

@@ -39,7 +39,7 @@ def load_config(path: Path) -> dict:
 
 def run(root: Path, config: dict, selected: list[str] | None = None, since: date | None = None,
         dry_run: bool = False, now: datetime | None = None, collectors=None, client_factory=HttpClient,
-        no_enrich: bool = False) -> dict:
+        no_enrich: bool = False, refresh: bool = False) -> dict:
     now = now or datetime.now(timezone.utc)
     stamp = now.isoformat(timespec="seconds")
     today = now.date()
@@ -52,7 +52,7 @@ def run(root: Path, config: dict, selected: list[str] | None = None, since: date
         raise ValueError("Unsupported cache schema; refusing to overwrite")
     store = PaperStore(cache["papers"])
     pending = set(state.get("pending", []))
-    report = {"started_at": stamp, "start_year": first_year, "backfill": backfill, "sources": {}, "enrichment_errors": []}
+    report = {"started_at": stamp, "start_year": first_year, "backfill": backfill, "refresh": refresh, "sources": {}, "enrichment_errors": []}
     collectors = collectors or COLLECTORS
     # Reapply user exclusions after config edits, without migrating unrelated FL cache.
     for identifier, paper in list(store.papers.items()):
@@ -69,17 +69,17 @@ def run(root: Path, config: dict, selected: list[str] | None = None, since: date
             report["sources"][name] = {"status": "disabled" if not source_cfg["enabled"] else "not selected"}
             continue
         previous = state["sources"].get(name, {})
-        if previous.get("last_success", "")[:10] == today.isoformat() and since is None:
+        if not refresh and previous.get("last_success", "")[:10] == today.isoformat() and since is None:
             report["sources"][name] = {"status": "cached", "message": "Already completed today (UTC)"}
             continue
         lower_bound = since or (date.fromisoformat(previous["last_success"][:10]) - timedelta(days=config["tracking"]["overlap_days"])
                                 if previous.get("last_success") else first_date)
         lower_bound = max(first_date, lower_bound)
-        if backfill and previous.get("last_success", "")[:10] == today.isoformat() and previous.get("coverage_start", "9999-12-31") <= lower_bound.isoformat():
+        if not refresh and backfill and previous.get("last_success", "")[:10] == today.isoformat() and previous.get("coverage_start", "9999-12-31") <= lower_bound.isoformat():
             report["sources"][name] = {"status": "cached", "message": "Requested historical interval already completed today"}
             continue
         upper_bound = today
-        if name == "eprint" and previous.get("last_success", "")[:10] == today.isoformat():
+        if not refresh and name == "eprint" and previous.get("last_success", "")[:10] == today.isoformat():
             # A requested historical backfill is a different, older OAI interval; do not
             # refresh the recently scanned daily window a second time today.
             upper_bound = today - timedelta(days=config["tracking"]["overlap_days"] + 1)

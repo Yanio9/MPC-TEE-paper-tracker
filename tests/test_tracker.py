@@ -266,6 +266,33 @@ class PipelineTests(unittest.TestCase):
         self.call({name: collector for name in ("dblp", "arxiv", "eprint")})
         self.assertEqual(windows, [(date(2020, 1, 1), NOW.date())] * 3)
 
+    def test_explicit_refresh_rechecks_all_sources_without_resetting_history(self):
+        self.call({name: lambda *args: [paper()] for name in ("dblp", "arxiv", "eprint")})
+        windows = []
+        def collector(config, client, upper, lower):
+            windows.append((lower, upper))
+            return [paper(), paper("New Intel SGX security protocol", identifier="2610.2")]
+        result = self.call({name: collector for name in ("dblp", "arxiv", "eprint")}, refresh=True)
+        self.assertTrue(all(status["status"] == "ok" for status in result["sources"].values()))
+        self.assertEqual(windows, [(date(2026, 10, 26), NOW.date())] * 3)
+        self.assertEqual(result["total_papers"], 2)
+        self.assertEqual(result["pending"], 1)
+        state = read_json(self.root / "data/state.json", {})
+        self.assertTrue(all(status["coverage_start"] == "2020-01-01" for status in state["sources"].values()))
+
+    def test_refresh_failure_preserves_checkpoint_and_rejects_partial_results(self):
+        self.call({name: lambda *args: [paper()] for name in ("dblp", "arxiv", "eprint")})
+        prior = read_json(self.root / "data/state.json", {})["sources"]["eprint"]
+        def broken(*args):
+            yield paper("Incomplete new SGX security result", source="eprint", identifier="2026/9999")
+            raise SourceError("refresh interrupted")
+        result = self.call({"eprint": broken}, selected=["eprint"], refresh=True)
+        current = read_json(self.root / "data/state.json", {})["sources"]["eprint"]
+        self.assertEqual(result["total_papers"], 1)
+        self.assertEqual(result["pending"], 0)
+        self.assertEqual(current["last_success"], prior["last_success"])
+        self.assertEqual(current["coverage_start"], prior["coverage_start"])
+
     def test_explicit_backfill_is_quiet_and_does_not_refresh_eprint_daily_window(self):
         self.call({name: lambda *args: [] for name in ("dblp", "arxiv", "eprint")})
         state_path = self.root / "data/state.json"

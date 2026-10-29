@@ -15,6 +15,7 @@ def main():
     parser.add_argument("--output-dir", type=Path, default=root, help="Root for data/, reports/ and PAPERS.md")
     parser.add_argument("--sources", default="", help="Comma-separated source names: dblp,arxiv,eprint")
     parser.add_argument("--since", type=date.fromisoformat, help="Quiet historical backfill from this date (YYYY-MM-DD); no new-paper alerts")
+    parser.add_argument("--refresh", action="store_true", help="Recheck sources now even if already scanned today; retain normal request pacing")
     parser.add_argument("--dry-run", action="store_true", help="Fetch and summarize without writing cache or files")
     parser.add_argument("--no-enrich", action="store_true", help="Skip optional Crossref/translation calls")
     args = parser.parse_args()
@@ -25,7 +26,7 @@ def main():
         parser.error("--since must not be in the future")
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     config = load_config(args.config)
-    report = run(args.output_dir.resolve(), config, selected or None, args.since, args.dry_run, no_enrich=args.no_enrich)
+    report = run(args.output_dir.resolve(), config, selected or None, args.since, args.dry_run, no_enrich=args.no_enrich, refresh=args.refresh)
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 2 if report["failed_sources"] else 0
 
