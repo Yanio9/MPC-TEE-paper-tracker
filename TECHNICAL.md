@@ -7,7 +7,7 @@
 - `src/core.py`：缩写消歧、相关性筛选、跨来源去重、缓存读写。
 - `src/runner.py`：独立来源扫描、成功时间、首轮基线、待发送队列。
 - `src/enrichment.py`：可选 Crossref 摘要补全与 Qwen 中文翻译。
-- `src/catalog.py`：生成 MPC / TEE / MPC + TEE 的直接论文表格及完整单页网页。
+- `src/catalog.py`：按会议/期刊名称生成直接论文表格及完整单页网页，组内按年份倒序；MPC / TEE / MPC + TEE 作为方向标签与筛选项。
 - `src/output.py`：更新 README 自动生成区、完整论文列表、网页和运行报告。
 - `scripts/publish_digest.py`：只向配置指定的当前仓库发送 Issue，并检测已发送的论文 ID。
 - `data/papers.json`：去重论文。`records` 保留各来源元数据，`aliases` 记录旧标题和 ID。
@@ -15,7 +15,7 @@
 - `README.md`：仓库首页直接展示论文表格；每日仅替换 `<!-- PAPERS:START -->` 与 `<!-- PAPERS:END -->` 之间的内容，保留其余手写说明。
 - `PAPERS.md`：同一批全部论文的直接列表，不再按页数分流。
 - `GUIDE.md`：完整的使用、收录范围与来源许可说明。
-- `docs/index.html`：全部论文的独立单页网页，保留作者与摘要，可按关键词、年份、方向和发表记录筛选。无需外部脚本或服务。
+- `docs/index.html`：全部论文的独立单页网页，保留作者与摘要，可按会议/期刊、关键词、年份、方向和发表记录筛选。无需外部脚本或服务。
 - `reports/`：最近运行摘要、结构化报告和待发送摘要。
 
 ## 扫描范围

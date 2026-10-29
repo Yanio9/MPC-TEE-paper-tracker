@@ -50,8 +50,8 @@ def render_digest(papers: dict, identifiers: list[str], repository: str, limit: 
 
 def write_outputs(root: Path, papers: dict, state: dict, report: dict, config: dict) -> None:
     (root / "reports").mkdir(parents=True, exist_ok=True)
-    update_readme(root / "README.md", render_tables(papers))
-    (root / "PAPERS.md").write_text(render_library(papers, report), encoding="utf-8", newline="\n")
+    update_readme(root / "README.md", render_tables(papers, config))
+    (root / "PAPERS.md").write_text(render_library(papers, report, config), encoding="utf-8", newline="\n")
     site = root / "docs"
     site.mkdir(parents=True, exist_ok=True)
     (site / "index.html").write_text(render_site(papers, config), encoding="utf-8", newline="\n")

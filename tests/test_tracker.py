@@ -8,7 +8,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from src.core import PaperStore, canonical_doi, classify, read_json, write_json, year_bounds
-from src.catalog import render_site, update_readme, paper_date
+from src.catalog import render_site, update_readme, paper_date, paper_groups
 from src.output import render_library, write_outputs
 from src.runner import load_config, run
 from src.sources import SourceError, collect_arxiv, collect_dblp, collect_eprint, parse_arxiv, parse_dblp, parse_eprint, parse_dblp_sparql, sparql_query
@@ -338,6 +338,47 @@ class PipelineTests(unittest.TestCase):
         p["records"].append({"source": "dblp", "id": "journals/popets/Example24", "year": "2024", "venue": "PoPETs", "url": "https://example.org/publication"})
         self.assertEqual(paper_date(p), "2024")
         self.assertIn("| PoPETs | 2024 |", render_library({"p": p}, {}))
+
+    def test_catalog_groups_by_venue_and_keeps_topic_labels_on_each_paper(self):
+        def publication(title, venue, year, topics):
+            p = paper(title, source="dblp", identifier=title)
+            p["topics"] = topics
+            p["records"][0].update(venue=venue, year=str(year), published="")
+            return p
+        papers = {
+            "crypto-new": publication("Secure computation", "CRYPTO", 2026, ["MPC"]),
+            "crypto-old": publication("Trusted execution security", "CRYPTO", 2020, ["TEE"]),
+            "ccs": publication("MPC in SGX", "ACM CCS", 2025, ["MPC", "TEE"]),
+            "unknown": publication("Another protocol", "New conference", 2024, ["MPC"]),
+            "arxiv": paper("An arXiv preprint", identifier="a"),
+            "cross-posted": paper("A cross-posted preprint", identifier="b"),
+        }
+        papers["cross-posted"]["records"].append({**papers["cross-posted"]["records"][0], "source": "eprint", "id": "2026/100", "url": "https://eprint.iacr.org/2026/100"})
+        groups = list(paper_groups(papers, self.cfg))
+        self.assertEqual([group[1] for group in groups], ["CRYPTO", "ACM CCS", "New conference", "IACR ePrint", "arXiv"])
+        self.assertEqual([identifier for identifier, _ in groups[0][3]], ["crypto-new", "crypto-old"])
+        identifiers = [identifier for _, _, _, selected in groups for identifier, _ in selected]
+        self.assertCountEqual(identifiers, papers)
+        website = render_site(papers, self.cfg)
+        crypto_section = website.split('<section id="venue-crypto">')[1].split('</section>')[0]
+        self.assertIn('data-topic="mpc"', crypto_section)
+        self.assertIn('data-topic="tee"', crypto_section)
+        self.assertNotIn('MPC in SGX', crypto_section)
+        self.assertIn('id="venue"', website)
+
+    def test_multiple_publications_use_latest_venue_without_duplicating_paper(self):
+        p = paper("Secure computation with multiple versions")
+        p["records"] += [
+            {"source": "dblp", "id": "conf/tcc/Example21", "year": "2021", "venue": "TCC", "url": "https://example.org/conference"},
+            {"source": "dblp", "id": "journals/joc/Example23", "year": "2023", "venue": "Journal of Cryptology", "url": "https://example.org/journal"},
+        ]
+        groups = list(paper_groups({"p": p}, self.cfg))
+        self.assertEqual(len(groups), 1)
+        self.assertEqual(groups[0][1], "Journal of Cryptology")
+        self.assertEqual([identifier for identifier, _ in groups[0][3]], ["p"])
+        rendered = render_library({"p": p}, {}, self.cfg)
+        self.assertIn("https://example.org/conference", rendered)
+        self.assertIn("https://example.org/journal", rendered)
 
     def test_large_library_lists_every_paper_directly_and_preserves_notes(self):
         papers = {str(i): paper(title=f"Secure protocol {i:03d}", identifier=str(i), abstract="Abstract. " * 2500) for i in range(40)}

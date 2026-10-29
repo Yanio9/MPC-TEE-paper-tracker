@@ -2,11 +2,12 @@
 from __future__ import annotations
 
 import html
+import hashlib
+import re
 from pathlib import Path
 
 START = "<!-- PAPERS:START -->"
 END = "<!-- PAPERS:END -->"
-TOPICS = (("mpc", "MPC", ["MPC"]), ("tee", "TEE", ["TEE"]), ("mpc-tee", "MPC + TEE", ["MPC", "TEE"]))
 
 
 def escaped(value: str) -> str:
@@ -58,35 +59,64 @@ def venue_label(paper: dict) -> str:
     return " / ".join(venues)
 
 
-def paper_groups(papers: dict):
-    for published, kind in ((True, "published"), (False, "preprint")):
-        for slug, label, topics in TOPICS:
-            selected = [(identifier, paper) for identifier, paper in papers.items()
-                        if sorted(paper["topics"]) == topics and has_publication_record(paper) == published]
-            selected.sort(key=lambda item: (paper_date(item[1]), item[1]["title"], item[0]), reverse=True)
-            yield f"{slug}-{kind}", label, published, selected
+def primary_venue(paper: dict) -> tuple[bool, str]:
+    publications = [record for record in paper["records"] if record["source"] == "dblp"]
+    if publications:
+        latest = max(publications, key=lambda record: (str(record.get("published") or record.get("year", "")), record.get("venue", ""), record["id"]))
+        return True, latest.get("venue") or "Unknown venue"
+    sources = {record["source"] for record in paper["records"]}
+    # Keep a cross-posted preprint in one place while retaining both source links.
+    if "eprint" in sources:
+        return False, "IACR ePrint"
+    if "arxiv" in sources:
+        return False, "arXiv"
+    return False, venue_label(paper)
 
 
-def render_tables(papers: dict) -> str:
+def paper_groups(papers: dict, config: dict | None = None):
+    venues = (config or {}).get("sources", {}).get("dblp", {}).get("venues", {})
+    order = {name: index for index, name in enumerate(dict.fromkeys(venues.values()))}
+    groups = {}
+    for identifier, paper in papers.items():
+        groups.setdefault(primary_venue(paper), []).append((identifier, paper))
+    def group_order(item):
+        published, label = item[0]
+        rank = order.get(label, len(order)) if published else {"IACR ePrint": 0, "arXiv": 1}.get(label, 2)
+        return not published, rank, label.casefold()
+    used_slugs = set()
+    for (published, label), selected in sorted(groups.items(), key=group_order):
+        slug = ("venue-" if published else "source-") + re.sub(r"[^\w]+", "-", label.casefold()).strip("-")
+        if slug in used_slugs:
+            slug += "-" + hashlib.sha256(label.encode("utf-8")).hexdigest()[:8]
+        used_slugs.add(slug)
+        selected.sort(key=lambda item: (paper_date(item[1]), item[1]["title"], item[0]), reverse=True)
+        yield slug, label, published, selected
+
+
+def render_tables(papers: dict, config: dict | None = None) -> str:
     published_count = sum(has_publication_record(paper) for paper in papers.values())
+    groups = list(paper_groups(papers, config))
     lines = [f"共 **{len(papers)}** 篇去重论文：会议/期刊记录 **{published_count}** 篇，"
              f"仅预印本来源 **{len(papers) - published_count}** 篇。", "",
              "预印本单独列出；尚未关联会议/期刊记录，不代表论文一定尚未发表。", "",
-             "会议/期刊：[MPC](#mpc-published) · [TEE](#tee-published) · [MPC + TEE](#mpc-tee-published)", "",
-             "预印本：[MPC](#mpc-preprint) · [TEE](#tee-preprint) · [MPC + TEE](#mpc-tee-preprint)", ""]
-    for slug, label, published, selected in paper_groups(papers):
-        kind = "会议与期刊" if published else "预印本"
-        lines += [f'<a id="{slug}"></a>', "", f"## {label} · {kind}（{len(selected)}）", "",
-                  "| 论文标题 | 会议 / 期刊 / 来源 | 年份 | 资源链接 |", "|---|---|---|---|"]
+             "按会议、期刊与预印本来源分组，组内按年份倒序；MPC / TEE 为方向标签。", ""]
+    for published, heading in ((True, "会议与期刊"), (False, "预印本")):
+        links = [f"[{escaped(label)}（{len(selected)}）](#{slug})" for slug, label, formal, selected in groups if formal == published]
+        if links:
+            lines += [f"**{heading}**：" + " · ".join(links), ""]
+    for slug, label, published, selected in groups:
+        lines += [f'<a id="{slug}"></a>', "", f"## {escaped(label)}（{len(selected)}）", "",
+                  "| 论文标题 | 会议 / 期刊 / 来源 | 年份 | 方向 | 资源链接 |", "|---|---|---|---|---|"]
         for _, paper in selected:
             links = " · ".join(f"[{escaped(label)}]({url})" for label, url in material_links(paper))
-            lines.append(f"| {escaped(paper['title'])} | {escaped(venue_label(paper))} | {escaped(paper_date(paper)[:4])} | {links} |")
+            topics = " + ".join(sorted(paper["topics"]))
+            lines.append(f"| {escaped(paper['title'])} | {escaped(venue_label(paper))} | {escaped(paper_date(paper)[:4])} | {escaped(topics)} | {links} |")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
 
-def render_library(papers: dict, report: dict) -> str:
-    return "# MPC & TEE 论文列表\n\n[仓库首页](README.md) · [运行与收录说明](GUIDE.md)\n\n" + render_tables(papers)
+def render_library(papers: dict, report: dict, config: dict | None = None) -> str:
+    return "# MPC & TEE 论文列表\n\n[仓库首页](README.md) · [运行与收录说明](GUIDE.md)\n\n" + render_tables(papers, config)
 
 
 def update_readme(path: Path, table: str) -> None:
@@ -110,7 +140,7 @@ main{max-width:1440px;margin:auto;padding:36px 24px 80px}h1{font-size:32px;margi
 label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}input,select{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:9px 12px}
 input{width:min(420px,85vw)}#result-count{margin-left:auto;color:var(--muted)}.table-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:8px}
 table{width:100%;border-collapse:collapse;text-align:left}th{background:var(--bg);white-space:nowrap}th,td{padding:13px 16px;vertical-align:top;border-bottom:1px solid var(--line)}tbody tr:last-child td{border-bottom:0}
-.title{min-width:300px;width:58%;font-weight:600}.venue{min-width:125px}.year{white-space:nowrap}.materials{min-width:130px}.materials a{display:inline-block;margin:0 9px 5px 0}
+.title{min-width:300px;width:55%;font-weight:600}.venue{min-width:125px}.year,.topic{white-space:nowrap}.materials{min-width:130px}.materials a{display:inline-block;margin:0 9px 5px 0}
 details{font-weight:400;color:var(--muted);font-size:14px;margin-top:6px}summary{cursor:pointer}details p{white-space:pre-wrap}tr:target{background:#fff4cb}footer{margin-top:40px;color:var(--muted)}[hidden]{display:none!important}
 @media(prefers-color-scheme:dark){:root{--bg:#111827;--surface:#182235;--text:#e3eaf5;--muted:#afbdd1;--line:#334058;--accent:#8ec1ff}tr:target{background:#3f3616}}
 @media(max-width:650px){main{padding:24px 12px}h1{font-size:26px}th,td{padding:10px}.title{min-width:240px}#result-count{margin-left:0;width:100%}}
@@ -122,12 +152,13 @@ const search = document.getElementById('search');
 const year = document.getElementById('year');
 const topic = document.getElementById('topic');
 const kind = document.getElementById('kind');
+const venue = document.getElementById('venue');
 function filterPapers(){
   const words = search.value.trim().toLocaleLowerCase().split(/\\s+/).filter(Boolean);
   let shown = 0;
   for(const item of rows){
     const row = item.row;
-    const matches = words.every(word => item.text.includes(word)) && (!year.value || row.dataset.year === year.value) && (!topic.value || row.dataset.topic === topic.value) && (!kind.value || row.dataset.kind === kind.value);
+    const matches = words.every(word => item.text.includes(word)) && (!year.value || row.dataset.year === year.value) && (!topic.value || row.dataset.topic === topic.value) && (!kind.value || row.dataset.kind === kind.value) && (!venue.value || row.dataset.venue === venue.value);
     row.hidden = !matches;
     if(matches) shown++;
   }
@@ -136,36 +167,40 @@ function filterPapers(){
 }
 let pending;
 search.addEventListener('input', () => {clearTimeout(pending);pending=setTimeout(filterPapers,150);});
-for(const element of [year,topic,kind]) element.addEventListener('change',filterPapers);
+for(const element of [year,topic,kind,venue]) element.addEventListener('change',filterPapers);
 """
 
 
 def render_site(papers: dict, config: dict) -> str:
     repository = html.escape(config["project"]["repository"], quote=True)
     base = f"https://github.com/{repository}"
+    groups = list(paper_groups(papers, config))
+    venue_options = "".join(f'<option value="{html.escape(slug, quote=True)}">{html.escape(label)} ({len(selected)})</option>' for slug, label, _, selected in groups)
     years = sorted({paper_date(paper)[:4] for paper in papers.values()}, reverse=True)
     options = "".join(f'<option value="{html.escape(year, quote=True)}">{html.escape(year)}</option>' for year in years)
     parts = ['<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">',
              '<meta name="viewport" content="width=device-width,initial-scale=1">',
              '<title>MPC &amp; TEE 论文列表</title>', f'<style>{STYLE}</style></head><body><main>',
              '<h1>MPC &amp; TEE 论文列表</h1>',
-             f'<p class="lead">从 2020 年起追踪安全多方计算与可信执行环境。共 {len(papers)} 篇去重论文，全部在本页直接列出。</p>',
+             f'<p class="lead">从 2020 年起追踪安全多方计算与可信执行环境。共 {len(papers)} 篇去重论文，按会议、期刊与预印本来源分组，组内按年份倒序。</p>',
              f'<nav class="links"><a href="{base}">GitHub 仓库</a><a href="{base}/blob/main/GUIDE.md">收录与运行说明</a><a href="{base}/blob/main/reports/latest-run.md">最近更新状态</a></nav>',
              '<div class="filters"><label>搜索标题、作者、摘要<input id="search" type="search" placeholder="例如：oblivious transfer、SGX"></label>',
+             f'<label>会议 / 期刊 / 来源<select id="venue"><option value="">全部会议与来源</option>{venue_options}</select></label>',
              f'<label>年份<select id="year"><option value="">全部年份</option>{options}</select></label>',
              '<label>方向<select id="topic"><option value="">全部方向</option><option value="mpc">MPC</option><option value="tee">TEE</option><option value="mpc-tee">MPC + TEE</option></select></label>',
              '<label>发表记录<select id="kind"><option value="">全部来源</option><option value="published">会议 / 期刊</option><option value="preprint">仅预印本来源</option></select></label>',
              f'<span id="result-count" role="status">显示 {len(papers)} / {len(papers)} 篇</span></div>',
              '<p class="note">仅预印本来源表示尚未关联会议或期刊记录，不代表论文一定尚未发表。点击“作者与摘要”展开详情。</p>']
-    for slug, label, published, selected in paper_groups(papers):
+    for slug, label, published, selected in groups:
         if not selected:
             continue
         kind = "published" if published else "preprint"
-        topic = slug.removesuffix("-" + kind)
-        title = f'{label} · {"会议与期刊" if published else "预印本"}（{len(selected)}）'
+        title = f'{label}（{len(selected)}）'
         parts += [f'<section id="{slug}"><h2>{html.escape(title)}</h2><div class="table-wrap"><table>',
-                  '<thead><tr><th scope="col">论文标题</th><th scope="col">会议 / 期刊 / 来源</th><th scope="col">年份</th><th scope="col">资源链接</th></tr></thead><tbody>']
+                  '<thead><tr><th scope="col">论文标题</th><th scope="col">会议 / 期刊 / 来源</th><th scope="col">年份</th><th scope="col">方向</th><th scope="col">资源链接</th></tr></thead><tbody>']
         for identifier, paper in selected:
+            topic = "-".join(value.lower() for value in sorted(paper["topics"]))
+            topics = html.escape(" + ".join(sorted(paper["topics"])))
             year = html.escape(paper_date(paper)[:4], quote=True)
             links = " ".join(f'<a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(label)}</a>' for label, url in material_links(paper))
             authors = html.escape(", ".join(paper.get("authors", [])))
@@ -177,7 +212,7 @@ def render_site(papers: dict, config: dict) -> str:
             if translated:
                 detail += f'<p>{translated}</p>'
             detail += '</details>'
-            parts.append(f'<tr id="paper-{html.escape(identifier, quote=True)}" data-year="{year}" data-topic="{topic}" data-kind="{kind}"><td class="title">{html.escape(paper["title"])}{detail}</td><td class="venue">{html.escape(venue_label(paper))}</td><td class="year">{year}</td><td class="materials">{links}</td></tr>')
+            parts.append(f'<tr id="paper-{html.escape(identifier, quote=True)}" data-year="{year}" data-topic="{topic}" data-kind="{kind}" data-venue="{html.escape(slug, quote=True)}"><td class="title">{html.escape(paper["title"])}{detail}</td><td class="venue">{html.escape(venue_label(paper))}</td><td class="year">{year}</td><td class="topic">{topics}</td><td class="materials">{links}</td></tr>')
         parts.append('</tbody></table></div></section>')
     parts += [f'<footer>自动更新 · <a href="{base}/blob/main/LICENSE">MIT License</a> · <a href="{base}/blob/main/GUIDE.md#来源与许可">项目来源与论文许可</a></footer>',
               f'</main><script>{SCRIPT}</script></body></html>']
