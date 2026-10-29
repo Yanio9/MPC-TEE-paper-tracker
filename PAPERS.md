@@ -25,9 +25,9 @@
 | Traceable Secret Sharing Schemes for General Access Structures. | EUROCRYPT | 2026 | [论文](https://doi.org/10.1007/978-3-032-25324-8_1) · [ePrint](https://eprint.iacr.org/2025/1120) |
 | Traceable Secret Sharing Revisited. | EUROCRYPT | 2026 | [论文](https://doi.org/10.1007/978-3-032-25324-8_2) · [ePrint](https://eprint.iacr.org/2025/1980) |
 | Towards Scalable YOSO MPC via Packed Secret-Sharing. | ASIACRYPT | 2026 | [论文](https://doi.org/10.1007/978-981-95-5116-3_3) · [ePrint](https://eprint.iacr.org/2025/635) |
-| Threshold Homomorphic Secret Sharing: Definitions and Constructions. | series/lncs | 2026 | [论文](https://doi.org/10.1007/978-981-95-5119-4_18) |
+| Threshold Homomorphic Secret Sharing: Definitions and Constructions. | ASIACRYPT | 2026 | [论文](https://doi.org/10.1007/978-981-95-5119-4_18) |
 | Taming Adaptive Security and New Access Structures in Evolving Secret Sharing. | ASIACRYPT | 2026 | [论文](https://doi.org/10.1007/978-981-95-5125-5_3) |
-| Succinct Line-Point Zero-Knowledge Arguments from Homomorphic Secret Sharing. | series/lncs | 2026 | [论文](https://doi.org/10.1007/978-981-95-5116-3_19) · [ePrint](https://eprint.iacr.org/2025/1866) |
+| Succinct Line-Point Zero-Knowledge Arguments from Homomorphic Secret Sharing. | ASIACRYPT | 2026 | [论文](https://doi.org/10.1007/978-981-95-5116-3_19) · [ePrint](https://eprint.iacr.org/2025/1866) |
 | Succinct Garbled Circuits with Low-Depth Garbling Algorithms. | EUROCRYPT | 2026 | [论文](https://doi.org/10.1007/978-3-032-25324-8_9) · [ePrint](https://eprint.iacr.org/2025/2308) |
 | Succinct Computational Secret Sharing for Monotone Circuits. | ASIACRYPT | 2026 | [论文](https://doi.org/10.1007/978-981-95-5125-5_4) · [ePrint](https://eprint.iacr.org/2025/850) |
 | Statistically Secure Asynchronous MPC with Linear Communication and 풪(n5) Additive Overhead. | CRYPTO | 2026 | [论文](https://doi.org/10.1007/978-3-032-35418-1_2) |
@@ -42,13 +42,13 @@
 | Scalable Privacy-Preserving Shortest Path Distance Computation via 2-Hop Labeling in MPC. | PACMMOD / SIGMOD | 2026 | [论文](https://doi.org/10.1145/3786695) |
 | RoundRole: Unlocking the Efficiency of Multi-party Computation with Bandwidth-aware Execution. | NDSS | 2026 | [论文](https://www.ndss-symposium.org/ndss-paper/roundrole-unlocking-the-efficiency-of-multi-party-computation-with-bandwidth-aware-execution/) |
 | Randomized Agreement, Verifiable Secret Sharing and Multi-party Computation in Granular Synchrony. | ASIACRYPT | 2026 | [论文](https://doi.org/10.1007/978-981-95-5116-3_1) · [ePrint](https://eprint.iacr.org/2025/1327) |
-| Pseudorandom Correlation Functions for Garbled Circuits. | series/lncs | 2026 | [论文](https://doi.org/10.1007/978-3-032-12293-3_15) · [ePrint](https://eprint.iacr.org/2025/2325) |
+| Pseudorandom Correlation Functions for Garbled Circuits. | TCC | 2026 | [论文](https://doi.org/10.1007/978-3-032-12293-3_15) · [ePrint](https://eprint.iacr.org/2025/2325) |
 | Privacy-Preserving Continuous Authentication of Smartphone Users via Secret Sharing. | TDSC | 2026 | [论文](https://doi.org/10.1109/TDSC.2026.3680150) |
 | PriFFT: Privacy-Preserving Federated Fine-Tuning of Large Language Models via Hybrid Secret Sharing. | TDSC | 2026 | [论文](https://doi.org/10.1109/TDSC.2026.3661572) · [arXiv](https://arxiv.org/abs/2503.03146) |
 | Practical Traceable Over-Threshold Multi-Party Private Set Intersection. | NDSS | 2026 | [论文](https://www.ndss-symposium.org/ndss-paper/practical-traceable-over-threshold-multi-party-private-set-intersection/) · [arXiv](https://arxiv.org/abs/2512.24652) |
 | Practical Private Set Operation via Secret Sharing for Lightweight Clients. | TIFS | 2026 | [论文](https://doi.org/10.1109/TIFS.2026.3684841) |
 | Practical Multi-Party Private Set Intersection with Reducible Zero-Sharing. | IEEE S&amp;P | 2026 | [论文](https://doi.org/10.1109/SP63933.2026.00006) · [ePrint](https://eprint.iacr.org/2025/2019) |
-| Polynomial Secret Sharing Schemes and Algebraic Matroids. | series/lncs | 2026 | [论文](https://doi.org/10.1007/978-3-032-12293-3_14) · [ePrint](https://eprint.iacr.org/2025/368) |
+| Polynomial Secret Sharing Schemes and Algebraic Matroids. | TCC | 2026 | [论文](https://doi.org/10.1007/978-3-032-12293-3_14) · [ePrint](https://eprint.iacr.org/2025/368) |
 | Perfectly Secure Network-Agnostic MPC Comes for Free. | EUROCRYPT | 2026 | [论文](https://doi.org/10.1007/978-3-032-25324-8_12) · [ePrint](https://eprint.iacr.org/2026/377) |
 | PUFF: Maximally Proactive Security for Free in Perfectly Secure MPC with Guaranteed Output Delivery. | EUROCRYPT | 2026 | [论文](https://doi.org/10.1007/978-3-032-25324-8_18) · [ePrint](https://eprint.iacr.org/2026/509) |
 | Over-Threshold Multiparty Private Set Intersection for Collaborative Network Intrusion Detection. | NSDI | 2026 | [论文](https://www.usenix.org/conference/nsdi26/presentation/arpaci) · [arXiv](https://arxiv.org/abs/2510.12045) |
@@ -61,7 +61,7 @@
 | Oblivis: A Framework for Delegated and Efficient Oblivious Transfer. | PoPETs | 2026 | [论文](https://doi.org/10.56553/POPETS-2026-0104) · [arXiv](https://arxiv.org/abs/2603.14492) |
 | Non-interactive Secure Computation with Constant Communication Overhead. | EUROCRYPT | 2026 | [论文](https://doi.org/10.1007/978-3-032-25324-8_5) · [ePrint](https://eprint.iacr.org/2026/1555) |
 | New Upper and Lower Bounds for Perfectly Secure MPC. | EUROCRYPT | 2026 | [论文](https://doi.org/10.1007/978-3-032-25324-8_13) · [ePrint](https://eprint.iacr.org/2025/1206) |
-| New Framework for Structure-Aware PSI From Distributed Function Secret Sharing. | series/lncs | 2026 | [论文](https://doi.org/10.1007/978-981-95-5116-3_10) · [ePrint](https://eprint.iacr.org/2025/907) |
+| New Framework for Structure-Aware PSI From Distributed Function Secret Sharing. | ASIACRYPT | 2026 | [论文](https://doi.org/10.1007/978-981-95-5116-3_10) · [ePrint](https://eprint.iacr.org/2025/907) |
 | Multiparty Homomorphic Secret Sharing and More from LPN and MQ. | TCC | 2026 | [论文](https://doi.org/10.1007/978-3-032-12293-3_16) · [ePrint](https://eprint.iacr.org/2025/966) |
 | Multiparty Computation with Minimal Overhead Without Circuit Transformation. | CRYPTO | 2026 | [论文](https://doi.org/10.1007/978-3-032-35418-1_5) |
 | MinBucket MPSI: Breaking the Max-Size Bottleneck in Multi-Party Private Set Intersection. | NDSS | 2026 | [论文](https://www.ndss-symposium.org/ndss-paper/minbucket-mpsi-breaking-the-max-size-bottleneck-in-multi-party-private-set-intersection/) |
@@ -69,9 +69,9 @@
 | Malicious Homomorphic Secret Sharing with Applications to DV-NIZK and More. | PKC | 2026 | [论文](https://doi.org/10.1007/978-3-032-26740-5_7) · [ePrint](https://eprint.iacr.org/2025/2077) |
 | Maintaining Sublinear Locality Over Time: Adaptively Secure MPC on a Reusable Hidden Graph. | EUROCRYPT | 2026 | [论文](https://doi.org/10.1007/978-3-032-25324-8_19) · [ePrint](https://eprint.iacr.org/2026/905) |
 | Just-in-Time-OPRFs and a Modular Framework for Fast Private Set Intersection. | CRYPTO | 2026 | [论文](https://doi.org/10.1007/978-3-032-35418-1_12) · [ePrint](https://eprint.iacr.org/2026/1532) |
-| Honest Majority Constant-Round MPC with Linear Communication from One-Way Functions. | series/lncs | 2026 | [论文](https://doi.org/10.1007/978-3-032-12287-2_1) · [ePrint](https://eprint.iacr.org/2025/1676) |
+| Honest Majority Constant-Round MPC with Linear Communication from One-Way Functions. | TCC | 2026 | [论文](https://doi.org/10.1007/978-3-032-12287-2_1) · [ePrint](https://eprint.iacr.org/2025/1676) |
 | GoSSamer: Lightweight and Linear-Communication Asynchronous (Dynamic Proactive) Secret Sharing and the Applications. | IEEE S&amp;P | 2026 | [论文](https://doi.org/10.1109/SP63933.2026.00185) · [ePrint](https://eprint.iacr.org/2025/1516) |
-| Fuzzy Private Set Intersection from VOLE. | series/lncs | 2026 | [论文](https://doi.org/10.1007/978-981-95-5116-3_11) · [ePrint](https://eprint.iacr.org/2025/911) |
+| Fuzzy Private Set Intersection from VOLE. | ASIACRYPT | 2026 | [论文](https://doi.org/10.1007/978-981-95-5116-3_11) · [ePrint](https://eprint.iacr.org/2025/911) |
 | Faster Than Ever: A New Lightweight Private Set Intersection and Its Variants. | NDSS | 2026 | [论文](https://www.ndss-symposium.org/ndss-paper/faster-than-ever-a-new-lightweight-private-set-intersection-and-its-variants/) |
 | Fast and Efficient Perfectly Secure Network-Agnostic Secure Computation. | EUROCRYPT | 2026 | [论文](https://doi.org/10.1007/978-3-032-25324-8_7) · [ePrint](https://eprint.iacr.org/2026/655) |
 | FESCAT: Function Secret Sharing Based Efficient Secure Collaborative Analysis of Time Series Data. | TDSC | 2026 | [论文](https://doi.org/10.1109/TDSC.2025.3632891) |
@@ -79,7 +79,7 @@
 | Efficient Malicious Multiparty Private Set Intersection Supporting Cardinality, Sharing, and Batching. | TIFS | 2026 | [论文](https://doi.org/10.1109/TIFS.2026.3671114) |
 | Efficient Fuzzy Private Set Intersection from Secret-Shared OPRF. | IEEE S&amp;P | 2026 | [论文](https://doi.org/10.1109/SP63933.2026.00172) · [arXiv](https://arxiv.org/abs/2604.14909) |
 | Dishonest-Majority Secure Computation via PIR-Authenticated Multiplication Triples. | CRYPTO | 2026 | [论文](https://doi.org/10.1007/978-3-032-35418-1_15) · [ePrint](https://eprint.iacr.org/2026/257) |
-| Deniable Secret Sharing. | series/lncs | 2026 | [论文](https://doi.org/10.1007/978-3-032-12293-3_13) · [ePrint](https://eprint.iacr.org/2025/525) |
+| Deniable Secret Sharing. | TCC | 2026 | [论文](https://doi.org/10.1007/978-3-032-12293-3_13) · [ePrint](https://eprint.iacr.org/2025/525) |
 | Decor: Delegated Computation on Randomness for Secure Evaluation of Nonlinear Functions. | IEEE S&amp;P | 2026 | [论文](https://doi.org/10.1109/SP63933.2026.00256) |
 | DMPF-PSI: Enabling High-Frequency Updatable Private Set Intersection on Dynamic Data. | TIFS | 2026 | [论文](https://doi.org/10.1109/TIFS.2026.3705330) |
 | Cryptanalysis of "Multi-Party Private Set Intersection With One-Round Online Interaction". | TIFS | 2026 | [论文](https://doi.org/10.1109/TIFS.2026.3666890) |
@@ -94,34 +94,34 @@
 | Π: A Unified Framework for Computational Verifiable Secret Sharing. | PKC | 2025 | [论文](https://doi.org/10.1007/978-3-031-91829-2_4) |
 | ømega (1/λ )-Rate Boolean Garbling Scheme from Generic Groups. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_16) |
 | Wave Hello to Privacy: Efficient Mixed-Mode MPC using Wavelet Transforms. | PoPETs | 2025 | [论文](https://doi.org/10.56553/POPETS-2025-0083) · [ePrint](https://eprint.iacr.org/2025/013) |
-| Verifiable Secret Sharing from Symmetric Key Cryptography with Improved Optimistic Complexity. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-981-96-0941-3_4) · [ePrint](https://eprint.iacr.org/2024/838) |
+| Verifiable Secret Sharing from Symmetric Key Cryptography with Improved Optimistic Complexity. | ASIACRYPT | 2025 | [论文](https://doi.org/10.1007/978-981-96-0941-3_4) · [ePrint](https://eprint.iacr.org/2024/838) |
 | Verifiable Secret Sharing Simplified. | IEEE S&amp;P | 2025 | [论文](https://doi.org/10.1109/SP61157.2025.00046) · [ePrint](https://eprint.iacr.org/2023/1196) |
 | Velox: Scalable Fair Asynchronous MPC from Lightweight Cryptography. | ACM CCS | 2025 | [论文](https://doi.org/10.1145/3719027.3765114) · [ePrint](https://eprint.iacr.org/2025/1630) |
 | Updatable Private Set Intersection Revisited: Extended Functionalities, Deletion, and Worst-Case Complexity. | ASIACRYPT | 2025 | [论文](https://doi.org/10.1007/978-981-96-0938-3_7) · [ePrint](https://eprint.iacr.org/2024/1446) |
 | Unclonable Secret Sharing. | ASIACRYPT | 2025 | [论文](https://doi.org/10.1007/978-981-96-0947-5_5) · [arXiv](https://arxiv.org/abs/2406.11008) · [ePrint](https://eprint.iacr.org/2024/716) |
 | Ultra-Fast Private Set Intersection From Efficient Oblivious Key-Value Stores. | TDSC | 2025 | [论文](https://doi.org/10.1109/TDSC.2025.3557963) |
 | Towards Efficient and Practical Multi-party Computation under Inconsistent Trust in TEEs. | IEEE S&amp;P | 2025 | [论文](https://doi.org/10.1109/SP61157.2025.00185) |
-| TinyLabels: How to Compress Garbled Circuit Input Labels, Efficiently. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-031-91095-1_9) · [ePrint](https://eprint.iacr.org/2024/2048) |
+| TinyLabels: How to Compress Garbled Circuit Input Labels, Efficiently. | EUROCRYPT | 2025 | [论文](https://doi.org/10.1007/978-3-031-91095-1_9) · [ePrint](https://eprint.iacr.org/2024/2048) |
 | Timed Secret Sharing. | ASIACRYPT | 2025 | [论文](https://doi.org/10.1007/978-981-96-0941-3_5) · [ePrint](https://eprint.iacr.org/2023/1024) |
-| The Round Complexity of Black-Box Post-quantum Secure Computation. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_1) · [arXiv](https://arxiv.org/abs/2502.13830) · [ePrint](https://eprint.iacr.org/2025/250) |
+| The Round Complexity of Black-Box Post-quantum Secure Computation. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_1) · [arXiv](https://arxiv.org/abs/2502.13830) · [ePrint](https://eprint.iacr.org/2025/250) |
 | The Meta-complexity of Secret Sharing. | STOC | 2025 | [论文](https://doi.org/10.1145/3717823.3718161) · [ePrint](https://eprint.iacr.org/2025/046) |
 | The Concrete Security of Two-Party Computation: Simple Definitions, and Tight Proofs for PSI and OPRFs. | ASIACRYPT | 2025 | [论文](https://doi.org/10.1007/978-981-96-0938-3_11) · [ePrint](https://eprint.iacr.org/2024/1476) |
 | Strong Secret Sharing with Snitching. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_10) · [ePrint](https://eprint.iacr.org/2025/1119) |
 | Split-State Non-malleable Codes and Secret Sharing Schemes for Quantum Messages. | TCC | 2025 | [论文](https://doi.org/10.1007/978-3-031-78017-2_3) · [arXiv](https://arxiv.org/abs/2308.06466) · [ePrint](https://eprint.iacr.org/2024/335) |
 | SoK: Computational and Distributed Differential Privacy for MPC. | PoPETs | 2025 | [论文](https://doi.org/10.56553/POPETS-2025-0023) · [ePrint](https://eprint.iacr.org/2024/1290) |
 | Simultaneous-Message and Succinct Secure Computation. | EUROCRYPT | 2025 | [论文](https://doi.org/10.1007/978-3-031-91092-0_8) · [ePrint](https://eprint.iacr.org/2025/096) |
-| Silent Circuit Relinearisation: Sublinear-Size (Boolean and Arithmetic) Garbled Circuits from DCR. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_14) · [ePrint](https://eprint.iacr.org/2025/245) |
+| Silent Circuit Relinearisation: Sublinear-Size (Boolean and Arithmetic) Garbled Circuits from DCR. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_14) · [ePrint](https://eprint.iacr.org/2025/245) |
 | SelectFormer in Data Markets: Privacy-Preserving and Efficient Data Selection for Transformers with Multi-Party Computation. | ICLR | 2025 | [论文](https://openreview.net/forum?id=2cF3f9t31y) |
 | Secure and efficient transciphering for FHE-based MPC. | TCHES | 2025 | [论文](https://doi.org/10.46586/TCHES.V2025.I3.745-780) · [ePrint](https://eprint.iacr.org/2024/1702) |
-| Secure Computation with Parallel Calls to 2-Ary Functions. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_8) · [ePrint](https://eprint.iacr.org/2024/1701) |
+| Secure Computation with Parallel Calls to 2-Ary Functions. | TCC | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_8) · [ePrint](https://eprint.iacr.org/2024/1701) |
 | Secret-Sharing Schemes for High Slices. | TCC | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_19) · [ePrint](https://eprint.iacr.org/2024/602) |
-| Secret Sharing with Publicly Verifiable Deletion. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-031-91131-6_10) · [ePrint](https://eprint.iacr.org/2024/1596) |
+| Secret Sharing with Publicly Verifiable Deletion. | EUROCRYPT | 2025 | [论文](https://doi.org/10.1007/978-3-031-91131-6_10) · [ePrint](https://eprint.iacr.org/2024/1596) |
 | SHARK: Actively Secure Inference Using Function Secret Sharing. | IEEE S&amp;P | 2025 | [论文](https://doi.org/10.1109/SP61157.2025.00175) · [ePrint](https://eprint.iacr.org/2025/716) |
 | SEAF: Secure Evaluation on Activation Functions with Dynamic Precision for Secure Two-Party Inference. | USENIX Security | 2025 | [论文](https://www.usenix.org/conference/usenixsecurity25/presentation/guo-hao-seaf) · [ePrint](https://eprint.iacr.org/2025/1111) |
 | Rushing at SPDZ: On the Practical Security of Malicious MPC Implementations. | IEEE S&amp;P | 2025 | [论文](https://doi.org/10.1109/SP61157.2025.00176) · [ePrint](https://eprint.iacr.org/2025/789) |
 | Round-Optimal Black-Box Multiparty Computation from Polynomial-Time Assumptions. | EUROCRYPT | 2025 | [论文](https://doi.org/10.1007/978-3-031-91092-0_12) · [ePrint](https://eprint.iacr.org/2023/1742) |
 | Reversible Data Hiding in Encrypted Images With Secret Sharing and Multivariate Linear Equation. | TDSC | 2025 | [论文](https://doi.org/10.1109/TDSC.2025.3590551) |
-| Reducing the Share Size of Weighted Threshold Secret Sharing Schemes via Chow Parameters Approximation. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_17) · [ePrint](https://eprint.iacr.org/2024/772) |
+| Reducing the Share Size of Weighted Threshold Secret Sharing Schemes via Chow Parameters Approximation. | TCC | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_17) · [ePrint](https://eprint.iacr.org/2024/772) |
 | Recurrent Private Set Intersection for Unbalanced Databases with Cuckoo Hashing and Leveled FHE. | NDSS | 2025 | [论文](https://www.ndss-symposium.org/ndss-paper/recurrent-private-set-intersection-for-unbalanced-databases-with-cuckoo-hashing-and-leveled-fhe/) |
 | Re-visiting Authorized Private Set Intersection: A New Privacy-Preserving Variant and Two Protocols. | PoPETs | 2025 | [论文](https://doi.org/10.56553/POPETS-2025-0041) · [ePrint](https://eprint.iacr.org/2024/1579) |
 | Rate-1 Arithmetic Garbling From Homomorphic Secret Sharing. | TCC | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_3) · [ePrint](https://eprint.iacr.org/2024/820) |
@@ -142,10 +142,10 @@
 | NIZK Amplification via Leakage-Resilient Secure Computation. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01907-3_15) · [ePrint](https://eprint.iacr.org/2025/995) |
 | Multiparty Delegated Private Set Union With Efficient Updates on Outsourced Datasets. | TDSC | 2025 | [论文](https://doi.org/10.1109/TDSC.2024.3419576) |
 | Multi-Party Private Set Intersection With One-Round Online Interaction. | TIFS | 2025 | [论文](https://doi.org/10.1109/TIFS.2025.3574993) |
-| Multi-Key Homomorphic Secret Sharing. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-031-91092-0_1) · [ePrint](https://eprint.iacr.org/2025/094) |
+| Multi-Key Homomorphic Secret Sharing. | EUROCRYPT | 2025 | [论文](https://doi.org/10.1007/978-3-031-91092-0_1) · [ePrint](https://eprint.iacr.org/2025/094) |
 | More Efficient, Privacy-Enhanced, and Powerful Privacy-Preserving Feature Retrieval Private Set Intersection. | TIFS | 2025 | [论文](https://doi.org/10.1109/TIFS.2025.3562695) |
 | Maliciously Secure Circuit Private Set Intersection via SPDZ-Compatible Oblivious PRF. | PoPETs | 2025 | [论文](https://doi.org/10.56553/POPETS-2025-0082) · [ePrint](https://eprint.iacr.org/2024/789) |
-| Lower Bounds for Garbled Circuits from Shannon-Type Information Inequalities. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_19) · [ePrint](https://eprint.iacr.org/2025/876) |
+| Lower Bounds for Garbled Circuits from Shannon-Type Information Inequalities. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_19) · [ePrint](https://eprint.iacr.org/2025/876) |
 | Leap: A Fast, Lattice-Based OPRF with Application to Private Set Intersection. | EUROCRYPT | 2025 | [论文](https://doi.org/10.1007/978-3-031-91098-2_10) · [ePrint](https://eprint.iacr.org/2025/333) |
 | Labeled Private Set Intersection From Distributed Point Function. | TIFS | 2025 | [论文](https://doi.org/10.1109/TIFS.2025.3550059) |
 | Is MPC Secure? Leveraging Neural Network Classifiers to Detect Data Leakage Vulnerabilities in MPC Implementations. | IEEE S&amp;P | 2025 | [论文](https://doi.org/10.1109/SP61157.2025.00181) |
@@ -160,10 +160,10 @@
 | Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound. | IEEE S&amp;P | 2025 | [论文](https://doi.org/10.1109/SP61157.2025.00183) · [ePrint](https://eprint.iacr.org/2025/614) |
 | High-Throughput Secure Multiparty Computation with an Honest Majority in Various Network Settings. | PoPETs | 2025 | [论文](https://doi.org/10.56553/POPETS-2025-0015) · [arXiv](https://arxiv.org/abs/2206.03776) · [ePrint](https://eprint.iacr.org/2024/386) |
 | General Adversary Structures in Byzantine Agreement and Multi-party Computation with Active and Omission Corruption. | TCC | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_7) · [ePrint](https://eprint.iacr.org/2024/209) |
-| Fully Anonymous Secret Sharing. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_12) · [ePrint](https://eprint.iacr.org/2025/1984) |
+| Fully Anonymous Secret Sharing. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_12) · [ePrint](https://eprint.iacr.org/2025/1984) |
 | Fast Enhanced Private Set Union in the Balanced and Unbalanced Scenarios. | USENIX Security | 2025 | [论文](https://www.usenix.org/conference/usenixsecurity25/presentation/tu) · [ePrint](https://eprint.iacr.org/2025/827) |
 | FOLEAGE: $\\mathbb {F}\_{\\scriptstyle 4}$OLE-Based Multi-party Computation for Boolean Circuits. | ASIACRYPT | 2025 | [论文](https://doi.org/10.1007/978-981-96-0938-3_3) |
-| Evolving Secret Sharing Made Short. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-981-96-0941-3_3) · [ePrint](https://eprint.iacr.org/2023/1534) |
+| Evolving Secret Sharing Made Short. | ASIACRYPT | 2025 | [论文](https://doi.org/10.1007/978-981-96-0941-3_3) · [ePrint](https://eprint.iacr.org/2023/1534) |
 | EoTMP: Efficient Over-Threshold Multi-Party Private Set Intersection. | TIFS | 2025 | [论文](https://doi.org/10.1109/TIFS.2025.3639987) |
 | Enabling Two-Party Secure Computation on Set Intersection. | TDSC | 2025 | [论文](https://doi.org/10.1109/TDSC.2025.3561472) · [ePrint](https://eprint.iacr.org/2023/609) |
 | Enabling Low-Cost Secure Computing on Untrusted In-Memory Architectures. | USENIX Security | 2025 | [论文](https://www.usenix.org/conference/usenixsecurity25/presentation/ghinani) · [arXiv](https://arxiv.org/abs/2501.17292) |
@@ -177,31 +177,31 @@
 | Efficient 2PC for Constant Round Secure Equality Testing and Comparison. | USENIX Security | 2025 | [论文](https://www.usenix.org/conference/usenixsecurity25/presentation/lu) · [ePrint](https://eprint.iacr.org/2024/949) |
 | Distributed Function Secret Sharing and Applications. | NDSS | 2025 | [论文](https://www.ndss-symposium.org/ndss-paper/distributed-function-secret-sharing-and-applications/) |
 | Disincentivize Collusion in Verifiable Secret Sharing. | EUROCRYPT | 2025 | [论文](https://doi.org/10.1007/978-3-031-91092-0_2) · [ePrint](https://eprint.iacr.org/2025/446) |
-| Dishonest Majority Multiparty Computation over Matrix Rings. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-981-96-0938-3_10) · [ePrint](https://eprint.iacr.org/2023/1912) |
+| Dishonest Majority Multiparty Computation over Matrix Rings. | ASIACRYPT | 2025 | [论文](https://doi.org/10.1007/978-981-96-0938-3_10) · [ePrint](https://eprint.iacr.org/2023/1912) |
 | Dash: Accelerating Distributed Private Convolutional Neural Network Inference with Arithmetic Garbled Circuits. | TCHES | 2025 | [论文](https://doi.org/10.46586/TCHES.V2025.I1.420-449) · [arXiv](https://arxiv.org/abs/2302.06361) |
 | Compute, but Verify: Efficient Multiparty Computation over Authenticated Inputs. | ASIACRYPT | 2025 | [论文](https://doi.org/10.1007/978-981-96-0938-3_5) · [ePrint](https://eprint.iacr.org/2022/1648) |
-| Computationally Differentially Private Inner-Product Protocols Imply Oblivious Transfer. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_6) · [arXiv](https://arxiv.org/abs/2502.15629) |
+| Computationally Differentially Private Inner-Product Protocols Imply Oblivious Transfer. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_6) · [arXiv](https://arxiv.org/abs/2502.15629) |
 | Charge Your Clients: Payable Secure Computation and Its Applications. | TIFS | 2025 | [论文](https://doi.org/10.1109/TIFS.2025.3559456) · [ePrint](https://eprint.iacr.org/2025/630) |
-| Black-Box Constant-Round Secure 2PC with Succinct Communication. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-031-91092-0_13) · [ePrint](https://eprint.iacr.org/2025/474) |
+| Black-Box Constant-Round Secure 2PC with Succinct Communication. | EUROCRYPT | 2025 | [论文](https://doi.org/10.1007/978-3-031-91092-0_13) · [ePrint](https://eprint.iacr.org/2025/474) |
 | Bitwise Garbling Schemes - A Model with 32λ\\documentclass\[12pt\]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\frac{3}{2}\\lambda $$\\end{document}-Bit Lower Bound of Ciphertexts. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_15) |
 | BitGC: Garbled Circuits with 1 Bit per Gate. | EUROCRYPT | 2025 | [论文](https://doi.org/10.1007/978-3-031-91098-2_16) · [ePrint](https://eprint.iacr.org/2024/1988) |
-| Authenticated BitGC for Actively Secure Rate-One 2PC. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_21) · [ePrint](https://eprint.iacr.org/2025/232) |
-| An Improvement Upon the Bounds for the Local Leakage Resilience of Shamir's Secret Sharing Scheme. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_13) |
+| Authenticated BitGC for Actively Secure Rate-One 2PC. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_21) · [ePrint](https://eprint.iacr.org/2025/232) |
+| An Improvement Upon the Bounds for the Local Leakage Resilience of Shamir's Secret Sharing Scheme. | TCC | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_13) |
 | All-You-Can-Compute: Packed Secret Sharing for Combined Resilience. | TCHES | 2025 | [论文](https://doi.org/10.46586/TCHES.V2025.I2.420-459) · [ePrint](https://eprint.iacr.org/2025/035) |
 | Adaptive Security, Erasures, and Network Assumptions in Communication-Local MPC. | TCC | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_10) · [ePrint](https://eprint.iacr.org/2024/1489) |
-| Actively Secure MPC in the Dishonest Majority Setting: Achieving Constant Complexity in Online Communication, Computation Per Gate, Rounds, and Private Input Size. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_4) · [ePrint](https://eprint.iacr.org/2025/810) |
-| A Unified Framework for Succinct Garbling from Homomorphic Secret Sharing. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_13) · [ePrint](https://eprint.iacr.org/2025/442) |
+| Actively Secure MPC in the Dishonest Majority Setting: Achieving Constant Complexity in Online Communication, Computation Per Gate, Rounds, and Private Input Size. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_4) · [ePrint](https://eprint.iacr.org/2025/810) |
+| A Unified Framework for Succinct Garbling from Homomorphic Secret Sharing. | CRYPTO | 2025 | [论文](https://doi.org/10.1007/978-3-032-01884-7_13) · [ePrint](https://eprint.iacr.org/2025/442) |
 | A Scheme of Robust Privacy-Preserving Multi-Party Computation via Public Verification. | TDSC | 2025 | [论文](https://doi.org/10.1109/TDSC.2025.3555284) |
-| A Note on Low-Communication Secure Multiparty Computation via Circuit Depth-Reduction. | series/lncs | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_6) · [ePrint](https://eprint.iacr.org/2024/1473) |
+| A Note on Low-Communication Secure Multiparty Computation via Circuit Depth-Reduction. | TCC | 2025 | [论文](https://doi.org/10.1007/978-3-031-78023-3_6) · [ePrint](https://eprint.iacr.org/2024/1473) |
 | Updatable Private Set Intersection With Forward Privacy. | TIFS | 2024 | [论文](https://doi.org/10.1109/TIFS.2024.3461475) |
 | Unbalanced Private Set Union with Reduced Computation and Communication. | ACM CCS | 2024 | [论文](https://doi.org/10.1145/3658644.3690308) · [ePrint](https://eprint.iacr.org/2024/1340) |
-| Two-Round Maliciously-Secure Oblivious Transfer with Optimal Rate. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-58751-1_10) · [ePrint](https://eprint.iacr.org/2024/372) |
+| Two-Round Maliciously-Secure Oblivious Transfer with Optimal Rate. | EUROCRYPT | 2024 | [论文](https://doi.org/10.1007/978-3-031-58751-1_10) · [ePrint](https://eprint.iacr.org/2024/372) |
 | Traceable Secret Sharing: Strong Security and Efficient Constructions. | CRYPTO | 2024 | [论文](https://doi.org/10.1007/978-3-031-68388-6_9) · [ePrint](https://eprint.iacr.org/2024/405) |
 | Towards Breaking the Half-Barrier of Local Leakage-Resilient Shamir's Secret Sharing. | CRYPTO | 2024 | [论文](https://doi.org/10.1007/978-3-031-68388-6_10) |
-| Toward Malicious Constant-Rate 2PC via Arithmetic Garbling. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-58740-5_14) · [ePrint](https://eprint.iacr.org/2024/283) |
+| Toward Malicious Constant-Rate 2PC via Arithmetic Garbling. | EUROCRYPT | 2024 | [论文](https://doi.org/10.1007/978-3-031-58740-5_14) · [ePrint](https://eprint.iacr.org/2024/283) |
 | Toward A Practical Multi-party Private Set Union. | PoPETs | 2024 | [论文](https://doi.org/10.56553/POPETS-2024-0133) · [ePrint](https://eprint.iacr.org/2023/1930) |
 | The Capacity Region of Distributed Multi-User Secret Sharing Under Perfect Secrecy. | TIFS | 2024 | [论文](https://doi.org/10.1109/TIFS.2024.3484666) |
-| Succinct Homomorphic Secret Sharing. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-58751-1_11) · [ePrint](https://eprint.iacr.org/2024/814) |
+| Succinct Homomorphic Secret Sharing. | EUROCRYPT | 2024 | [论文](https://doi.org/10.1007/978-3-031-58751-1_11) · [ePrint](https://eprint.iacr.org/2024/814) |
 | Stochastic Secret Sharing with 1-Bit Shares and Applications to MPC. | CRYPTO | 2024 | [论文](https://doi.org/10.1007/978-3-031-68388-6_11) · [ePrint](https://eprint.iacr.org/2024/1053) |
 | Sparsity and Privacy in Secret Sharing: A Fundamental Trade-Off. | TIFS | 2024 | [论文](https://doi.org/10.1109/TIFS.2024.3394256) · [arXiv](https://arxiv.org/abs/2308.06413) |
 | Secure and Efficient Federated Learning via Novel Authenticable Multi-Party Computation and Compressed Sensing. | TIFS | 2024 | [论文](https://doi.org/10.1109/TIFS.2024.3486611) |
@@ -213,17 +213,17 @@
 | Secret Sharing with Certified Deletion. | CRYPTO | 2024 | [论文](https://doi.org/10.1007/978-3-031-68394-7_7) · [arXiv](https://arxiv.org/abs/2405.08117) · [ePrint](https://eprint.iacr.org/2024/736) |
 | Secret Cracking and Security Enhancement for the Image Application of CRT-Based Secret Sharing. | TIFS | 2024 | [论文](https://doi.org/10.1109/TIFS.2024.3477265) |
 | Scalable Private Set Union, with Stronger Security. | USENIX Security | 2024 | [论文](https://www.usenix.org/conference/usenixsecurity24/presentation/jia-yanxue) · [ePrint](https://eprint.iacr.org/2024/922) |
-| Scalable Multiparty Computation from Non-linear Secret Sharing. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-68397-8_12) · [ePrint](https://eprint.iacr.org/2025/1007) |
+| Scalable Multiparty Computation from Non-linear Secret Sharing. | CRYPTO | 2024 | [论文](https://doi.org/10.1007/978-3-031-68397-8_12) · [ePrint](https://eprint.iacr.org/2025/1007) |
 | Scalable Multi-Party Computation Protocols for Machine Learning in the Honest-Majority Setting. | USENIX Security | 2024 | [论文](https://www.usenix.org/conference/usenixsecurity24/presentation/liu-fengrun) |
 | SIGMA: Secure GPT Inference with Function Secret Sharing. | PoPETs | 2024 | [论文](https://doi.org/10.56553/POPETS-2024-0107) · [ePrint](https://eprint.iacr.org/2023/1269) |
 | Randomness Recoverable Secret Sharing Schemes. | Journal of Cryptology | 2024 | [论文](https://doi.org/10.1007/S00145-024-09515-4) · [ePrint](https://eprint.iacr.org/2023/959) |
 | P²FRPSI: Privacy-Preserving Feature Retrieved Private Set Intersection. | TIFS | 2024 | [论文](https://doi.org/10.1109/TIFS.2023.3343973) |
-| Publicly Verifiable Secret Sharing Over Class Groups and Applications to DKG and YOSO. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-58740-5_8) · [ePrint](https://eprint.iacr.org/2023/1651) |
+| Publicly Verifiable Secret Sharing Over Class Groups and Applications to DKG and YOSO. | EUROCRYPT | 2024 | [论文](https://doi.org/10.1007/978-3-031-58740-5_8) · [ePrint](https://eprint.iacr.org/2023/1651) |
 | PrivDNN: A Secure Multi-Party Computation Framework for Deep Learning using Partial DNN Encryption. | PoPETs | 2024 | [论文](https://doi.org/10.56553/POPETS-2024-0089) · [arXiv](https://arxiv.org/abs/2607.21895) · [Code](https://github.com/LiangqinRen/PrivDNN) |
 | Poster: Multiparty Private Set Intersection from Multiparty Homomorphic Encryption. | ACM CCS | 2024 | [论文](https://doi.org/10.1145/3658644.3691405) |
 | Poster: A Secure Multiparty Computation Platform for Squeaky-Clean Data Rooms. | ACM CCS | 2024 | [论文](https://doi.org/10.1145/3658644.3691371) |
 | PEPSI: Practically Efficient Private Set Intersection in the Unbalanced Setting. | USENIX Security | 2024 | [论文](https://www.usenix.org/conference/usenixsecurity24/presentation/mahdavi) · [arXiv](https://arxiv.org/abs/2310.14565) |
-| On Sigma-Protocols and (Packed) Black-Box Secret Sharing Schemes. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-57722-2_14) · [ePrint](https://eprint.iacr.org/2023/1652) |
+| On Sigma-Protocols and (Packed) Black-Box Secret Sharing Schemes. | PKC | 2024 | [论文](https://doi.org/10.1007/978-3-031-57722-2_14) · [ePrint](https://eprint.iacr.org/2023/1652) |
 | On Information-Theoretic Secure Multiparty Computation with Local Repairability. | PKC | 2024 | [论文](https://doi.org/10.1007/978-3-031-57722-2_7) · [ePrint](https://eprint.iacr.org/2024/391) |
 | O-Ring and K-Star: Efficient Multi-party Private Set Intersection. | USENIX Security | 2024 | [论文](https://www.usenix.org/conference/usenixsecurity24/presentation/wu-mingli) |
 | NodeGuard: A Highly Efficient Two-Party Computation Framework for Training Large-Scale Gradient Boosting Decision Tree. | IEEE S&amp;P | 2024 | [论文](https://doi.org/10.1109/SPW63631.2024.00015) · [ePrint](https://eprint.iacr.org/2024/535) |
@@ -234,10 +234,10 @@
 | MPC-Pipe: an Efficient Pipeline Scheme for Semi-honest MPC Machine Learning. | ASPLOS | 2024 | [论文](https://doi.org/10.1145/3622781.3674175) |
 | Linear-Communication Asynchronous Complete Secret Sharing with Optimal Resilience. | CRYPTO | 2024 | [论文](https://doi.org/10.1007/978-3-031-68397-8_13) · [ePrint](https://eprint.iacr.org/2024/245) |
 | Lightweight Asynchronous Verifiable Secret Sharing with Optimal Resilience. | Journal of Cryptology | 2024 | [论文](https://doi.org/10.1007/S00145-024-09505-6) · [ePrint](https://eprint.iacr.org/2023/536) |
-| Garbled Circuit Lookup Tables with Logarithmic Number of Ciphertexts. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-58740-5_7) · [ePrint](https://eprint.iacr.org/2024/369) |
+| Garbled Circuit Lookup Tables with Logarithmic Number of Ciphertexts. | EUROCRYPT | 2024 | [论文](https://doi.org/10.1007/978-3-031-58740-5_7) · [ePrint](https://eprint.iacr.org/2024/369) |
 | GAuV: A Graph-Based Automated Verification Framework for Perfect Semi-Honest Security of Multiparty Computation Protocols. | IEEE S&amp;P | 2024 | [论文](https://doi.org/10.1109/SP54263.2024.00131) · [ePrint](https://eprint.iacr.org/2024/1078) |
-| Fuzzy Private Set Intersection with Large Hyperballs. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-58740-5_12) · [ePrint](https://eprint.iacr.org/2024/330) |
-| Fully Secure MPC and zk-FLIOP over Rings: New Constructions, Improvements and Extensions. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-68397-8_5) · [ePrint](https://eprint.iacr.org/2024/837) |
+| Fuzzy Private Set Intersection with Large Hyperballs. | EUROCRYPT | 2024 | [论文](https://doi.org/10.1007/978-3-031-58740-5_12) · [ePrint](https://eprint.iacr.org/2024/330) |
+| Fully Secure MPC and zk-FLIOP over Rings: New Constructions, Improvements and Extensions. | CRYPTO | 2024 | [论文](https://doi.org/10.1007/978-3-031-68397-8_5) · [ePrint](https://eprint.iacr.org/2024/837) |
 | Fast RS-IOP Multivariate Polynomial Commitments and Verifiable Secret Sharing. | USENIX Security | 2024 | [论文](https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-zongyang) |
 | Fast Evaluation of S-Boxes With Garbled Circuits. | TIFS | 2024 | [论文](https://doi.org/10.1109/TIFS.2024.3402145) · [arXiv](https://arxiv.org/abs/2405.20713) · [ePrint](https://eprint.iacr.org/2022/1278) |
 | FSS-DBSCAN: Outsourced Private Density-Based Clustering via Function Secret Sharing. | TIFS | 2024 | [论文](https://doi.org/10.1109/TIFS.2024.3446233) |
@@ -249,12 +249,12 @@
 | Efficient Arithmetic in Garbled Circuits. | EUROCRYPT | 2024 | [论文](https://doi.org/10.1007/978-3-031-58740-5_1) · [ePrint](https://eprint.iacr.org/2024/139) |
 | Efficient Actively Secure DPF and RAM-based 2PC with One-Bit Leakage. | IEEE S&amp;P | 2024 | [论文](https://doi.org/10.1109/SP54263.2024.00205) · [ePrint](https://eprint.iacr.org/2024/426) |
 | Dual-Cloud Multi-Secret Sharing Architecture for Privacy Preserving Persistent Computation. | TIFS | 2024 | [论文](https://doi.org/10.1109/TIFS.2024.3436662) |
-| Doubly Efficient Cryptography: Commitments, Arguments and RAM MPC. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-68397-8_8) · [ePrint](https://eprint.iacr.org/2025/235) |
+| Doubly Efficient Cryptography: Commitments, Arguments and RAM MPC. | CRYPTO | 2024 | [论文](https://doi.org/10.1007/978-3-031-68397-8_8) · [ePrint](https://eprint.iacr.org/2025/235) |
 | Don't Eject the Impostor: Fast Three-Party Computation With a Known Cheater. | IEEE S&amp;P | 2024 | [论文](https://doi.org/10.1109/SP54263.2024.00164) |
-| Ditto: Quantization-aware Secure Inference of Transformers upon MPC. | series/jmlr | 2024 | [论文](https://proceedings.mlr.press/v235/wu24d.html) · [arXiv](https://arxiv.org/abs/2405.05525) |
+| Ditto: Quantization-aware Secure Inference of Transformers upon MPC. | ICML | 2024 | [论文](https://proceedings.mlr.press/v235/wu24d.html) · [arXiv](https://arxiv.org/abs/2405.05525) |
 | Coral: Maliciously Secure Computation Framework for Packed and Mixed Circuits. | ACM CCS | 2024 | [论文](https://doi.org/10.1145/3658644.3690223) · [ePrint](https://eprint.iacr.org/2024/1372) |
-| Constructing Leakage-Resilient Shamir's Secret Sharing: Over Composite Order Fields. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-58737-5_11) |
-| Connecting Leakage-Resilient Secret Sharing to Practice: Scaling Trends and Physical Dependencies of Prime Field Masking. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-58737-5_12) · [ePrint](https://eprint.iacr.org/2024/377) |
+| Constructing Leakage-Resilient Shamir's Secret Sharing: Over Composite Order Fields. | EUROCRYPT | 2024 | [论文](https://doi.org/10.1007/978-3-031-58737-5_11) |
+| Connecting Leakage-Resilient Secret Sharing to Practice: Scaling Trends and Physical Dependencies of Prime Field Masking. | EUROCRYPT | 2024 | [论文](https://doi.org/10.1007/978-3-031-58737-5_12) · [ePrint](https://eprint.iacr.org/2024/377) |
 | Computation Efficient Structure-Aware PSI from Incremental Function Secret Sharing. | CRYPTO | 2024 | [论文](https://doi.org/10.1007/978-3-031-68397-8_10) · [ePrint](https://eprint.iacr.org/2024/842) |
 | Compact: Approximating Complex Activation Functions for Secure Computation. | PoPETs | 2024 | [论文](https://doi.org/10.56553/POPETS-2024-0065) · [arXiv](https://arxiv.org/abs/2309.04664) |
 | Communication-Efficient Privacy-Preserving Neural Network Inference via Arithmetic Secret Sharing. | TIFS | 2024 | [论文](https://doi.org/10.1109/TIFS.2024.3420216) |
@@ -266,76 +266,76 @@
 | AITIA: Efficient Secure Computation of Bivariate Causal Discovery. | ACM CCS | 2024 | [论文](https://doi.org/10.1145/3658644.3670337) · [ePrint](https://eprint.iacr.org/2024/1065) |
 | A Secure Computing System With Hardware-Efficient Lazy Bonsai Merkle Tree for FPGA-Attached Embedded Memory. | TDSC | 2024 | [论文](https://doi.org/10.1109/TDSC.2023.3324935) |
 | A New Shift-Add Secret Sharing Scheme for Partial Data Protection With Parallel Zigzag Decoding. | TIFS | 2024 | [论文](https://doi.org/10.1109/TIFS.2024.3488498) |
-| 10-Party Sublinear Secure Computation from Standard Assumptions. | series/lncs | 2024 | [论文](https://doi.org/10.1007/978-3-031-68400-5_2) · [ePrint](https://eprint.iacr.org/2025/269) |
+| 10-Party Sublinear Secure Computation from Standard Assumptions. | CRYPTO | 2024 | [论文](https://doi.org/10.1007/978-3-031-68400-5_2) · [ePrint](https://eprint.iacr.org/2025/269) |
 | Verifiable Homomorphic Secret Sharing for Low Degree Polynomials. | TDSC | 2023 | [论文](https://doi.org/10.1109/TDSC.2022.3194321) |
-| Unconditionally Secure Multiparty Computation for Symmetric Functions with Low Bottleneck Complexity. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-981-99-8721-4_11) · [ePrint](https://eprint.iacr.org/2023/662) |
+| Unconditionally Secure Multiparty Computation for Symmetric Functions with Low Bottleneck Complexity. | ASIACRYPT | 2023 | [论文](https://doi.org/10.1007/978-981-99-8721-4_11) · [ePrint](https://eprint.iacr.org/2023/662) |
 | Trifecta: Faster High-Throughput Three-Party Computation over WAN Using Multi-Fan-In Logic Gates. | PoPETs | 2023 | [论文](https://doi.org/10.56553/POPETS-2023-0107) |
 | Towards Topology-Hiding Computation from Oblivious Transfer. | TCC | 2023 | [论文](https://doi.org/10.1007/978-3-031-48615-9_13) · [ePrint](https://eprint.iacr.org/2023/849) |
 | Threshold Private Set Intersection with Better Communication Complexity. | PKC | 2023 | [论文](https://doi.org/10.1007/978-3-031-31371-4_9) · [ePrint](https://eprint.iacr.org/2023/919) |
-| Threshold Linear Secret Sharing to the Rescue of MPC-in-the-Head. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-981-99-8721-4_14) · [ePrint](https://eprint.iacr.org/2022/1407) |
+| Threshold Linear Secret Sharing to the Rescue of MPC-in-the-Head. | ASIACRYPT | 2023 | [论文](https://doi.org/10.1007/978-981-99-8721-4_14) · [ePrint](https://eprint.iacr.org/2022/1407) |
 | Three Party Secure Computation with Friends and Foes. | TCC | 2023 | [论文](https://doi.org/10.1007/978-3-031-48618-0_6) · [ePrint](https://eprint.iacr.org/2023/1605) |
 | TVA: A multi-party computation system for secure and expressive time series analytics. | USENIX Security | 2023 | [论文](https://www.usenix.org/conference/usenixsecurity23/presentation/faisal) · [ePrint](https://eprint.iacr.org/2023/1120) |
 | Succinct Computational Secret Sharing. | STOC | 2023 | [论文](https://doi.org/10.1145/3564246.3585127) · [ePrint](https://eprint.iacr.org/2023/955) |
-| Sublinear-Communication Secure Multiparty Computation Does Not Require FHE. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-30617-4_6) · [ePrint](https://eprint.iacr.org/2023/1802) |
+| Sublinear-Communication Secure Multiparty Computation Does Not Require FHE. | EUROCRYPT | 2023 | [论文](https://doi.org/10.1007/978-3-031-30617-4_6) · [ePrint](https://eprint.iacr.org/2023/1802) |
 | Squirrel: A Scalable Secure Two-Party Computation Framework for Training Gradient Boosting Decision Tree. | USENIX Security | 2023 | [论文](https://www.usenix.org/conference/usenixsecurity23/presentation/lu) · [ePrint](https://eprint.iacr.org/2023/527) |
-| Sigma Protocols from Verifiable Secret Sharing and Their Applications. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-981-99-8724-5_7) · [ePrint](https://eprint.iacr.org/2023/1388) |
-| Secure Multiparty Computation from Threshold Encryption Based on Class Groups. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_20) · [ePrint](https://eprint.iacr.org/2022/1437) |
+| Sigma Protocols from Verifiable Secret Sharing and Their Applications. | ASIACRYPT | 2023 | [论文](https://doi.org/10.1007/978-981-99-8724-5_7) · [ePrint](https://eprint.iacr.org/2023/1388) |
+| Secure Multiparty Computation from Threshold Encryption Based on Class Groups. | CRYPTO | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_20) · [ePrint](https://eprint.iacr.org/2022/1437) |
 | Secure Computation with Shared EPR Pairs (Or: How to Teleport in Zero-Knowledge). | CRYPTO | 2023 | [论文](https://doi.org/10.1007/978-3-031-38554-4_8) · [arXiv](https://arxiv.org/abs/2304.10480) · [ePrint](https://eprint.iacr.org/2023/564) |
 | Secure Computation Meets Distributed Universal Optimality. | FOCS | 2023 | [论文](https://doi.org/10.1109/FOCS57990.2023.00144) |
-| Scalable Multi-party Private Set Union from Multi-query Secret-Shared Private Membership Test. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-981-99-8721-4_8) · [ePrint](https://eprint.iacr.org/2023/1413) |
-| Round-Optimal Oblivious Transfer and MPC from Computational CSIDH. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-31368-4_14) · [ePrint](https://eprint.iacr.org/2022/1511) |
-| Reverse Firewalls for Oblivious Transfer Extension and Applications to Zero-Knowledge. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-30545-0_9) · [ePrint](https://eprint.iacr.org/2022/1535) |
-| Reusable Secure Computation in the Plain Model. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_14) · [ePrint](https://eprint.iacr.org/2023/1006) |
+| Scalable Multi-party Private Set Union from Multi-query Secret-Shared Private Membership Test. | ASIACRYPT | 2023 | [论文](https://doi.org/10.1007/978-981-99-8721-4_8) · [ePrint](https://eprint.iacr.org/2023/1413) |
+| Round-Optimal Oblivious Transfer and MPC from Computational CSIDH. | PKC | 2023 | [论文](https://doi.org/10.1007/978-3-031-31368-4_14) · [ePrint](https://eprint.iacr.org/2022/1511) |
+| Reverse Firewalls for Oblivious Transfer Extension and Applications to Zero-Knowledge. | EUROCRYPT | 2023 | [论文](https://doi.org/10.1007/978-3-031-30545-0_9) · [ePrint](https://eprint.iacr.org/2022/1535) |
+| Reusable Secure Computation in the Plain Model. | CRYPTO | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_14) · [ePrint](https://eprint.iacr.org/2023/1006) |
 | Ramen: Souper Fast Three-Party Computation for RAM Programs. | ACM CCS | 2023 | [论文](https://doi.org/10.1145/3576915.3623115) · [ePrint](https://eprint.iacr.org/2023/310) |
 | Publicly Verifiable Homomorphic Secret Sharing for Polynomial Evaluation. | TIFS | 2023 | [论文](https://doi.org/10.1109/TIFS.2023.3298258) |
-| Proactive Secret Sharing with Constant Communication. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-48618-0_12) · [ePrint](https://eprint.iacr.org/2023/942) |
+| Proactive Secret Sharing with Constant Communication. | TCC | 2023 | [论文](https://doi.org/10.1007/978-3-031-48618-0_12) · [ePrint](https://eprint.iacr.org/2023/942) |
 | Private Access Control for Function Secret Sharing. | IEEE S&amp;P | 2023 | [论文](https://doi.org/10.1109/SP46215.2023.10179295) · [ePrint](https://eprint.iacr.org/2022/1707) |
 | Privacy of Federated QR Decomposition Using Additive Secure Multiparty Computation. | TIFS | 2023 | [论文](https://doi.org/10.1109/TIFS.2023.3301710) · [arXiv](https://arxiv.org/abs/2210.06163) |
-| Practically Efficient Private Set Intersection from Trusted Hardware with Side-Channels. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-981-99-8730-6_9) |
+| Practically Efficient Private Set Intersection from Trusted Hardware with Side-Channels. | ASIACRYPT | 2023 | [论文](https://doi.org/10.1007/978-981-99-8730-6_9) |
 | On the Security of a Lattice-Based Multi-Stage Secret Sharing Scheme. | TDSC | 2023 | [论文](https://doi.org/10.1109/TDSC.2022.3209011) |
 | On the Round Complexity of Fully Secure Solitary MPC with Honest Majority. | TCC | 2023 | [论文](https://doi.org/10.1007/978-3-031-48618-0_5) · [ePrint](https://eprint.iacr.org/2021/241) |
-| On the Power of an Honest Majority in Three-Party Computation Without Broadcast. | Journal of Cryptology / series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-030-64378-2_22) · [论文](https://doi.org/10.1007/S00145-023-09456-4) · [ePrint](https://eprint.iacr.org/2020/1170) |
+| On the Power of an Honest Majority in Three-Party Computation Without Broadcast. | Journal of Cryptology / TCC | 2023 | [论文](https://doi.org/10.1007/978-3-030-64378-2_22) · [论文](https://doi.org/10.1007/S00145-023-09456-4) · [ePrint](https://eprint.iacr.org/2020/1170) |
 | On the Communication Efficiency of Statistically Secure Asynchronous MPC with Optimal Resilience. | Journal of Cryptology | 2023 | [论文](https://doi.org/10.1007/S00145-023-09451-9) · [ePrint](https://eprint.iacr.org/2022/913) |
 | On Secure Computation of Solitary Output Functionalities with and Without Broadcast. | TCC | 2023 | [论文](https://doi.org/10.1007/978-3-031-48618-0_4) · [ePrint](https://eprint.iacr.org/2022/934) |
-| On Homomorphic Secret Sharing from Polynomial-Modulus LWE. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-31371-4_1) · [ePrint](https://eprint.iacr.org/2023/382) |
-| Oblivious Transfer with Constant Computational Overhead. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-30545-0_10) · [ePrint](https://eprint.iacr.org/2023/817) |
+| On Homomorphic Secret Sharing from Polynomial-Modulus LWE. | PKC | 2023 | [论文](https://doi.org/10.1007/978-3-031-31371-4_1) · [ePrint](https://eprint.iacr.org/2023/382) |
+| Oblivious Transfer with Constant Computational Overhead. | EUROCRYPT | 2023 | [论文](https://doi.org/10.1007/978-3-031-30545-0_10) · [ePrint](https://eprint.iacr.org/2023/817) |
 | Oblivious Transfer from Zero-Knowledge Proofs - Or How to Achieve Round-Optimal Quantum Oblivious Transfer and Zero-Knowledge Proofs on Quantum States. | ASIACRYPT | 2023 | [论文](https://doi.org/10.1007/978-981-99-8742-9_1) · [arXiv](https://arxiv.org/abs/2303.01476) · [ePrint](https://eprint.iacr.org/2023/311) |
-| New Bounds on the Local Leakage Resilience of Shamir's Secret Sharing Scheme. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_5) · [ePrint](https://eprint.iacr.org/2023/805) |
-| Network-Agnostic Security Comes (Almost) for Free in DKG and MPC. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_3) · [ePrint](https://eprint.iacr.org/2022/1369) |
-| Network Agnostic MPC with Statistical Security. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-48618-0_3) · [arXiv](https://arxiv.org/abs/2306.01401) · [ePrint](https://eprint.iacr.org/2023/820) |
-| Multi-party Homomorphic Secret Sharing and Sublinear MPC from Sparse LPN. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-38545-2_11) · [ePrint](https://eprint.iacr.org/2023/1593) |
+| New Bounds on the Local Leakage Resilience of Shamir's Secret Sharing Scheme. | CRYPTO | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_5) · [ePrint](https://eprint.iacr.org/2023/805) |
+| Network-Agnostic Security Comes (Almost) for Free in DKG and MPC. | CRYPTO | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_3) · [ePrint](https://eprint.iacr.org/2022/1369) |
+| Network Agnostic MPC with Statistical Security. | TCC | 2023 | [论文](https://doi.org/10.1007/978-3-031-48618-0_3) · [arXiv](https://arxiv.org/abs/2306.01401) · [ePrint](https://eprint.iacr.org/2023/820) |
+| Multi-party Homomorphic Secret Sharing and Sublinear MPC from Sparse LPN. | CRYPTO | 2023 | [论文](https://doi.org/10.1007/978-3-031-38545-2_11) · [ePrint](https://eprint.iacr.org/2023/1593) |
 | Multi-Party Replicated Secret Sharing over a Ring with Applications to Privacy-Preserving Machine Learning. | PoPETs | 2023 | [论文](https://doi.org/10.56553/POPETS-2023-0035) · [ePrint](https://eprint.iacr.org/2020/1577) |
 | Matrix-Based Secret Sharing for Reversible Data Hiding in Encrypted Images. | TDSC | 2023 | [论文](https://doi.org/10.1109/TDSC.2022.3218570) |
 | Manticore: A Framework for Efficient Multiparty Computation Supporting Real Number and Boolean Arithmetic. | Journal of Cryptology | 2023 | [论文](https://doi.org/10.1007/S00145-023-09464-4) |
 | Maliciously Secure and Efficient Large-Scale Genome-Wide Association Study With Multi-Party Computation. | TDSC | 2023 | [论文](https://doi.org/10.1109/TDSC.2022.3152498) |
-| Malicious Secure, Structure-Aware Private Set Intersection. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_19) · [ePrint](https://eprint.iacr.org/2023/1166) |
+| Malicious Secure, Structure-Aware Private Set Intersection. | CRYPTO | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_19) · [ePrint](https://eprint.iacr.org/2023/1166) |
 | Low Communication Secure Computation From Semi-Trusted Hardware. | TIFS | 2023 | [论文](https://doi.org/10.1109/TIFS.2023.3282134) |
 | Longshot: Indexing Growing Databases using MPC and Differential Privacy. | PVLDB | 2023 | [论文](https://doi.org/10.14778/3594512.3594529) |
-| List Oblivious Transfer and Applications to Round-Optimal Black-Box Multiparty Coin Tossing. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_15) · [ePrint](https://eprint.iacr.org/2023/1512) |
+| List Oblivious Transfer and Applications to Round-Optimal Black-Box Multiparty Coin Tossing. | CRYPTO | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_15) · [ePrint](https://eprint.iacr.org/2023/1512) |
 | Linear Private Set Union from Multi-Query Reverse Private Membership Test. | USENIX Security | 2023 | [论文](https://www.usenix.org/conference/usenixsecurity23/presentation/zhang-cong) · [ePrint](https://eprint.iacr.org/2022/358) |
 | Linear Communication in Malicious Majority MPC. | ACM CCS | 2023 | [论文](https://doi.org/10.1145/3576915.3623162) · [ePrint](https://eprint.iacr.org/2022/781) |
 | Let's Go Eevee! A Friendly and Suitable Family of AEAD Modes for IoT-to-Cloud Secure Computation. | ACM CCS | 2023 | [论文](https://doi.org/10.1145/3576915.3623091) · [ePrint](https://eprint.iacr.org/2023/1361) |
 | Improved Protocols for Distributed Secret Sharing. | TDSC | 2023 | [论文](https://doi.org/10.1109/TDSC.2022.3213790) |
-| Improved Private Set Intersection for Sets with Small Entries. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-31371-4_7) · [ePrint](https://eprint.iacr.org/2022/334) |
-| Improved Polynomial Secret-Sharing Schemes. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-48618-0_13) · [ePrint](https://eprint.iacr.org/2023/1158) |
+| Improved Private Set Intersection for Sets with Small Entries. | PKC | 2023 | [论文](https://doi.org/10.1007/978-3-031-31371-4_7) · [ePrint](https://eprint.iacr.org/2022/334) |
+| Improved Polynomial Secret-Sharing Schemes. | TCC | 2023 | [论文](https://doi.org/10.1007/978-3-031-48618-0_13) · [ePrint](https://eprint.iacr.org/2023/1158) |
 | High-Throughput Secure Three-Party Computation with an Honest Majority. | Journal of Cryptology | 2023 | [论文](https://doi.org/10.1007/S00145-023-09461-7) |
-| Garbled Circuits from an SCA Perspective Free XOR can be Quite Expensive. . . | CHES | 2023 | [论文](https://doi.org/10.46586/TCHES.V2023.I2.54-79) · [ePrint](https://eprint.iacr.org/2022/901) |
+| Garbled Circuits from an SCA Perspective Free XOR can be Quite Expensive. . . | TCHES | 2023 | [论文](https://doi.org/10.46586/TCHES.V2023.I2.54-79) · [ePrint](https://eprint.iacr.org/2022/901) |
 | Funshade: Function Secret Sharing for Two-Party Secure Thresholded Distance Evaluation. | PoPETs | 2023 | [论文](https://doi.org/10.56553/POPETS-2023-0096) · [ePrint](https://eprint.iacr.org/2022/1688) |
 | Faster Secure Comparisons with Offline Phase for Efficient Private Set Intersection. | NDSS | 2023 | [论文](https://www.ndss-symposium.org/ndss-paper/faster-secure-comparisons-with-offline-phase-for-efficient-private-set-intersection/) · [arXiv](https://arxiv.org/abs/2209.13913) |
 | Fast Unbalanced Private Set Union from Fully Homomorphic Encryption. | ACM CCS | 2023 | [论文](https://doi.org/10.1145/3576915.3623064) · [ePrint](https://eprint.iacr.org/2022/653) |
 | Fast Large-Scale Honest-Majority MPC for Malicious Adversaries. | Journal of Cryptology | 2023 | [论文](https://doi.org/10.1007/S00145-023-09453-7) |
-| Endemic Oblivious Transfer via Random Oracles, Revisited. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-30545-0_11) · [ePrint](https://eprint.iacr.org/2022/1525) |
+| Endemic Oblivious Transfer via Random Oracles, Revisited. | EUROCRYPT | 2023 | [论文](https://doi.org/10.1007/978-3-031-30545-0_11) · [ePrint](https://eprint.iacr.org/2022/1525) |
 | Efficient decision tree training with new data structure for secure multi-party computation. | PoPETs | 2023 | [论文](https://doi.org/10.56553/POPETS-2023-0021) · [arXiv](https://arxiv.org/abs/2112.12906) |
 | Efficient Unbalanced Private Set Intersection Cardinality and User-friendly Privacy-preserving Contact Tracing. | USENIX Security | 2023 | [论文](https://www.usenix.org/conference/usenixsecurity23/presentation/wu-mingli) |
 | Efficient Noise Generation Protocols for Differentially Private Multiparty Computation. | TDSC | 2023 | [论文](https://doi.org/10.1109/TDSC.2022.3227568) · [ePrint](https://eprint.iacr.org/2022/1391) |
 | Efficient Multiparty Probabilistic Threshold Private Set Intersection. | ACM CCS | 2023 | [论文](https://doi.org/10.1145/3576915.3623158) |
 | Efficient 3PC for Binary Circuits with Application to Maliciously-Secure DNN Inference. | USENIX Security | 2023 | [论文](https://www.usenix.org/conference/usenixsecurity23/presentation/li-yun) · [ePrint](https://eprint.iacr.org/2023/909) |
 | Distance-Aware Private Set Intersection. | USENIX Security | 2023 | [论文](https://www.usenix.org/conference/usenixsecurity23/presentation/chakraborti-intersection) · [arXiv](https://arxiv.org/abs/2112.14737) |
-| Detect, Pack and Batch: Perfectly-Secure MPC with Linear Communication and Constant Expected Time. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-30617-4_9) · [ePrint](https://eprint.iacr.org/2023/557) |
-| DORAM Revisited: Maliciously Secure RAM-MPC with Logarithmic Overhead. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-48615-9_16) · [ePrint](https://eprint.iacr.org/2023/578) |
-| Cryptography with Weights: MPC, Encryption and Signatures. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_10) · [ePrint](https://eprint.iacr.org/2022/1632) |
+| Detect, Pack and Batch: Perfectly-Secure MPC with Linear Communication and Constant Expected Time. | EUROCRYPT | 2023 | [论文](https://doi.org/10.1007/978-3-031-30617-4_9) · [ePrint](https://eprint.iacr.org/2023/557) |
+| DORAM Revisited: Maliciously Secure RAM-MPC with Logarithmic Overhead. | TCC | 2023 | [论文](https://doi.org/10.1007/978-3-031-48615-9_16) · [ePrint](https://eprint.iacr.org/2023/578) |
+| Cryptography with Weights: MPC, Encryption and Signatures. | CRYPTO | 2023 | [论文](https://doi.org/10.1007/978-3-031-38557-5_10) · [ePrint](https://eprint.iacr.org/2022/1632) |
 | Convolutions in Overdrive: Maliciously Secure Convolutions for MPC. | PoPETs | 2023 | [论文](https://doi.org/10.56553/POPETS-2023-0084) · [ePrint](https://eprint.iacr.org/2023/359) |
-| Constrained Pseudorandom Functions from Homomorphic Secret Sharing. | series/lncs | 2023 | [论文](https://doi.org/10.1007/978-3-031-30620-4_7) · [ePrint](https://eprint.iacr.org/2023/387) |
+| Constrained Pseudorandom Functions from Homomorphic Secret Sharing. | EUROCRYPT | 2023 | [论文](https://doi.org/10.1007/978-3-031-30620-4_7) · [ePrint](https://eprint.iacr.org/2023/387) |
 | Circuit-Free General-Purpose Multi-Party Computation via Co-Utile Unlinkable Outsourcing. | TDSC | 2023 | [论文](https://doi.org/10.1109/TDSC.2021.3138826) · [arXiv](https://arxiv.org/abs/2112.15001) |
 | COMBINE: COMpilation and Backend-INdependent vEctorization for Multi-Party Computation. | ACM CCS | 2023 | [论文](https://doi.org/10.1145/3576915.3623181) · [ePrint](https://eprint.iacr.org/2023/089) |
 | Breaking and Fixing Garbled Circuits When a Gate has Duplicate Input Wires. | Journal of Cryptology | 2023 | [论文](https://doi.org/10.1007/S00145-023-09472-4) · [ePrint](https://eprint.iacr.org/2023/530) |
@@ -350,29 +350,29 @@
 | XORBoost: Tree Boosting in the Multiparty Computation Setting. | PoPETs | 2022 | [论文](https://doi.org/10.56553/POPETS-2022-0099) · [ePrint](https://eprint.iacr.org/2021/432) |
 | Waldo: A Private Time-Series Database from Function Secret Sharing. | IEEE S&amp;P | 2022 | [论文](https://doi.org/10.1109/SP46214.2022.9833611) · [ePrint](https://eprint.iacr.org/2021/1661) |
 | Updatable Private Set Intersection. | PoPETs | 2022 | [论文](https://doi.org/10.2478/POPETS-2022-0051) · [ePrint](https://eprint.iacr.org/2021/1349) |
-| Two-Round MPC Without Round Collapsing Revisited - Towards Efficient Malicious Protocols. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-15802-5_13) · [ePrint](https://eprint.iacr.org/2022/944) |
+| Two-Round MPC Without Round Collapsing Revisited - Towards Efficient Malicious Protocols. | CRYPTO | 2022 | [论文](https://doi.org/10.1007/978-3-031-15802-5_13) · [ePrint](https://eprint.iacr.org/2022/944) |
 | TurboPack: Honest Majority MPC with Constant Online Communication. | ACM CCS | 2022 | [论文](https://doi.org/10.1145/3548606.3560633) · [ePrint](https://eprint.iacr.org/2022/1316) |
 | TinyKeys: A New Approach to Efficient Multi-Party Computation. | Journal of Cryptology | 2022 | [论文](https://doi.org/10.1007/S00145-022-09423-5) |
-| Tight Bounds on the Randomness Complexity of Secure Multiparty Computation. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-15985-5_17) · [ePrint](https://eprint.iacr.org/2022/799) |
-| Sublinear Secure Computation from New Assumptions. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-22365-5_5) · [ePrint](https://eprint.iacr.org/2023/513) |
-| Structure-Aware Private Set Intersection, with Applications to Fuzzy Matching. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-15802-5_12) · [ePrint](https://eprint.iacr.org/2022/1011) |
-| Statistical Security in Two-Party Computation Revisited. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-22365-5_7) · [ePrint](https://eprint.iacr.org/2022/1190) |
+| Tight Bounds on the Randomness Complexity of Secure Multiparty Computation. | CRYPTO | 2022 | [论文](https://doi.org/10.1007/978-3-031-15985-5_17) · [ePrint](https://eprint.iacr.org/2022/799) |
+| Sublinear Secure Computation from New Assumptions. | TCC | 2022 | [论文](https://doi.org/10.1007/978-3-031-22365-5_5) · [ePrint](https://eprint.iacr.org/2023/513) |
+| Structure-Aware Private Set Intersection, with Applications to Fuzzy Matching. | CRYPTO | 2022 | [论文](https://doi.org/10.1007/978-3-031-15802-5_12) · [ePrint](https://eprint.iacr.org/2022/1011) |
+| Statistical Security in Two-Party Computation Revisited. | TCC | 2022 | [论文](https://doi.org/10.1007/978-3-031-22365-5_7) · [ePrint](https://eprint.iacr.org/2022/1190) |
 | Shuffle-based Private Set Union: Faster and More Secure. | USENIX Security | 2022 | [论文](https://www.usenix.org/conference/usenixsecurity22/presentation/jia) · [ePrint](https://eprint.iacr.org/2022/157) |
-| Short Leakage Resilient and Non-malleable Secret Sharing Schemes. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-15802-5_7) · [ePrint](https://eprint.iacr.org/2022/216) |
+| Short Leakage Resilient and Non-malleable Secret Sharing Schemes. | CRYPTO | 2022 | [论文](https://doi.org/10.1007/978-3-031-15802-5_7) · [ePrint](https://eprint.iacr.org/2022/216) |
 | Sharing Transformation and Dishonest Majority MPC with Packed Secret Sharing. | CRYPTO | 2022 | [论文](https://doi.org/10.1007/978-3-031-15985-5_1) · [ePrint](https://eprint.iacr.org/2022/831) |
 | Self-Stabilizing Secure Computation. | TDSC | 2022 | [论文](https://doi.org/10.1109/TDSC.2020.2986751) |
 | Secure Multiparty Computation with Sublinear Preprocessing. | EUROCRYPT | 2022 | [论文](https://doi.org/10.1007/978-3-031-06944-4_15) |
-| Secure Multiparty Computation with Free Branching. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-06944-4_14) · [ePrint](https://eprint.iacr.org/2023/901) |
+| Secure Multiparty Computation with Free Branching. | EUROCRYPT | 2022 | [论文](https://doi.org/10.1007/978-3-031-06944-4_14) · [ePrint](https://eprint.iacr.org/2023/901) |
 | Secret Sharing Based Reversible Data Hiding in Encrypted Images With Multiple Data-Hiders. | TDSC | 2022 | [论文](https://doi.org/10.1109/TDSC.2020.3011923) |
 | SecFloat: Accurate Floating-Point meets Secure 2-Party Computation. | IEEE S&amp;P | 2022 | [论文](https://doi.org/10.1109/SP46214.2022.9833697) · [ePrint](https://eprint.iacr.org/2022/322) |
 | STAR: Secret Sharing for Private Threshold Aggregation Reporting. | ACM CCS | 2022 | [论文](https://doi.org/10.1145/3548606.3560631) · [arXiv](https://arxiv.org/abs/2109.10074) |
-| Round-Optimal and Communication-Efficient Multiparty Computation. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-06944-4_3) · [ePrint](https://eprint.iacr.org/2020/1437) |
+| Round-Optimal and Communication-Efficient Multiparty Computation. | EUROCRYPT | 2022 | [论文](https://doi.org/10.1007/978-3-031-06944-4_3) · [ePrint](https://eprint.iacr.org/2020/1437) |
 | Round-Optimal Multi-party Computation with Identifiable Abort. | EUROCRYPT | 2022 | [论文](https://doi.org/10.1007/978-3-031-06944-4_12) · [ePrint](https://eprint.iacr.org/2022/645) |
 | Round-Optimal Honest-Majority MPC in Minicrypt and with Everlasting Security - (Extended Abstract). | TCC | 2022 | [论文](https://doi.org/10.1007/978-3-031-22365-5_4) |
 | Round-Optimal Black-Box Secure Computation from Two-Round Malicious OT. | TCC | 2022 | [论文](https://doi.org/10.1007/978-3-031-22365-5_16) · [ePrint](https://eprint.iacr.org/2022/1288) |
 | Quantum garbled circuits. | STOC | 2022 | [论文](https://doi.org/10.1145/3519935.3520073) · [arXiv](https://arxiv.org/abs/2006.01085) · [ePrint](https://eprint.iacr.org/2020/1401) |
 | Publicly Accountable Robust Multi-Party Computation. | IEEE S&amp;P | 2022 | [论文](https://doi.org/10.1109/SP46214.2022.9833608) · [ePrint](https://eprint.iacr.org/2022/436) |
-| Practical Non-interactive Publicly Verifiable Secret Sharing with Thousands of Parties. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-06944-4_16) · [ePrint](https://eprint.iacr.org/2021/1397) |
+| Practical Non-interactive Publicly Verifiable Secret Sharing with Thousands of Parties. | EUROCRYPT | 2022 | [论文](https://doi.org/10.1007/978-3-031-06944-4_16) · [ePrint](https://eprint.iacr.org/2021/1397) |
 | Practical Multi-Party Private Set Intersection Protocols. | TIFS | 2022 | [论文](https://doi.org/10.1109/TIFS.2021.3118879) |
 | Polymath: Low-Latency MPC via Secure Polynomial Evaluations and Its Applications. | PoPETs | 2022 | [论文](https://doi.org/10.2478/POPETS-2022-0020) · [ePrint](https://eprint.iacr.org/2021/978) |
 | Piranha: A GPU Platform for Secure Computation. | USENIX Security | 2022 | [论文](https://www.usenix.org/conference/usenixsecurity22/presentation/watson) · [ePrint](https://eprint.iacr.org/2022/892) · [Code](https://github.com/ucbrise/piranha) |
@@ -380,10 +380,10 @@
 | PPMLAC: high performance chipset architecture for secure multi-party computation. | ISCA | 2022 | [论文](https://doi.org/10.1145/3470496.3527392) |
 | On Secret Sharing, Randomness, and Random-less Reductions for Secret Sharing. | TCC | 2022 | [论文](https://doi.org/10.1007/978-3-031-22318-1_12) · [ePrint](https://eprint.iacr.org/2021/802) |
 | On Perfectly Secure Two-Party Computation for Symmetric Functionalities with Correlated Randomness. | TCC | 2022 | [论文](https://doi.org/10.1007/978-3-031-22365-5_19) · [ePrint](https://eprint.iacr.org/2022/1504) |
-| Oblivious-Transfer Complexity of Noisy Coin-Toss via Secure Zero Communication Reductions. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-22368-6_4) · [ePrint](https://eprint.iacr.org/2022/1539) |
+| Oblivious-Transfer Complexity of Noisy Coin-Toss via Secure Zero Communication Reductions. | TCC | 2022 | [论文](https://doi.org/10.1007/978-3-031-22368-6_4) · [ePrint](https://eprint.iacr.org/2022/1539) |
 | Non-interactive Secure Computation of Inner-Product from LPN and LWE. | ASIACRYPT | 2022 | [论文](https://doi.org/10.1007/978-3-031-22963-3_16) · [ePrint](https://eprint.iacr.org/2023/072) |
 | More Efficient Dishonest Majority Secure Computation over $\\mathbb {Z}\_{2^k}$ via Galois Rings. | CRYPTO | 2022 | [论文](https://doi.org/10.1007/978-3-031-15802-5_14) · [ePrint](https://eprint.iacr.org/2022/815) |
-| Lightweight, Maliciously Secure Verifiable Function Secret Sharing. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-06944-4_6) · [ePrint](https://eprint.iacr.org/2021/580) |
+| Lightweight, Maliciously Secure Verifiable Function Secret Sharing. | EUROCRYPT | 2022 | [论文](https://doi.org/10.1007/978-3-031-06944-4_6) · [ePrint](https://eprint.iacr.org/2021/580) |
 | Leakage-resilient Linear Secret-sharing Against Arbitrary Bounded-size Leakage Family. | TCC | 2022 | [论文](https://doi.org/10.1007/978-3-031-22318-1_13) |
 | Laconic Private Set-Intersection From Pairings. | ACM CCS | 2022 | [论文](https://doi.org/10.1145/3548606.3560642) · [ePrint](https://eprint.iacr.org/2022/529) |
 | IncShrink: Architecting Efficient Outsourced Databases using Incremental MPC and Differential Privacy. | SIGMOD | 2022 | [论文](https://doi.org/10.1145/3514221.3526151) · [arXiv](https://arxiv.org/abs/2203.05084) |
@@ -403,46 +403,46 @@
 | Binary Search in Secure Computation. | NDSS | 2022 | [论文](https://www.ndss-symposium.org/ndss-paper/auto-draft-224/) · [ePrint](https://eprint.iacr.org/2021/1049) |
 | AriaNN: Low-Interaction Privacy-Preserving Deep Learning via Function Secret Sharing. | PoPETs | 2022 | [论文](https://doi.org/10.2478/POPETS-2022-0015) · [arXiv](https://arxiv.org/abs/2006.04593) |
 | Analog Secret Sharing With Applications to Private Distributed Learning. | TIFS | 2022 | [论文](https://doi.org/10.1109/TIFS.2022.3173417) |
-| Adaptively Secure Computation for RAM Programs. | series/lncs | 2022 | [论文](https://doi.org/10.1007/978-3-031-07085-3_7) |
+| Adaptively Secure Computation for RAM Programs. | EUROCRYPT | 2022 | [论文](https://doi.org/10.1007/978-3-031-07085-3_7) |
 | YOSO: You Only Speak Once - Secure MPC with Stateless Ephemeral Roles. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_3) · [ePrint](https://eprint.iacr.org/2021/210) |
-| Upslices, Downslices, and Secret-Sharing with Complexity of 1.5n. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_21) |
+| Upslices, Downslices, and Secret-Sharing with Complexity of 1.5n. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_21) |
 | Unconditionally Secure Computation Against Low-Complexity Leakage. | Journal of Cryptology | 2021 | [论文](https://doi.org/10.1007/S00145-021-09402-2) |
-| Unbounded Multi-party Computation from Learning with Errors. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_26) · [ePrint](https://eprint.iacr.org/2021/431) |
+| Unbounded Multi-party Computation from Learning with Errors. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_26) · [ePrint](https://eprint.iacr.org/2021/431) |
 | Two-Round Maliciously Secure Computation with Super-Polynomial Simulation. | TCC | 2021 | [论文](https://doi.org/10.1007/978-3-030-90459-3_22) · [ePrint](https://eprint.iacr.org/2021/1230) |
-| Two-Round Adaptively Secure MPC from Isogenies, LPN, or CDH. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-92075-3_11) · [ePrint](https://eprint.iacr.org/2023/1170) |
+| Two-Round Adaptively Secure MPC from Isogenies, LPN, or CDH. | ASIACRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-92075-3_11) · [ePrint](https://eprint.iacr.org/2023/1170) |
 | Traceable Secret Sharing and Applications. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_24) · [ePrint](https://eprint.iacr.org/2021/871) |
 | Threshold Garbled Circuits and Ad Hoc Secure Computation. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77883-5_3) · [ePrint](https://eprint.iacr.org/2021/308) |
-| Three-Round Secure Multiparty Computation from Black-Box Two-Round Oblivious Transfer. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_7) · [ePrint](https://eprint.iacr.org/2021/957) |
-| Three Halves Make a Whole? Beating the Half-Gates Lower Bound for Garbled Circuits. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84242-0_5) · [ePrint](https://eprint.iacr.org/2021/749) |
+| Three-Round Secure Multiparty Computation from Black-Box Two-Round Oblivious Transfer. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_7) · [ePrint](https://eprint.iacr.org/2021/957) |
+| Three Halves Make a Whole? Beating the Half-Gates Lower Bound for Garbled Circuits. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84242-0_5) · [ePrint](https://eprint.iacr.org/2021/749) |
 | The Rise of Paillier: Homomorphic Secret Sharing and Public-Key Silent OT. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77870-5_24) · [ePrint](https://eprint.iacr.org/2021/262) |
 | Simple, Fast Malicious Multiparty Private Set Intersection. | ACM CCS | 2021 | [论文](https://doi.org/10.1145/3460120.3484772) · [ePrint](https://eprint.iacr.org/2021/1221) |
-| Silver: Silent VOLE and Oblivious Transfer from Hardness of Decoding Structured LDPC Codes. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_17) · [ePrint](https://eprint.iacr.org/2021/1150) |
+| Silver: Silent VOLE and Oblivious Transfer from Hardness of Decoding Structured LDPC Codes. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_17) · [ePrint](https://eprint.iacr.org/2021/1150) |
 | Senate: A Maliciously-Secure MPC Platform for Collaborative Analytics. | USENIX Security | 2021 | [论文](https://www.usenix.org/conference/usenixsecurity21/presentation/poddar) · [arXiv](https://arxiv.org/abs/2010.13752) · [ePrint](https://eprint.iacr.org/2020/1350) |
 | Secure Secret Sharing Enabled b-band Mini Vaults Bio-Cryptosystem for Vectorial Biometrics. | TDSC | 2021 | [论文](https://doi.org/10.1109/TDSC.2018.2874245) |
 | Secure Multi-party Computation of Differentially Private Heavy Hitters. | ACM CCS | 2021 | [论文](https://doi.org/10.1145/3460120.3484557) |
 | Secure Computation from One-Way Noisy Communication, or: Anti-correlation via Anti-concentration. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_5) |
 | Round-Optimal Secure Multi-party Computation. | Journal of Cryptology | 2021 | [论文](https://doi.org/10.1007/S00145-021-09382-3) |
-| Round-Efficient Byzantine Agreement and Multi-party Computation with Asynchronous Fallback. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-90459-3_21) · [ePrint](https://eprint.iacr.org/2021/1141) |
-| Reverse Firewalls for Adaptively Secure MPC Without Setup. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-92075-3_12) · [ePrint](https://eprint.iacr.org/2021/1262) |
-| ROTed: Random Oblivious Transfer for embedded devices. | CHES | 2021 | [论文](https://doi.org/10.46586/TCHES.V2021.I4.215-238) · [ePrint](https://eprint.iacr.org/2021/935) |
+| Round-Efficient Byzantine Agreement and Multi-party Computation with Asynchronous Fallback. | TCC | 2021 | [论文](https://doi.org/10.1007/978-3-030-90459-3_21) · [ePrint](https://eprint.iacr.org/2021/1141) |
+| Reverse Firewalls for Adaptively Secure MPC Without Setup. | ASIACRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-92075-3_12) · [ePrint](https://eprint.iacr.org/2021/1262) |
+| ROTed: Random Oblivious Transfer for embedded devices. | TCHES | 2021 | [论文](https://doi.org/10.46586/TCHES.V2021.I4.215-238) · [ePrint](https://eprint.iacr.org/2021/935) |
 | Quadratic Secret Sharing and Conditional Disclosure of Secrets. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_25) · [ePrint](https://eprint.iacr.org/2021/285) |
 | Private Set Intersection With Authorization Over Outsourced Encrypted Datasets. | TIFS | 2021 | [论文](https://doi.org/10.1109/TIFS.2021.3101059) |
 | Privacy-Preserving Feature Selection with Secure Multiparty Computation. | ICML | 2021 | [论文](http://proceedings.mlr.press/v139/li21e.html) · [arXiv](https://arxiv.org/abs/2102.03517) · [ePrint](https://eprint.iacr.org/2021/132) |
 | Post-Quantum Multi-Party Computation. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77870-5_16) · [arXiv](https://arxiv.org/abs/2005.12904) · [ePrint](https://eprint.iacr.org/2020/1395) |
 | Order-C Secure Multiparty Computation for Highly Repetitive Circuits. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_23) · [ePrint](https://eprint.iacr.org/2021/500) |
-| One-Way Functions Imply Secure Computation in a Quantum World. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84242-0_17) · [arXiv](https://arxiv.org/abs/2011.13486) · [ePrint](https://eprint.iacr.org/2020/1487) |
-| On the Round Complexity of Black-Box Secure MPC. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_8) · [ePrint](https://eprint.iacr.org/2021/1467) |
+| One-Way Functions Imply Secure Computation in a Quantum World. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84242-0_17) · [arXiv](https://arxiv.org/abs/2011.13486) · [ePrint](https://eprint.iacr.org/2020/1487) |
+| On the Round Complexity of Black-Box Secure MPC. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_8) · [ePrint](https://eprint.iacr.org/2021/1467) |
 | On the Local Leakage Resilience of Linear Secret Sharing Schemes. | Journal of Cryptology | 2021 | [论文](https://doi.org/10.1007/S00145-021-09375-2) |
 | On the Exact Round Complexity of Secure Three-Party Computation. | Journal of Cryptology | 2021 | [论文](https://doi.org/10.1007/S00145-021-09404-0) |
 | On Communication-Efficient Asynchronous MPC with Adaptive Security. | TCC | 2021 | [论文](https://doi.org/10.1007/978-3-030-90453-1_2) · [ePrint](https://eprint.iacr.org/2021/1174) |
 | On Communication Models and Best-Achievable Security in Two-Round MPC. | TCC | 2021 | [论文](https://doi.org/10.1007/978-3-030-90453-1_4) · [ePrint](https://eprint.iacr.org/2021/690) |
-| On Actively-Secure Elementary MPC Reductions. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-90459-3_24) · [ePrint](https://eprint.iacr.org/2021/1208) |
+| On Actively-Secure Elementary MPC Reductions. | TCC | 2021 | [论文](https://doi.org/10.1007/978-3-030-90459-3_24) · [ePrint](https://eprint.iacr.org/2021/1208) |
 | On Abelian and Homomorphic Secret Sharing Schemes. | Journal of Cryptology | 2021 | [论文](https://doi.org/10.1007/S00145-021-09410-2) |
 | Oblivious Transfer from Trapdoor Permutations in Minimal Rounds. | TCC | 2021 | [论文](https://doi.org/10.1007/978-3-030-90453-1_18) · [ePrint](https://eprint.iacr.org/2021/1433) |
-| Oblivious Transfer Is in MiniQCrypt. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_18) · [arXiv](https://arxiv.org/abs/2011.14980) · [ePrint](https://eprint.iacr.org/2020/1500) |
-| Oblivious Key-Value Stores and Amplification for Private Set Intersection. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_14) · [ePrint](https://eprint.iacr.org/2021/883) |
-| Non-interactive Secure Multiparty Computation for Symmetric Functions, Revisited: More Efficient Constructions and Extensions. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_11) |
-| Multiparty Reusable Non-interactive Secure Computation from LWE. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_25) · [ePrint](https://eprint.iacr.org/2021/378) |
+| Oblivious Transfer Is in MiniQCrypt. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_18) · [arXiv](https://arxiv.org/abs/2011.14980) · [ePrint](https://eprint.iacr.org/2020/1500) |
+| Oblivious Key-Value Stores and Amplification for Private Set Intersection. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_14) · [ePrint](https://eprint.iacr.org/2021/883) |
+| Non-interactive Secure Multiparty Computation for Symmetric Functions, Revisited: More Efficient Constructions and Extensions. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_11) |
+| Multiparty Reusable Non-interactive Secure Computation from LWE. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_25) · [ePrint](https://eprint.iacr.org/2021/378) |
 | Multi-party Threshold Private Set Intersection with Sublinear Communication. | PKC | 2021 | [论文](https://doi.org/10.1007/978-3-030-75248-4_13) · [ePrint](https://eprint.iacr.org/2020/600) |
 | More than a Fair Share: Network Data Remanence Attacks against Secret Sharing-based Schemes. | NDSS | 2021 | [论文](https://www.ndss-symposium.org/ndss-paper/more-than-a-fair-share-network-data-remanence-attacks-against-secret-sharing-based-schemes/) |
 | Machine-checked ZKP for NP relations: Formally Verified Security Proofs and Implementations of MPC-in-the-Head. | ACM CCS | 2021 | [论文](https://doi.org/10.1145/3460120.3484771) · [arXiv](https://arxiv.org/abs/2104.05516) · [ePrint](https://eprint.iacr.org/2021/1149) |
@@ -450,69 +450,69 @@
 | MPC-Friendly Commitments for Publicly Verifiable Covert Security. | ACM CCS | 2021 | [论文](https://doi.org/10.1145/3460120.3485375) · [arXiv](https://arxiv.org/abs/2109.07461) · [ePrint](https://eprint.iacr.org/2022/102) |
 | MAGE: Nearly Zero-Cost Virtual Memory for Secure Computation. | OSDI | 2021 | [论文](https://www.usenix.org/conference/osdi21/presentation/kumar) · [arXiv](https://arxiv.org/abs/2106.14651) |
 | Leakage-Resilience of the Shamir Secret-Sharing Scheme Against Physical-Bit Leakages. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_12) · [ePrint](https://eprint.iacr.org/2021/186) |
-| Large Scale, Actively Secure Computation from LPN and Free-XOR Garbled Circuits. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-77883-5_2) · [ePrint](https://eprint.iacr.org/2021/120) |
-| Large Message Homomorphic Secret Sharing from DCR and Applications. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_23) · [ePrint](https://eprint.iacr.org/2021/274) |
+| Large Scale, Actively Secure Computation from LPN and Free-XOR Garbled Circuits. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77883-5_2) · [ePrint](https://eprint.iacr.org/2021/120) |
+| Large Message Homomorphic Secret Sharing from DCR and Applications. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_23) · [ePrint](https://eprint.iacr.org/2021/274) |
 | Laconic Private Set Intersection and Applications. | TCC | 2021 | [论文](https://doi.org/10.1007/978-3-030-90456-2_4) · [ePrint](https://eprint.iacr.org/2021/728) |
 | Information-Theoretically Secure MPC Against Mixed Dynamic Adversaries. | TCC | 2021 | [论文](https://doi.org/10.1007/978-3-030-90459-3_20) · [ePrint](https://eprint.iacr.org/2021/1163) |
-| Homomorphic Secret Sharing for Multipartite and General Adversary Structures Supporting Parallel Evaluation of Low-Degree Polynomials. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-92075-3_7) · [ePrint](https://eprint.iacr.org/2021/1395) |
+| Homomorphic Secret Sharing for Multipartite and General Adversary Structures Supporting Parallel Evaluation of Low-Degree Polynomials. | ASIACRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-92075-3_7) · [ePrint](https://eprint.iacr.org/2021/1395) |
 | High-Performance Multi-party Computation for Binary Circuits Based on Oblivious Transfer. | Journal of Cryptology | 2021 | [论文](https://doi.org/10.1007/S00145-021-09403-1) |
 | Generic Compiler for Publicly Verifiable Covert Multi-Party Computation. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_27) · [ePrint](https://eprint.iacr.org/2021/251) |
 | Generalized Pseudorandom Secret Sharing and Efficient Straggler-Resilient Secure Computation. | TCC | 2021 | [论文](https://doi.org/10.1007/978-3-030-90453-1_5) · [ePrint](https://eprint.iacr.org/2021/1223) |
 | Fuzzy Labeled Private Set Intersection with Applications to Private Real-Time Biometric Search. | USENIX Security | 2021 | [论文](https://www.usenix.org/conference/usenixsecurity21/presentation/uzun) |
-| Function Secret Sharing for Mixed-Mode and Fixed-Point Secure Computation. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_30) · [ePrint](https://eprint.iacr.org/2020/1392) |
+| Function Secret Sharing for Mixed-Mode and Fixed-Point Secure Computation. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_30) · [ePrint](https://eprint.iacr.org/2020/1392) |
 | Framing in Secret Sharing. | TIFS | 2021 | [论文](https://doi.org/10.1109/TIFS.2021.3067468) |
 | Fortified Multi-Party Computation: Taking Advantage of Simple Secure Hardware Modules. | PoPETs | 2021 | [论文](https://doi.org/10.2478/POPETS-2021-0072) |
 | Fluid MPC: Secure Multiparty Computation with Dynamic Participants. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_4) · [ePrint](https://eprint.iacr.org/2020/754) |
 | Fantastic Four: Honest-Majority Four-Party Secure Computation With Malicious Security. | USENIX Security | 2021 | [论文](https://www.usenix.org/conference/usenixsecurity21/presentation/dalskov) · [ePrint](https://eprint.iacr.org/2020/1330) |
 | Environmentally Friendly Composable Multi-party Computation in the Plain Model from Standard (Timed) Assumptions. | TCC | 2021 | [论文](https://doi.org/10.1007/978-3-030-90459-3_25) · [ePrint](https://eprint.iacr.org/2021/843) |
 | Efficient Server-Aided Secure Two-Party Computation in Heterogeneous Mobile Cloud Computing. | TDSC | 2021 | [论文](https://doi.org/10.1109/TDSC.2020.2966632) |
-| Efficient Information-Theoretic Multi-party Computation over Non-commutative Rings. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_12) · [ePrint](https://eprint.iacr.org/2021/1025) |
+| Efficient Information-Theoretic Multi-party Computation over Non-commutative Rings. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_12) · [ePrint](https://eprint.iacr.org/2021/1025) |
 | CrypTen: Secure Multi-Party Computation Meets Machine Learning. | NeurIPS | 2021 | [论文](https://proceedings.neurips.cc/paper/2021/hash/2754518221cfbc8d25c13a06a4cb8421-Abstract.html) · [arXiv](https://arxiv.org/abs/2109.00984) |
-| Continuously Non-malleable Secret Sharing: Joint Tampering, Plain Model and Capacity. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-90453-1_12) · [ePrint](https://eprint.iacr.org/2021/1128) |
+| Continuously Non-malleable Secret Sharing: Joint Tampering, Plain Model and Capacity. | TCC | 2021 | [论文](https://doi.org/10.1007/978-3-030-90453-1_12) · [ePrint](https://eprint.iacr.org/2021/1128) |
 | Constructing Locally Leakage-Resilient Linear Secret-Sharing Schemes. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_26) · [ePrint](https://eprint.iacr.org/2020/1517) |
 | Constant-Overhead Unconditionally Secure Multiparty Computation Over Binary Fields. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_28) · [ePrint](https://eprint.iacr.org/2020/1412) |
 | Compact, Efficient and UC-Secure Isogeny-Based Oblivious Transfer. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77870-5_8) · [ePrint](https://eprint.iacr.org/2020/1012) |
 | Compact and Malicious Private Set Intersection for Small Sets. | ACM CCS | 2021 | [论文](https://doi.org/10.1145/3460120.3484778) · [ePrint](https://eprint.iacr.org/2021/1159) |
 | Broadcast-Optimal Two Round MPC with an Honest Majority. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_6) · [ePrint](https://eprint.iacr.org/2020/1254) |
 | Breaking the Circuit Size Barrier for Secure Computation Under Quasi-Polynomial LPN. | EUROCRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-77886-6_29) · [ePrint](https://eprint.iacr.org/2021/943) |
-| Better Security-Efficiency Trade-Offs in Permutation-Based Two-Party Computation. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-92075-3_10) · [ePrint](https://eprint.iacr.org/2022/080) |
-| Asymptotically-Good Arithmetic Secret Sharing over $\\mathbb {Z}/p^{\\ell }\\mathbb {Z}$ with Strong Multiplication and Its Applications to Efficient MPC. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_22) |
-| Adaptive Extractors and Their Application to Leakage Resilient Secret Sharing. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_20) · [ePrint](https://eprint.iacr.org/2020/1252) |
-| ATLAS: Efficient and Scalable MPC in the Honest Majority Setting. | series/lncs | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_9) · [ePrint](https://eprint.iacr.org/2021/833) |
+| Better Security-Efficiency Trade-Offs in Permutation-Based Two-Party Computation. | ASIACRYPT | 2021 | [论文](https://doi.org/10.1007/978-3-030-92075-3_10) · [ePrint](https://eprint.iacr.org/2022/080) |
+| Asymptotically-Good Arithmetic Secret Sharing over $\\mathbb {Z}/p^{\\ell }\\mathbb {Z}$ with Strong Multiplication and Its Applications to Efficient MPC. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_22) |
+| Adaptive Extractors and Their Application to Leakage Resilient Secret Sharing. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84252-9_20) · [ePrint](https://eprint.iacr.org/2020/1252) |
+| ATLAS: Efficient and Scalable MPC in the Honest Majority Setting. | CRYPTO | 2021 | [论文](https://doi.org/10.1007/978-3-030-84245-1_9) · [ePrint](https://eprint.iacr.org/2021/833) |
 | ABY2.0: Improved Mixed-Protocol Secure Two-Party Computation. | USENIX Security | 2021 | [论文](https://www.usenix.org/conference/usenixsecurity21/presentation/patra) · [ePrint](https://eprint.iacr.org/2020/1225) |
 | A Geometric Approach to Homomorphic Secret Sharing. | PKC | 2021 | [论文](https://doi.org/10.1007/978-3-030-75248-4_4) · [ePrint](https://eprint.iacr.org/2021/260) |
 | Two-Round Oblivious Transfer from CDH or LPN. | EUROCRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-45724-2_26) |
-| Towards Multiparty Computation Withstanding Coercion of All Parties. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-64378-2_15) · [ePrint](https://eprint.iacr.org/2020/1434) |
+| Towards Multiparty Computation Withstanding Coercion of All Parties. | TCC | 2020 | [论文](https://doi.org/10.1007/978-3-030-64378-2_15) · [ePrint](https://eprint.iacr.org/2020/1434) |
 | The Share Size of Secret-Sharing Schemes for Almost All Access Structures and Graphs. | TCC | 2020 | [论文](https://doi.org/10.1007/978-3-030-64381-2_18) · [ePrint](https://eprint.iacr.org/2020/664) |
 | The Round Complexity of Perfect MPC with Active Security and Optimal Resiliency. | FOCS | 2020 | [论文](https://doi.org/10.1109/FOCS46700.2020.00121) · [ePrint](https://eprint.iacr.org/2020/581) |
 | Telekine: Secure Computing with Cloud GPUs. | NSDI | 2020 | [论文](https://www.usenix.org/conference/nsdi20/presentation/hunt) |
-| Succinct Non-interactive Secure Computation. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-45724-2_8) |
-| Statistical Zaps and New Oblivious Transfer Protocols. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-45727-3_23) · [ePrint](https://eprint.iacr.org/2020/235) |
+| Succinct Non-interactive Secure Computation. | EUROCRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-45724-2_8) |
+| Statistical Zaps and New Oblivious Transfer Protocols. | EUROCRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-45727-3_23) · [ePrint](https://eprint.iacr.org/2020/235) |
 | Stacked Garbling - Garbled Circuit Proportional to Longest Execution Path. | CRYPTO | 2020 | [论文](https://doi.org/10.1007/978-3-030-56880-1_27) · [ePrint](https://eprint.iacr.org/2020/973) |
-| Simpler Statistically Sender Private Oblivious Transfer from Ideals of Cyclotomic Integers. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-64834-3_13) · [ePrint](https://eprint.iacr.org/2020/1413) |
+| Simpler Statistically Sender Private Oblivious Transfer from Ideals of Cyclotomic Integers. | ASIACRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-64834-3_13) · [ePrint](https://eprint.iacr.org/2020/1413) |
 | Secure Multi-party Computation of Differentially Private Median. | USENIX Security | 2020 | [论文](https://www.usenix.org/conference/usenixsecurity20/presentation/boehler) |
-| Secure MPC: Laziness Leads to GOD. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_5) |
+| Secure MPC: Laziness Leads to GOD. | ASIACRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_5) |
 | Round Optimal Secure Multiparty Computation from Minimal Assumptions. | TCC | 2020 | [论文](https://doi.org/10.1007/978-3-030-64378-2_11) |
-| Robust Secret Sharing with Almost Optimal Share Size and Security Against Rushing Adversaries. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-64381-2_17) |
+| Robust Secret Sharing with Almost Optimal Share Size and Security Against Rushing Adversaries. | TCC | 2020 | [论文](https://doi.org/10.1007/978-3-030-64381-2_17) |
 | Reversible Image Secret Sharing. | TIFS | 2020 | [论文](https://doi.org/10.1109/TIFS.2020.3001735) |
 | Resource-Restricted Cryptography: Revisiting MPC Bounds in the Proof-of-Work Era. | EUROCRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-45724-2_5) |
 | Reimagining Secret Sharing: Creating a Safer and More Versatile Primitive by Adding Authenticity, Correcting Errors, and Reducing Randomness Requirements. | PoPETs | 2020 | [论文](https://doi.org/10.2478/POPETS-2020-0082) · [ePrint](https://eprint.iacr.org/2020/800) |
-| Private Set Intersection in the Internet Setting from Lightweight Oblivious PRF. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-56877-1_2) · [ePrint](https://eprint.iacr.org/2020/729) |
-| PSI from PaXoS: Fast, Malicious Private Set Intersection. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-45724-2_25) · [ePrint](https://eprint.iacr.org/2020/193) |
+| Private Set Intersection in the Internet Setting from Lightweight Oblivious PRF. | CRYPTO | 2020 | [论文](https://doi.org/10.1007/978-3-030-56877-1_2) · [ePrint](https://eprint.iacr.org/2020/729) |
+| PSI from PaXoS: Fast, Malicious Private Set Intersection. | EUROCRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-45724-2_25) · [ePrint](https://eprint.iacr.org/2020/193) |
 | On the Power of Secure Two-Party Computation. | Journal of Cryptology | 2020 | [论文](https://doi.org/10.1007/S00145-019-09314-2) |
 | On the Exact Round Complexity of Best-of-Both-Worlds Multi-party Computation. | ASIACRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_3) · [ePrint](https://eprint.iacr.org/2020/1050) |
-| On the Complexity of Arithmetic Secret Sharing. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-64381-2_16) |
+| On the Complexity of Arithmetic Secret Sharing. | TCC | 2020 | [论文](https://doi.org/10.1007/978-3-030-64381-2_16) |
 | On Statistical Security in Two-Party Computation. | TCC | 2020 | [论文](https://doi.org/10.1007/978-3-030-64378-2_19) · [ePrint](https://eprint.iacr.org/2020/1428) |
 | Non-malleable Secret Sharing Against Bounded Joint-Tampering Attacks in the Plain Model. | CRYPTO | 2020 | [论文](https://doi.org/10.1007/978-3-030-56877-1_5) · [ePrint](https://eprint.iacr.org/2020/725) |
 | Non-malleable Codes, Extractors and Secret Sharing for Interleaved Tampering and Composition of Tampering. | TCC | 2020 | [论文](https://doi.org/10.1007/978-3-030-64381-2_21) |
 | Nearly Optimal Robust Secret Sharing Against Rushing Adversaries. | CRYPTO | 2020 | [论文](https://doi.org/10.1007/978-3-030-56877-1_6) |
-| Mr NISC: Multiparty Reusable Non-Interactive Secure Computation. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-64378-2_13) |
+| Mr NISC: Multiparty Reusable Non-Interactive Secure Computation. | TCC | 2020 | [论文](https://doi.org/10.1007/978-3-030-64378-2_13) |
 | More Efficient MPC from Improved Triple Generation and Authenticated Garbling. | ACM CCS | 2020 | [论文](https://doi.org/10.1145/3372297.3417285) |
-| Mon$\\mathbb {Z}\_{2^{k}}$a: Fast Maliciously Secure Two Party Computation on $\\mathbb {Z}\_{2^{k}}$. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-45388-6_13) |
+| Mon$\\mathbb {Z}\_{2^{k}}$a: Fast Maliciously Secure Two Party Computation on $\\mathbb {Z}\_{2^{k}}$. | PKC | 2020 | [论文](https://doi.org/10.1007/978-3-030-45388-6_13) |
 | Mind the Gap: Ceremonies for Applied Secret Sharing. | PoPETs | 2020 | [论文](https://doi.org/10.2478/POPETS-2020-0033) |
 | MPC with Synchronous Security and Asynchronous Responsiveness. | ASIACRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_4) |
 | MP-SPDZ: A Versatile Framework for Multi-Party Computation. | ACM CCS | 2020 | [论文](https://doi.org/10.1145/3372297.3417872) · [ePrint](https://eprint.iacr.org/2020/521) |
-| Lower Bounds for Leakage-Resilient Secret Sharing. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-45721-1_20) |
+| Lower Bounds for Leakage-Resilient Secret Sharing. | EUROCRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-45721-1_20) |
 | Low Cost Constant Round MPC Combining BMR and Oblivious Transfer. | Journal of Cryptology | 2020 | [论文](https://doi.org/10.1007/S00145-020-09355-Y) |
 | Is the Classical GMW Paradigm Practical? The Case of Non-Interactive Actively Secure 2PC. | ACM CCS | 2020 | [论文](https://doi.org/10.1145/3372297.3423366) |
 | Information-Theoretic 2-Round MPC Without Round Collapsing: Adaptive Security, and More. | TCC | 2020 | [论文](https://doi.org/10.1007/978-3-030-64378-2_18) · [ePrint](https://eprint.iacr.org/2020/1431) |
@@ -521,18 +521,18 @@
 | Extractors and Secret Sharing Against Bounded Collusion Protocols. | FOCS | 2020 | [论文](https://doi.org/10.1109/FOCS46700.2020.00117) |
 | Evolving Ramp Secret Sharing with a Small Gap. | EUROCRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-45721-1_19) |
 | Efficient and Secure Multiparty Computation from Fixed-Key Block Ciphers. | IEEE S&amp;P | 2020 | [论文](https://doi.org/10.1109/SP40000.2020.00016) |
-| Efficient and Round-Optimal Oblivious Transfer and Commitment with Adaptive Security. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_10) · [ePrint](https://eprint.iacr.org/2020/545) |
+| Efficient and Round-Optimal Oblivious Transfer and Commitment with Adaptive Security. | ASIACRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_10) · [ePrint](https://eprint.iacr.org/2020/545) |
 | Efficient Fully Secure Computation via Distributed Zero-Knowledge Proofs. | ASIACRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_9) · [ePrint](https://eprint.iacr.org/2020/1451) |
-| Efficient Constructions for Almost-Everywhere Secure Computation. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-45724-2_6) |
-| Differentially Private Set Union. | series/jmlr | 2020 | [论文](http://proceedings.mlr.press/v119/gopi20a.html) · [arXiv](https://arxiv.org/abs/2002.09745) |
+| Efficient Constructions for Almost-Everywhere Secure Computation. | EUROCRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-45724-2_6) |
+| Differentially Private Set Union. | ICML | 2020 | [论文](http://proceedings.mlr.press/v119/gopi20a.html) · [arXiv](https://arxiv.org/abs/2002.09745) |
 | Crowd Verifiable Zero-Knowledge and End-to-End Verifiable Multiparty Computation. | ASIACRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_24) · [ePrint](https://eprint.iacr.org/2020/711) |
-| Circuit Amortization Friendly Encodingsand Their Application to Statistically Secure Multiparty Computation. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_8) |
-| Blackbox Secret Sharing Revisited: A Coding-Theoretic Approach with Application to Expansionless Near-Threshold Schemes. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-45721-1_18) |
+| Circuit Amortization Friendly Encodingsand Their Application to Statistically Secure Multiparty Computation. | ASIACRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_8) |
+| Blackbox Secret Sharing Revisited: A Coding-Theoretic Approach with Application to Expansionless Near-Threshold Schemes. | EUROCRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-45721-1_18) |
 | Better secret sharing via robust conditional disclosure of secrets. | STOC | 2020 | [论文](https://doi.org/10.1145/3357713.3384293) · [ePrint](https://eprint.iacr.org/2020/080) |
 | An Optimal Distributed Discrete Log Protocol with Applications to Homomorphic Secret Sharing. | Journal of Cryptology | 2020 | [论文](https://doi.org/10.1007/S00145-019-09330-2) |
 | Always Have a Backup Plan: Fully Secure Synchronous MPC with Asynchronous Fallback. | CRYPTO | 2020 | [论文](https://doi.org/10.1007/978-3-030-56880-1_25) · [ePrint](https://eprint.iacr.org/2020/740) |
-| ALBATROSS: Publicly AttestabLe BATched Randomness Based On Secret Sharing. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_11) · [ePrint](https://eprint.iacr.org/2020/644) |
-| A Secret-Sharing Based MPC Protocol for Boolean Circuits with Good Amortized Complexity. | series/lncs | 2020 | [论文](https://doi.org/10.1007/978-3-030-64378-2_23) · [ePrint](https://eprint.iacr.org/2020/162) |
+| ALBATROSS: Publicly AttestabLe BATched Randomness Based On Secret Sharing. | ASIACRYPT | 2020 | [论文](https://doi.org/10.1007/978-3-030-64840-4_11) · [ePrint](https://eprint.iacr.org/2020/644) |
+| A Secret-Sharing Based MPC Protocol for Boolean Circuits with Good Amortized Complexity. | TCC | 2020 | [论文](https://doi.org/10.1007/978-3-030-64378-2_23) · [ePrint](https://eprint.iacr.org/2020/162) |
 | 1/p-Secure Multiparty Computation without an Honest Majority and the Best of Both Worlds. | Journal of Cryptology | 2020 | [论文](https://doi.org/10.1007/S00145-020-09354-Z) |
 
 <a id="tee-published"></a>
@@ -640,7 +640,7 @@
 | TeeBench: Seamless Benchmarking in Trusted Execution Environments. | SIGMOD | 2023 | [论文](https://doi.org/10.1145/3555041.3589726) |
 | TSC-VEE: A TrustZone-Based Smart Contract Virtual Execution Environment. | TPDS | 2023 | [论文](https://doi.org/10.1109/TPDS.2023.3263882) |
 | TEESec: Pre-Silicon Vulnerability Discovery for Trusted Execution Environments. | ISCA | 2023 | [论文](https://doi.org/10.1145/3579371.3589070) |
-| TEE-based General-purpose Computational Backend for Secure Delegated Data Processing. | SIGMOD | 2023 | [论文](https://doi.org/10.1145/3626757) |
+| TEE-based General-purpose Computational Backend for Secure Delegated Data Processing. | PACMMOD / SIGMOD | 2023 | [论文](https://doi.org/10.1145/3626757) |
 | T-Counter: Trustworthy and Efficient CPU Resource Measurement Using SGX in the Cloud. | TDSC | 2023 | [论文](https://doi.org/10.1109/TDSC.2022.3145814) |
 | SymGX: Detecting Cross-boundary Pointer Vulnerabilities of SGX Applications via Static Symbolic Execution. | ACM CCS | 2023 | [论文](https://doi.org/10.1145/3576915.3623213) |
 | Shielding Graph for eXact Analytics With SGX. | TDSC | 2023 | [论文](https://doi.org/10.1109/TDSC.2023.3241164) |
@@ -652,7 +652,7 @@
 | Olive: Oblivious Federated Learning on Trusted Execution Environment Against the Risk of Sparsification. | PVLDB | 2023 | [论文](https://doi.org/10.14778/3603581.3603583) · [arXiv](https://arxiv.org/abs/2202.07165) |
 | MyTEE: Own the Trusted Execution Environment on Embedded Devices. | NDSS | 2023 | [论文](https://www.ndss-symposium.org/ndss-paper/mytee-own-the-trusted-execution-environment-on-embedded-devices/) |
 | EnigMap: External-Memory Oblivious Map for Secure Enclaves. | USENIX Security | 2023 | [论文](https://www.usenix.org/conference/usenixsecurity23/presentation/tinoco) · [ePrint](https://eprint.iacr.org/2022/1083) |
-| Enabling Secure and Efficient Data Analytics Pipeline Evolution with Trusted Execution Environment. | VLDB | 2023 | [论文](https://doi.org/10.14778/3603581.3603589) |
+| Enabling Secure and Efficient Data Analytics Pipeline Evolution with Trusted Execution Environment. | PVLDB | 2023 | [论文](https://doi.org/10.14778/3603581.3603589) |
 | ESMAC: Efficient and Secure Multi-Owner Access Control With TEE in Multi-Level Data Processing. | TDSC | 2023 | [论文](https://doi.org/10.1109/TDSC.2022.3215977) |
 | ENCIDER: Detecting Timing and Cache Side Channels in SGX Enclaves and Cryptographic APIs. | TDSC | 2023 | [论文](https://doi.org/10.1109/TDSC.2022.3160346) |
 | Cracking-Like Join for Trusted Execution Environments. | PVLDB | 2023 | [论文](https://doi.org/10.14778/3598581.3598602) |
@@ -720,7 +720,7 @@
 | Enabling Rack-scale Confidential Computing using Heterogeneous Trusted Execution Environment. | IEEE S&amp;P | 2020 | [论文](https://doi.org/10.1109/SP40000.2020.00054) |
 | Civet: An Efficient Java Partitioning Framework for Hardware Enclaves. | USENIX Security | 2020 | [论文](https://www.usenix.org/conference/usenixsecurity20/presentation/tsai) |
 | COIN Attacks: On Insecurity of Enclave Untrusted Interfaces in SGX. | ASPLOS | 2020 | [论文](https://doi.org/10.1145/3373376.3378486) |
-| Bluethunder: A 2-level Directional Predictor Based Side-Channel Attack against SGX. | CHES | 2020 | [论文](https://doi.org/10.13154/TCHES.V2020.I1.321-347) |
+| Bluethunder: A 2-level Directional Predictor Based Side-Channel Attack against SGX. | TCHES | 2020 | [论文](https://doi.org/10.13154/TCHES.V2020.I1.321-347) |
 | An Off-Chip Attack on Hardware Enclaves via the Memory Bus. | USENIX Security | 2020 | [论文](https://www.usenix.org/conference/usenixsecurity20/presentation/lee-dayeol) |
 
 <a id="mpc-tee-published"></a>

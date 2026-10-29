@@ -181,10 +181,13 @@ def parse_dblp_sparql(data: dict, venues: dict) -> list[dict]:
             raise SourceError("Incomplete DBLP SPARQL binding")
         key = url.removeprefix("https://dblp.org/rec/")
         stream = value("stream").removeprefix("https://dblp.org/streams/")
+        venue = venues.get("/".join(key.split("/")[:2])) or venues.get(stream)
         if key not in grouped:
             grouped[key] = {"title": clean_text(value("title")), "abstract": "", "authors": [], "records": [{
                 "source": "dblp", "id": key, "year": value("year"), "updated": "", "doi": value("doi"),
-                "url": value("doi") or value("ee") or url, "venue": venues.get(stream, stream)}]}
+                "url": value("doi") or value("ee") or url, "venue": venue or stream}]}
+        elif venue:
+            grouped[key]["records"][0]["venue"] = venue
         if value("author") and value("author") not in grouped[key]["authors"]:
             grouped[key]["authors"].append(clean_text(value("author")))
     return list(grouped.values())

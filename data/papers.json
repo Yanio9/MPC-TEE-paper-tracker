@@ -2255,7 +2255,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-56877-1_2",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2020"
         },
         {
@@ -2495,7 +2495,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-92075-3_12",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2021"
         },
         {
@@ -3117,7 +3117,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-64381-2_16",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2020"
         }
       ],
@@ -3541,7 +3541,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84245-1_14",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         },
         {
@@ -3747,7 +3747,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-38557-5_14",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2023"
         },
         {
@@ -4648,7 +4648,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84242-0_5",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         },
         {
@@ -8700,7 +8700,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-95-5116-3_19",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2026"
         },
         {
@@ -9722,7 +9722,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-58751-1_10",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2024"
         },
         {
@@ -12693,7 +12693,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.14778/3603581.3603589",
-          "venue": "VLDB",
+          "venue": "PVLDB",
           "year": "2023"
         }
       ],
@@ -14225,7 +14225,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-30545-0_10",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2023"
         },
         {
@@ -16652,7 +16652,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84245-1_11",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         }
       ],
@@ -17538,7 +17538,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-38545-2_11",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2023"
         },
         {
@@ -17739,7 +17739,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-45721-1_20",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2020"
         }
       ],
@@ -17779,7 +17779,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-58740-5_7",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2024"
         },
         {
@@ -19170,7 +19170,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84245-1_12",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         },
         {
@@ -21043,7 +21043,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-68397-8_12",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2024"
         },
         {
@@ -23141,7 +23141,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-78023-3_8",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2025"
         },
         {
@@ -23776,7 +23776,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-96-0941-3_3",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2025"
         },
         {
@@ -24943,7 +24943,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84252-9_22",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         }
       ],
@@ -27378,7 +27378,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-64378-2_13",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2020"
         }
       ],
@@ -27539,7 +27539,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-01884-7_6",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2025"
         }
       ],
@@ -28533,7 +28533,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84245-1_9",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         },
         {
@@ -33224,7 +33224,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-64840-4_10",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2020"
         },
         {
@@ -34446,7 +34446,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-78023-3_17",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2025"
         },
         {
@@ -37975,7 +37975,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-06944-4_3",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2022"
         },
         {
@@ -38112,7 +38112,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-57722-2_14",
-          "venue": "series/lncs",
+          "venue": "PKC",
           "year": "2024"
         },
         {
@@ -39936,7 +39936,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-45388-6_13",
-          "venue": "series/lncs",
+          "venue": "PKC",
           "year": "2020"
         }
       ],
@@ -40161,7 +40161,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-31371-4_7",
-          "venue": "series/lncs",
+          "venue": "PKC",
           "year": "2023"
         },
         {
@@ -41508,7 +41508,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-38557-5_5",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2023"
         },
         {
@@ -41556,7 +41556,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-15802-5_13",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2022"
         },
         {
@@ -46348,7 +46348,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-58740-5_12",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2024"
         },
         {
@@ -47607,7 +47607,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-78023-3_13",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2025"
         }
       ],
@@ -47999,7 +47999,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-96-0941-3_4",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2025"
         },
         {
@@ -48605,7 +48605,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84252-9_23",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         },
         {
@@ -53013,7 +53013,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84252-9_17",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         },
         {
@@ -53283,7 +53283,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-64381-2_17",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2020"
         }
       ],
@@ -53788,7 +53788,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-45721-1_18",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2020"
         }
       ],
@@ -54489,7 +54489,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-64840-4_11",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2020"
         },
         {
@@ -54703,7 +54703,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-30617-4_9",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2023"
         },
         {
@@ -56319,7 +56319,7 @@
           "source": "dblp",
           "updated": "",
           "url": "http://proceedings.mlr.press/v119/gopi20a.html",
-          "venue": "series/jmlr",
+          "venue": "ICML",
           "year": "2020"
         }
       ],
@@ -56775,7 +56775,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-45724-2_25",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2020"
         },
         {
@@ -56825,7 +56825,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-91092-0_13",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2025"
         },
         {
@@ -57278,7 +57278,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-77886-6_25",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2021"
         },
         {
@@ -57822,7 +57822,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-64840-4_5",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2020"
         }
       ],
@@ -58616,7 +58616,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84245-1_8",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         },
         {
@@ -58864,7 +58864,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-30620-4_7",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2023"
         },
         {
@@ -60893,7 +60893,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-58737-5_11",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2024"
         }
       ],
@@ -61213,7 +61213,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-95-5119-4_18",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2026"
         }
       ],
@@ -66333,7 +66333,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-96-0938-3_10",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2025"
         },
         {
@@ -71267,7 +71267,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-15802-5_7",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2022"
         },
         {
@@ -74431,7 +74431,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-48618-0_12",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2023"
         },
         {
@@ -79735,7 +79735,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-99-8730-6_9",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2023"
         }
       ],
@@ -82156,7 +82156,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-45727-3_23",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2020"
         },
         {
@@ -82982,7 +82982,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-77886-6_26",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2021"
         },
         {
@@ -85932,7 +85932,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-15985-5_17",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2022"
         },
         {
@@ -85981,7 +85981,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-64378-2_15",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2020"
         },
         {
@@ -87620,7 +87620,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-45724-2_8",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2020"
         }
       ],
@@ -87991,7 +87991,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-12287-2_1",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2026"
         },
         {
@@ -92231,7 +92231,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-01884-7_13",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2025"
         },
         {
@@ -92282,7 +92282,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-01884-7_4",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2025"
         },
         {
@@ -94833,7 +94833,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-12293-3_13",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2026"
         },
         {
@@ -98006,7 +98006,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-64834-3_13",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2020"
         },
         {
@@ -99306,7 +99306,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.46586/TCHES.V2023.I2.54-79",
-          "venue": "CHES",
+          "venue": "TCHES",
           "year": "2023"
         },
         {
@@ -99737,7 +99737,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-48618-0_3",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2023"
         },
         {
@@ -99823,7 +99823,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-45724-2_6",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2020"
         }
       ],
@@ -101616,7 +101616,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-30545-0_11",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2023"
         },
         {
@@ -102053,7 +102053,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-30617-4_6",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2023"
         },
         {
@@ -104201,7 +104201,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-92075-3_11",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2021"
         },
         {
@@ -105258,7 +105258,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-78023-3_6",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2025"
         },
         {
@@ -110347,7 +110347,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-64378-2_23",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2020"
         },
         {
@@ -112093,7 +112093,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-90453-1_12",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2021"
         },
         {
@@ -113638,7 +113638,7 @@
           "id": "conf/tcc/AlonCOS20",
           "source": "dblp",
           "url": "https://doi.org/10.1007/978-3-030-64378-2_22",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2020"
         },
         {
@@ -113850,7 +113850,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-95-5116-3_10",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2026"
         },
         {
@@ -114272,7 +114272,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-68397-8_8",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2024"
         },
         {
@@ -116219,7 +116219,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-38557-5_20",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2023"
         },
         {
@@ -116544,7 +116544,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84252-9_20",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         },
         {
@@ -119893,7 +119893,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-92075-3_7",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2021"
         },
         {
@@ -120169,7 +120169,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-99-8724-5_7",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2023"
         },
         {
@@ -120797,7 +120797,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-68400-5_2",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2024"
         },
         {
@@ -124640,7 +124640,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-58751-1_11",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2024"
         },
         {
@@ -126318,7 +126318,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-31368-4_14",
-          "venue": "series/lncs",
+          "venue": "PKC",
           "year": "2023"
         },
         {
@@ -126620,7 +126620,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-12293-3_15",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2026"
         },
         {
@@ -127362,7 +127362,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84242-0_17",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         },
         {
@@ -129192,7 +129192,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-38557-5_10",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2023"
         },
         {
@@ -132318,7 +132318,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-22365-5_5",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2022"
         },
         {
@@ -135778,7 +135778,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-77883-5_2",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2021"
         },
         {
@@ -136221,7 +136221,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-01884-7_19",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2025"
         },
         {
@@ -137411,7 +137411,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84252-9_21",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         }
       ],
@@ -138173,7 +138173,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-01884-7_21",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2025"
         },
         {
@@ -138260,7 +138260,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-38557-5_3",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2023"
         },
         {
@@ -139351,7 +139351,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-77886-6_18",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2021"
         },
         {
@@ -146167,7 +146167,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-91131-6_10",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2025"
         },
         {
@@ -146644,7 +146644,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-48615-9_16",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2023"
         },
         {
@@ -149855,7 +149855,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-99-8721-4_11",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2023"
         },
         {
@@ -150826,7 +150826,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-48618-0_13",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2023"
         },
         {
@@ -151745,7 +151745,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-91095-1_9",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2025"
         },
         {
@@ -152505,7 +152505,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-12293-3_14",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2026"
         },
         {
@@ -153956,7 +153956,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-58740-5_14",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2024"
         },
         {
@@ -154328,7 +154328,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-01884-7_12",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2025"
         },
         {
@@ -154375,7 +154375,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-06944-4_6",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2022"
         },
         {
@@ -157092,7 +157092,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-99-8721-4_14",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2023"
         },
         {
@@ -159069,7 +159069,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-90459-3_24",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2021"
         },
         {
@@ -160243,7 +160243,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-38557-5_19",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2023"
         },
         {
@@ -162532,7 +162532,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-84245-1_7",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2021"
         },
         {
@@ -163528,7 +163528,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-90459-3_21",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2021"
         },
         {
@@ -165284,7 +165284,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-58737-5_12",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2024"
         },
         {
@@ -165370,7 +165370,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-06944-4_16",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2022"
         },
         {
@@ -165701,7 +165701,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-64840-4_8",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2020"
         }
       ],
@@ -166783,7 +166783,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-06944-4_14",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2022"
         },
         {
@@ -167525,7 +167525,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-01884-7_14",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2025"
         },
         {
@@ -167578,7 +167578,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.46586/TCHES.V2021.I4.215-238",
-          "venue": "CHES",
+          "venue": "TCHES",
           "year": "2021"
         },
         {
@@ -168084,7 +168084,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-95-5116-3_11",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2026"
         },
         {
@@ -168253,7 +168253,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-22368-6_4",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2022"
         },
         {
@@ -170194,7 +170194,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-91092-0_1",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2025"
         },
         {
@@ -171651,7 +171651,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.13154/TCHES.V2020.I1.321-347",
-          "venue": "CHES",
+          "venue": "TCHES",
           "year": "2020"
         }
       ],
@@ -171702,7 +171702,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-032-01884-7_1",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2025"
         },
         {
@@ -173770,7 +173770,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://proceedings.mlr.press/v235/wu24d.html",
-          "venue": "series/jmlr",
+          "venue": "ICML",
           "year": "2024"
         }
       ],
@@ -174333,7 +174333,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-30545-0_9",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2023"
         },
         {
@@ -175742,7 +175742,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-58740-5_8",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2024"
         },
         {
@@ -175790,7 +175790,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-07085-3_7",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2022"
         }
       ],
@@ -175830,7 +175830,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-22365-5_7",
-          "venue": "series/lncs",
+          "venue": "TCC",
           "year": "2022"
         },
         {
@@ -177347,7 +177347,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-68397-8_5",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2024"
         },
         {
@@ -181241,7 +181241,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-77886-6_30",
-          "venue": "series/lncs",
+          "venue": "EUROCRYPT",
           "year": "2021"
         },
         {
@@ -182051,7 +182051,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-15802-5_12",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2022"
         },
         {
@@ -182580,7 +182580,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1145/3626757",
-          "venue": "SIGMOD",
+          "venue": "PACMMOD / SIGMOD",
           "year": "2023"
         }
       ],
@@ -183023,7 +183023,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-030-92075-3_10",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2021"
         },
         {
@@ -184602,7 +184602,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-981-99-8721-4_8",
-          "venue": "series/lncs",
+          "venue": "ASIACRYPT",
           "year": "2023"
         },
         {
@@ -184855,7 +184855,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-31371-4_1",
-          "venue": "series/lncs",
+          "venue": "PKC",
           "year": "2023"
         },
         {
@@ -187423,7 +187423,7 @@
           "source": "dblp",
           "updated": "",
           "url": "https://doi.org/10.1007/978-3-031-38557-5_15",
-          "venue": "series/lncs",
+          "venue": "CRYPTO",
           "year": "2023"
         },
         {

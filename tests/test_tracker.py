@@ -197,6 +197,14 @@ class SourceTests(unittest.TestCase):
         self.assertIn("streams/conf/crypto", query)
         self.assertNotIn("federate", query)
 
+    def test_sparql_conference_name_is_not_replaced_by_book_series(self):
+        cfg = load_config(ROOT / "config.yaml")
+        row = {key: {"value": value} for key, value in {
+            "paper": "https://dblp.org/rec/conf/crypto/Example26", "title": "Secure computation",
+            "year": "2026", "stream": "https://dblp.org/streams/series/lncs"}.items()}
+        parsed = parse_dblp_sparql({"results": {"bindings": [row]}}, cfg["sources"]["dblp"]["venues"])
+        self.assertEqual(parsed[0]["records"][0]["venue"], "CRYPTO")
+
     def test_start_year_remains_2020_in_future_runs(self):
         cfg = load_config(ROOT / "config.yaml")
         self.assertEqual(year_bounds(cfg, date(2030, 1, 1)), (2020, 2031))
