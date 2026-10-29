@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **Efficient Fully Secure Computation via Distributed Zero-Knowledge Proofs**
+- **Efficient Fully Secure Computation via Distributed Zero-Knowledge Proofs.**
   2020-11-19 · MPC · 含会议/期刊记录 · [ASIACRYPT](https://doi.org/10.1007/978-3-030-64840-4_9) · [IACR ePrint](https://eprint.iacr.org/2020/1451)
   Elette Boyle, Yuval Ishai, Ariel Nof, Niv Gilboa
 
@@ -14,7 +14,7 @@
 
   </details>
 
-- **Towards Multiparty Computation Withstanding Coercion of All Parties**
+- **Towards Multiparty Computation Withstanding Coercion of All Parties.**
   2020-11-15 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-030-64378-2_15) · [IACR ePrint](https://eprint.iacr.org/2020/1434)
   Oxana Poburinnaya, Ran Canetti
 
@@ -26,7 +26,7 @@
 
   </details>
 
-- **Simpler Statistically Sender Private Oblivious Transfer from Ideals of Cyclotomic Integers**
+- **Simpler Statistically Sender Private Oblivious Transfer from Ideals of Cyclotomic Integers.**
   2020-11-15 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-030-64834-3_13) · [IACR ePrint](https://eprint.iacr.org/2020/1413)
   Daniele Micciancio, Jessica Sorrell
 
@@ -38,7 +38,7 @@
 
   </details>
 
-- **On Statistical Security in Two-Party Computation**
+- **On Statistical Security in Two-Party Computation.**
   2020-11-15 · MPC · 含会议/期刊记录 · [TCC](https://doi.org/10.1007/978-3-030-64378-2_19) · [IACR ePrint](https://eprint.iacr.org/2020/1428)
   Muhammad Haris Mughees, Dakshita Khurana
 
@@ -50,7 +50,7 @@
 
   </details>
 
-- **Information-Theoretic 2-Round MPC without Round Collapsing: Adaptive Security, and More**
+- **Information-Theoretic 2-Round MPC Without Round Collapsing: Adaptive Security, and More.**
   2020-11-15 · MPC · 含会议/期刊记录 · [TCC](https://doi.org/10.1007/978-3-030-64378-2_18) · [IACR ePrint](https://eprint.iacr.org/2020/1431)
   Tianren Liu, Huijia Lin, Hoeteck Wee
 
@@ -62,7 +62,7 @@
 
   </details>
 
-- **On the Exact Round Complexity of Best-of-both-Worlds Multi-party Computation**
+- **On the Exact Round Complexity of Best-of-Both-Worlds Multi-party Computation.**
   2020-09-01 · MPC · 含会议/期刊记录 · [ASIACRYPT](https://doi.org/10.1007/978-3-030-64840-4_3) · [IACR ePrint](https://eprint.iacr.org/2020/1050)
   Divya Ravi, Swati Singla, Arpita Patra
 
@@ -74,7 +74,7 @@
 
   </details>
 
-- **Stacked Garbling: Garbled Circuit Proportional to Longest Execution Path**
+- **Stacked Garbling - Garbled Circuit Proportional to Longest Execution Path.**
   2020-08-18 · MPC · 含会议/期刊记录 · [CRYPTO](https://doi.org/10.1007/978-3-030-56880-1_27) · [IACR ePrint](https://eprint.iacr.org/2020/973)
   David Heath, Vladimir Kolesnikov
 
@@ -86,7 +86,7 @@
 
   </details>
 
-- **Reimagining Secret Sharing: Creating a Safer and More Versatile Primitive by Adding Authenticity, Correcting Errors, and Reducing Randomness Requirements**
+- **Reimagining Secret Sharing: Creating a Safer and More Versatile Primitive by Adding Authenticity, Correcting Errors, and Reducing Randomness Requirements.**
   2020-06-27 · MPC · 含会议/期刊记录 · [PoPETs](https://doi.org/10.2478/POPETS-2020-0082) · [IACR ePrint](https://eprint.iacr.org/2020/800)
   Wei Dai, Phillip Rogaway, Mihir Bellare
 
@@ -98,7 +98,7 @@
 
   </details>
 
-- **Always Have a Backup Plan: Fully Secure Synchronous MPC with Asynchronous Fallback**
+- **Always Have a Backup Plan: Fully Secure Synchronous MPC with Asynchronous Fallback.**
   2020-06-18 · MPC · 含会议/期刊记录 · [CRYPTO](https://doi.org/10.1007/978-3-030-56880-1_25) · [IACR ePrint](https://eprint.iacr.org/2020/740)
   Julian Loss, Chen-Da Liu-Zhang, Erica Blum
 
@@ -110,7 +110,7 @@
 
   </details>
 
-- **Private Set Intersection in the Internet Setting From Lightweight Oblivious PRF**
+- **Private Set Intersection in the Internet Setting from Lightweight Oblivious PRF.**
   2020-06-17 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-030-56877-1_2) · [IACR ePrint](https://eprint.iacr.org/2020/729)
   Melissa Chase, Peihan Miao
 
@@ -122,7 +122,7 @@
 
   </details>
 
-- **Non-Malleable Secret Sharing against Bounded Joint-Tampering Attacks in the Plain Model**
+- **Non-malleable Secret Sharing Against Bounded Joint-Tampering Attacks in the Plain Model.**
   2020-06-16 · MPC · 含会议/期刊记录 · [CRYPTO](https://doi.org/10.1007/978-3-030-56877-1_5) · [IACR ePrint](https://eprint.iacr.org/2020/725)
   Maciej Obremski, Antonio Faonio, Gianluca Brian, Daniele Venturi, Mark Simkin
 
@@ -134,7 +134,7 @@
 
   </details>
 
-- **Crowd Verifiable Zero-Knowledge and End-to-end Verifiable Multiparty Computation**
+- **Crowd Verifiable Zero-Knowledge and End-to-End Verifiable Multiparty Computation.**
   2020-06-14 · MPC · 含会议/期刊记录 · [ASIACRYPT](https://doi.org/10.1007/978-3-030-64840-4_24) · [IACR ePrint](https://eprint.iacr.org/2020/711)
   Foteini Baldimtsi, Aggelos Kiayias, Bingsheng Zhang, Thomas Zacharias
 
@@ -146,7 +146,7 @@
 
   </details>
 
-- **The Share Size of Secret-Sharing Schemes for Almost All Access Structures and Graphs**
+- **The Share Size of Secret-Sharing Schemes for Almost All Access Structures and Graphs.**
   2020-06-03 · MPC · 含会议/期刊记录 · [TCC](https://doi.org/10.1007/978-3-030-64381-2_18) · [IACR ePrint](https://eprint.iacr.org/2020/664)
   Oriol Farràs, Amos Beimel
 
@@ -158,7 +158,7 @@
 
   </details>
 
-- **ALBATROSS: publicly AttestabLe BATched Randomness based On Secret Sharing**
+- **ALBATROSS: Publicly AttestabLe BATched Randomness Based On Secret Sharing.**
   2020-06-03 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-030-64840-4_11) · [IACR ePrint](https://eprint.iacr.org/2020/644)
   Bernardo Machado David, Ignacio Cascudo, Bernardo David
 
@@ -170,7 +170,7 @@
 
   </details>
 
-- **The Round Complexity of Perfect MPC with Active Security and Optimal Resiliency**
+- **The Round Complexity of Perfect MPC with Active Security and Optimal Resiliency.**
   2020-05-18 · MPC · 含会议/期刊记录 · [FOCS](https://doi.org/10.1109/FOCS46700.2020.00121) · [IACR ePrint](https://eprint.iacr.org/2020/581)
   Eliran Kachlon, Benny Applebaum, Arpita Patra
 
@@ -182,7 +182,7 @@
 
   </details>
 
-- **Efficient and Round-Optimal Oblivious Transfer and Commitment with Adaptive Security**
+- **Efficient and Round-Optimal Oblivious Transfer and Commitment with Adaptive Security.**
   2020-05-15 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-030-64840-4_10) · [IACR ePrint](https://eprint.iacr.org/2020/545)
   Pratik Sarkar, Xiao Wang, Ran Canetti
 
@@ -194,7 +194,7 @@
 
   </details>
 
-- **MP-SPDZ: A Versatile Framework for Multi-Party Computation**
+- **MP-SPDZ: A Versatile Framework for Multi-Party Computation.**
   2020-05-05 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3372297.3417872) · [IACR ePrint](https://eprint.iacr.org/2020/521)
   Marcel Keller
 
@@ -206,7 +206,7 @@
 
   </details>
 
-- **Statistical Zaps and New Oblivious Transfer Protocols**
+- **Statistical Zaps and New Oblivious Transfer Protocols.**
   2020-02-24 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-030-45727-3_23) · [IACR ePrint](https://eprint.iacr.org/2020/235)
   Zhengzhong Jin, Giulio Malavolta, Abhishek Jain, Vipul Goyal
 
@@ -218,7 +218,7 @@
 
   </details>
 
-- **Differentially Private Set Union**
+- **Differentially Private Set Union.**
   2020-02-22 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2002.09745) · [series/jmlr](http://proceedings.mlr.press/v119/gopi20a.html)
   Sivakanth Gopi, Sergey Yekhanin, Judy Hanwen Shen, Pankaj Gulhane, Janardhan Kulkarni, Milad Shokouhi
 
@@ -230,7 +230,7 @@
 
   </details>
 
-- **PSI from PaXoS: Fast, Malicious Private Set Intersection**
+- **PSI from PaXoS: Fast, Malicious Private Set Intersection.**
   2020-02-18 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-030-45724-2_25) · [IACR ePrint](https://eprint.iacr.org/2020/193)
   Ni Trieu, Avishay Yanai, Benny Pinkas, Mike Rosulek
 
@@ -242,7 +242,7 @@
 
   </details>
 
-- **Guaranteed Output Delivery Comes Free in Honest Majority MPC**
+- **Guaranteed Output Delivery Comes Free in Honest Majority MPC.**
   2020-02-18 · MPC · 含会议/期刊记录 · [CRYPTO](https://doi.org/10.1007/978-3-030-56880-1_22) · [IACR ePrint](https://eprint.iacr.org/2020/189)
   Vipul Goyal, Chenzhi Zhu, Yifan Song
 
@@ -254,7 +254,7 @@
 
   </details>
 
-- **A Secret-Sharing Based MPC Protocol for Boolean Circuits with Good Amortized Complexity**
+- **A Secret-Sharing Based MPC Protocol for Boolean Circuits with Good Amortized Complexity.**
   2020-02-13 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-030-64378-2_23) · [IACR ePrint](https://eprint.iacr.org/2020/162)
   Ignacio Cascudo, Jaron Skovsted Gundersen
 
@@ -266,7 +266,7 @@
 
   </details>
 
-- **Better Secret-Sharing via Robust Conditional Disclosure of Secrets**
+- **Better secret sharing via robust conditional disclosure of secrets.**
   2020-01-28 · MPC · 含会议/期刊记录 · [STOC](https://doi.org/10.1145/3357713.3384293) · [IACR ePrint](https://eprint.iacr.org/2020/080)
   Naty Peter, Oded Nir, Amos Beimel, Benny Applebaum
 

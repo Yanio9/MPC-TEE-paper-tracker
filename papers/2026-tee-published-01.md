@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **More Granular, Less Trust: Enforcing Intra-Process Isolation with Arm CCA in an Untrusted Management Environment**
+- **More Granular, Less Trust: Enforcing Intra-Process Isolation With Arm CCA in an Untrusted Management Environment.**
   2026-08-20 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2608.20584) · [TIFS](https://doi.org/10.1109/TIFS.2025.3634981)
   Kun Sun, Zhouqi Jiang, Zhaohui Chen, Jie Wang, Wei Zhou, Shiqi Liu, Yulai Xie
 
@@ -14,7 +14,7 @@
 
   </details>
 
-- **MATEE: Efficiently Bridging the Semantic Gap in TrustZone via Arm Pointer Authentication**
+- **MaTEE: Efficiently Bridging the Semantic Gap in TrustZone via Arm Pointer Authentication.**
   2026-08-20 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2608.20583) · [TDSC](https://doi.org/10.1109/TDSC.2024.3445296)
   Yongpeng Gao, Xiang Li, Jie Wang, Jiajin Hu, Shiqi Liu
 
@@ -26,7 +26,7 @@
 
   </details>
 
-- **DIST-FL: Enhancing Security for TEE-based Aggregation in Federated Learning**
+- **DisT-FL: Enhancing Security for TEE-Based Aggregation in Federated Learning.**
   2026-06-03 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2606.04899) · [TIFS](https://doi.org/10.1109/TIFS.2026.3715108)
   Guoxing Chen, Jianzong Wang, Jianyu Niu, Zhen Huang, Guanlong Wu, Ju Yang, Yinqian Zhang
 
@@ -62,7 +62,7 @@
   2026 · TEE · 含会议/期刊记录 · [TDSC](https://doi.org/10.1109/TDSC.2026.3693739)
   Zhen Ling, Huaiyu Yan, Ming Yang, Xinhui Shao, Junzhou Luo, Ping Jiang, Xinwen Fu
 
-- **Teamwork Makes TEE Work: Open and Resilient Remote Attestation on Decentralized Trust**
+- **Teamwork Makes TEE Work: Open and Resilient Remote Attestation on Decentralized Trust.**
   2026 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2402.08908) · [TDSC](https://doi.org/10.1109/TDSC.2025.3636884)
   Dawu Gu, Chi Zhang, Shipei Qu, Xiaolin Zhang, Kailun Qin, Tengfei Wang
 
@@ -74,7 +74,7 @@
 
   </details>
 
-- **TZ-LLM: Protecting On-Device Large Language Models with Arm TrustZone**
+- **TZ-LLM: Protecting On-Device Large Language Models with Arm TrustZone.**
   2026 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2511.13717) · [EuroSys](https://doi.org/10.1145/3767295.3769334)
   Jiacheng Shi, Zhichao Hua, Jinyu Gu, Zihan Zhao, Yang Yu, Xunjie Wang
 
@@ -166,7 +166,7 @@
   2026 · TEE · 含会议/期刊记录 · [TDSC](https://doi.org/10.1109/TDSC.2026.3670134)
   Jie Cui, Junjie Liu, Qingyang Zhang, Fengqun Wang, Jiaxin Li, Hong Zhong
 
-- **AEX-NStep: Probabilistic Interrupt Counting Attacks on Intel SGX**
+- **AEX-NStep: Probabilistic Interrupt Counting Attacks on Intel SGX.**
   2026 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2510.14675) · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00035)
   Ivan Puddu, Nicolas Dutly, Friederike Groschupp, Kari Kostiainen, Srdjan Capkun
 

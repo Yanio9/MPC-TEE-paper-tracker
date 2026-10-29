@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **On Perfectly Secure Two-Party Computation for Symmetric Functionalities with Correlated Randomness**
+- **On Perfectly Secure Two-Party Computation for Symmetric Functionalities with Correlated Randomness.**
   2022-11-07 · MPC · 含会议/期刊记录 · [TCC](https://doi.org/10.1007/978-3-031-22365-5_19) · [IACR ePrint](https://eprint.iacr.org/2022/1504)
   Bar Alon, Olga Nissenbaum, Anat Paskin-Cherniavsky, Eran Omri, Arpita Patra
 
@@ -14,7 +14,7 @@
 
   </details>
 
-- **Oblivious-Transfer Complexity of Noisy Coin-Toss via Secure Zero Communication Reductions**
+- **Oblivious-Transfer Complexity of Noisy Coin-Toss via Secure Zero Communication Reductions.**
   2022-11-07 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-22368-6_4) · [IACR ePrint](https://eprint.iacr.org/2022/1539)
   Manoj Prabhakaran, Saumya Goyal, Varun Narayanan
 
@@ -26,7 +26,7 @@
 
   </details>
 
-- **TurboPack: Honest Majority MPC with Constant Online Communication**
+- **TurboPack: Honest Majority MPC with Constant Online Communication.**
   2022-10-04 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3548606.3560633) · [IACR ePrint](https://eprint.iacr.org/2022/1316)
   Daniel Escudero, Vipul Goyal, Antigoni Polychroniadou, Yifan Song
 
@@ -38,7 +38,7 @@
 
   </details>
 
-- **Round-Optimal Black-Box Secure Computation from Two-Round Malicious OT**
+- **Round-Optimal Black-Box Secure Computation from Two-Round Malicious OT.**
   2022-09-28 · MPC · 含会议/期刊记录 · [TCC](https://doi.org/10.1007/978-3-031-22365-5_16) · [IACR ePrint](https://eprint.iacr.org/2022/1288)
   Akshayaram Srinivasan, Yuval Ishai, Dakshita Khurana, Amit Sahai
 
@@ -50,7 +50,7 @@
 
   </details>
 
-- **Fully-Secure MPC with Minimal Trust**
+- **Fully-Secure MPC with Minimal Trust.**
   2022-09-20 · MPC · 含会议/期刊记录 · [TCC](https://doi.org/10.1007/978-3-031-22365-5_17) · [IACR ePrint](https://eprint.iacr.org/2022/1248)
   Divya Ravi, Sikhar Patranabis, Akshayaram Srinivasan, Yuval Ishai, Arpita Patra
 
@@ -62,7 +62,7 @@
 
   </details>
 
-- **Statistical Security in Two-Party Computation Revisited**
+- **Statistical Security in Two-Party Computation Revisited.**
   2022-09-09 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-22365-5_7) · [IACR ePrint](https://eprint.iacr.org/2022/1190)
   Saikrishna Badrinarayanan, Pratik Sarkar, Sikhar Patranabis
 
@@ -74,7 +74,7 @@
 
   </details>
 
-- **Structure-Aware Private Set Intersection, With Applications to Fuzzy Matching**
+- **Structure-Aware Private Set Intersection, with Applications to Fuzzy Matching.**
   2022-08-05 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-15802-5_12) · [IACR ePrint](https://eprint.iacr.org/2022/1011)
   Jaspal Singh, Gayathri Garimella, Mike Rosulek
 
@@ -86,7 +86,7 @@
 
   </details>
 
-- **Two-Round MPC without Round Collapsing Revisited -- Towards Efficient Malicious Protocols**
+- **Two-Round MPC Without Round Collapsing Revisited - Towards Efficient Malicious Protocols.**
   2022-07-20 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-15802-5_13) · [IACR ePrint](https://eprint.iacr.org/2022/944)
   Tianren Liu, Huijia Lin
 
@@ -98,7 +98,7 @@
 
   </details>
 
-- **Piranha: A GPU Platform for Secure Computation**
+- **Piranha: A GPU Platform for Secure Computation.**
   2022-07-07 · MPC · 含会议/期刊记录 · [USENIX Security](https://www.usenix.org/conference/usenixsecurity22/presentation/watson) · [IACR ePrint](https://eprint.iacr.org/2022/892) · [Code](https://github.com/ucbrise/piranha)
   Sameer Wagh, Jean-Luc Watson, Raluca A. Popa, Raluca Ada Popa
 
@@ -110,7 +110,7 @@
 
   </details>
 
-- **Sharing Transformation and Dishonest Majority MPC with Packed Secret Sharing**
+- **Sharing Transformation and Dishonest Majority MPC with Packed Secret Sharing.**
   2022-06-23 · MPC · 含会议/期刊记录 · [CRYPTO](https://doi.org/10.1007/978-3-031-15985-5_1) · [IACR ePrint](https://eprint.iacr.org/2022/831)
   Vipul Goyal, Yifan Song, Antigoni Polychroniadou
 
@@ -122,7 +122,7 @@
 
   </details>
 
-- **Pika: Secure Computation using Function Secret Sharing over Rings**
+- **Pika: Secure Computation using Function Secret Sharing over Rings.**
   2022-06-23 · MPC · 含会议/期刊记录 · [PoPETs](https://doi.org/10.56553/POPETS-2022-0113) · [IACR ePrint](https://eprint.iacr.org/2022/826)
   Sameer Wagh
 
@@ -134,7 +134,7 @@
 
   </details>
 
-- **More Efficient Dishonest Majority Secure Computation over $\\mathbb{Z}\_{2^k}$ via Galois Rings**
+- **More Efficient Dishonest Majority Secure Computation over $\\mathbb {Z}\_{2^k}$ via Galois Rings.**
   2022-06-22 · MPC · 含会议/期刊记录 · [CRYPTO](https://doi.org/10.1007/978-3-031-15802-5_14) · [IACR ePrint](https://eprint.iacr.org/2022/815)
   Daniel Escudero, Chen Yuan, Chaoping Xing
 
@@ -146,7 +146,7 @@
 
   </details>
 
-- **Tight Bounds on the Randomness Complexity of Secure Multiparty Computation**
+- **Tight Bounds on the Randomness Complexity of Secure Multiparty Computation.**
   2022-06-20 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-15985-5_17) · [IACR ePrint](https://eprint.iacr.org/2022/799)
   Yuval Ishai, Vipul Goyal, Yifan Song
 
@@ -158,7 +158,7 @@
 
   </details>
 
-- **Garbled Circuits With Sublinear Evaluator**
+- **Garbled Circuits with Sublinear Evaluator.**
   2022-06-20 · MPC · 含会议/期刊记录 · [EUROCRYPT](https://doi.org/10.1007/978-3-031-06944-4_2) · [IACR ePrint](https://eprint.iacr.org/2022/797)
   Akash Shah, David Heath, Abida Haque, Vladimir Kolesnikov, Steve Lu, Rafail Ostrovsky
 
@@ -170,7 +170,7 @@
 
   </details>
 
-- **Round-Optimal Multi-Party Computation with Identifiable Abort**
+- **Round-Optimal Multi-party Computation with Identifiable Abort.**
   2022-05-25 · MPC · 含会议/期刊记录 · [EUROCRYPT](https://doi.org/10.1007/978-3-031-06944-4_12) · [IACR ePrint](https://eprint.iacr.org/2022/645)
   Michele Ciampi, Luisa Siniscalchi, Divya Ravi, Hendrik Waldner
 
@@ -182,7 +182,7 @@
 
   </details>
 
-- **Fast Fully Secure Multi-Party Computation over Any Ring with Two-Thirds Honest Majority**
+- **Fast Fully Secure Multi-Party Computation over Any Ring with Two-Thirds Honest Majority.**
   2022-05-23 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3548606.3559389) · [IACR ePrint](https://eprint.iacr.org/2022/623)
   Daniel Escudero, Ariel Nof, Anders P. K. Dalskov, Anders Dalskov
 
@@ -194,7 +194,7 @@
 
   </details>
 
-- **Laconic Private Set-Intersection From Pairings**
+- **Laconic Private Set-Intersection From Pairings.**
   2022-05-10 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3548606.3560642) · [IACR ePrint](https://eprint.iacr.org/2022/529)
   Chuanwei Lin, Diego F. Aranha, Mark Simkin, Claudio Orlandi, Diego Aranha
 
@@ -206,7 +206,7 @@
 
   </details>
 
-- **Publicly Accountable Robust Multi-Party Computation**
+- **Publicly Accountable Robust Multi-Party Computation.**
   2022-04-06 · MPC · 含会议/期刊记录 · [IEEE S&amp;P](https://doi.org/10.1109/SP46214.2022.9833608) · [IACR ePrint](https://eprint.iacr.org/2022/436)
   Daniel Rausch, Pascal Reisert, Marc Rivinius, Ralf Küsters, Ralf Kuesters
 
@@ -218,7 +218,7 @@
 
   </details>
 
-- **Fully Secure PSI via MPC-in-the-Head**
+- **Fully Secure PSI via MPC-in-the-Head.**
   2022-03-28 · MPC · 含会议/期刊记录 · [PoPETs](https://doi.org/10.56553/POPETS-2022-0073) · [IACR ePrint](https://eprint.iacr.org/2022/379)
   Phi Hung Le, Carmit Hazay, S. Dov Gordon
 
@@ -230,7 +230,7 @@
 
   </details>
 
-- **IncShrink: Architecting Efficient Outsourced Databases using Incremental MPC and Differential Privacy**
+- **IncShrink: Architecting Efficient Outsourced Databases using Incremental MPC and Differential Privacy.**
   2022-03-09 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2203.05084) · [SIGMOD](https://doi.org/10.1145/3514221.3526151)
   Kartik Nayak, Johes Bater, Ashwin Machanavajjhala, Chenghong Wang
 
@@ -242,7 +242,7 @@
 
   </details>
 
-- **SecFloat: Accurate Floating-Point meets Secure 2-Party Computation**
+- **SecFloat: Accurate Floating-Point meets Secure 2-Party Computation.**
   2022-03-08 · MPC · 含会议/期刊记录 · [IEEE S&amp;P](https://doi.org/10.1109/SP46214.2022.9833697) · [IACR ePrint](https://eprint.iacr.org/2022/322)
   Rahul Sharma, Deevashwer Rathee, Anwesh Bhattacharya, Aseem Rastogi, Divya Gupta, Nishanth Chandran
 
@@ -254,7 +254,7 @@
 
   </details>
 
-- **YOLO YOSO: Fast and Simple Encryption and Secret Sharing in the YOSO Model**
+- **YOLO YOSO: Fast and Simple Encryption and Secret Sharing in the YOSO Model.**
   2022-03-02 · MPC · 含会议/期刊记录 · [ASIACRYPT](https://doi.org/10.1007/978-3-031-22963-3_22) · [IACR ePrint](https://eprint.iacr.org/2022/242)
   Bernardo Machado David, Ignacio Cascudo, Lydia Garms, Anders Konring, Bernardo David
 
@@ -266,7 +266,7 @@
 
   </details>
 
-- **Short Leakage Resilient and Non-malleable Secret Sharing Schemes**
+- **Short Leakage Resilient and Non-malleable Secret Sharing Schemes.**
   2022-02-25 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-15802-5_7) · [IACR ePrint](https://eprint.iacr.org/2022/216)
   Sai Lakshmi Bhavana Obbattu, Sruthi Sekar, Nishanth Chandran, Bhavana Kanukurthi
 
@@ -278,7 +278,7 @@
 
   </details>
 
-- **Shuffle-based Private Set Union: Faster and More Secure**
+- **Shuffle-based Private Set Union: Faster and More Secure.**
   2022-02-12 · MPC · 含会议/期刊记录 · [USENIX Security](https://www.usenix.org/conference/usenixsecurity22/presentation/jia) · [IACR ePrint](https://eprint.iacr.org/2022/157)
   Shifeng Sun, Jiajun Du, Yanxue Jia, Hong-Sheng Zhou, Dawu Gu, Shi-Feng Sun
 
@@ -290,7 +290,7 @@
 
   </details>
 
-- **MPC-Friendly Commitments for Publicly Verifiable Covert Security**
+- **MPC-Friendly Commitments for Publicly Verifiable Covert Security.**
   2022-01-31 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2109.07461) · [ACM CCS](https://doi.org/10.1145/3460120.3485375) · [IACR ePrint](https://eprint.iacr.org/2022/102)
   Matt J. Kusner, James Bell-Clark, Nitin Agrawal, Adrià Gascón, James Bell
 
@@ -302,7 +302,7 @@
 
   </details>
 
-- **Better Security-Efficiency Trade-Offs in Permutation-Based Two-Party Computation**
+- **Better Security-Efficiency Trade-Offs in Permutation-Based Two-Party Computation.**
   2022-01-23 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-030-92075-3_10) · [IACR ePrint](https://eprint.iacr.org/2022/080)
   Yu Long Chen, Stefano Tessaro
 
@@ -314,7 +314,7 @@
 
   </details>
 
-- **ZK-PCPs from Leakage-Resilient Secret Sharing**
+- **ZK-PCPs from Leakage-Resilient Secret Sharing.**
   2022 · MPC · 含会议/期刊记录 · [Journal of Cryptology](https://doi.org/10.1007/S00145-022-09433-3) · [IACR ePrint](https://eprint.iacr.org/2021/606)
   Mor Weiss, Carmit Hazay, Muthuramakrishnan Venkitasubramaniam
 
@@ -326,7 +326,7 @@
 
   </details>
 
-- **XORBoost: Tree Boosting in the Multiparty Computation Setting**
+- **XORBoost: Tree Boosting in the Multiparty Computation Setting.**
   2022 · MPC · 含会议/期刊记录 · [PoPETs](https://doi.org/10.56553/POPETS-2022-0099) · [IACR ePrint](https://eprint.iacr.org/2021/432)
   Marc Desgroseilliers, Mariya Georgieva, Dimitar Jetchev, Marius Vuille, Kevin Deforth, Nicolas Gama
 
@@ -338,7 +338,7 @@
 
   </details>
 
-- **Waldo: A Private Time-Series Database from Function Secret Sharing**
+- **Waldo: A Private Time-Series Database from Function Secret Sharing.**
   2022 · MPC · 含会议/期刊记录 · [IEEE S&amp;P](https://doi.org/10.1109/SP46214.2022.9833611) · [IACR ePrint](https://eprint.iacr.org/2021/1661)
   Mayank, Emma Dauterman, Ion Stoica, Raluca A. Popa, Mayank Rathee, Raluca Ada Popa
 
@@ -350,7 +350,7 @@
 
   </details>
 
-- **Updatable Private Set Intersection**
+- **Updatable Private Set Intersection.**
   2022 · MPC · 含会议/期刊记录 · [PoPETs](https://doi.org/10.2478/POPETS-2022-0051) · [IACR ePrint](https://eprint.iacr.org/2021/1349)
   Saikrishna Badrinarayanan, Peihan Miao, Tiancheng Xie
 
@@ -378,7 +378,7 @@
   2022 · MPC · 含会议/期刊记录 · [TDSC](https://doi.org/10.1109/TDSC.2020.3011923)
   Jiwu Huang, Jian Weng, Bing Chen, Wei Lu, Yicong Zhou
 
-- **STAR: Secret Sharing for Private Threshold Aggregation Reporting**
+- **STAR: Secret Sharing for Private Threshold Aggregation Reporting.**
   2022 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2109.10074) · [ACM CCS](https://doi.org/10.1145/3548606.3560631)
   Peter Snyder, Alex Davidson, Hamed Haddadi, Joseph Genereux, E. B. Quirk, Benjamin Livshits
 
@@ -390,7 +390,7 @@
 
   </details>
 
-- **Round-Optimal and Communication-Efficient Multiparty Computation**
+- **Round-Optimal and Communication-Efficient Multiparty Computation.**
   2022 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-06944-4_3) · [IACR ePrint](https://eprint.iacr.org/2020/1437)
   Michele Ciampi, Hendrik Waldner, Vassilis Zikas, Rafail Ostrovsky
 
@@ -406,7 +406,7 @@
   2022 · MPC · 含会议/期刊记录 · [TCC](https://doi.org/10.1007/978-3-031-22365-5_4)
   Eliran Kachlon, Benny Applebaum, Arpita Patra
 
-- **Quantum Garbled Circuits**
+- **Quantum garbled circuits.**
   2022 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2006.01085) · [STOC](https://doi.org/10.1145/3519935.3520073) · [IACR ePrint](https://eprint.iacr.org/2020/1401)
   Henry Yuen, Zvika Brakerski
 
@@ -418,7 +418,7 @@
 
   </details>
 
-- **Practical Non-interactive Publicly Verifiable Secret Sharing with Thousands of Parties**
+- **Practical Non-interactive Publicly Verifiable Secret Sharing with Thousands of Parties.**
   2022 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-06944-4_16) · [IACR ePrint](https://eprint.iacr.org/2021/1397)
   Craig Gentry, Vadim Lyubashevsky, Shai Halevi
 
@@ -434,7 +434,7 @@
   2022 · MPC · 含会议/期刊记录 · [TIFS](https://doi.org/10.1109/TIFS.2021.3118879)
   Aslí Bay, Zekeriya Erkin, Simona Samardjiska, Jelle Vos, Jaap-Henk Hoepman
 
-- **Polymath: Low-Latency MPC via Secure Polynomial Evaluations and its Applications**
+- **Polymath: Low-Latency MPC via Secure Polynomial Evaluations and Its Applications.**
   2022 · MPC · 含会议/期刊记录 · [PoPETs](https://doi.org/10.2478/POPETS-2022-0020) · [IACR ePrint](https://eprint.iacr.org/2021/978)
   Aniket Kate, Donghang Lu, Albert Yu, Hemanta K. Maji, Hemanta Maji
 
@@ -450,7 +450,7 @@
   2022 · MPC · 含会议/期刊记录 · [ISCA](https://doi.org/10.1145/3470496.3527392)
   Cong Wang, Zhilei Xu, Xing Zhou, Mingyu Gao
 
-- **On Secret Sharing, Randomness, and Random-less Reductions for Secret Sharing**
+- **On Secret Sharing, Randomness, and Random-less Reductions for Secret Sharing.**
   2022 · MPC · 含会议/期刊记录 · [TCC](https://doi.org/10.1007/978-3-031-22318-1_12) · [IACR ePrint](https://eprint.iacr.org/2021/802)
   Maciej Obremski, Divesh Aggarwal, João Ribeiro, Eldon Chung
 
@@ -462,7 +462,7 @@
 
   </details>
 
-- **Lightweight, Maliciously Secure Verifiable Function Secret Sharing**
+- **Lightweight, Maliciously Secure Verifiable Function Secret Sharing.**
   2022 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-06944-4_6) · [IACR ePrint](https://eprint.iacr.org/2021/580)
   Leo de Castro, Antigoni Polychroniadou
 
@@ -482,7 +482,7 @@
   2022 · MPC · 含会议/期刊记录 · [FOCS](https://doi.org/10.1109/FOCS54457.2022.00101)
   Hamidreza Amini Khorasgani, Hai H. Nguyen, Hemanta K. Maji, Saugata Basu
 
-- **From Fairness to Full Security in Multiparty Computation**
+- **From Fairness to Full Security in Multiparty Computation.**
   2022 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2105.00962) · [Journal of Cryptology](https://doi.org/10.1007/S00145-021-09415-X)
   Lior Rotem, Ran Cohen, Iftach Haitner, Eran Omri
 
@@ -494,7 +494,7 @@
 
   </details>
 
-- **Fast Privacy-Preserving Text Classification based on Secure Multiparty Computation**
+- **Fast Privacy-Preserving Text Classification Based on Secure Multiparty Computation.**
   2022 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2101.07365) · [TIFS](https://doi.org/10.1109/TIFS.2022.3144007) · [IACR ePrint](https://eprint.iacr.org/2021/069)
   Anderson C. A. Nascimento, Amanda Cristina Davi Resende, Davis Railsback, Rafael Dowsley, Diego F. Aranha, Amanda Resende
 
@@ -510,7 +510,7 @@
   2022 · MPC · 含会议/期刊记录 · [USENIX Security](https://www.usenix.org/conference/usenixsecurity22/presentation/kulshrestha)
   Anunay Kulshrestha, Jonathan R. Mayer
 
-- **Efficient Perfectly Secure Computation with Optimal Resilience**
+- **Efficient Perfectly Secure Computation with Optimal Resilience.**
   2022 · MPC · 含会议/期刊记录 · [TCC](https://doi.org/10.1007/978-3-030-90453-1_3) · [Journal of Cryptology](https://doi.org/10.1007/S00145-022-09434-2) · [IACR ePrint](https://eprint.iacr.org/2021/1206)
   Avishay Yanai, Gilad Asharov, Ittai Abraham
 
@@ -530,7 +530,7 @@
   2022 · MPC · 含会议/期刊记录 · [Journal of Cryptology](https://doi.org/10.1007/S00145-021-09412-0) · [Journal of Cryptology](https://doi.org/10.1007/S00145-021-09417-9)
   Akshayaram Srinivasan, Andrej Bogdanov, Yuval Ishai
 
-- **Concurrently Composable Non-Interactive Secure Computation**
+- **Concurrently Composable Non-interactive Secure Computation.**
   2022 · MPC · 含会议/期刊记录 · [ASIACRYPT](https://doi.org/10.1007/978-3-031-22963-3_18) · [IACR ePrint](https://eprint.iacr.org/2021/1562)
   Rafael Pass, Andrew Morgan
 
@@ -546,7 +546,7 @@
   2022 · MPC · 含会议/期刊记录 · [IEEE S&amp;P](https://doi.org/10.1109/SP46214.2022.9833658)
   Eduardo Alchieri, Bernardo Ferreira, Robin Vassantlal, Alysson Neves Bessani
 
-- **Binary Search in Secure Computation**
+- **Binary Search in Secure Computation.**
   2022 · MPC · 含会议/期刊记录 · [NDSS](https://www.ndss-symposium.org/ndss-paper/auto-draft-224/) · [IACR ePrint](https://eprint.iacr.org/2021/1049)
   Marina Blanton, Chen Yuan
 
@@ -558,15 +558,7 @@
 
   </details>
 
-- **Analog Secret Sharing With Applications to Private Distributed Learning.**
-  2022 · MPC · 含会议/期刊记录 · [TIFS](https://doi.org/10.1109/TIFS.2022.3173417)
-  Hessam Mahdavifar, Mahdi Soleymani, Amir Salman Avestimehr
-
-- **Adaptively Secure Computation for RAM Programs.**
-  2022 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-07085-3_7)
-  Oxana Poburinnaya, Laasya Bangalore, Rafail Ostrovsky, Muthuramakrishnan Venkitasubramaniam
-
-- **ARIANN: Low-Interaction Privacy-Preserving Deep Learning via Function Secret Sharing**
+- **AriaNN: Low-Interaction Privacy-Preserving Deep Learning via Function Secret Sharing.**
   2022 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2006.04593) · [PoPETs](https://doi.org/10.2478/POPETS-2022-0015)
   Théo Ryffel, Pierre Tholoniat, David Pointcheval, Francis R. Bach, Francis Bach
 
@@ -577,3 +569,11 @@
   匹配依据：MPC: 2 party computation, secret sharing
 
   </details>
+
+- **Analog Secret Sharing With Applications to Private Distributed Learning.**
+  2022 · MPC · 含会议/期刊记录 · [TIFS](https://doi.org/10.1109/TIFS.2022.3173417)
+  Hessam Mahdavifar, Mahdi Soleymani, Amir Salman Avestimehr
+
+- **Adaptively Secure Computation for RAM Programs.**
+  2022 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-07085-3_7)
+  Oxana Poburinnaya, Laasya Bangalore, Rafail Ostrovsky, Muthuramakrishnan Venkitasubramaniam

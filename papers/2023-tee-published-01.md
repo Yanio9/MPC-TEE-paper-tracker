@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **Oops..! I Glitched It Again! How to Multi-Glitch the Glitching-Protections on ARM TrustZone-M**
+- **Oops..! I Glitched It Again! How to Multi-Glitch the Glitching-Protections on ARM TrustZone-M.**
   2023-02-14 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2302.06932) · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/sass)
   Xhani Marvin Saß, Richard Mitev, Ahmad-Reza Sadeghi, Marvin Saß
 
@@ -66,7 +66,7 @@
   2023 · TEE · 含会议/期刊记录 · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/zhao-shixuan)
   Guoxing Chen, Mengya Zhang, Shixuan Zhao, Pinshen Xu, Yinqian Zhang, Zhiqiang Lin
 
-- **OLIVE: Oblivious Federated Learning on Trusted Execution Environment against the risk of sparsification**
+- **Olive: Oblivious Federated Learning on Trusted Execution Environment Against the Risk of Sparsification.**
   2023 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2202.07165) · [PVLDB](https://doi.org/10.14778/3603581.3603583)
   Yang Cao, Fumiyuki Kato, Masatoshi Yoshikawa
 
@@ -82,7 +82,7 @@
   2023 · TEE · 含会议/期刊记录 · [NDSS](https://www.ndss-symposium.org/ndss-paper/mytee-own-the-trusted-execution-environment-on-embedded-devices/)
   Seung-Kyun Han, Jin Soo Jang
 
-- **Enigmap : External-Memory Oblivious Map for Secure Enclaves**
+- **EnigMap: External-Memory Oblivious Map for Secure Enclaves.**
   2023 · TEE · 含会议/期刊记录 · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/tinoco) · [IACR ePrint](https://eprint.iacr.org/2022/1083)
   Sixiang Gao, Afonso Tinoco, Elaine Shi
 

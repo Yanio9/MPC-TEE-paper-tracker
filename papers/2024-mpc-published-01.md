@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **Secret Sharing with Snitching**
+- **Secret Sharing with Snitching.**
   2024-10-09 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3658644.3690296) · [IACR ePrint](https://eprint.iacr.org/2024/1610)
   Tomasz Lizurej, Marcin Mielniczuk, Stefan Dziembowski, Sebastian Faust
 
@@ -14,7 +14,7 @@
 
   </details>
 
-- **MPC-in-the-Head Framework without Repetition and its Applications to the Lattice-based Cryptography**
+- **MPC-in-the-Head Framework without Repetition and its Applications to the Lattice-based Cryptography.**
   2024-10-08 · MPC · 含会议/期刊记录 · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00157) · [IACR ePrint](https://eprint.iacr.org/2024/1591)
   Qianwen Gao, Long Chen, Zhenfeng Zhang, Weihao Bai
 
@@ -26,7 +26,7 @@
 
   </details>
 
-- **Coral: Maliciously Secure Computation Framework for Packed and Mixed Circuits**
+- **Coral: Maliciously Secure Computation Framework for Packed and Mixed Circuits.**
   2024-09-02 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3658644.3690223) · [IACR ePrint](https://eprint.iacr.org/2024/1372)
   Zhicong Huang, Wen-jie Lu, Wenguang Chen, Yuchen Wang, Tao Wei, Cheng Hong, WenGuang Chen
 
@@ -38,7 +38,7 @@
 
   </details>
 
-- **Secure Multiparty Computation with Lazy Sharing**
+- **Secure Multiparty Computation with Lazy Sharing.**
   2024-08-28 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3658644.3690207) · [IACR ePrint](https://eprint.iacr.org/2024/1347)
   Cong Zhang, Shuaishuai Li, Dongdai Lin
 
@@ -50,7 +50,7 @@
 
   </details>
 
-- **Unbalanced Private Set Union with Reduced Computation and Communication**
+- **Unbalanced Private Set Union with Reduced Computation and Communication.**
   2024-08-27 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3658644.3690308) · [IACR ePrint](https://eprint.iacr.org/2024/1340)
   Cong Zhang, Meng Hao, Anyu Wang, Liqiang Peng, Weiran Liu, Xiaoyun Wang, Yu Chen
 
@@ -62,7 +62,7 @@
 
   </details>
 
-- **GAuV: A Graph-Based Automated Verification Framework for Perfect Semi-Honest Security of Multiparty Computation Protocols**
+- **GAuV: A Graph-Based Automated Verification Framework for Perfect Semi-Honest Security of Multiparty Computation Protocols.**
   2024-07-02 · MPC · 含会议/期刊记录 · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00131) · [IACR ePrint](https://eprint.iacr.org/2024/1078)
   Wei Zhang, Shizhen Xu, Xingyu Xie, Tuowei Wang, Yifei Li, Jun Zhu, Yifan Song
 
@@ -74,7 +74,7 @@
 
   </details>
 
-- **AITIA: Efficient Secure Computation of Bivariate Causal Discovery**
+- **AITIA: Efficient Secure Computation of Bivariate Causal Discovery.**
   2024-06-30 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3658644.3670337) · [IACR ePrint](https://eprint.iacr.org/2024/1065)
   Lun Wang, Ni Trieu, Truong Son Nguyen, Evgenios M. Kornaropoulos
 
@@ -86,7 +86,7 @@
 
   </details>
 
-- **Stochastic Secret Sharing with $1$-Bit Shares and Applications to MPC**
+- **Stochastic Secret Sharing with 1-Bit Shares and Applications to MPC.**
   2024-06-28 · MPC · 含会议/期刊记录 · [CRYPTO](https://doi.org/10.1007/978-3-031-68388-6_11) · [IACR ePrint](https://eprint.iacr.org/2024/1053)
   Eliran Kachlon, Benny Applebaum
 
@@ -98,7 +98,7 @@
 
   </details>
 
-- **Efficient Secret Sharing for Large-Scale Applications**
+- **Efficient Secret Sharing for Large-Scale Applications.**
   2024-06-27 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3658644.3670379) · [IACR ePrint](https://eprint.iacr.org/2024/1045)
   Sarvar Patel, Kevin Yeo, Joon Young Seo, Giuseppe Persiano
 
@@ -110,7 +110,7 @@
 
   </details>
 
-- **Scalable Private Set Union, with Stronger Security**
+- **Scalable Private Set Union, with Stronger Security.**
   2024-06-10 · MPC · 含会议/期刊记录 · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/jia-yanxue) · [IACR ePrint](https://eprint.iacr.org/2024/922)
   Shifeng Sun, Yanxue Jia, Hong-Sheng Zhou, Dawu Gu, Shi-Feng Sun
 
@@ -122,7 +122,7 @@
 
   </details>
 
-- **Fast Evaluation of S-boxes with Garbled Circuits**
+- **Fast Evaluation of S-Boxes With Garbled Circuits.**
   2024-05-31 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2405.20713) · [TIFS](https://doi.org/10.1109/TIFS.2024.3402145) · [IACR ePrint](https://eprint.iacr.org/2022/1278)
   Aysajan Abidin, Erik Pohle, Bart Preneel
 
@@ -134,7 +134,7 @@
 
   </details>
 
-- **Computation Efficient Structure Aware PSI From Incremental Function Secret Sharing**
+- **Computation Efficient Structure-Aware PSI from Incremental Function Secret Sharing.**
   2024-05-29 · MPC · 含会议/期刊记录 · [CRYPTO](https://doi.org/10.1007/978-3-031-68397-8_10) · [IACR ePrint](https://eprint.iacr.org/2024/842)
   Peihan Miao, Gayathri Garimella, Benjamin Goff
 
@@ -146,7 +146,7 @@
 
   </details>
 
-- **Fully Secure MPC and zk-FLIOP Over Rings: New Constructions, Improvements and Extensions**
+- **Fully Secure MPC and zk-FLIOP over Rings: New Constructions, Improvements and Extensions.**
   2024-05-28 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-68397-8_5) · [IACR ePrint](https://eprint.iacr.org/2024/837)
   Ariel Nof, Anders P. K. Dalskov, Daniel Escudero, Anders Dalskov
 
@@ -158,7 +158,7 @@
 
   </details>
 
-- **Succinct Homomorphic Secret Sharing**
+- **Succinct Homomorphic Secret Sharing.**
   2024-05-24 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-58751-1_11) · [IACR ePrint](https://eprint.iacr.org/2024/814)
   Lawrence Roy, Peter Scholl, Damiano Abram
 
@@ -170,7 +170,7 @@
 
   </details>
 
-- **Secret Sharing with Certified Deletion**
+- **Secret Sharing with Certified Deletion.**
   2024-05-13 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2405.08117) · [CRYPTO](https://doi.org/10.1007/978-3-031-68394-7_7) · [IACR ePrint](https://eprint.iacr.org/2024/736)
   James Bartusek, Justin Raizes
 
@@ -182,7 +182,7 @@
 
   </details>
 
-- **Ditto: Quantization-aware Secure Inference of Transformers upon MPC**
+- **Ditto: Quantization-aware Secure Inference of Transformers upon MPC.**
   2024-05-09 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2405.05525) · [series/jmlr](https://proceedings.mlr.press/v235/wu24d.html)
   Lei Wang, Junming Ma, Wenjing Fang, Jin Tan, Yancheng Zheng, Haoqi Wu, Yinggui Wang
 
@@ -194,7 +194,7 @@
 
   </details>
 
-- **Actively Secure Private Set Intersection in the Client-Server Setting**
+- **Actively Secure Private Set Intersection in the Client-Server Setting.**
   2024-04-15 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3658644.3690349) · [IACR ePrint](https://eprint.iacr.org/2024/570)
   Mariana Raykova, Phillipp Schoppmann, Xiao Wang, Yunqing Sun, Jonathan Katz
 
@@ -206,7 +206,7 @@
 
   </details>
 
-- **NodeGuard: A Highly Efficient Two-Party Computation Framework for Training Large-Scale Gradient Boosting Decision Tree**
+- **NodeGuard: A Highly Efficient Two-Party Computation Framework for Training Large-Scale Gradient Boosting Decision Tree.**
   2024-04-05 · MPC · 含会议/期刊记录 · [IEEE S&amp;P](https://doi.org/10.1109/SPW63631.2024.00015) · [IACR ePrint](https://eprint.iacr.org/2024/535)
   Yufan Jiang, Tianxiang Dai, Fei Mei, Yong Li
 
@@ -218,7 +218,7 @@
 
   </details>
 
-- **Efficient Actively Secure DPF and RAM-based 2PC with One-Bit Leakage**
+- **Efficient Actively Secure DPF and RAM-based 2PC with One-Bit Leakage.**
   2024-03-12 · MPC · 含会议/期刊记录 · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00205) · [IACR ePrint](https://eprint.iacr.org/2024/426)
   Ruiyu Zhu, Xiao Wang, Yu Yu, Xiaojie Guo, Wenhao Zhang, Kang Yang
 
@@ -230,7 +230,7 @@
 
   </details>
 
-- **Traceable Secret Sharing: Strong Security and Efficient Constructions**
+- **Traceable Secret Sharing: Strong Security and Efficient Constructions.**
   2024-03-05 · MPC · 含会议/期刊记录 · [CRYPTO](https://doi.org/10.1007/978-3-031-68388-6_9) · [IACR ePrint](https://eprint.iacr.org/2024/405)
   Lior Rotem, Aditi Partap, Dan Boneh
 
@@ -242,7 +242,7 @@
 
   </details>
 
-- **On Information-Theoretic Secure Multiparty Computation with Local Repairability**
+- **On Information-Theoretic Secure Multiparty Computation with Local Repairability.**
   2024-03-03 · MPC · 含会议/期刊记录 · [PKC](https://doi.org/10.1007/978-3-031-57722-2_7) · [IACR ePrint](https://eprint.iacr.org/2024/391)
   Daniel Escudero, Ivan Tjuawinata, Chaoping Xing
 
@@ -254,7 +254,7 @@
 
   </details>
 
-- **Two-Round Maliciously-Secure Oblivious Transfer with Optimal Rate**
+- **Two-Round Maliciously-Secure Oblivious Transfer with Optimal Rate.**
   2024-02-29 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-58751-1_10) · [IACR ePrint](https://eprint.iacr.org/2024/372)
   Akshayaram Srinivasan, Pedro Branco, Nico Döttling
 
@@ -266,7 +266,7 @@
 
   </details>
 
-- **Connecting Leakage-Resilient Secret Sharing to Practice: Scaling Trends and Physical Dependencies of Prime Field Masking**
+- **Connecting Leakage-Resilient Secret Sharing to Practice: Scaling Trends and Physical Dependencies of Prime Field Masking.**
   2024-02-29 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-58737-5_12) · [IACR ePrint](https://eprint.iacr.org/2024/377)
   Elena Micheli, François-Xavier Standaert, Maximilian Orlt, Loïc Masure, Sebastian Faust
 
@@ -278,7 +278,7 @@
 
   </details>
 
-- **Garbled Circuit Lookup Tables with Logarithmic Number of Ciphertexts**
+- **Garbled Circuit Lookup Tables with Logarithmic Number of Ciphertexts.**
   2024-02-28 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-58740-5_7) · [IACR ePrint](https://eprint.iacr.org/2024/369)
   David Heath, Lucien K. L. Ng, Vladimir Kolesnikov
 
@@ -290,7 +290,7 @@
 
   </details>
 
-- **Fuzzy Private Set Intersection with Large Hyperballs**
+- **Fuzzy Private Set Intersection with Large Hyperballs.**
   2024-02-26 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-58740-5_12) · [IACR ePrint](https://eprint.iacr.org/2024/330)
   Sihang Pu, Aron van Baarsen
 
@@ -302,7 +302,7 @@
 
   </details>
 
-- **Toward Malicious Constant-Rate 2PC via Arithmetic Garbling**
+- **Toward Malicious Constant-Rate 2PC via Arithmetic Garbling.**
   2024-02-20 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-58740-5_14) · [IACR ePrint](https://eprint.iacr.org/2024/283)
   Yibin Yang, Carmit Hazay
 
@@ -314,7 +314,7 @@
 
   </details>
 
-- **Linear-Communication Asynchronous Complete Secret Sharing with Optimal Resilience**
+- **Linear-Communication Asynchronous Complete Secret Sharing with Optimal Resilience.**
   2024-02-15 · MPC · 含会议/期刊记录 · [CRYPTO](https://doi.org/10.1007/978-3-031-68397-8_13) · [IACR ePrint](https://eprint.iacr.org/2024/245)
   Junru Li, Yifan Song, Xiaoyu Ji
 
@@ -326,7 +326,7 @@
 
   </details>
 
-- **Efficient Arithmetic in Garbled Circuits**
+- **Efficient Arithmetic in Garbled Circuits.**
   2024-01-31 · MPC · 含会议/期刊记录 · [EUROCRYPT](https://doi.org/10.1007/978-3-031-58740-5_1) · [IACR ePrint](https://eprint.iacr.org/2024/139)
   David Heath
 
@@ -346,7 +346,7 @@
   2024 · MPC · 含会议/期刊记录 · [CRYPTO](https://doi.org/10.1007/978-3-031-68388-6_10)
   Hai H. Nguyen
 
-- **Toward A Practical Multi-party Private Set Union**
+- **Toward A Practical Multi-party Private Set Union.**
   2024 · MPC · 含会议/期刊记录 · [PoPETs](https://doi.org/10.56553/POPETS-2024-0133) · [IACR ePrint](https://eprint.iacr.org/2023/1930)
   Ni Trieu, Jiahui Gao, Son Nguyen
 
@@ -362,7 +362,7 @@
   2024 · MPC · 含会议/期刊记录 · [TIFS](https://doi.org/10.1109/TIFS.2024.3484666)
   Jiahong Wu, Wei Kang, Nan Liu
 
-- **Sparsity and Privacy in Secret Sharing: A Fundamental Trade-Off**
+- **Sparsity and Privacy in Secret Sharing: A Fundamental Trade-Off.**
   2024 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2308.06413) · [TIFS](https://doi.org/10.1109/TIFS.2024.3394256)
   Maximilian Egger, Marvin Xhemrishi, Rawad Bitar, Antonia Wachter-Zeh
 
@@ -398,7 +398,7 @@
   2024 · MPC · 含会议/期刊记录 · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/liu-fengrun)
   Xiang Xie, Yu Yu, Fengrun Liu
 
-- **SIGMA: Secure GPT Inference with Function Secret Sharing**
+- **SIGMA: Secure GPT Inference with Function Secret Sharing.**
   2024 · MPC · 含会议/期刊记录 · [PoPETs](https://doi.org/10.56553/POPETS-2024-0107) · [IACR ePrint](https://eprint.iacr.org/2023/1269)
   Ashish Panwar, Rahul Sharma, Ananta Mukherjee, Neha Jawalkar, Kanav Gupta, Divya Gupta, Nishanth Chandran
 
@@ -410,7 +410,7 @@
 
   </details>
 
-- **Randomness Recoverable Secret Sharing Schemes**
+- **Randomness Recoverable Secret Sharing Schemes.**
   2024 · MPC · 含会议/期刊记录 · [Journal of Cryptology](https://doi.org/10.1007/S00145-024-09515-4) · [IACR ePrint](https://eprint.iacr.org/2023/959)
   Behzad Vahdani, Shahram Khazaei, Mohammad Hajiabadi
 
@@ -426,7 +426,7 @@
   2024 · MPC · 含会议/期刊记录 · [TIFS](https://doi.org/10.1109/TIFS.2023.3343973)
   Chaochao Cai, Weidong Qiu, Haiyang Xue, Guowei Ling, Jinyong Shan, Wulu Li, Peng Tang, Xinyi Huang, Fei Tang
 
-- **Publicly Verifiable Secret Sharing over Class Groups and Applications to DKG and YOSO**
+- **Publicly Verifiable Secret Sharing Over Class Groups and Applications to DKG and YOSO.**
   2024 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-58740-5_8) · [IACR ePrint](https://eprint.iacr.org/2023/1651)
   Bernardo Machado David, Ignacio Cascudo, Bernardo David
 
@@ -446,7 +446,7 @@
   2024 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3658644.3691371)
   Sikhar Patranabis, Vinayaka Pandit, Abhishek Singh, Nitin Singh, Pankaj Dayama
 
-- **PEPSI: Practically Efficient Private Set Intersection in the Unbalanced Setting**
+- **PEPSI: Practically Efficient Private Set Intersection in the Unbalanced Setting.**
   2024 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2310.14565) · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/mahdavi)
   Ehsan Amjadian, Simon Oya, Florian Kerschbaum, Thomas Humphries, Faezeh Ebrahimianghazani, Bailey Kacsmar, Xinda Li, Nils Lukas, John A. Premkumar, Rasoul Akhavan Mahdavi, John Premkumar
 
@@ -458,7 +458,7 @@
 
   </details>
 
-- **On Sigma-Protocols and (packed) Black-Box Secret Sharing Schemes**
+- **On Sigma-Protocols and (Packed) Black-Box Secret Sharing Schemes.**
   2024 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-57722-2_14) · [IACR ePrint](https://eprint.iacr.org/2023/1652)
   Ignacio Cascudo, Claudia Bartoli
 
@@ -478,7 +478,7 @@
   2024 · MPC · 含会议/期刊记录 · [PKC](https://doi.org/10.1007/978-3-031-57722-2_6)
   Supreeth Varadarajan, Nidhish Bhimrajka, Ashish Choudhury
 
-- **Multiparty Private Set Intersection Cardinality and Its Applications**
+- **Multiparty Private Set Intersection Cardinality and Its Applications.**
   2024 · MPC · 含会议/期刊记录 · [PoPETs](https://doi.org/10.56553/POPETS-2024-0041) · [IACR ePrint](https://eprint.iacr.org/2022/735)
   Ni Trieu, Avishay Yanai, Jiahui Gao
 
@@ -498,7 +498,7 @@
   2024 · MPC · 含会议/期刊记录 · [ASPLOS](https://doi.org/10.1145/3622781.3674175)
   Murali Annavaram, Rachit Rajat, Yongqin Wang
 
-- **Lightweight Asynchronous Verifiable Secret Sharing with Optimal Resilience**
+- **Lightweight Asynchronous Verifiable Secret Sharing with Optimal Resilience.**
   2024 · MPC · 含会议/期刊记录 · [Journal of Cryptology](https://doi.org/10.1007/S00145-024-09505-6) · [IACR ePrint](https://eprint.iacr.org/2023/536)
   Victor Shoup, Nigel P. Smart
 
@@ -530,7 +530,7 @@
   2024 · MPC · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3658644.3690245)
   Ying Gao, Mengmeng Zhou, Wei Wang, Longxin Wang, Xiang Liu, Yuanchao Luo, Lin Qi
 
-- **Efficient Coded Multi-Party Computation at Edge Networks**
+- **Efficient Coded Multi-Party Computation at Edge Networks.**
   2024 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2305.07142) · [TIFS](https://doi.org/10.1109/TIFS.2023.3326970)
   Hulya Seferoglu, Elahe Vedadi, Yasaman Keshtkarjahromi
 
@@ -554,7 +554,7 @@
   2024 · MPC · 含会议/期刊记录 · [series/lncs](https://doi.org/10.1007/978-3-031-58737-5_11)
   Hai H. Nguyen, Xiuyu Ye, Anat Paskin-Cherniavsky, Hemanta K. Maji
 
-- **Compact: Approximating Complex Activation Functions for Secure Computation**
+- **Compact: Approximating Complex Activation Functions for Secure Computation.**
   2024 · MPC · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2309.04664) · [PoPETs](https://doi.org/10.56553/POPETS-2024-0065)
   Rahul Chatterjee, Peter Rindal, Sunpreet S. Arora, Maliheh Shirvanian, Mazharul Islam
 
@@ -582,7 +582,7 @@
   2024 · MPC · 含会议/期刊记录 · [TDSC](https://doi.org/10.1109/TDSC.2024.3381959)
   William J. Buchanan, Rahul Saha, Gulshan Kumar, G. Geetha, Mauro Conti
 
-- **Abuse Reporting for Metadata-Hiding Communication Based on Secret Sharing**
+- **Abuse Reporting for Metadata-Hiding Communication Based on Secret Sharing.**
   2024 · MPC · 含会议/期刊记录 · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/eskandarian) · [IACR ePrint](https://eprint.iacr.org/2023/1144)
   Saba Eskandarian
 

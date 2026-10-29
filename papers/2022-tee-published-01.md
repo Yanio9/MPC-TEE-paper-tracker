@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **Cerberus: A Formal Approach to Secure and Efficient Enclave Memory Sharing**
+- **Cerberus: A Formal Approach to Secure and Efficient Enclave Memory Sharing.**
   2022-09-30 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2209.15253) · [ACM CCS](https://doi.org/10.1145/3548606.3560595)
   Anjo Vahldiek-Oberwagner, Dayeol Lee, Pranav Gaddamadugu, Alexander Thomas, Catherine Lu, Kevin Cheang, Dawn Song, Sanjit A. Seshia, Mona Vij, Krste Asanovic, Krste Asanović
 
@@ -14,7 +14,7 @@
 
   </details>
 
-- **SoK: TEE-assisted Confidential Smart Contract**
+- **SoK: TEE-Assisted Confidential Smart Contract.**
   2022-03-16 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2203.08548) · [PoPETs](https://doi.org/10.56553/POPETS-2022-0093)
   Qi Wang, David Galindo, Qin Wang, Rujia Li, Mark Ryan
 
@@ -26,7 +26,7 @@
 
   </details>
 
-- **ReZone: Disarming TrustZone with TEE Privilege Reduction**
+- **ReZone: Disarming TrustZone with TEE Privilege Reduction.**
   2022-03-02 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2203.01025) · [USENIX Security](https://www.usenix.org/conference/usenixsecurity22/presentation/cerdeira)
   Nuno Santos, Sandro Pinto, David Cerdeira, José Martins
 
@@ -38,7 +38,7 @@
 
   </details>
 
-- **Trust Dies in Darkness: Shedding Light on Samsung's TrustZone Keymaster Design**
+- **Trust Dies in Darkness: Shedding Light on Samsung's TrustZone Keymaster Design.**
   2022-02-21 · TEE · 含会议/期刊记录 · [USENIX Security](https://www.usenix.org/conference/usenixsecurity22/presentation/shakevsky) · [IACR ePrint](https://eprint.iacr.org/2022/208)
   Eyal Ronen, Alon Shakevsky, Avishai Wool
 
@@ -90,7 +90,7 @@
   2022 · TEE · 含会议/期刊记录 · [TPDS](https://doi.org/10.1109/TPDS.2021.3121562)
   Zecheng Li, Haotian Wu, Yuanyuan Yang, Bin Xiao, Laphou Lao, Songtao Guo
 
-- **Minimum Viable Device Drivers for ARM TrustZone**
+- **Minimum viable device drivers for ARM trustzone.**
   2022 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2110.08303) · [EuroSys](https://doi.org/10.1145/3492321.3519565)
   Felix Xiaozhu Lin, Liwei Guo
 
@@ -110,7 +110,7 @@
   2022 · TEE · 含会议/期刊记录 · [TDSC](https://doi.org/10.1109/TDSC.2020.3024562)
   Rafael Pires, Emanuel Onica, Andrei Mogage, Vlad Constantin Craciun, Pascal Felber
 
-- **MAGE: Mutual Attestation for a Group of Enclaves without Trusted Third Parties**
+- **MAGE: Mutual Attestation for a Group of Enclaves without Trusted Third Parties.**
   2022 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2008.09501) · [USENIX Security](https://www.usenix.org/conference/usenixsecurity22/presentation/chen-guoxing)
   Guoxing Chen, Yinqian Zhang
 
@@ -130,7 +130,7 @@
   2022 · TEE · 含会议/期刊记录 · [OSDI](https://www.usenix.org/conference/osdi22/presentation/li)
   Ronghui Gu, Christoffer Dall, Yousuf Sait, Gareth Stockwell, Xuheng Li, Xupeng Li, Jason Nieh
 
-- **Composite Enclaves: Towards Disaggregated Trusted Execution**
+- **Composite Enclaves: Towards Disaggregated Trusted Execution.**
   2022 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2010.10416) · [TCHES](https://doi.org/10.46586/TCHES.V2022.I1.630-656)
   Aritra Dhar, Moritz Schneider, Ivan Puddu, Kari Kostiainen, Srdjan Capkun
 

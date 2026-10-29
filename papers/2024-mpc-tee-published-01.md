@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **DECLOAK: Enable Secure and Cheap Multi-Party Transactions on Legacy Blockchains by a Minimally Trusted TEE Network**
+- **DeCloak: Enable Secure and Cheap Multi-Party Transactions on Legacy Blockchains by a Minimally Trusted TEE Network.**
   2024 · MPC / TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2202.10206) · [TIFS](https://doi.org/10.1109/TIFS.2023.3318935)
   Yuchen Wu, Lei Wang, Hong Lei, Bangdao Chen, Yue Li, Qian Ren, Yingjun Wu
 

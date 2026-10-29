@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **HAAC: A Hardware-Software Co-Design to Accelerate Garbled Circuits**
+- **HAAC: A Hardware-Software Co-Design to Accelerate Garbled Circuits.**
   2023 · MPC / TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2211.13324) · [ISCA](https://doi.org/10.1145/3579371.3589045)
   Brandon Reagen, Jianqiao Mo, Jayanth Gopinath
 

@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **SmashEx: Smashing SGX Enclaves Using Exceptions**
+- **SmashEx: Smashing SGX Enclaves Using Exceptions.**
   2021-10-13 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2110.06657) · [ACM CCS](https://doi.org/10.1145/3460120.3484821)
   Shweta Shinde, Jinhua Cui, Zhijingcheng Yu, Zhiping Cai, Prateek Saxena, Jason Zhijingcheng Yu
 
@@ -14,7 +14,7 @@
 
   </details>
 
-- **IceClave: A Trusted Execution Environment for In-Storage Computing**
+- **IceClave: A Trusted Execution Environment for In-Storage Computing.**
   2021-09-08 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2109.03373) · [MICRO](https://doi.org/10.1145/3466752.3480109)
   Hyung Jin Lim, Changhwan Youn, Jongryool Kim, Myeong Joon Kang, Yuqi Xue, Luyi Kang, Weiwei Jia, Bruce L. Jacob, Jian Huang, Xiaohao Wang, Bruce Jacob
 
@@ -26,7 +26,7 @@
 
   </details>
 
-- **One Glitch to Rule Them All: Fault Injection Attacks Against AMD's Secure Encrypted Virtualization**
+- **One Glitch to Rule Them All: Fault Injection Attacks Against AMD's Secure Encrypted Virtualization.**
   2021-08-10 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2108.04575) · [ACM CCS](https://doi.org/10.1145/3460120.3484779)
   Thilo Krachenfels, Robert Buhren, Hans Niklas Jacob, Jean-Pierre Seifert
 
@@ -54,7 +54,7 @@
   2021 · TEE · 含会议/期刊记录 · [TIFS](https://doi.org/10.1109/TIFS.2021.3058777)
   Sven Nitzsche, Nadir Khan, Asier Garciandia López, Jürgen Becker
 
-- **SGX-MR: Regulating Dataflows for Protecting Access Patterns of Data-Intensive SGX Applications**
+- **SGX-MR: Regulating Dataflows for Protecting Access Patterns of Data-Intensive SGX Applications.**
   2021 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2009.03518) · [PoPETs](https://doi.org/10.2478/POPETS-2021-0002)
   Sagar Sharma, A. K. M. Mubashwir Alam, Keke Chen, A K M Mubashwir Alam
 
@@ -74,7 +74,7 @@
   2021 · TEE · 含会议/期刊记录 · [ICDE](https://doi.org/10.1109/ICDE51399.2021.00175)
   Zhao Zhang, Aoying Zhou, Min Fang, Cheqing Jin
 
-- **Frontal Attack: Leaking Control-Flow in SGX via the CPU Frontend**
+- **Frontal Attack: Leaking Control-Flow in SGX via the CPU Frontend.**
   2021 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2005.11516) · [USENIX Security](https://www.usenix.org/conference/usenixsecurity21/presentation/puddu)
   Moritz Schneider, Ivan Puddu, Miro Haller, Srdjan Capkun, Srdjan Čapkun
 
@@ -86,27 +86,7 @@
 
   </details>
 
-- **Confidential computing for OpenPOWER.**
-  2021 · TEE · 含会议/期刊记录 · [EuroSys](https://doi.org/10.1145/3447786.3456243)
-  Brad Frey, Lawrence Roy, Jeffrey Stuecheli, Enriquillo Valdez, Laurent Dufour, Mohit Kapur, Janani Janakirman, Wendel Voigt, Michael V. Le, William A. Starke, Ryan Grimm, Bharata Bhasker Rao, John M. Ludden, Kenneth A. Goldman, Ramachandra Pai, Sukadev Bhattiprolu, Cathy May, Guerney D. H. Hunt, Hani Jamjoom, Paul Mackerras, Rick Boivie, Elaine R. Palmer
-
-- **Confidential Serverless Made Efficient with Plug-In Enclaves.**
-  2021 · TEE · 含会议/期刊记录 · [ISCA](https://doi.org/10.1109/ISCA52012.2021.00032)
-  Yubin Xia, Haibo Chen, Mingyu Li
-
-- **CURE: A Security Architecture with CUstomizable and Resilient Enclaves**
-  2021 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2010.15866) · [USENIX Security](https://www.usenix.org/conference/usenixsecurity21/presentation/bahmani)
-  Ferdinand Brasser, Ghada Dessouky, Raad Bahmani, Patrick Jauernig, Matthias Klimmek, Emmanuel Stapf, Ahmad-Reza Sadeghi
-
-  <details><summary>摘要 / Abstract</summary>
-
-  Security architectures providing Trusted Execution Environments (TEEs) have been an appealing research subject for a wide range of computer systems, from low-end embedded devices to powerful cloud servers. The goal of these architectures is to protect sensitive services in isolated execution contexts, called enclaves. Unfortunately, existing TEE solutions suffer from significant design shortcomings. First, they follow a one-size-fits-all approach offering only a single enclave type, however, different services need flexible enclaves that can adjust to their demands. Second, they cannot efficiently support emerging applications (e.g., Machine Learning as a Service), which require secure channels to peripherals (e.g., accelerators), or the computational power of multiple cores. Third, their protection against cache side-channel attacks is either an afterthought or impractical, i.e., no fine-grained mapping between cache resources and individual enclaves is provided. In this work, we propose CURE, the first security architecture, which tackles these design challenges by providing different types of enclaves: (i) sub-space enclaves provide vertical isolation at all execution privilege levels, (ii) user-space enclaves provide isolated execution to unprivileged applications, and (iii) self-contained enclaves allow isolated execution environments that span multiple privilege levels. Moreover, CURE enables the exclusive assignment of system resources, e.g., peripherals, CPU cores, or cache resources to single enclaves. CURE requires minimal hardware changes while significantly improving the state of the art of hardware-assisted security architectures. We implemented CURE on a RISC-V-based SoC and thoroughly evaluated our prototype in terms of hardware and performance overhead. CURE imposes a geometric mean performance overhead of 15.33% on standard benchmarks.
-
-  匹配依据：TEE: trusted execution environments
-
-  </details>
-
-- **CROSSLINE: Breaking "Security-by-Crash" based Memory Isolation in AMD SEV**
+- **CrossLine: Breaking "Security-by-Crash" based Memory Isolation in AMD SEV.**
   2021 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2008.00146) · [ACM CCS](https://doi.org/10.1145/3460120.3485253)
   Mengyuan Li, Zhiqiang Lin, Yinqian Zhang
 
@@ -115,6 +95,26 @@
   AMD&#x27;s Secure Encrypted Virtualization (SEV) is an emerging security feature on AMD processors that allows virtual machines to run on encrypted memory and perform confidential computing even with an untrusted hypervisor. This paper first demystifies SEV&#x27;s improper use of address space identifier (ASID) for controlling accesses of a VM to encrypted memory pages, cache lines, and TLB entries. We then present the CROSSLINE attacks, a novel class of attacks against SEV that allow the adversary to launch an attacker VM and change its ASID to that of the victim VM to impersonate the victim. We present two variants of CROSSLINE attacks: CROSSLINE V1 decrypts victim&#x27;s page tables or memory blocks following the format of a page table entry; CROSSLINE V2 constructs encryption and decryption oracles by executing instructions of the victim VM. We have successfully performed CROSSLINE attacks on SEV and SEV-ES processors.
 
   匹配依据：TEE: amd sev, confidential computing, secure encrypted virtualization
+
+  </details>
+
+- **Confidential computing for OpenPOWER.**
+  2021 · TEE · 含会议/期刊记录 · [EuroSys](https://doi.org/10.1145/3447786.3456243)
+  Brad Frey, Lawrence Roy, Jeffrey Stuecheli, Enriquillo Valdez, Laurent Dufour, Mohit Kapur, Janani Janakirman, Wendel Voigt, Michael V. Le, William A. Starke, Ryan Grimm, Bharata Bhasker Rao, John M. Ludden, Kenneth A. Goldman, Ramachandra Pai, Sukadev Bhattiprolu, Cathy May, Guerney D. H. Hunt, Hani Jamjoom, Paul Mackerras, Rick Boivie, Elaine R. Palmer
+
+- **Confidential Serverless Made Efficient with Plug-In Enclaves.**
+  2021 · TEE · 含会议/期刊记录 · [ISCA](https://doi.org/10.1109/ISCA52012.2021.00032)
+  Yubin Xia, Haibo Chen, Mingyu Li
+
+- **CURE: A Security Architecture with CUstomizable and Resilient Enclaves.**
+  2021 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2010.15866) · [USENIX Security](https://www.usenix.org/conference/usenixsecurity21/presentation/bahmani)
+  Ferdinand Brasser, Ghada Dessouky, Raad Bahmani, Patrick Jauernig, Matthias Klimmek, Emmanuel Stapf, Ahmad-Reza Sadeghi
+
+  <details><summary>摘要 / Abstract</summary>
+
+  Security architectures providing Trusted Execution Environments (TEEs) have been an appealing research subject for a wide range of computer systems, from low-end embedded devices to powerful cloud servers. The goal of these architectures is to protect sensitive services in isolated execution contexts, called enclaves. Unfortunately, existing TEE solutions suffer from significant design shortcomings. First, they follow a one-size-fits-all approach offering only a single enclave type, however, different services need flexible enclaves that can adjust to their demands. Second, they cannot efficiently support emerging applications (e.g., Machine Learning as a Service), which require secure channels to peripherals (e.g., accelerators), or the computational power of multiple cores. Third, their protection against cache side-channel attacks is either an afterthought or impractical, i.e., no fine-grained mapping between cache resources and individual enclaves is provided. In this work, we propose CURE, the first security architecture, which tackles these design challenges by providing different types of enclaves: (i) sub-space enclaves provide vertical isolation at all execution privilege levels, (ii) user-space enclaves provide isolated execution to unprivileged applications, and (iii) self-contained enclaves allow isolated execution environments that span multiple privilege levels. Moreover, CURE enables the exclusive assignment of system resources, e.g., peripherals, CPU cores, or cache resources to single enclaves. CURE requires minimal hardware changes while significantly improving the state of the art of hardware-assisted security architectures. We implemented CURE on a RISC-V-based SoC and thoroughly evaluated our prototype in terms of hardware and performance overhead. CURE imposes a geometric mean performance overhead of 15.33% on standard benchmarks.
+
+  匹配依据：TEE: trusted execution environments
 
   </details>
 

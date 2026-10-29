@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **TensorTEE: Unifying Heterogeneous TEE Granularity for Efficient Secure Collaborative Tensor Computing**
+- **TensorTEE: Unifying Heterogeneous TEE Granularity for Efficient Secure Collaborative Tensor Computing.**
   2024-07-12 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2407.08903) · [ASPLOS](https://doi.org/10.1145/3622781.3674168)
   Yifan Hao, Xiaqing Li, Yuanbo Wen, Erhu Feng, Jianan Mu, Pengwei Jin, Tianyun Ma, Xinkai Song, Husheng Han, Zidong Du, Ling Liang, Xinyao Zheng, Qi Guo, Xing Hu
 
@@ -14,7 +14,7 @@
 
   </details>
 
-- **WeSee: Using Malicious \#VC Interrupts to Break AMD SEV-SNP**
+- **WeSee: Using Malicious \#VC Interrupts to Break AMD SEV-SNP.**
   2024-04-04 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2404.03526) · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00262)
   Shweta Shinde, Benedict Schlüter, Supraja Sridhara, Andrin Bertschi
 
@@ -58,7 +58,7 @@
   2024 · TEE · 含会议/期刊记录 · [TDSC](https://doi.org/10.1109/TDSC.2023.3268169)
   Omais Shafi Pandith
 
-- **SEV-Step: A Single-Stepping Framework for AMD-SEV**
+- **SEV-Step A Single-Stepping Framework for AMD-SEV.**
   2024 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2307.14757) · [TCHES](https://doi.org/10.46586/TCHES.V2024.I1.180-206)
   Anja Rabich, Luca Wilke, Jan Wichelmann, Thomas Eisenbarth
 
@@ -74,7 +74,7 @@
   2024 · TEE · 含会议/期刊记录 · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00090)
   David F. Oswald, Jo Van Bulck, Lesly-Ann Daniel, Fritz Alder, Frank Piessens
 
-- **On (the Lack of) Code Confidentiality in Trusted Execution Environments**
+- **On (the Lack of) Code Confidentiality in Trusted Execution Environments.**
   2024 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2212.07899) · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00259)
   Daniele Lain, Ivan Puddu, Moritz Schneider, Stefano Boschetto, Srdjan Capkun, Srdjan Čapkun
 
@@ -86,7 +86,7 @@
 
   </details>
 
-- **No Privacy Left Outside: On the (In-)Security of TEE-Shielded DNN Partition for On-Device ML**
+- **No Privacy Left Outside: On the (In-)Security of TEE-Shielded DNN Partition for On-Device ML.**
   2024 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2310.07152) · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00052)
   Yao Guo, Bingyan Liu, Yifeng Cai, Chen Gong, Yuanyuan Yuan, Xiangqun Chen, Ding Li, Ziqi Zhang
 
@@ -142,7 +142,7 @@
   2024 · TEE · 含会议/期刊记录 · [TDSC](https://doi.org/10.1109/TDSC.2023.3334277)
   Kevin Leach, Shoumeng Yan, Fengwei Zhang, Zhengyu He, Chenxu Wang, Zhenyu Ning, Jin Li, Yunjie Deng, Jiannong Cao
 
-- **ACAI: Protecting Accelerator Execution with Arm Confidential Computing Architecture**
+- **ACAI: Protecting Accelerator Execution with Arm Confidential Computing Architecture.**
   2024 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2305.15986) · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/sridhara)
   Shweta Shinde, Supraja Sridhara, Mark Kuhne, Benedict Schlüter, Andrin Bertschi, Fabio Aliberti
 
@@ -158,7 +158,7 @@
   2024 · TEE · 含会议/期刊记录 · [HPCA](https://doi.org/10.1109/HPCA57654.2024.00051)
   Sanjay Deshpande, Chuanqi Xu, Yao Lu, Theodoros Trochatos, Yongshan Ding, Jakub Szefer
 
-- **A Comprehensive Trusted Runtime for WebAssembly with Intel SGX**
+- **A Comprehensive Trusted Runtime for WebAssembly With Intel SGX.**
   2024 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2312.09087) · [TDSC](https://doi.org/10.1109/TDSC.2023.3334516)
   Marcelo Pasin, Giovanni Mazzeo, Darshan Vaydia, Valerio Schiavoni, Arne Hollum, Jämes Ménétrey, Pascal Felber
 

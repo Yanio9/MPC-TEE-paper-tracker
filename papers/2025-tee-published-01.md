@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **TEEMS: A Trusted Execution Environment based Metadata-protected Messaging System**
+- **TEEMS: A Trusted Execution Environment based Metadata-protected Messaging System.**
   2025-06-12 · TEE · 含会议/期刊记录 · [PoPETs](https://doi.org/10.56553/POPETS-2025-0119) · [IACR ePrint](https://eprint.iacr.org/2025/1102)
   Ian Goldberg, Sajin Sasy, Aaron Johnson
 
@@ -14,7 +14,7 @@
 
   </details>
 
-- **Attestable Builds: Compiling Verifiable Binaries on Untrusted Systems using Trusted Execution Environments**
+- **Attestable Builds: Compiling Verifiable Binaries on Untrusted Systems using Trusted Execution Environments.**
   2025-05-05 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2505.02521) · [ACM CCS](https://doi.org/10.1145/3719027.3765128)
   Alastair R. Beresford, Daniel Hugenroth, Mario Lins, René Mayrhofer, Alastair Beresford
 
@@ -26,7 +26,7 @@
 
   </details>
 
-- **Transparent Attested DNS for Confidential Computing Services**
+- **Transparent Attested DNS for Confidential Computing Services.**
   2025-03-18 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2503.14611) · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/delignat-lavaud)
   Antoine Delignat-Lavaud, Sylvan Clebsch, Christoph M. Wintersteiger, Manuel Costa, Kapil Vaswani, Cédric Fournet
 
@@ -38,7 +38,7 @@
 
   </details>
 
-- **ZIPNet: Low-bandwidth anonymous broadcast from (dis)Trusted Execution Environments**
+- **ZIPNet: Low-bandwidth anonymous broadcast from (dis)Trusted Execution Environments.**
   2025 · TEE · 含会议/期刊记录 · [PoPETs](https://doi.org/10.56553/POPETS-2025-0058) · [IACR ePrint](https://eprint.iacr.org/2024/1227)
   Rui Wang, Ian Miers, Michael Rosenberg, Maurice Shih, Zhenyu Zhao, Fan Zhang
 
@@ -54,7 +54,7 @@
   2025 · TEE · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3719027.3765204)
   Christina Garman, Stephan van Schaik, Jalen Chuang, Alexander Seto, Samy Amer, Daniel Genkin, Oytun Kuday Duran
 
-- **The Road to Trust: Building Enclaves within Confidential VMs**
+- **The Road to Trust: Building Enclaves within Confidential VMs.**
   2025 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2402.11438) · [NDSS](https://www.ndss-symposium.org/ndss-paper/the-road-to-trust-building-enclaves-within-confidential-vms/)
   Shijun Zhao, XiaoFeng Wang, Shoumeng Yan, Dan Meng, Linke Song, Benshan Mei, Shuang Liu, Wenhao Wang, Rui Hou
 
@@ -106,7 +106,7 @@
   2025 · TEE · 含会议/期刊记录 · [IEEE S&amp;P](https://doi.org/10.1109/SP61157.2025.00013)
   Jaehyuk Lee, Xiaokuan Zhang, Fan Sang, Taesoo Kim
 
-- **OPSA: Efficient and Verifiable One-Pass Secure Aggregation with TEE for Federated Learning**
+- **OPSA: Efficient and Verifiable One-Pass Secure Aggregation With TEE for Federated Learning.**
   2025 · TEE · 含会议/期刊记录 · [TDSC](https://doi.org/10.1109/TDSC.2025.3565640) · [IACR ePrint](https://eprint.iacr.org/2024/476)
   Jinsong Han, Zhiguo Wan, Zhangshuang Guan, Yulin Zhao
 
@@ -154,7 +154,7 @@
   2025 · TEE · 含会议/期刊记录 · [ACM CCS](https://doi.org/10.1145/3719027.3765029)
   Enriquillo Valdez, Shixuan Zhao, Hani Jamjoom, Salman Ahmed, Zhongshu Gu, Zhiqiang Lin
 
-- **Formal Security Analysis of the AMD SEV-SNP Software Interface**
+- **Formal Security Analysis of the AMD SEV-SNP Software Interface.**
   2025 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2403.10296) · [TDSC](https://doi.org/10.1109/TDSC.2025.3528737)
   Petar Paradzik, Marko Horvat, Ante Derek, Petar Paradžik
 
@@ -166,7 +166,7 @@
 
   </details>
 
-- **Dorami: Privilege Separating Security Monitor on RISC-V TEEs**
+- **Dorami: Privilege Separating Security Monitor on RISC-V TEEs.**
   2025 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2410.03653) · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/kuhne)
   Shweta Shinde, Mark Kuhne, Stavros Volos
 

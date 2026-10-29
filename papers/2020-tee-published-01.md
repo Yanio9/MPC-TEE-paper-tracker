@@ -2,7 +2,7 @@
 
 [总目录](../PAPERS.md)
 
-- **TeeRex: Discovery and Exploitation of Memory Corruption Vulnerabilities in SGX Enclaves**
+- **TeeRex: Discovery and Exploitation of Memory Corruption Vulnerabilities in SGX Enclaves.**
   2020-07-15 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2007.07586) · [USENIX Security](https://www.usenix.org/conference/usenixsecurity20/presentation/cloosters)
   Michael Rodler, Tobias Cloosters, Lucas Davi
 
@@ -14,7 +14,7 @@
 
   </details>
 
-- **Occlum: Secure and Efficient Multitasking Inside a Single Enclave of Intel SGX**
+- **Occlum: Secure and Efficient Multitasking Inside a Single Enclave of Intel SGX.**
   2020-01-21 · TEE · 含会议/期刊记录 · [arXiv](https://arxiv.org/abs/2001.07450) · [ASPLOS](https://doi.org/10.1145/3373376.3378469)
   Yi Xu, Yubin Xia, Shoumeng Yan, Youren Shen, Runji Wang, Hongliang Tian, Kang Chen, Yu Chen
 
