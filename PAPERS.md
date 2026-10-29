@@ -6,9 +6,9 @@
 
 自动筛选结果，建议按匹配依据人工复核；arXiv 和 IACR ePrint 是预印本来源。
 
-共 **185** 篇去重论文。
+共 **634** 篇去重论文。
 
-## MPC + TEE（1）
+## MPC + TEE（2）
 
 ### 2026
 
@@ -24,7 +24,11 @@
 
   </details>
 
-## MPC（152）
+- **Loricae: Upgrading and Optimizing Multi-Party Computation Protocols with Filmy Hardware Enclaves.**
+  2026 · MPC / TEE · [TCHES](https://doi.org/10.46586/TCHES.V2026.I2.73-105)
+  Xiaoyu Fan, Mingyu Gao, Yifan Song, Xiang Li, Weijie Liu, Baiting Jiang
+
+## MPC（480）
 
 ### 2026
 
@@ -1444,8 +1448,8 @@
 
   </details>
 
-- **Perfectly Secure Network-Agnostic MPC Comes for Free**
-  2026-02-24 · MPC · [IACR ePrint](https://eprint.iacr.org/2026/377)
+- **Perfectly Secure Network-Agnostic MPC Comes for Free.**
+  2026-02-24 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_12) · [IACR ePrint](https://eprint.iacr.org/2026/377)
   Xiaoyu Ji, Chen-Da Liu-Zhang, Yifan Song
 
   <details><summary>摘要 / Abstract</summary>
@@ -1515,6 +1519,302 @@
   匹配依据：MPC: garbled circuit, garbling scheme, secure two party computation
 
   </details>
+
+- **cwPSU: Efficient Unbalanced Private Set Union via Constant-weight Codes.**
+  2026 · MPC · [NDSS](https://www.ndss-symposium.org/ndss-paper/cwpsu-efficient-unbalanced-private-set-union-via-constant-weight-codes/)
+  Song Bian, Hui Li, Qingwen Li
+
+- **Updatable Private Set Intersection from Symmetric-Key Techniques.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25317-0_13)
+  Junxin Liu, Xinyi Shi, Peihan Miao, Jifeng Wang, Mike Rosulek
+
+- **Updatable Multi-Party Private Set Intersection for Real-Time Collaborative Threat Intelligence.**
+  2026 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2026.3707440)
+  Zhongming Wang, Biwen Chen, Xiaoguo Li, Ze Jiang, Di Zhang, Xiaofeng Liao, Tao Xiang
+
+- **Universally Composable Almost-Everywhere Secure Computation.**
+  2026 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-025-09565-2)
+  Juan A. Garay, Rutvik Patel, Pouyan Forghani, Nishanth Chandran, Rafail Ostrovsky, Vassilis Zikas
+
+- **Unconditionally Secure MPC for Boolean Circuits with Constant Communication.**
+  2026 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-35418-1_1)
+  Yubo Zeng, Kang Yang, Min Zhang, Dengguo Feng
+
+- **UFOs: An Ultra-Fast Toolkit for Multiparty Computation on Small Elements.**
+  2026 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2026.3734714)
+  Yuan Zhang, Moyang Xie, Sheng Zhong, Jiacheng Gao
+
+- **Traceable Secret Sharing Schemes for General Access Structures.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_1)
+  Miquel Guiot, Oriol Farràs
+
+- **Traceable Secret Sharing Revisited.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_2)
+  Abhishek Jain, Vipul Goyal, Aditi Partap
+
+- **Towards Scalable YOSO MPC via Packed Secret-Sharing.**
+  2026 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-95-5116-3_3)
+  Daniel Escudero, Elisaweta Masserova, Antigoni Polychroniadou
+
+- **Threshold Homomorphic Secret Sharing: Definitions and Constructions.**
+  2026 · MPC · [series/lncs](https://doi.org/10.1007/978-981-95-5119-4_18)
+  Junqing Gong, Rupeng Yang, Shifeng Sun, Xinzhou Wang, Yuan Luo, Dawu Gu
+
+- **Taming Adaptive Security and New Access Structures in Evolving Secret Sharing.**
+  2026 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-95-5125-5_3)
+  Sara Giammusso, Danilo Francati, Daniele Venturi
+
+- **Succinct Line-Point Zero-Knowledge Arguments from Homomorphic Secret Sharing.**
+  2026 · MPC · [series/lncs](https://doi.org/10.1007/978-981-95-5116-3_19)
+  Zhe Li, Mengmeng Zhou, Yizhou Yao, Chaoping Xing, Chen Yuan
+
+- **Succinct Garbled Circuits with Low-Depth Garbling Algorithms.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_9)
+  Huijia Lin, Hanjun Li, George Lu
+
+- **Succinct Computational Secret Sharing for Monotone Circuits.**
+  2026 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-95-5125-5_4)
+  Shafik Nassar, George Lu, Brent Waters
+
+- **Statistically Secure Asynchronous MPC with Linear Communication and 풪(n5) Additive Overhead.**
+  2026 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-35418-1_2)
+  Yifan Song, Xiaoyu Ji
+
+- **Simultaneous-Message and Succinct Secure Computation: Reusable and Multiparty Protocols.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_4)
+  Akshayaram Srinivasan, Abhishek Jain, David J. Wu, Siddharth Agarwal
+
+- **Simplified PIR and CDS Protocols and Improved Linear Secret-Sharing Schemes.**
+  2026 · MPC · [TCC](https://doi.org/10.1007/978-3-032-12293-3_12)
+  Bar Alon, Or Lasri, Amos Beimel
+
+- **Secure Computation Over Gaussian Multiple-Access Wiretap Channels With Feedback.**
+  2026 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2026.3715114)
+  Han Deng, Bin Dai, Yuhan Yang, Fan Cheng, Haoheng Yuan, Chao Qi
+
+- **Secure Computation Against NC1 Leakage Without Secure Hardware.**
+  2026 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-35415-0_10)
+  Yuyu Wang
+
+- **Secret Sharing Schemes From Correlated Random Variables and Rate-Limited Public Communication.**
+  2026 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2026.3657030)
+  Rumia Sultana, Remi A. Chou
+
+- **SecP-Tuning: Efficient Privacy-Preserving Prompt Tuning for Large Language Models via MPC.**
+  2026 · MPC · [ICLR](https://proceedings.iclr.cc/paper_files/paper/2026/hash/7f2e5d16c2c5ac161ce7aa44af35c0fe-Abstract-Conference.html)
+  Zhuo Zhang, Xun Zhou, Yehong Zhang, Shiyu Liu, Jinglong Luo, Ye Dong, Hui Wang, Zenglin Xu, Yue Yu
+
+- **SecOIR: Enhancing Privacy and Accuracy in Outsourced Image Retrieval via Function Secret Sharing and Deep Hashing.**
+  2026 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2025.3628356)
+  Zhi Li, Hao Wang, Xiaochao Wei, Ye Su, Lei Wu, Wenying Zhang
+
+- **Scaling Fully Secure MPC via Robust Recursive Search and Gap Amplification.**
+  2026 · MPC · [PKC](https://doi.org/10.1007/978-3-032-26734-4_10)
+  Matan Hamilis, Ariel Nof
+
+- **Scalable Privacy-Preserving Shortest Path Distance Computation via 2-Hop Labeling in MPC.**
+  2026 · MPC · [PACMMOD / SIGMOD](https://doi.org/10.1145/3786695)
+  Huizhong Wang, Kun Chen, Chenhao Ma, Yuanyuan Zeng, Wei Dong
+
+- **RoundRole: Unlocking the Efficiency of Multi-party Computation with Bandwidth-aware Execution.**
+  2026 · MPC · [NDSS](https://www.ndss-symposium.org/ndss-paper/roundrole-unlocking-the-efficiency-of-multi-party-computation-with-bandwidth-aware-execution/)
+  Kun Chen, Wei Xu, Jiping Yu, Yunyi Chen, Xiaoyu Fan, Xin Liu
+
+- **Randomized Agreement, Verifiable Secret Sharing and Multi-party Computation in Granular Synchrony.**
+  2026 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-95-5116-3_1)
+  David Heath, Ananya Appan, Ling Ren
+
+- **Pseudorandom Correlation Functions for Garbled Circuits.**
+  2026 · MPC · [TCC](https://doi.org/10.1007/978-3-032-12293-3_15)
+  Srini Devadas, Geoffroy Couteau, Sacha Servan-Schreiber, Alexander Koch
+
+- **Privacy-Preserving Continuous Authentication of Smartphone Users via Secret Sharing.**
+  2026 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2026.3680150)
+  Mingming Hu, Ding Wang, Daojun Han, Bibo Tu, Jingtao Guo
+
+- **PriFFT: Privacy-Preserving Federated Fine-Tuning of Large Language Models via Hybrid Secret Sharing.**
+  2026 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2026.3661572)
+  Ke Cheng, Qiang Qu, Zhichao You, Jiaxuan Fu, Xutong Mu, Shiyang Ma, Yulong Shen, Xuewen Dong
+
+- **Practical Traceable Over-Threshold Multi-Party Private Set Intersection.**
+  2026 · MPC · [NDSS](https://www.ndss-symposium.org/ndss-paper/practical-traceable-over-threshold-multi-party-private-set-intersection/)
+  Kailiang Ji, Weijing You, Huiyang He, Le Yang, Jingqiang Lin
+
+- **Practical Private Set Operation via Secret Sharing for Lightweight Clients.**
+  2026 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2026.3684841)
+  Ziyu Niu, Yumei Li, Yudi Zhang, Willy Susilo, Hao Wang, Ye Su
+
+- **Practical Multi-Party Private Set Intersection with Reducible Zero-Sharing.**
+  2026 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00006)
+  Jin Tan, Zhenyu Guan, Hua Guo, Yewei Guan, Jiarong Huo, Man Ho Au
+
+- **Polynomial Secret Sharing Schemes and Algebraic Matroids.**
+  2026 · MPC · [series/lncs](https://doi.org/10.1007/978-3-032-12293-3_14)
+  Oriol Farràs, Amos Beimel, Adriana Moya
+
+- **PUFF: Maximally Proactive Security for Free in Perfectly Secure MPC with Guaranteed Output Delivery.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_18)
+  Jiarui Li, Mengzhen Zou, Guoyan Zhang, Guidong Li, Chen Qian
+
+- **Over-Threshold Multiparty Private Set Intersection for Collaborative Network Intrusion Detection.**
+  2026 · MPC · [NSDI](https://www.usenix.org/conference/nsdi26/presentation/arpaci)
+  Florian Kerschbaum, Raouf Boutaba, Onur Eren Arpaci
+
+- **Optimistic Asynchronous Dynamic-Committee Proactive Secret Sharing.**
+  2026 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00243)
+  Zhuolun Xiang, Qiang Tang, Bin Hu, Zhenliang Lu, Zongyang Zhang, Jianwei Liu
+
+- **Optimal Access Structure Partition Methods for Image Secret Sharing.**
+  2026 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2025.3645631)
+  Li Tang, Ching-Nung Yang, Wei Qi Yan, Zhihua Xia, Xiaotian Wu
+
+- **On the Security of Linear Secret Sharing with General Noisy Side-Channel Leakage.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25336-1_17)
+  Hessam Mahdavifar, Utkarsh Gupta
+
+- **On the Power of Sumcheck in Secure Multiparty Computation.**
+  2026 · MPC · [PKC](https://doi.org/10.1007/978-3-032-26734-4_9)
+  Zhe Li, Yizhou Yao, Chen Yuan, Chaoping Xing
+
+- **On the Attribute Hiding Security of Privacy Preserving Secret-Sharing-Based Outsourced Decision Tree Classification.**
+  2026 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2026.3714143)
+  Yu-Chi Chen, Chang-Ching Hung, Tsung-Chen Hsieh, Srinivas Shekar
+
+- **On Succinct Non-interactive Secure Computation with Malicious Security.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_20)
+  Arka Rai Choudhuri, Omer Paneth, Abhishek Jain, Maya Farber Brodsky
+
+- **Oblivis: A Framework for Delegated and Efficient Oblivious Transfer.**
+  2026 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2026-0104)
+  Aydin Abadi, Yvo Desmedt
+
+- **Non-interactive Secure Computation with Constant Communication Overhead.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_5)
+  Naty Peter, Yuval Ishai, Akshayaram Srinivasan, Ziyang Jin
+
+- **New Upper and Lower Bounds for Perfectly Secure MPC.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_13)
+  Lawrence Roy, Shravani Patil, Arpita Patra, Ivan Damgård
+
+- **New Framework for Structure-Aware PSI From Distributed Function Secret Sharing.**
+  2026 · MPC · [series/lncs](https://doi.org/10.1007/978-981-95-5116-3_10)
+  Peihan Miao, Dung Bui, Gayathri Garimella, Phuoc Pham Van Long
+
+- **Multiparty Homomorphic Secret Sharing and More from LPN and MQ.**
+  2026 · MPC · [TCC](https://doi.org/10.1007/978-3-032-12293-3_16)
+  Geoffroy Couteau, Naman Kumar, Xiaxi Ye
+
+- **Multiparty Computation with Minimal Overhead Without Circuit Transformation.**
+  2026 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-35418-1_5)
+  Aditya Hegde, Mingyuan Wang, Phuoc Pham Van Long
+
+- **MinBucket MPSI: Breaking the Max-Size Bottleneck in Multi-Party Private Set Intersection.**
+  2026 · MPC · [NDSS](https://www.ndss-symposium.org/ndss-paper/minbucket-mpsi-breaking-the-max-size-bottleneck-in-multi-party-private-set-intersection/)
+  Yang Cao, Binbin Tu, Yu Chen, Boyudong Zhu
+
+- **Malicious Private Set Union with Two-Sided Output.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25317-0_14)
+  Ni Trieu, Sihang Pu, Jiahui Gao
+
+- **Malicious Homomorphic Secret Sharing with Applications to DV-NIZK and More.**
+  2026 · MPC · [PKC](https://doi.org/10.1007/978-3-032-26740-5_7)
+  Lisa Kohl, Zhe Li, Pedro Capitão, Hila Dahari-Garbian
+
+- **Maintaining Sublinear Locality Over Time: Adaptively Secure MPC on a Reusable Hidden Graph.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_19)
+  Elette Boyle, Ran Cohen, Pierre Meyer
+
+- **Just-in-Time-OPRFs and a Modular Framework for Fast Private Set Intersection.**
+  2026 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-35418-1_12)
+  Rishabh Ranjan, Doreen Riepel, Mihir Bellare
+
+- **Honest Majority Constant-Round MPC with Linear Communication from One-Way Functions.**
+  2026 · MPC · [series/lncs](https://doi.org/10.1007/978-3-032-12287-2_1)
+  Junru Li, Yifan Song
+
+- **GoSSamer: Lightweight and Linear-Communication Asynchronous (Dynamic Proactive) Secret Sharing and the Applications.**
+  2026 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00185)
+  Bin Hu, Yuan Lu, Xinxin Xing, Yizhong Liu, Boyang Liao, Jianwei Liu, Xun Lin, Tianwei Zhang
+
+- **Fuzzy Private Set Intersection from VOLE.**
+  2026 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-95-5116-3_11)
+  Sihang Pu, Aron van Baarsen
+
+- **Faster Than Ever: A New Lightweight Private Set Intersection and Its Variants.**
+  2026 · MPC · [NDSS](https://www.ndss-symposium.org/ndss-paper/faster-than-ever-a-new-lightweight-private-set-intersection-and-its-variants/)
+  Liyao Xiang, Jinyong Shan, Weidong Qiu, Guowei Ling, Peng Tang
+
+- **Fast and Efficient Perfectly Secure Network-Agnostic Secure Computation.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_7)
+  Gilad Stern, Gilad Asharov, Fatima Elsheimy
+
+- **FESCAT: Function Secret Sharing Based Efficient Secure Collaborative Analysis of Time Series Data.**
+  2026 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2025.3632891)
+  David S. L. Wei, Jingcheng Zhao, Qibin Sun, Bin Zhu, Kaiping Xue, Jun Lu
+
+- **Efficient Privacy-Preserving User Tracking From Threshold Multi-Party Private Set Intersection.**
+  2026 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2026.3705319)
+  Jianting Ning, Haining Yang, Jing Qin, Bo Zhao, Jixin Ma
+
+- **Efficient Malicious Multiparty Private Set Intersection Supporting Cardinality, Sharing, and Batching.**
+  2026 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2026.3671114)
+  Kim-Kwang Raymond Choo, Zhenfu Cao, Xiyuan Han, Jun Zhou, Xiaolei Dong
+
+- **Efficient Fuzzy Private Set Intersection from Secret-Shared OPRF.**
+  2026 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00172)
+  Meng Hao, Yonggang Wen, Xinpeng Yang, Chenkai Weng, Robert H. Deng, Tianwei Zhang
+
+- **Dishonest-Majority Secure Computation via PIR-Authenticated Multiplication Triples.**
+  2026 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-35418-1_15)
+  Matan Hamilis, Yuval Ishai, Ariel Nof, Elette Boyle, Niv Gilboa
+
+- **Deniable Secret Sharing.**
+  2026 · MPC · [series/lncs](https://doi.org/10.1007/978-3-032-12293-3_13)
+  Sophia Yakoubov, Sebastian Kolby, Divya Ravi, Ran Canetti, Ivan Damgård
+
+- **Decor: Delegated Computation on Randomness for Secure Evaluation of Nonlinear Functions.**
+  2026 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00256)
+  Hyunghoon Cho, Haris Smajlovic, Ruzica Piskac, Kyle Sheng, Timos Antonopoulos
+
+- **DMPF-PSI: Enabling High-Frequency Updatable Private Set Intersection on Dynamic Data.**
+  2026 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2026.3705330)
+  Zhi Li, Debiao He, Hao Wang, Jiadi Zhang, Ye Su
+
+- **Cryptanalysis of "Multi-Party Private Set Intersection With One-Round Online Interaction".**
+  2026 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2026.3666890)
+  Yewei Guan, Jiarong Huo, Ye Yuan, Hua Guo, Jin Tan
+
+- **Concretely-Efficient Multi-Key Homomorphic Secret Sharing and Applications.**
+  2026 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00004)
+  Srini Devadas, Geoffroy Couteau, Kaiwen He, Sacha Servan-Schreiber
+
+- **Client-Server Homomorphic Secret Sharing in the CRS Model.**
+  2026 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-032-25324-8_3)
+  Geoffroy Couteau, Aditya Hegde, Lawrence Roy, Lalita Devadas, Abhishek Jain, Damiano Abram, Sacha Servan-Schreiber
+
+- **Broadcast-Optimal Secure Computation from Black-Box Oblivious Transfer.**
+  2026 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-95-5116-3_5)
+  Luisa Siniscalchi, Michele Ciampi, Divya Ravi, Yu Xia
+
+- **Breaking the $\\varOmega (\|C\|\\kappa )$ Barrier on Garbled Circuit Size in the Random Oracle Model.**
+  2026 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-35418-1_18)
+  Junru Li, Yifan Song
+
+- **Beyond the Output: Inference Attacks on Private Set Union and Multi-Key Private Matching.**
+  2026 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2026-0155)
+  Francesca Falzon, Tianxin Tang, Kenneth G. Paterson, Andrea Raguso
+
+- **Approx-PSI: Efficient Differentially Private Set Intersection-Based Analysis.**
+  2026 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2025.3629820)
+  Jian Long, Ziyuan Liang, Zhan Qin, Chao Li, Fan Zhang
+
+- **Actively Secure MPC with O(\|C\|) Computation and Communication via CRT.**
+  2026 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-35418-1_7)
+  Daniel Escudero, Alexander Bienstock, Antigoni Polychroniadou
+
+- **A Construction of Evolving k-Threshold Secret Sharing Scheme over A Polynomial Ring.**
+  2026 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-95-5125-5_1)
+  Sian-Jheng Lin, Xianhong Xie, Hongru Cao, Qi Cheng, Nenghai Yu, Yunghsiang Sam Han
 
 ### 2025
 
@@ -1770,6 +2070,422 @@
 
   </details>
 
+- **Π: A Unified Framework for Computational Verifiable Secret Sharing.**
+  2025 · MPC · [PKC](https://doi.org/10.1007/978-3-031-91829-2_4)
+  Karim Baghery
+
+- **ømega (1/λ )-Rate Boolean Garbling Scheme from Generic Groups.**
+  2025 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-01884-7_16)
+  Geoffroy Couteau, Aditya Hegde, Naman Kumar, Carmit Hazay
+
+- **Wave Hello to Privacy: Efficient Mixed-Mode MPC using Wavelet Transforms.**
+  2025 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2025-0083)
+  Sameer Wagh, Mehmet Ugurbil, Miguel de Vega, José Reis, Ryan Henry
+
+- **Verifiable Secret Sharing from Symmetric Key Cryptography with Improved Optimistic Complexity.**
+  2025 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-96-0941-3_4)
+  Ignacio Cascudo, Daniele Cozzo, Emanuele Giunta
+
+- **Verifiable Secret Sharing Simplified.**
+  2025 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP61157.2025.00046)
+  Alin Tomescu, Zhuolun Xiang, Alexander Spiegelman, Sourav Das, Ling Ren, Benny Pinkas
+
+- **Velox: Scalable Fair Asynchronous MPC from Lightweight Cryptography.**
+  2025 · MPC · [ACM CCS](https://doi.org/10.1145/3719027.3765114)
+  Chen-Da Liu-Zhang, Aniket Kate, Akhil Bandarupalli, Yifan Song, Daniel Pöllmann, Xiaoyu Ji
+
+- **Updatable Private Set Intersection Revisited: Extended Functionalities, Deletion, and Worst-Case Complexity.**
+  2025 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-96-0938-3_7)
+  Saikrishna Badrinarayanan, Peihan Miao, Xinyi Shi, Ruida Zeng, Max Tromanhauser
+
+- **Unclonable Secret Sharing.**
+  2025 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-96-0947-5_5)
+  Vipul Goyal, Prabhanjan Vijendra Ananth, Jiahui Liu, Qipeng Liu
+
+- **Ultra-Fast Private Set Intersection From Efficient Oblivious Key-Value Stores.**
+  2025 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2025.3557963)
+  Shifeng Sun, Peng Tang, Weidong Qiu, Shouling Ji, Fei Tang, Guowei Ling
+
+- **Towards Efficient and Practical Multi-party Computation under Inconsistent Trust in TEEs.**
+  2025 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP61157.2025.00185)
+  Qi Wang, Xuanwei Hu, Rujia Li, Yi Liu
+
+- **TinyLabels: How to Compress Garbled Circuit Input Labels, Efficiently.**
+  2025 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-91095-1_9)
+  Hanjun Li, Marian Dietz, Huijia Lin
+
+- **Timed Secret Sharing.**
+  2025 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-96-0941-3_5)
+  Philipp Jovanovic, Aydin Abadi, Alireza Kavousi
+
+- **The Round Complexity of Black-Box Post-quantum Secure Computation.**
+  2025 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-01884-7_1)
+  Rohit Chatterjee, Takashi Yamakawa, Xiao Liang, Omkant Pandey
+
+- **The Meta-complexity of Secret Sharing.**
+  2025 · MPC · [STOC](https://doi.org/10.1145/3717823.3718161)
+  Oded Nir, Benny Applebaum
+
+- **The Concrete Security of Two-Party Computation: Simple Definitions, and Tight Proofs for PSI and OPRFs.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-981-96-0938-3_11)
+  Rishabh Ranjan, Doreen Riepel, Ali Aldakheel, Mihir Bellare
+
+- **Strong Secret Sharing with Snitching.**
+  2025 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-01884-7_10)
+  Tomasz Lizurej, Jan Bormet, Marcin Mielniczuk, Stefan Dziembowski, Sebastian Faust
+
+- **Split-State Non-malleable Codes and Secret Sharing Schemes for Quantum Messages.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-78017-2_3)
+  Naresh Goud Boddu, João Ribeiro, Vipul Goyal, Rahul Jain
+
+- **SoK: Computational and Distributed Differential Privacy for MPC.**
+  2025 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2025-0023)
+  Fredrik Meisingseth, Christian Rechberger
+
+- **Simultaneous-Message and Succinct Secure Computation.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-91092-0_8)
+  Elette Boyle, Akshayaram Srinivasan, Sacha Servan-Schreiber, Abhishek Jain
+
+- **Silent Circuit Relinearisation: Sublinear-Size (Boolean and Arithmetic) Garbled Circuits from DCR.**
+  2025 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-01884-7_14)
+  Peter Scholl, Lawrence Roy, Pierre Meyer, Claudio Orlandi
+
+- **SelectFormer in Data Markets: Privacy-Preserving and Efficient Data Selection for Transformers with Multi-Party Computation.**
+  2025 · MPC · [ICLR](https://openreview.net/forum?id=2cF3f9t31y)
+  Felix Xiaozhu Lin, Xu Ouyang, Yangfeng Ji
+
+- **Secure and efficient transciphering for FHE-based MPC.**
+  2025 · MPC · [TCHES](https://doi.org/10.46586/TCHES.V2025.I3.745-780)
+  Pierrick Méaux, Clément Hoffmann, Antonio Guimarães, Diego F. Aranha
+
+- **Secure Computation with Parallel Calls to 2-Ary Functions.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-78023-3_8)
+  Akshayaram Srinivasan, Varun Narayanan, Shubham Vivek Pawar
+
+- **Secret-Sharing Schemes for High Slices.**
+  2025 · MPC · [TCC](https://doi.org/10.1007/978-3-031-78023-3_19)
+  Or Lasri, Oriol Farràs, Oded Nir, Amos Beimel
+
+- **Secret Sharing with Publicly Verifiable Deletion.**
+  2025 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-91131-6_10)
+  Benjamin Sela, Jonathan Katz
+
+- **SHARK: Actively Secure Inference Using Function Secret Sharing.**
+  2025 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP61157.2025.00175)
+  Rahul Sharma, Kanav Gupta, Nishanth Chandran, Divya Gupta, Jonathan Katz
+
+- **SEAF: Secure Evaluation on Activation Functions with Dynamic Precision for Secure Two-Party Inference.**
+  2025 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/guo-hao-seaf)
+  Ximing Fu, Zhusen Liu, Zhaoqian Liu, Hao Guo
+
+- **Rushing at SPDZ: On the Practical Security of Malicious MPC Implementations.**
+  2025 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP61157.2025.00176)
+  Sabine Oechsner, Peter Scholl, Frederik Huss Nielsen, Alexander Kyster
+
+- **Round-Optimal Black-Box Multiparty Computation from Polynomial-Time Assumptions.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-91092-0_12)
+  Michele Ciampi, Luisa Siniscalchi, Hendrik Waldner, Rafail Ostrovsky
+
+- **Reversible Data Hiding in Encrypted Images With Secret Sharing and Multivariate Linear Equation.**
+  2025 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2025.3590551)
+  Xianquan Zhang, Chunqiang Yu, Peng Liu, Xinpeng Zhang, Guoxiang Li, Zhenjun Tang
+
+- **Reducing the Share Size of Weighted Threshold Secret Sharing Schemes via Chow Parameters Approximation.**
+  2025 · MPC · [TCC](https://doi.org/10.1007/978-3-031-78023-3_17)
+  Miquel Guiot, Oriol Farràs
+
+- **Recurrent Private Set Intersection for Unbalanced Databases with Cuckoo Hashing and Leveled FHE.**
+  2025 · MPC · [NDSS](https://www.ndss-symposium.org/ndss-paper/recurrent-private-set-intersection-for-unbalanced-databases-with-cuckoo-hashing-and-leveled-fhe/)
+  Eduardo Chielle, Michail Maniatakos
+
+- **Re-visiting Authorized Private Set Intersection: A New Privacy-Preserving Variant and Two Protocols.**
+  2025 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2025-0041)
+  Evangelia Anna Markatou, Francesca Falzon
+
+- **Rate-1 Arithmetic Garbling From Homomorphic Secret Sharing.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-78023-3_3)
+  Lawrence Roy, Peter Scholl, Pierre Meyer, Claudio Orlandi
+
+- **QuietOT: Lightweight Oblivious Transfer with a Public-Key Setup.**
+  2025 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-96-0888-1_7)
+  Geoffroy Couteau, Srini Devadas, Lalita Devadas, Sacha Servan-Schreiber, Alexander Koch
+
+- **Protecting Distributed Primitives Against Leakage: Equivocal Secret Sharing and more.**
+  2025 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-024-09524-3)
+  Mor Weiss, Muthuramakrishnan Venkitasubramaniam, Carmit Hazay
+
+- **Private Set Union with Multiple Contributions.**
+  2025 · MPC · [NeurIPS](http://papers.nips.cc/paper_files/paper/2025/hash/81a4bde3b5c6665dbd780b1fd577851f-Abstract-Conference.html)
+  Ananda Theertha Suresh, Uri Stemmer, Travis Dick, Ziteng Sun, Alex Kulesza, Haim Kaplan
+
+- **Private Set Intersection and other Set Operations in the Third Party Setting.**
+  2025 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/yeo)
+  Jason H. M. Ying, Foo Yee Yeo
+
+- **Privacy-Preserving Authorized Set Matching via Dishonest Majority Multiparty Computation.**
+  2025 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2025.3599183)
+  Weidong Qiu, Liyao Xiang, Jinyong Shan, Fei Tang, Guowei Ling, Peng Tang, Shifeng Sun
+
+- **Physical-Bit Leakage Resilience of Linear Code-Based Secret Sharing.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-91101-9_3)
+  Hai H. Nguyen
+
+- **Perfectly-Secure Multiparty Computation with Linear Communication Complexity over Any Modulus.**
+  2025 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-96-0938-3_4)
+  Daniel Escudero, Wenhao Wang, Yifan Song
+
+- **Perfectly-Secure MPC with Constant Online Communication Complexity.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-78023-3_11)
+  Xiaxi Ye, Yifan Song
+
+- **PULSE: Parallel Private Set Union for Large-Scale Entities.**
+  2025 · MPC · [ACM CCS](https://doi.org/10.1145/3719027.3765108)
+  Ni Trieu, Jiahui Gao, Marina Blanton, Son Nguyen
+
+- **POTA: A Pipelined Oblivious Transfer Acceleration Architecture for Secure Multi-Party Computation.**
+  2025 · MPC · [TCHES](https://doi.org/10.46586/TCHES.V2025.I3.262-292)
+  Yong Liu, Ninghui Sun, Qinfen Hao, Xiaolin Li, Yong Zhang, Hongwei Liu, Wei Yan
+
+- **PM-ABE: Puncturable Bilateral Fine-Grained Access Control From Lattices for Secret Sharing.**
+  2025 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2024.3431035)
+  Debiao He, Mengxue Yang, Huaqun Wang
+
+- **PIGEON: A High Throughput Framework for Private Inference of Neural Networks using Secure Multiparty Computation.**
+  2025 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2025-0090)
+  Murali Annavaram, Christopher Harth-Kitzerow, Rachit Rajat, Yongqin Wang, Georg Carle
+
+- **On the Adaptive Security of Free-XOR-Based Garbling Schemes in the Plain Model.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-91095-1_8)
+  Karen Azari, Chethan Kamath, Anasuya Acharya
+
+- **New Upper Bounds for Evolving Secret Sharing via Infinite Branching Programs.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-78023-3_18)
+  Bar Alon, Tamar Ben David, Eran Omri, Anat Paskin-Cherniavsky, Amos Beimel
+
+- **NIZK Amplification via Leakage-Resilient Secure Computation.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-032-01907-3_15)
+  Eliran Kachlon, Benny Applebaum
+
+- **Multiparty Delegated Private Set Union With Efficient Updates on Outsourced Datasets.**
+  2025 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2024.3419576)
+  Heewon Chung, Myungsun Kim, Patrick Chulsoon Yang
+
+- **Multi-Party Private Set Intersection With One-Round Online Interaction.**
+  2025 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2025.3574993)
+  Shengnan Zhao, Chuan Zhao, Qiuliang Xu, Yu Meng, Shan Jing, Shimeng Lu, Zhenxiang Chen
+
+- **Multi-Key Homomorphic Secret Sharing.**
+  2025 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-91092-0_1)
+  Aditya Hegde, Geoffroy Couteau, Lalita Devadas, Sacha Servan-Schreiber, Abhishek Jain
+
+- **More Efficient, Privacy-Enhanced, and Powerful Privacy-Preserving Feature Retrieval Private Set Intersection.**
+  2025 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2025.3562695)
+  Guowei Ling, Fei Tang, Peng Tang, Weidong Qiu, Jinyong Shan
+
+- **Maliciously Secure Circuit Private Set Intersection via SPDZ-Compatible Oblivious PRF.**
+  2025 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2025-0082)
+  Changyu Dong, Linting Huang, Xiaojian Liang, Yaxi Yang, Hongyu Ren, Xiangfu Song, Jianying Zhou, Ye Dong
+
+- **Lower Bounds for Garbled Circuits from Shannon-Type Information Inequalities.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-032-01884-7_19)
+  Lawrence Roy, Jake Januzelli, Mike Rosulek
+
+- **Leap: A Fast, Lattice-Based OPRF with Application to Private Set Intersection.**
+  2025 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-91098-2_10)
+  Daniel Kales, Omid Mir, Sebastian Ramacher, Lena Heimberger, Riccardo Lolato, Christian Rechberger
+
+- **Labeled Private Set Intersection From Distributed Point Function.**
+  2025 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2025.3550059)
+  Kang Yang, Yu Yu, Qi Liu, Xiaojie Guo
+
+- **Is MPC Secure? Leveraging Neural Network Classifiers to Detect Data Leakage Vulnerabilities in MPC Implementations.**
+  2025 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP61157.2025.00181)
+  Wenjing Fang, Jin Tan, Lei Wang, Junming Ma, Lushan Song, Guopeng Lin, Weili Han, Xiaoning Du
+
+- **Ironman: Accelerating Oblivious Transfer Extension for Privacy-Preserving AI with Near-Memory Processing.**
+  2025 · MPC · [MICRO](https://doi.org/10.1145/3725843.3756025)
+  Tianshi Xu, Runsheng Wang, Chenqi Lin, Zhaohui Chen, Kang Yang, Meng Li, Ling Liang, Mingyu Gao, Yufei Wang
+
+- **Increasing the Resilience of Secure Multiparty Computation Using Security Modules.**
+  2025 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2025.3552670)
+  Lamya Abdullah, Felix C. Freiling, Dominique Schröder
+
+- **Improved Universal Thresholdizer from Iterative Shamir Secret Sharing.**
+  2025 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-024-09536-Z)
+  Wonhee Cho, Jiseung Kim, Jung Hee Cheon
+
+- **Improved Secure Two-party Computation from a Geometric Perspective.**
+  2025 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/guo-hao-improved)
+  Liqiang Peng, Lei Hu, Haiyang Xue, Weiran Liu, Hao Guo, Zhe Liu, Li Peng
+
+- **How to Make Any Computational Secret Sharing Scheme Adaptively Secure.**
+  2025 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-01884-7_11)
+  George Lu, Brent Waters
+
+- **Honest Majority MPC with Õ(\|C\|) Communication in Minicrypt.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-91092-0_16)
+  Xiaxi Ye, Yifan Song
+
+- **Honest Majority GOD MPC with O(sfdepth(C)) Rounds and Low Online Communication.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-981-96-0938-3_8)
+  Daniel Escudero, Alexander Bienstock, Amit Agarwal, Ivan Damgård
+
+- **Homomorphic Secret Sharing with Verifiable Evaluation.**
+  2025 · MPC · [TCC](https://doi.org/10.1007/978-3-031-78023-3_20)
+  Aarushi Goel, Arka Rai Choudhuri, Aditya Hegde, Abhishek Jain
+
+- **Highly Efficient Actively Secure Two-Party Computation with One-Bit Advantage Bound.**
+  2025 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP61157.2025.00183)
+  Junzuo Lai, Qi Wang, Anjia Yang, Yi Liu, Siu-Ming Yiu, Peng Yang, Jian Weng
+
+- **High-Throughput Secure Multiparty Computation with an Honest Majority in Various Network Settings.**
+  2025 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2025-0015)
+  Ajith Suresh, Murali Annavaram, Christopher Harth-Kitzerow, Yongqin Wang, Hossein Yalame, Georg Carle
+
+- **General Adversary Structures in Byzantine Agreement and Multi-party Computation with Active and Omission Corruption.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-78023-3_7)
+  Konstantinos Brazitikos, Vassilis Zikas
+
+- **Fully Anonymous Secret Sharing.**
+  2025 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-01884-7_12)
+  Paul Lou, Yuval Ishai, Abhishek Jain, Allison Bishop, Matthew Green
+
+- **Fast Enhanced Private Set Union in the Balanced and Unbalanced Scenarios.**
+  2025 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/tu)
+  Cong Zhang, Yujie Bai, Yang Cao, Binbin Tu, Yu Chen
+
+- **FOLEAGE: $\\mathbb {F}\_{\\scriptstyle 4}$OLE-Based Multi-party Computation for Boolean Circuits.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-981-96-0938-3_3)
+  Geoffroy Couteau, Dung Bui, Clément Ducros, Sacha Servan-Schreiber, Maxime Bombar, Alain Couvreur
+
+- **Evolving Secret Sharing Made Short.**
+  2025 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-96-0941-3_3)
+  Danilo Francati, Daniele Venturi
+
+- **EoTMP: Efficient Over-Threshold Multi-Party Private Set Intersection.**
+  2025 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2025.3639987)
+  Xiaoguang Li, Hui Li, Xingwen Zhao, Song Bian, Qingwen Li
+
+- **Enabling Two-Party Secure Computation on Set Intersection.**
+  2025 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2025.3561472)
+  Alptekin Küpçü, Ferhat Karakoç
+
+- **Enabling Low-Cost Secure Computing on Untrusted In-Memory Architectures.**
+  2025 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/ghinani)
+  Elaheh Sadredini, Jingyao Zhang, Sahar Ghoflsaz Ghinani
+
+- **Efficient and Privacy-Preserving Feature Selection Based on Multiparty Computation.**
+  2025 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2025.3546843)
+  Hao Guo, Lu Zhou, Luyao Wang, Weibin Wu
+
+- **Efficient Three-Party ECDSA Signature Based on Replicated Secret Sharing With Identifiable Abort.**
+  2025 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2025.3607264)
+  Chenkai Zeng, Min Luo, Yu Peng, Wenjing Cheng, Qi Feng, Qingcai Luo, Xiaolin Yang
+
+- **Efficient Permutation Correlations and Batched Random Access for Two-Party Computation.**
+  2025 · MPC · [PKC](https://doi.org/10.1007/978-3-031-91829-2_3)
+  Srinivasan Raghuraman, Peter Rindal, Harshal Shah, Stanislav Peceny
+
+- **Efficient Multi-Party Private Set Union Without Non-Collusion Assumptions.**
+  2025 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/dong-minglang)
+  Cong Zhang, Yujie Bai, Minglang Dong, Yu Chen
+
+- **Efficient Mixed Garbling from Homomorphic Secret Sharing and GGM-Tree.**
+  2025 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-91095-1_6)
+  Wenjie Nan, Jian Guo
+
+- **Efficient Fuzzy Private Set Intersection from Fuzzy Mapping.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-981-96-0938-3_2)
+  Ying Gao, Xiang Liu, Longxin Wang, Yuanchao Luo, Lin Qi
+
+- **Efficient Collaborative Data Cleaning Using Private Set Intersection and Encoding for Unbalanced Datasets.**
+  2025 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2025.3594871)
+  Fagen Li, Wenyi Li, Yu Zhou, Xiaojun Zhang, Jingting Xue, Wenzheng Zhang
+
+- **Efficient 2PC for Constant Round Secure Equality Testing and Comparison.**
+  2025 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/lu)
+  Xin Kang, Chun Chen, Xiaoyuan Zhang, Kui Ren, Tianpei Lu, Yang Liu, Zhuo Ma, Bingsheng Zhang
+
+- **Distributed Function Secret Sharing and Applications.**
+  2025 · MPC · [NDSS](https://www.ndss-symposium.org/ndss-paper/distributed-function-secret-sharing-and-applications/)
+  Dongxiao Liu, Meng Hao, Hanxiao Chen, Pengzhi Xing, Hongwei Li, Jia Hu
+
+- **Disincentivize Collusion in Verifiable Secret Sharing.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-91092-0_2)
+  Hai H. Nguyen, Aniket Kate, Tiantian Gong, Hemanta K. Maji
+
+- **Dishonest Majority Multiparty Computation over Matrix Rings.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-981-96-0938-3_10)
+  Hongqing Liu, Taoxu Zou, Chen Yuan, Chaoping Xing
+
+- **Dash: Accelerating Distributed Private Convolutional Neural Network Inference with Arithmetic Garbled Circuits.**
+  2025 · MPC · [TCHES](https://doi.org/10.46586/TCHES.V2025.I1.420-449)
+  Sebastian Berndt, Ida Bruhns, Jonas Sander, Thomas Eisenbarth
+
+- **Compute, but Verify: Efficient Multiparty Computation over Authenticated Inputs.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-981-96-0938-3_5) · [IACR ePrint](https://eprint.iacr.org/2022/1648)
+  Moumita Dutta, Chaya Ganesh, Sikhar Patranabis, Nitin Singh
+
+  <details><summary>摘要 / Abstract</summary>
+
+  Traditional notions of secure multiparty computation (MPC) allow mutually distrusting parties to jointly compute a function over their private inputs, but typically do not specify how these inputs are chosen. Motivated by real-world applications where corrupt inputs could adversely impact privacy and operational legitimacy, we consider a notion of authenticated MPC where the inputs are authenticated, e.g., signed using a digital signature by some certification authority. We propose a generic and efficient compiler that transforms any linear secret sharing based honest-majority MPC protocol into one with input authentication. Our compiler incurs significantly lower computational costs and competitive communication overheads when compared to the best existing solutions, while entirely avoiding the (potentially expensive) protocol-specific techniques and pre-processing requirements that are inherent to these solutions. For $n$-party honest majority MPC protocols with abort security where each party has $\ell$ inputs, our compiler incurs $O(n\log \ell)$ communication overall and a computational overhead of $O(\ell)$ group exponentiations per party (the corresponding overheads for the most efficient existing solution are $O(n^2)$ and $O(\ell n)$). Finally, for a corruption threshold $t&lt;n/3$, our compiler preserves the stronger identifiable abort security of the underlying MPC protocol. No existing solution for authenticated MPC achieves this regardless of the corruption threshold. Along the way, we make several technical contributions that are of independent interest. This includes the notion of distributed proofs of knowledge and concrete realizations of the same for several relations of interest, such as proving knowledge of many popularly used digital signature schemes, and proving knowledge of opening of a Pedersen commitment.
+
+  匹配依据：MPC: multiparty computation, secret sharing, secure multiparty computation
+
+  </details>
+
+- **Computationally Differentially Private Inner-Product Protocols Imply Oblivious Transfer.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-032-01884-7_6)
+  Eliad Tsfadia, Jad Silbak, Iftach Haitner, Noam Mazor, Chao Yan
+
+- **Charge Your Clients: Payable Secure Computation and Its Applications.**
+  2025 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2025.3559456)
+  Meng Hao, Weiran Liu, Cong Zhang, Liqiang Peng, Shuaishuai Li, Dongdai Lin, Lei Zhang
+
+- **Black-Box Constant-Round Secure 2PC with Succinct Communication.**
+  2025 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-91092-0_13)
+  Michele Ciampi, Akash Shah, Ankit Kumar Misra, Rafail Ostrovsky
+
+- **Bitwise Garbling Schemes - A Model with 32λ\\documentclass\[12pt\]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\frac{3}{2}\\lambda $$\\end{document}-Bit Lower Bound of Ciphertexts.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-032-01884-7_15)
+  Honggang Hu, Changhong Xu, Fei Xu
+
+- **BitGC: Garbled Circuits with 1 Bit per Gate.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-91098-2_16)
+  Xiao Wang, Hanlin Liu, Yu Yu, Kang Yang
+
+- **Authenticated BitGC for Actively Secure Rate-One 2PC.**
+  2025 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-032-01884-7_21)
+  Hanlin Liu, Xiao Wang, Yu Yu, Kang Yang
+
+- **An Improvement Upon the Bounds for the Local Leakage Resilience of Shamir's Secret Sharing Scheme.**
+  2025 · MPC · [TCC](https://doi.org/10.1007/978-3-031-78023-3_13)
+  Dustin Kasser
+
+- **All-You-Can-Compute: Packed Secret Sharing for Combined Resilience.**
+  2025 · MPC · [TCHES](https://doi.org/10.46586/TCHES.V2025.I2.420-459)
+  Maximilian Orlt, Liang Zhao, Sebastian Faust, Kathrin Wirschem
+
+- **Adaptive Security, Erasures, and Network Assumptions in Communication-Local MPC.**
+  2025 · MPC · [TCC](https://doi.org/10.1007/978-3-031-78023-3_10)
+  Juan A. Garay, Ankit Kumar Misra, Nishanth Chandran, Vassilis Zikas, Rafail Ostrovsky
+
+- **Actively Secure MPC in the Dishonest Majority Setting: Achieving Constant Complexity in Online Communication, Computation Per Gate, Rounds, and Private Input Size.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-032-01884-7_4)
+  Jaesang Noh, Dohyuk Kim, Seung-Hwan Lee, Dong-Joon Shin, Taejeong Kim
+
+- **A Unified Framework for Succinct Garbling from Homomorphic Secret Sharing.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-032-01884-7_13)
+  Yuval Ishai, Hanjun Li, Huijia Lin
+
+- **A Scheme of Robust Privacy-Preserving Multi-Party Computation via Public Verification.**
+  2025 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2025.3555284)
+  Keke Gai, Jing Yu, Weizhi Meng, Dongjue Wang, Liehuang Zhu
+
+- **A Note on Low-Communication Secure Multiparty Computation via Circuit Depth-Reduction.**
+  2025 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-78023-3_6)
+  Geoffroy Couteau, Pierre Charbit, Pierre Meyer, Reza Naserasr
+
 ### 2024
 
 - **Succinct Homomorphic MACs from Groups and Applications**
@@ -1820,19 +2536,621 @@
 
   </details>
 
+- **Updatable Private Set Intersection With Forward Privacy.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3461475)
+  Xiaolei Dong, Zhenfu Cao, Jun Zhou, Ruochen Wang, Kim-Kwang Raymond Choo
+
+- **Unbalanced Private Set Union with Reduced Computation and Communication.**
+  2024 · MPC · [ACM CCS](https://doi.org/10.1145/3658644.3690308)
+  Cong Zhang, Meng Hao, Anyu Wang, Liqiang Peng, Weiran Liu, Xiaoyun Wang, Yu Chen
+
+- **Two-Round Maliciously-Secure Oblivious Transfer with Optimal Rate.**
+  2024 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-58751-1_10)
+  Akshayaram Srinivasan, Pedro Branco, Nico Döttling
+
+- **Traceable Secret Sharing: Strong Security and Efficient Constructions.**
+  2024 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-68388-6_9)
+  Lior Rotem, Aditi Partap, Dan Boneh
+
+- **Towards Breaking the Half-Barrier of Local Leakage-Resilient Shamir's Secret Sharing.**
+  2024 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-68388-6_10)
+  Hai H. Nguyen
+
+- **Toward Malicious Constant-Rate 2PC via Arithmetic Garbling.**
+  2024 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-58740-5_14)
+  Yibin Yang, Carmit Hazay
+
+- **Toward A Practical Multi-party Private Set Union.**
+  2024 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2024-0133)
+  Ni Trieu, Jiahui Gao, Son Nguyen
+
+- **The Capacity Region of Distributed Multi-User Secret Sharing Under Perfect Secrecy.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3484666)
+  Jiahong Wu, Wei Kang, Nan Liu
+
+- **Succinct Homomorphic Secret Sharing.**
+  2024 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-58751-1_11)
+  Lawrence Roy, Peter Scholl, Damiano Abram
+
+- **Stochastic Secret Sharing with 1-Bit Shares and Applications to MPC.**
+  2024 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-68388-6_11)
+  Eliran Kachlon, Benny Applebaum
+
+- **Sparsity and Privacy in Secret Sharing: A Fundamental Trade-Off.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3394256)
+  Maximilian Egger, Marvin Xhemrishi, Rawad Bitar, Antonia Wachter-Zeh
+
+- **Secure and Efficient Federated Learning via Novel Authenticable Multi-Party Computation and Compressed Sensing.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3486611)
+  Di Xiao, Yushu Zhang, Xiangli Xiao, Lvjun Chen
+
+- **Secure Sorting and Selection via Function Secret Sharing.**
+  2024 · MPC · [ACM CCS](https://doi.org/10.1145/3658644.3690359)
+  Yuval Ishai, Elette Boyle, Mahimna Kelkar, Yiping Ma, Amit Agarwal, Divya Gupta, Nishanth Chandran, Niv Gilboa
+
+- **Secure Multiparty Computation with Lazy Sharing.**
+  2024 · MPC · [ACM CCS](https://doi.org/10.1145/3658644.3690207)
+  Cong Zhang, Shuaishuai Li, Dongdai Lin
+
+- **Secure Multiparty Computation with Identifiable Abort via Vindicating Release.**
+  2024 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-68397-8_2)
+  Yashvanth Kondi, Ran Cohen, Jack Doerner, Abhi Shelat
+
+- **Secure Multiparty Computation of Threshold Signatures Made More Efficient.**
+  2024 · MPC · [NDSS](https://www.ndss-symposium.org/ndss-paper/secure-multiparty-computation-of-threshold-signatures-made-more-efficient/)
+  Harry W. H. Wong, Jack P. K. Ma, Sherman S. M. Chow
+
+- **Secret Sharing with Snitching.**
+  2024 · MPC · [ACM CCS](https://doi.org/10.1145/3658644.3690296)
+  Tomasz Lizurej, Marcin Mielniczuk, Stefan Dziembowski, Sebastian Faust
+
+- **Secret Sharing with Certified Deletion.**
+  2024 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-68394-7_7)
+  James Bartusek, Justin Raizes
+
+- **Secret Cracking and Security Enhancement for the Image Application of CRT-Based Secret Sharing.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3477265)
+  Rui Wang, Xuehu Yan, Guozheng Yang, Wei Yan, Longlong Li
+
+- **Scalable Private Set Union, with Stronger Security.**
+  2024 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/jia-yanxue)
+  Shifeng Sun, Yanxue Jia, Hong-Sheng Zhou, Dawu Gu
+
+- **Scalable Multiparty Computation from Non-linear Secret Sharing.**
+  2024 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-68397-8_12)
+  Pratyay Mukherjee, Abhishek Jain, Sanjam Garg, Mingyuan Wang
+
+- **Scalable Multi-Party Computation Protocols for Machine Learning in the Honest-Majority Setting.**
+  2024 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/liu-fengrun)
+  Xiang Xie, Yu Yu, Fengrun Liu
+
+- **SIGMA: Secure GPT Inference with Function Secret Sharing.**
+  2024 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2024-0107)
+  Ashish Panwar, Rahul Sharma, Ananta Mukherjee, Neha Jawalkar, Kanav Gupta, Divya Gupta, Nishanth Chandran
+
+- **Randomness Recoverable Secret Sharing Schemes.**
+  2024 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-024-09515-4)
+  Behzad Vahdani, Shahram Khazaei, Mohammad Hajiabadi
+
+- **P²FRPSI: Privacy-Preserving Feature Retrieved Private Set Intersection.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2023.3343973)
+  Chaochao Cai, Weidong Qiu, Haiyang Xue, Guowei Ling, Jinyong Shan, Wulu Li, Peng Tang, Xinyi Huang, Fei Tang
+
+- **Publicly Verifiable Secret Sharing Over Class Groups and Applications to DKG and YOSO.**
+  2024 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-58740-5_8)
+  Bernardo Machado David, Ignacio Cascudo
+
+- **PrivDNN: A Secure Multi-Party Computation Framework for Deep Learning using Partial DNN Encryption.**
+  2024 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2024-0089)
+  Kaitai Liang, Zhu Li, Liangqin Ren, Zeyan Liu, Fengjun Li, Bo Luo
+
+- **Poster: Multiparty Private Set Intersection from Multiparty Homomorphic Encryption.**
+  2024 · MPC · [ACM CCS](https://doi.org/10.1145/3658644.3691405)
+  Wouter Lueks, Christian Mouchet, Lea Nürnberger, Sylvain Chatel
+
+- **Poster: A Secure Multiparty Computation Platform for Squeaky-Clean Data Rooms.**
+  2024 · MPC · [ACM CCS](https://doi.org/10.1145/3658644.3691371)
+  Sikhar Patranabis, Vinayaka Pandit, Abhishek Singh, Nitin Singh, Pankaj Dayama
+
+- **PEPSI: Practically Efficient Private Set Intersection in the Unbalanced Setting.**
+  2024 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/mahdavi)
+  Ehsan Amjadian, Simon Oya, Florian Kerschbaum, Thomas Humphries, Faezeh Ebrahimianghazani, Bailey Kacsmar, Xinda Li, Nils Lukas, John A. Premkumar, Rasoul Akhavan Mahdavi
+
+- **On Sigma-Protocols and (Packed) Black-Box Secret Sharing Schemes.**
+  2024 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-57722-2_14)
+  Ignacio Cascudo, Claudia Bartoli
+
+- **On Information-Theoretic Secure Multiparty Computation with Local Repairability.**
+  2024 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-57722-2_7)
+  Daniel Escudero, Ivan Tjuawinata, Chaoping Xing
+
+- **O-Ring and K-Star: Efficient Multi-party Private Set Intersection.**
+  2024 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/wu-mingli)
+  Tsz Hon Yuen, Kwan Yin Chan, Mingli Wu
+
+- **NodeGuard: A Highly Efficient Two-Party Computation Framework for Training Large-Scale Gradient Boosting Decision Tree.**
+  2024 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SPW63631.2024.00015)
+  Yufan Jiang, Tianxiang Dai, Fei Mei, Yong Li
+
+- **Network-Agnostic Multi-party Computation Revisited (Extended Abstract).**
+  2024 · MPC · [PKC](https://doi.org/10.1007/978-3-031-57722-2_6)
+  Supreeth Varadarajan, Nidhish Bhimrajka, Ashish Choudhury
+
+- **Multiparty Private Set Intersection Cardinality and Its Applications.**
+  2024 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2024-0041)
+  Ni Trieu, Avishay Yanai, Jiahui Gao
+
+- **Maliciously Secure MPC From Semi-Honest 2PC in the Server-Aided Model.**
+  2024 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2023.3322397)
+  Yibiao Lu, Kui Ren, Bingsheng Zhang
+
+- **MPC-in-the-Head Framework without Repetition and its Applications to the Lattice-based Cryptography.**
+  2024 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00157)
+  Qianwen Gao, Long Chen, Zhenfeng Zhang, Weihao Bai
+
+- **MPC-Pipe: an Efficient Pipeline Scheme for Semi-honest MPC Machine Learning.**
+  2024 · MPC · [ASPLOS](https://doi.org/10.1145/3622781.3674175)
+  Murali Annavaram, Rachit Rajat, Yongqin Wang
+
+- **Linear-Communication Asynchronous Complete Secret Sharing with Optimal Resilience.**
+  2024 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-68397-8_13)
+  Junru Li, Yifan Song, Xiaoyu Ji
+
+- **Lightweight Asynchronous Verifiable Secret Sharing with Optimal Resilience.**
+  2024 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-024-09505-6)
+  Victor Shoup, Nigel P. Smart
+
+- **Garbled Circuit Lookup Tables with Logarithmic Number of Ciphertexts.**
+  2024 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-58740-5_7)
+  David Heath, Lucien K. L. Ng, Vladimir Kolesnikov
+
+- **GAuV: A Graph-Based Automated Verification Framework for Perfect Semi-Honest Security of Multiparty Computation Protocols.**
+  2024 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00131)
+  Wei Zhang, Shizhen Xu, Xingyu Xie, Tuowei Wang, Yifei Li, Jun Zhu, Yifan Song
+
+- **Fuzzy Private Set Intersection with Large Hyperballs.**
+  2024 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-58740-5_12)
+  Sihang Pu, Aron van Baarsen
+
+- **Fully Secure MPC and zk-FLIOP over Rings: New Constructions, Improvements and Extensions.**
+  2024 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-68397-8_5)
+  Ariel Nof, Anders P. K. Dalskov, Daniel Escudero
+
+- **Fast RS-IOP Multivariate Polynomial Commitments and Verifiable Secret Sharing.**
+  2024 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-zongyang)
+  Kexin Shi, Ximeng Liu, Weihan Li, Jin Dong, Yanpei Guo, Zongyang Zhang, Sherman S. M. Chow
+
+- **Fast Evaluation of S-Boxes With Garbled Circuits.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3402145)
+  Aysajan Abidin, Erik Pohle, Bart Preneel
+
+- **FSS-DBSCAN: Outsourced Private Density-Based Clustering via Function Secret Sharing.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3446233)
+  Yulong Shen, Zhao Chang, Jiaxuan Fu, Yuheng Xia, Anxiao Song, Ke Cheng
+
+- **Enabling Threshold Functionality for Private Set Intersection Protocols in Cloud Computing.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3402355)
+  Yongjun Zhao, Khin Mi Mi Aung, Benjamin Hong Meng Tan, Huaxiong Wang, Jingwei Hu
+
+- **Efficiently Compiling Secure Computation Protocols From Passive to Active Security: Beyond Arithmetic Circuits.**
+  2024 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2024-0006)
+  Dennis Murphy, Marina Blanton, Chen Yuan
+
+- **Efficient Secret Sharing for Large-Scale Applications.**
+  2024 · MPC · [ACM CCS](https://doi.org/10.1145/3658644.3670379)
+  Sarvar Patel, Kevin Yeo, Joon Young Seo, Giuseppe Persiano
+
+- **Efficient Scalable Multi-Party Private Set Intersection(-Variants) from Bicentric Zero-Sharing.**
+  2024 · MPC · [ACM CCS](https://doi.org/10.1145/3658644.3690245)
+  Ying Gao, Mengmeng Zhou, Wei Wang, Longxin Wang, Xiang Liu, Yuanchao Luo, Lin Qi
+
+- **Efficient Coded Multi-Party Computation at Edge Networks.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2023.3326970)
+  Hulya Seferoglu, Elahe Vedadi, Yasaman Keshtkarjahromi
+
+- **Efficient Arithmetic in Garbled Circuits.**
+  2024 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-58740-5_1)
+  David Heath
+
+- **Efficient Actively Secure DPF and RAM-based 2PC with One-Bit Leakage.**
+  2024 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00205)
+  Ruiyu Zhu, Xiao Wang, Yu Yu, Xiaojie Guo, Wenhao Zhang, Kang Yang
+
+- **Dual-Cloud Multi-Secret Sharing Architecture for Privacy Preserving Persistent Computation.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3436662)
+  Jhe-Kai Yang, Hsin-Chan Yen, Pei-Wen Lin, Yu-Chi Chen
+
+- **Doubly Efficient Cryptography: Commitments, Arguments and RAM MPC.**
+  2024 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-68397-8_8)
+  Wei-Kai Lin, Ethan Mook, Daniel Wichs
+
+- **Don't Eject the Impostor: Fast Three-Party Computation With a Known Cheater.**
+  2024 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00164)
+  Ajith Suresh, Thomas Schneider, Oliver Schick, Hossein Yalame, Andreas Brüggemann
+
+- **Ditto: Quantization-aware Secure Inference of Transformers upon MPC.**
+  2024 · MPC · [ICML](https://proceedings.mlr.press/v235/wu24d.html)
+  Lei Wang, Junming Ma, Wenjing Fang, Jin Tan, Yancheng Zheng, Haoqi Wu
+
+- **Coral: Maliciously Secure Computation Framework for Packed and Mixed Circuits.**
+  2024 · MPC · [ACM CCS](https://doi.org/10.1145/3658644.3690223)
+  Zhicong Huang, Wen-jie Lu, Wenguang Chen, Yuchen Wang, Tao Wei, Cheng Hong
+
+- **Constructing Leakage-Resilient Shamir's Secret Sharing: Over Composite Order Fields.**
+  2024 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-58737-5_11)
+  Hai H. Nguyen, Xiuyu Ye, Anat Paskin-Cherniavsky, Hemanta K. Maji
+
+- **Connecting Leakage-Resilient Secret Sharing to Practice: Scaling Trends and Physical Dependencies of Prime Field Masking.**
+  2024 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-58737-5_12)
+  Elena Micheli, François-Xavier Standaert, Maximilian Orlt, Loïc Masure, Sebastian Faust
+
+- **Computation Efficient Structure-Aware PSI from Incremental Function Secret Sharing.**
+  2024 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-68397-8_10)
+  Peihan Miao, Gayathri Garimella, Benjamin Goff
+
+- **Compact: Approximating Complex Activation Functions for Secure Computation.**
+  2024 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2024-0065)
+  Rahul Chatterjee, Peter Rindal, Sunpreet S. Arora, Maliheh Shirvanian, Mazharul Islam
+
+- **Communication-Efficient Privacy-Preserving Neural Network Inference via Arithmetic Secret Sharing.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3420216)
+  Jianting Ning, Yan Zhang, Changqing Luo, Jinbo Xiong, Ximeng Liu, Youliang Tian, Renwan Bi
+
+- **Collusion-Resilient and Maliciously Secure Cloud- Assisted Two-Party Computation Scheme in Mobile Cloud Computing.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3428410)
+  Zhenfu Cao, Zhe Liu, Nan Min, Zhusen Liu, Weizheng Wang, Lu Zhou, Yutong Ye
+
+- **Bounds and Protocols for Graph-Based Distributed Secret Sharing.**
+  2024 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2023.3261239)
+  Alfredo De Santis, Roberto De Prisco, Francesco Palmieri
+
+- **Application of Randomness for Security and Privacy in Multi-Party Computation.**
+  2024 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2024.3381959)
+  William J. Buchanan, Rahul Saha, Gulshan Kumar, G. Geetha, Mauro Conti
+
+- **Actively Secure Private Set Intersection in the Client-Server Setting.**
+  2024 · MPC · [ACM CCS](https://doi.org/10.1145/3658644.3690349)
+  Mariana Raykova, Phillipp Schoppmann, Xiao Wang, Yunqing Sun, Jonathan Katz
+
+- **Abuse Reporting for Metadata-Hiding Communication Based on Secret Sharing.**
+  2024 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/eskandarian)
+  Saba Eskandarian
+
+- **AITIA: Efficient Secure Computation of Bivariate Causal Discovery.**
+  2024 · MPC · [ACM CCS](https://doi.org/10.1145/3658644.3670337)
+  Lun Wang, Ni Trieu, Truong Son Nguyen, Evgenios M. Kornaropoulos
+
+- **A Secure Computing System With Hardware-Efficient Lazy Bonsai Merkle Tree for FPGA-Attached Embedded Memory.**
+  2024 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2023.3324935)
+  Yu Zou, Rakin Muhammad Shadab, Sanjay Gandham, Mingjie Lin, Amro Awad
+
+- **A New Shift-Add Secret Sharing Scheme for Partial Data Protection With Parallel Zigzag Decoding.**
+  2024 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2024.3488498)
+  Chi Wan Sung, Yichen Shen, Jiajun Chen
+
+- **10-Party Sublinear Secure Computation from Standard Assumptions.**
+  2024 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-68400-5_2)
+  Geoffroy Couteau, Naman Kumar
+
+### 2023
+
+- **Verifiable Homomorphic Secret Sharing for Low Degree Polynomials.**
+  2023 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2022.3194321)
+  Liang Feng Zhang, Xin Chen, Jing Liu
+
+- **Unconditionally Secure Multiparty Computation for Symmetric Functions with Low Bottleneck Complexity.**
+  2023 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-99-8721-4_11)
+  Reo Eriguchi
+
+- **Trifecta: Faster High-Throughput Three-Party Computation over WAN Using Multi-Fan-In Logic Gates.**
+  2023 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2023-0107)
+  Sina Faraji, Florian Kerschbaum
+
+- **Towards Topology-Hiding Computation from Oblivious Transfer.**
+  2023 · MPC · [TCC](https://doi.org/10.1007/978-3-031-48615-9_13)
+  Lisa Kohl, Marshall Ball, Alexander Bienstock, Pierre Meyer
+
+- **Threshold Private Set Intersection with Better Communication Complexity.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-31371-4_9)
+  Satrajit Ghosh, Mark Simkin
+
+- **Threshold Linear Secret Sharing to the Rescue of MPC-in-the-Head.**
+  2023 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-99-8721-4_14)
+  Matthieu Rivain, Thibauld Feneuil
+
+- **Three Party Secure Computation with Friends and Foes.**
+  2023 · MPC · [TCC](https://doi.org/10.1007/978-3-031-48618-0_6)
+  Bar Alon, Amos Beimel, Eran Omri
+
+- **TVA: A multi-party computation system for secure and expressive time series analytics.**
+  2023 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/faisal)
+  Vasiliki Kalavri, Mayank Varia, John Liagouris, Muhammad Faisal, Jerry Zhang
+
+- **Succinct Computational Secret Sharing.**
+  2023 · MPC · [STOC](https://doi.org/10.1145/3564246.3585127)
+  Tianren Liu, Yuval Ishai, Benny Applebaum, Vinod Vaikuntanathan, Eyal Kushilevitz, Amos Beimel
+
+- **Sublinear-Communication Secure Multiparty Computation Does Not Require FHE.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-30617-4_6)
+  Elette Boyle, Geoffroy Couteau, Pierre Meyer
+
+- **Squirrel: A Scalable Secure Two-Party Computation Framework for Training Gradient Boosting Decision Tree.**
+  2023 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/lu)
+  Zhicong Huang, Qizhi Zhang, Wen-jie Lu, Yuchen Wang, Cheng Hong
+
+- **Sigma Protocols from Verifiable Secret Sharing and Their Applications.**
+  2023 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-99-8724-5_7)
+  Zhichao Wang, Chuanzhou Yao, Yu Chen, Min Zhang
+
+- **Secure Multiparty Computation from Threshold Encryption Based on Class Groups.**
+  2023 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-38557-5_20)
+  Lennart Braun, Ivan Damgård, Claudio Orlandi
+
+- **Secure Computation with Shared EPR Pairs (Or: How to Teleport in Zero-Knowledge).**
+  2023 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-38554-4_8)
+  Akshayaram Srinivasan, James Bartusek, Dakshita Khurana
+
+- **Secure Computation Meets Distributed Universal Optimality.**
+  2023 · MPC · [FOCS](https://doi.org/10.1109/FOCS57990.2023.00144)
+  Merav Parter
+
+- **Scalable Multi-party Private Set Union from Multi-query Secret-Shared Private Membership Test.**
+  2023 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-99-8721-4_8)
+  Ying Gao, Xiang Liu
+
+- **Round-Optimal Oblivious Transfer and MPC from Computational CSIDH.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-31368-4_14)
+  Daniel Masny, Pratyay Mukherjee, Saikrishna Badrinarayanan, Pratik Sarkar, Srinivasan Raghuraman, Sikhar Patranabis
+
+- **Reverse Firewalls for Oblivious Transfer Extension and Applications to Zero-Knowledge.**
+  2023 · MPC · [EUROCRYPT](https://doi.org/10.1007/978-3-031-30545-0_9)
+  Suvradip Chakraborty, Pratik Sarkar, Chaya Ganesh
+
+- **Reusable Secure Computation in the Plain Model.**
+  2023 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-38557-5_14)
+  Akshayaram Srinivasan, Mingyuan Wang, Vipul Goyal
+
+- **Ramen: Souper Fast Three-Party Computation for RAM Programs.**
+  2023 · MPC · [ACM CCS](https://doi.org/10.1145/3576915.3623115)
+  Mahak Pancholi, Lennart Braun, Rahul Rachuri, Mark Simkin
+
+- **Publicly Verifiable Homomorphic Secret Sharing for Polynomial Evaluation.**
+  2023 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2023.3298258)
+  Xin Chen, Liang Feng Zhang
+
+- **Proactive Secret Sharing with Constant Communication.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-48618-0_12)
+  Daniel Noble, Brett Hemenway, Tal Rabin
+
+- **Private Access Control for Function Secret Sharing.**
+  2023 · MPC · [IEEE S&amp;P](https://doi.org/10.1109/SP46215.2023.10179295)
+  Simon Beyzerov, Eli Yablon, Hyojae Park, Sacha Servan-Schreiber
+
+- **Privacy of Federated QR Decomposition Using Additive Secure Multiparty Computation.**
+  2023 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2023.3301710)
+  Anne Hartebrodt, Richard Röttger
+
+- **Practically Efficient Private Set Intersection from Trusted Hardware with Side-Channels.**
+  2023 · MPC · [ASIACRYPT](https://doi.org/10.1007/978-981-99-8730-6_9)
+  Jeremias Mechler, Felix Dörre, Jörn Müller-Quade
+
+- **On the Security of a Lattice-Based Multi-Stage Secret Sharing Scheme.**
+  2023 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2022.3209011)
+  Longjiang Qu, Debiao He, Jianqiao Xu, Zhichao Yang
+
+- **On the Round Complexity of Fully Secure Solitary MPC with Honest Majority.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-48618-0_5)
+  Saikrishna Badrinarayanan, Peihan Miao, Pratyay Mukherjee, Divya Ravi
+
+- **On the Power of an Honest Majority in Three-Party Computation Without Broadcast.**
+  2023 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-023-09456-4)
+  Ran Cohen, Bar Alon, Tom Suad, Eran Omri
+
+- **On the Communication Efficiency of Statistically Secure Asynchronous MPC with Optimal Resilience.**
+  2023 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-023-09451-9)
+  Ashish Choudhury, Arpita Patra
+
+- **On Secure Computation of Solitary Output Functionalities with and Without Broadcast.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-48618-0_4)
+  Bar Alon, Eran Omri
+
+- **On Homomorphic Secret Sharing from Polynomial-Modulus LWE.**
+  2023 · MPC · [PKC](https://doi.org/10.1007/978-3-031-31371-4_1)
+  Lisa Kohl, Thomas Attema, Pedro Capitão
+
+- **Oblivious Transfer with Constant Computational Overhead.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-30545-0_10)
+  Lisa Kohl, Elette Boyle, Peter Scholl, Yuval Ishai, Geoffroy Couteau, Nicolas Resch, Niv Gilboa
+
+- **Oblivious Transfer from Zero-Knowledge Proofs - Or How to Achieve Round-Optimal Quantum Oblivious Transfer and Zero-Knowledge Proofs on Quantum States.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-981-99-8742-9_1)
+  Léo Colisson Palais, Garazi Muguruza, Florian Speelman
+
+- **New Bounds on the Local Leakage Resilience of Shamir's Secret Sharing Scheme.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-38557-5_5)
+  Ohad Klein, Ilan Komargodski
+
+- **Network-Agnostic Security Comes (Almost) for Free in DKG and MPC.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-38557-5_3)
+  Julian Loss, Chen-Da Liu-Zhang, Renas Bacho, Daniel Collins
+
+- **Network Agnostic MPC with Statistical Security.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-48618-0_3)
+  Ananya Appan, Ashish Choudhury
+
+- **Multi-party Homomorphic Secret Sharing and Sublinear MPC from Sparse LPN.**
+  2023 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-38545-2_11)
+  Yuval Ishai, Aayush Jain, Quang Dao, Huijia Lin
+
+- **Multi-Party Replicated Secret Sharing over a Ring with Applications to Privacy-Preserving Machine Learning.**
+  2023 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2023-0035)
+  Alessandro N. Baccarini, Chen Yuan, Marina Blanton
+
+- **Matrix-Based Secret Sharing for Reversible Data Hiding in Encrypted Images.**
+  2023 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2022.3218570)
+  Xinpeng Zhang, Yongyong Chen, Zhongyun Hua, Shuang Yi, Yanxiang Wang, Yifeng Zheng, Xingyu Liu
+
+- **Manticore: A Framework for Efficient Multiparty Computation Supporting Real Number and Boolean Arithmetic.**
+  2023 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-023-09464-4)
+  Mariya Georgieva, Iraklis Leontiadis, Dimitar Jetchev, Abson Sae-Tang, Marius Vuille, Kevin Deforth, Mohsen Mohammadi, Jonathan Katz, Nicolas Gama, Sergiu Carpov
+
+- **Maliciously Secure and Efficient Large-Scale Genome-Wide Association Study With Multi-Party Computation.**
+  2023 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2022.3152498)
+  Jianfeng Ma, Zhiquan Liu, Anjia Yang, Jia-Nan Liu, Yaxi Yang, Caiqin Dong, Jian Weng
+
+- **Malicious Secure, Structure-Aware Private Set Intersection.**
+  2023 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-38557-5_19)
+  Jaspal Singh, Gayathri Garimella, Mike Rosulek
+
+- **Low Communication Secure Computation From Semi-Trusted Hardware.**
+  2023 · MPC · [TIFS](https://doi.org/10.1109/TIFS.2023.3282134)
+  Kui Ren, Bingsheng Zhang, Yibiao Lu
+
+- **Longshot: Indexing Growing Databases using MPC and Differential Privacy.**
+  2023 · MPC · [PVLDB](https://doi.org/10.14778/3594512.3594529)
+  Johes Bater, Kartik Nayak, Yanping Zhang, Ashwin Machanavajjhala
+
+- **List Oblivious Transfer and Applications to Round-Optimal Black-Box Multiparty Coin Tossing.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-38557-5_15)
+  Michele Ciampi, Luisa Siniscalchi, Hendrik Waldner, Rafail Ostrovsky
+
+- **Linear Private Set Union from Multi-Query Reverse Private Membership Test.**
+  2023 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/zhang-cong)
+  Cong Zhang, Weiran Liu, Min Zhang, Dongdai Lin, Yu Chen
+
+- **Linear Communication in Malicious Majority MPC.**
+  2023 · MPC · [ACM CCS](https://doi.org/10.1145/3576915.3623162)
+  Daniel McVicker, Phi Hung Le, S. Dov Gordon
+
+- **Let's Go Eevee! A Friendly and Suitable Family of AEAD Modes for IoT-to-Cloud Secure Computation.**
+  2023 · MPC · [ACM CCS](https://doi.org/10.1145/3576915.3623091)
+  Aysajan Abidin, Erik Pohle, Amit Singh Bhati, Elena Andreeva, Bart Preneel
+
+- **Improved Protocols for Distributed Secret Sharing.**
+  2023 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2022.3213790)
+  Roberto De Prisco, Francesco Palmieri, Alfredo De Santis
+
+- **Improved Private Set Intersection for Sets with Small Entries.**
+  2023 · MPC · [PKC](https://doi.org/10.1007/978-3-031-31371-4_7)
+  Dung Bui, Geoffroy Couteau
+
+- **Improved Polynomial Secret-Sharing Schemes.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-48618-0_13)
+  Or Lasri, Oriol Farràs, Amos Beimel
+
+- **High-Throughput Secure Three-Party Computation with an Honest Majority.**
+  2023 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-023-09461-7)
+  Or Weinstein, Ariel Nof, Jun Furukawa, Yehuda Lindell
+
+- **HAAC: A Hardware-Software Co-Design to Accelerate Garbled Circuits.**
+  2023 · MPC · [ISCA](https://doi.org/10.1145/3579371.3589045)
+  Brandon Reagen, Jianqiao Mo, Jayanth Gopinath
+
+- **Garbled Circuits from an SCA Perspective Free XOR can be Quite Expensive. . .**
+  2023 · MPC · [CHES](https://doi.org/10.46586/TCHES.V2023.I2.54-79)
+  Itamar Levi, Carmit Hazay
+
+- **Funshade: Function Secret Sharing for Two-Party Secure Thresholded Distance Evaluation.**
+  2023 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2023-0096)
+  Alberto Ibarrondo, Melek Önen, Hervé Chabanne
+
+- **Faster Secure Comparisons with Offline Phase for Efficient Private Set Intersection.**
+  2023 · MPC · [NDSS](https://www.ndss-symposium.org/ndss-paper/faster-secure-comparisons-with-offline-phase-for-efficient-private-set-intersection/)
+  Erik-Oliver Blass, Rasoul Akhavan Mahdavi, Florian Kerschbaum
+
+- **Fast Unbalanced Private Set Union from Fully Homomorphic Encryption.**
+  2023 · MPC · [ACM CCS](https://doi.org/10.1145/3576915.3623064)
+  Cong Zhang, Binbin Tu, Qi Liu, Yu Chen
+
+- **Fast Large-Scale Honest-Majority MPC for Malicious Adversaries.**
+  2023 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-023-09453-7)
+  Ariel Nof, Yehuda Lindell, Koki Hamada, Ryo Kikuchi, Koji Chida, Dai Ikarashi, Daniel Genkin
+
+- **Endemic Oblivious Transfer via Random Oracles, Revisited.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-30545-0_11)
+  Kui Ren, Hong-Sheng Zhou, Zhelei Zhou, Bingsheng Zhang
+
+- **Efficient decision tree training with new data structure for secure multi-party computation.**
+  2023 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2023-0021)
+  Koji Chida, Ryo Kikuchi, Koki Hamada, Dai Ikarashi
+
+- **Efficient Unbalanced Private Set Intersection Cardinality and User-friendly Privacy-preserving Contact Tracing.**
+  2023 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/wu-mingli)
+  Tsz Hon Yuen, Mingli Wu
+
+- **Efficient Noise Generation Protocols for Differentially Private Multiparty Computation.**
+  2023 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2022.3227568)
+  Noboru Kunihiro, Reo Eriguchi, Atsunori Ichikawa, Koji Nuida
+
+- **Efficient Multiparty Probabilistic Threshold Private Set Intersection.**
+  2023 · MPC · [ACM CCS](https://doi.org/10.1145/3576915.3623158)
+  En Zhang, Leiyong Qin, Feng-Hao Liu
+
+- **Efficient 3PC for Binary Circuits with Application to Maliciously-Secure DNN Inference.**
+  2023 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/li-yun)
+  Zhicong Huang, Yufei Duan, Yifan Song, Yun Li, Chao Zhang, Cheng Hong
+
+- **Distance-Aware Private Set Intersection.**
+  2023 · MPC · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/chakraborti-intersection)
+  Anrin Chakraborti, Giulia Fanti, Michael K. Reiter
+
+- **Detect, Pack and Batch: Perfectly-Secure MPC with Linear Communication and Constant Expected Time.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-30617-4_9)
+  Ittai Abraham, Gilad Asharov, Shravani Patil, Arpita Patra
+
+- **DORAM Revisited: Maliciously Secure RAM-MPC with Logarithmic Overhead.**
+  2023 · MPC · [TCC](https://doi.org/10.1007/978-3-031-48615-9_16)
+  Brett Hemenway, Daniel Noble, Jacob Zhang, Matan Shtepel, Rafail Ostrovsky
+
+- **Cryptography with Weights: MPC, Encryption and Signatures.**
+  2023 · MPC · [CRYPTO](https://doi.org/10.1007/978-3-031-38557-5_10)
+  Rohit Sinha, Pratyay Mukherjee, Mingyuan Wang, Sanjam Garg, Abhishek Jain, Yinuo Zhang
+
+- **Convolutions in Overdrive: Maliciously Secure Convolutions for MPC.**
+  2023 · MPC · [PoPETs](https://doi.org/10.56553/POPETS-2023-0084)
+  Marc Rivinius, Sebastian Hasler, Pascal Reisert, Ralf Küsters
+
+- **Constrained Pseudorandom Functions from Homomorphic Secret Sharing.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-30620-4_7)
+  Alain Passelègue, Geoffroy Couteau, Mahshid Riahinia, Pierre Meyer
+
+- **Circuit-Free General-Purpose Multi-Party Computation via Co-Utile Unlinkable Outsourcing.**
+  2023 · MPC · [TDSC](https://doi.org/10.1109/TDSC.2021.3138826)
+  Jesús A. Manjón, Josep Domingo-Ferrer
+
+- **COMBINE: COMpilation and Backend-INdependent vEctorization for Multi-Party Computation.**
+  2023 · MPC · [ACM CCS](https://doi.org/10.1145/3576915.3623181)
+  Muhammad Ishaq, Benjamin Sherman, Lindsey Kennard, Ana L. Milanova, Benjamin Levy, Vassilis Zikas
+
+- **Breaking and Fixing Garbled Circuits When a Gate has Duplicate Input Wires.**
+  2023 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-023-09472-4)
+  Thomas Schneider, Raine Nieminen
+
+- **Bingo: Adaptivity and Asynchrony in Verifiable Secret Sharing and Distributed Key Generation.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-38557-5_2)
+  Philipp Jovanovic, Mary Maller, Ittai Abraham, Gilad Stern, Sarah Meiklejohn
+
+- **Adaptively Secure MPC with Sublinear Communication Complexity.**
+  2023 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-023-09446-6)
+  Ran Cohen, Daniel Wichs, Abhi Shelat
+
+- **Adaptive Distributional Security for Garbling Schemes with 𝒪(\|x\|) Online Complexity.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-981-99-8721-4_5)
+  Estuardo Alpirez Bock, Sabine Oechsner, Kirthivaasan Puniamurthy, Pihla Karanko, Christopher Brzuska
+
+- **Actively Secure Garbled Circuits with Constant Communication Overhead in the Plain Model.**
+  2023 · MPC · [Journal of Cryptology](https://doi.org/10.1007/S00145-023-09465-3)
+  Yuval Ishai, Carmit Hazay, Muthuramakrishnan Venkitasubramaniam
+
+- **A New Framework for Quantum Oblivious Transfer.**
+  2023 · MPC · [series/lncs](https://doi.org/10.1007/978-3-031-30545-0_13)
+  James Bartusek, Amit Agarwal, Nishant Kumar, Dakshita Khurana
+
+- **3-Party Secure Computation for RAMs: Optimal and Concretely Efficient.**
+  2023 · MPC · [TCC](https://doi.org/10.1007/978-3-031-48615-9_17)
+  Atsunori Ichikawa, Ilan Komargodski, Ryo Kikuchi, Koki Hamada, Dai Ikarashi
+
 ### 2022
-
-- **Compute, but Verify: Efficient Multiparty Computation over Authenticated Inputs**
-  2022-11-28 · MPC · [IACR ePrint](https://eprint.iacr.org/2022/1648)
-  Moumita Dutta, Chaya Ganesh, Sikhar Patranabis, Nitin Singh
-
-  <details><summary>摘要 / Abstract</summary>
-
-  Traditional notions of secure multiparty computation (MPC) allow mutually distrusting parties to jointly compute a function over their private inputs, but typically do not specify how these inputs are chosen. Motivated by real-world applications where corrupt inputs could adversely impact privacy and operational legitimacy, we consider a notion of authenticated MPC where the inputs are authenticated, e.g., signed using a digital signature by some certification authority. We propose a generic and efficient compiler that transforms any linear secret sharing based honest-majority MPC protocol into one with input authentication. Our compiler incurs significantly lower computational costs and competitive communication overheads when compared to the best existing solutions, while entirely avoiding the (potentially expensive) protocol-specific techniques and pre-processing requirements that are inherent to these solutions. For $n$-party honest majority MPC protocols with abort security where each party has $\ell$ inputs, our compiler incurs $O(n\log \ell)$ communication overall and a computational overhead of $O(\ell)$ group exponentiations per party (the corresponding overheads for the most efficient existing solution are $O(n^2)$ and $O(\ell n)$). Finally, for a corruption threshold $t&lt;n/3$, our compiler preserves the stronger identifiable abort security of the underlying MPC protocol. No existing solution for authenticated MPC achieves this regardless of the corruption threshold. Along the way, we make several technical contributions that are of independent interest. This includes the notion of distributed proofs of knowledge and concrete realizations of the same for several relations of interest, such as proving knowledge of many popularly used digital signature schemes, and proving knowledge of opening of a Pedersen commitment.
-
-  匹配依据：MPC: multiparty computation, secret sharing, secure multiparty computation
-
-  </details>
 
 - **Programmable Distributed Point Functions**
   2022-08-15 · MPC · [IACR ePrint](https://eprint.iacr.org/2022/1060)
@@ -1860,7 +3178,7 @@
 
   </details>
 
-## TEE（32）
+## TEE（152）
 
 ### 2026
 
@@ -2224,6 +3542,126 @@
 
   </details>
 
+- **kvTZ: TrustZone Virtualization for Commodity Arm-Based Platforms.**
+  2026 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2025.3605807)
+  Shih-Wei Li, Chun-Yen Lin
+
+- **WorksetEnclave: Towards Optimizing Cold Starts in Confidential Serverless with Workset-Based Enclave Restore.**
+  2026 · TEE · [ASPLOS](https://doi.org/10.1145/3779212.3790249)
+  Xiaolong Yan, Weijuan Zhang, Qihang Zhou, Xiaoqi Jia, Feifan Qian, Zisen Wan, Wentao Yao
+
+- **UIEE: Secure and Efficient User-space Isolated Execution Environment for Embedded TEE Systems.**
+  2026 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/uiee-secure-and-efficient-user-space-isolated-execution-environment-for-embedded-tee-systems/)
+  Xinhui Shao, Haobo Li, Huaiyu Yan, Yier Jin, Ping Jiang, Xuandong Chen, Ming Yang, Junzhou Luo, Zhen Ling
+
+- **TrustSearch: Toward Secure and Efficient Reverse Image Search via SGX.**
+  2026 · TEE · [TIFS](https://doi.org/10.1109/TIFS.2026.3696201)
+  Dayan Wu, Xiong Li, Hongwei Li, Jingwei Li, Xiaosong Zhang, Fang Zou, Ting Chen, Jia Zhang
+
+- **Trust-V: Toward Secure and Reliable Storage for Trusted Execution Environments.**
+  2026 · TEE · [ASPLOS](https://doi.org/10.1145/3779212.3790242)
+  Seung-Kyun Han, Jin Soo Jang, Jiyeon Yang
+
+- **Toward Secure and Efficient Driver Support for Embedded TEE Systems.**
+  2026 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2026.3693739)
+  Zhen Ling, Huaiyu Yan, Ming Yang, Xinhui Shao, Junzhou Luo, Ping Jiang, Xinwen Fu
+
+- **Teamwork Makes TEE Work: Open and Resilient Remote Attestation on Decentralized Trust.**
+  2026 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2025.3636884)
+  Dawu Gu, Chi Zhang, Shipei Qu, Xiaolin Zhang, Kailun Qin, Tengfei Wang
+
+- **TZ-LLM: Protecting On-Device Large Language Models with Arm TrustZone.**
+  2026 · TEE · [EuroSys](https://doi.org/10.1145/3767295.3769334)
+  Jiacheng Shi, Zhichao Hua, Jinyu Gu, Zihan Zhao, Yang Yu, Xunjie Wang
+
+- **TEEM³: Core-Independent and Cooperating Trusted Execution Environments.**
+  2026 · TEE · [ASPLOS](https://doi.org/10.1145/3779212.3790232)
+  Nils Asmussen, Friedrich Pauls, Carsten Weinhold, Sebastian Haas, Michael Roitzsch, Nilanjana Das, Nicholas Gordon, Stephan Gerhold
+
+- **TEE.Fail: Breaking Trusted Execution Environments via DDR5 Memory Bus Interposition.**
+  2026 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00101)
+  Christina Garman, Stephan van Schaik, Alexander Seto, Jalen Chuang, Daniel Genkin, Nicolás Berrios
+
+- **TDXRay: Microarchitectural Side-Channel Analysis of Intel TDX for Real-World Workloads.**
+  2026 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00170)
+  Lukas Gerlach, Ruiyi Zhang, Phillipp Schoppmann, Michael Schwarz, Albert Cheu, Hosein Yavarzadeh, Daniel Moghimi, Adrià Gascón, Tristan Hornetz
+
+- **SXGB: Secure and Efficient Vertical Federated XGBoost via Trusted Execution Environments.**
+  2026 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2025.3626379)
+  Hui Zhu, Rongxing Lu, Hui Li, Jiaqi Zhao, Fengwei Wang
+
+- **SEED: A Minimal‑Footprint TEE Framework for Verifiable, Confidential Microservice Deployment.**
+  2026 · TEE · [PoPETs](https://doi.org/10.56553/POPETS-2026-0021)
+  Md. Redowan Mahmud, Omar Jarkas, Ryan Kok Leong Ko, Naipeng Dong
+
+- **PowerHooK: Enabling Software-Based Power Side Channels Against AMD SEV Technologies via Transient-Execution Replay.**
+  2026 · TEE · [conf/woot](https://www.usenix.org/conference/woot26/presentation/oberhuber)
+  Martin Unterguggenberger, Rishub Nagpal, Andreas Kogler, Mathias Oberhuber, Stefan Mangard, Martin Wistauder
+
+- **Palladium: Guarding Neural Network Training With Confidential Computing.**
+  2026 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2026.3694706)
+  Juan Wang, Wenzhe Yi, Xiaoyang Xu, Hongxin Hu, Ziang Li, Mengda Yang
+
+- **LÆGIS: Pinpointing and Addressing Performance Overheads of GPU-Based Confidential Computing.**
+  2026 · TEE · [ISCA](https://doi.org/10.1109/ISCA66397.2026.00046)
+  Adwait Jog, Yang Yang
+
+- **It's TEEtime: Secure Interrupt Isolation for Normal-world Enclaves on Arm.**
+  2026 · TEE · [TCHES](https://doi.org/10.46586/TCHES.V2026.I1.135-160)
+  Ivan Puddu, Shweta Shinde, Moritz Schneider, Friederike Groschupp, Mark Kuhne, Srdjan Capkun
+
+- **Enabling Confidential VMs Across Diverse ARM Platforms by Retrofitting TrustZone.**
+  2026 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2026.3657770)
+  Zeyu Mi, Haibo Chen, Yicong Wang
+
+- **EXIA: Trusted Transitions for Enclaves via External-Input Attestation.**
+  2026 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/exia-trusted-transitions-for-enclaves-via-external-input-attestation/)
+  Guoxing Chen, Sanchuan Chen, Yidi Kao, Haojin Zhu, Zhen Huang, Yan Meng
+
+- **DisT-FL: Enhancing Security for TEE-Based Aggregation in Federated Learning.**
+  2026 · TEE · [TIFS](https://doi.org/10.1109/TIFS.2026.3715108)
+  Guoxing Chen, Jianzong Wang, Jianyu Niu, Zhen Huang, Guanlong Wu, Ju Yang, Yinqian Zhang
+
+- **DisARMed: Attacking ARM TrustZone from Userspace with Memory Aliasing.**
+  2026 · TEE · [conf/woot](https://www.usenix.org/conference/woot26/presentation/henes)
+  Mihai Ordean, Jacqueline Henes, David Oswald, Matthew Bowden
+
+- **Detecting Inconsistencies in Arm CCA's Formally Verified Specification.**
+  2026 · TEE · [ASPLOS](https://doi.org/10.1145/3779212.3790152)
+  Xiang Cheng, Taesoo Kim, Changho Choi, Bokdeuk Jeong
+
+- **DNN Latency Sequencing: Extracting DNN Architectures from Intel SGX Enclaves with Single-Stepping Attacks.**
+  2026 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/dnn-latency-sequencing-extracting-dnn-architectures-from-intel-sgx-enclaves-with-single-stepping-attacks/)
+  Chung Hwan Kim, Z. Berkay Celik, Minkyung Park, Zelun Kong, DaveTian
+
+- **Complementing Confidential Computing Environment for Applications on Arm CCA.**
+  2026 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2025.3604008)
+  Xiapu Luo, Zhenyu Ning, Fengwei Zhang, Shoumeng Yan, Haoyang Huang, Yuxin Hu, Zhengyu He, Yiming Zhang
+
+- **CROSS-TEE: A Distributed Trusted Execution Environment Architecture for Cross-Module Automotive Security.**
+  2026 · TEE · [TIFS](https://doi.org/10.1109/TIFS.2026.3714115)
+  Kui Ren, Shoumeng Yan, Kun Yang, Sisi Li, Hongliang Tian
+
+- **Building Confidential Accelerator Computing Environment for Arm CCA.**
+  2026 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2025.3615787)
+  Tao Wei, Jiannong Cao, Zhengyu He, Fengwei Zhang, Chenxu Wang, Kevin Leach, Shoumeng Yan, Kun Lu, Zhenyu Ning, Yunjie Deng
+
+- **BreakFAST: Confused Deputy Attack on Infinity Fabric to Break AMD SEV-SNP.**
+  2026 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00259)
+  Shweta Shinde, Benedict Schlüter, Philipp Giersfeld
+
+- **Battering RAM: Low-Cost Interposer Attacks on Confidential Computing via Dynamic Memory Aliasing.**
+  2026 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00052)
+  Jo Van Bulck, David F. Oswald, Jesse De Meulemeester, Ingrid Verbauwhede
+
+- **Anonymous Integrity Auditing Scheme Based on Trusted Execution Environment for Distributed Edge Computing.**
+  2026 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2026.3670134)
+  Jie Cui, Junjie Liu, Qingyang Zhang, Fengqun Wang, Jiaxin Li, Hong Zhong
+
+- **AEX-NStep: Probabilistic Interrupt Counting Attacks on Intel SGX.**
+  2026 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP63933.2026.00035)
+  Ivan Puddu, Nicolas Dutly, Friederike Groschupp, Kari Kostiainen, Srdjan Capkun
+
 ### 2025
 
 - **Decentralized Proposer-as-a-Service (DPaaS): Improving Decentralization and Trustworthiness in Ethereum PBS**
@@ -2249,3 +3687,367 @@
   匹配依据：TEE: hardware enclaves
 
   </details>
+
+- **ZIPNet: Low-bandwidth anonymous broadcast from (dis)Trusted Execution Environments.**
+  2025 · TEE · [PoPETs](https://doi.org/10.56553/POPETS-2025-0058)
+  Rui Wang, Ian Miers, Michael Rosenberg, Maurice Shih, Zhenyu Zhao, Fan Zhang
+
+- **WireTap: Breaking Server SGX via DRAM Bus Interposition.**
+  2025 · TEE · [ACM CCS](https://doi.org/10.1145/3719027.3765204)
+  Christina Garman, Stephan van Schaik, Jalen Chuang, Alexander Seto, Samy Amer, Daniel Genkin, Oytun Kuday Duran
+
+- **Transparent Attested DNS for Confidential Computing Services.**
+  2025 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/delignat-lavaud)
+  Antoine Delignat-Lavaud, Sylvan Clebsch, Christoph M. Wintersteiger, Manuel Costa, Kapil Vaswani, Cédric Fournet
+
+- **The Road to Trust: Building Enclaves within Confidential VMs.**
+  2025 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/the-road-to-trust-building-enclaves-within-confidential-vms/)
+  Shijun Zhao, XiaoFeng Wang, Shoumeng Yan, Dan Meng, Linke Song, Benshan Mei, Shuang Liu, Wenhao Wang, Rui Hou
+
+- **Tacco: A Framework for Ensuring the Security of Real-World TEEs via Formal Verification.**
+  2025 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2025.3594594)
+  Kui Ren, Jilin Hu, Yongwang Zhao, Shuangquan Pan, Zuohua Ding
+
+- **TLBlur: Compiler-Assisted Automated Hardening against Controlled Channels on Off-the-Shelf Intel SGX Platforms.**
+  2025 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/vanoverloop)
+  Jo Van Bulck, Mathias Payer, Andrés Sánchez, Frank Piessens, Flavio Toffalini, Daan Vanoverloop
+
+- **TEEMS: A Trusted Execution Environment based Metadata-protected Messaging System.**
+  2025 · TEE · [PoPETs](https://doi.org/10.56553/POPETS-2025-0119)
+  Ian Goldberg, Sajin Sasy, Aaron Johnson
+
+- **TDXploit: Novel Techniques for Single-Stepping and Cache Attacks on Intel TDX.**
+  2025 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/rauscher)
+  Daniel Gruss, Luca Wilke, Fabian Rauscher, Hannes Weissteiner, Thomas Eisenbarth
+
+- **SCRUTINIZER: Towards Secure Forensics on Compromised TrustZone.**
+  2025 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/scrutinizer-towards-secure-forensics-on-compromised-trustzone/)
+  Shoumeng Yan, Fengwei Zhang, Xiapu Luo, Zhenkai Liang, Xuhua Ding, Tao Wei, Zhengyu He, Rui Hou, Yiming Zhang
+
+- **Revisiting SGX-Based Encrypted Deduplication via PoW-Before-Encryption and Eliminating Redundant Computations.**
+  2025 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2024.3476288)
+  Xiaowei Ge, Guanxiong Ha, Zhen Su, Chunfu Jia, Yuchen Chen
+
+- **Reload+Reload: Exploiting Cache and Memory Contention Side Channel on AMD SEV.**
+  2025 · TEE · [ASPLOS](https://doi.org/10.1145/3676641.3716017)
+  Shih-Wei Li, Li-Chung Chiang
+
+- **Rakis: Secure Fast I/O Primitives Across Trust Boundaries on Intel SGX.**
+  2025 · TEE · [EuroSys](https://doi.org/10.1145/3689031.3696090)
+  Dmitrii Kuvaiskii, Fan Sang, Taesoo Kim, Mansour Alharthi, Mona Vij
+
+- **RMPocalypse: How a Catch-22 Breaks AMD SEV-SNP.**
+  2025 · TEE · [ACM CCS](https://doi.org/10.1145/3719027.3765233)
+  Shweta Shinde, Benedict Schlüter
+
+- **RContainer: A Secure Container Architecture through Extending ARM CCA Hardware Primitives.**
+  2025 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/rcontainer-a-secure-container-architecture-through-extending-arm-cca-hardware-primitives/)
+  Jiayun Chen, Zhenyu Song, Shaowen Xu, Qihang Zhou, Peng Liu, Wenzhuo Cao, Xiaoqi Jia, Shengzhi Zhang
+
+- **Portal: Fast and Secure Device Access with Arm CCA for Modern Arm Mobile System-on-Chips (SoCs).**
+  2025 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP61157.2025.00013)
+  Jaehyuk Lee, Xiaokuan Zhang, Fan Sang, Taesoo Kim
+
+- **OPSA: Efficient and Verifiable One-Pass Secure Aggregation With TEE for Federated Learning.**
+  2025 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2025.3565640)
+  Jinsong Han, Zhiguo Wan, Zhangshuang Guan, Yulin Zhao
+
+- **OBIR-tree: An Efficient Oblivious Index for Spatial Keyword Queries on Secure Enclaves.**
+  2025 · TEE · [PACMMOD / SIGMOD](https://doi.org/10.1145/3709708)
+  Xiangyu Wang, Jianfeng Ma, Zesen Liu, Zikai Ye, Dan Zhu
+
+- **MuEOC: Efficient SGX-Based Multi-Key Homomorphic Outsourcing Computation for E-Health System.**
+  2025 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2024.3476483)
+  Zhenfu Cao, Jun Zhou, Yisong Wang, Kim-Kwang Raymond Choo, Xiaolei Dong
+
+- **More Granular, Less Trust: Enforcing Intra-Process Isolation With Arm CCA in an Untrusted Management Environment.**
+  2025 · TEE · [TIFS](https://doi.org/10.1109/TIFS.2025.3634981)
+  Kun Sun, Zhouqi Jiang, Zhaohui Chen, Jie Wang, Wei Zhou, Shiqi Liu, Yulai Xie
+
+- **Microft: Exploring and Mitigating Cross-State Control-Flow Hijacking Attacks on ARM Cortex-M TrustZone.**
+  2025 · TEE · [TIFS](https://doi.org/10.1109/TIFS.2025.3625394)
+  Zheyuan Ma, Lukasz Ziarek, Xi Tan, Ziming Zhao, Shambhu J. Upadhyaya, Hongxin Hu, Ning Zhang
+
+- **MaTEE: Efficiently Bridging the Semantic Gap in TrustZone via Arm Pointer Authentication.**
+  2025 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2024.3445296)
+  Yongpeng Gao, Xiang Li, Jie Wang, Jiajin Hu, Shiqi Liu
+
+- **MDPeek: Breaking Balanced Branches in SGX with Memory Disambiguation Unit Side Channels.**
+  2025 · TEE · [ASPLOS](https://doi.org/10.1145/3676641.3716004)
+  Wenjian He, Dongsheng Wang, Trevor E. Carlson, Chang Liu, Shuaihu Feng, Yuan Li, Yongqiang Lyu
+
+- **LoRO: Real-Time on-Device Secure Inference for LLMs via TEE-Based Low Rank Obfuscation.**
+  2025 · TEE · [NeurIPS](http://papers.nips.cc/paper_files/paper/2025/hash/1b86cf4b15cd83b6520d851eb7298228-Abstract-Conference.html)
+  Jianhua Liu, Gaojian Xiong, Jianwei Liu, Yu Sun, Jian Cui
+
+- **LETIndex: A Secure Learned Index with TEE.**
+  2025 · TEE · [VLDB](https://doi.org/10.14778/3750601.3750682)
+  Shuting Cao, Zeping Niu, Guoliang Li
+
+- **Heracles: Chosen Plaintext Attack on AMD SEV-SNP.**
+  2025 · TEE · [ACM CCS](https://doi.org/10.1145/3719027.3765209)
+  Shweta Shinde, Benedict Schlüter, Christoph Wech
+
+- **Game of Arrows: On the (In-)Security of Weight Obfuscation for On-Device TEE-Shielded LLM Partition Algorithms.**
+  2025 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/wang-pengli)
+  Zheng Zhang, Yifeng Cai, Bingyou Dong, Huanran Xue, Pengli Wang, Junlin Liu, Yao Zhang, Ye Wu, Ziqi Zhang
+
+- **GPU Travelling: Efficient Confidential Collaborative Training with TEE-Enabled GPUs.**
+  2025 · TEE · [ACM CCS](https://doi.org/10.1145/3719027.3765029)
+  Enriquillo Valdez, Shixuan Zhao, Hani Jamjoom, Salman Ahmed, Zhongshu Gu, Zhiqiang Lin
+
+- **Formal Security Analysis of the AMD SEV-SNP Software Interface.**
+  2025 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2025.3528737)
+  Petar Paradzik, Marko Horvat, Ante Derek
+
+- **Dorami: Privilege Separating Security Monitor on RISC-V TEEs.**
+  2025 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity25/presentation/kuhne)
+  Shweta Shinde, Mark Kuhne, Stavros Volos
+
+- **CounterSEVeillance: Performance-Counter Attacks on AMD SEV-SNP.**
+  2025 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/counterseveillance-performance-counter-attacks-on-amd-sev-snp/)
+  Daniel Gruss, Stefan Gast, Robin Leander Schröder, Hannes Weissteiner
+
+- **BiTDB: Constructing A Built-in TEE Secure Database for Embedded Systems (Extended Abstract).**
+  2025 · TEE · [ICDE](https://doi.org/10.1109/ICDE65448.2025.00393)
+  Jianfeng Ma, Chengyan Ma, Di Lu, Ning Xi, Chaoyue Lv, Xiaohong Jiang, Yulong Shen
+
+- **BadRAM: Practical Memory Aliasing Attacks on Trusted Execution Environments.**
+  2025 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP61157.2025.00104)
+  David F. Oswald, Jo Van Bulck, Jesse De Meulemeester, Luca Wilke, Thomas Eisenbarth, Ingrid Verbauwhede
+
+- **Attestable Builds: Compiling Verifiable Binaries on Untrusted Systems using Trusted Execution Environments.**
+  2025 · TEE · [ACM CCS](https://doi.org/10.1145/3719027.3765128)
+  Alastair R. Beresford, Daniel Hugenroth, Mario Lins, René Mayrhofer
+
+- **AegisGuard: RL-Guided Adapter Tuning for TEE-Based Efficient &amp; Secure On-Device Inference.**
+  2025 · TEE · [NeurIPS](http://papers.nips.cc/paper_files/paper/2025/hash/f308b5f207348484552997c536375654-Abstract-Conference.html)
+  Che Wang, Yinggui Wang, Yurong Hao, Tiantong Wang, Wei Yang Bryan Lim, Yang Cao, Zhong Chen, Ziqi Zhang, Jianbo Gao, Tao Wei
+
+- **ASGARD: Protecting On-Device Deep Neural Networks with Virtualization-Based Trusted Execution Environments.**
+  2025 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/asgard-protecting-on-device-deep-neural-networks-with-virtualization-based-trusted-execution-environments/)
+  Dokyung Song, Minhee Kim, Joonkyo Jung, Myungsuk Moon
+
+- **A System Framework to Symbolically Explore Intel TDX Module Execution.**
+  2025 · TEE · [ACM CCS](https://doi.org/10.1145/3719027.3765212)
+  Pansilu Pitigalaarachchi, Xuhua Ding
+
+### 2024
+
+- **sNPU: Trusted Execution Environments on Integrated NPUs.**
+  2024 · TEE · [ISCA](https://doi.org/10.1109/ISCA59077.2024.00057)
+  Yubin Xia, Erhu Feng, Haibo Chen, Dahu Feng, Dong Du
+
+- **WeSee: Using Malicious \#VC Interrupts to Break AMD SEV-SNP.**
+  2024 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00262)
+  Shweta Shinde, Benedict Schlüter, Supraja Sridhara, Andrin Bertschi
+
+- **Trusted Execution Environments for Quantum Computers.**
+  2024 · TEE · [ACM CCS](https://doi.org/10.1145/3658644.3690855)
+  Theodoros Trochatos
+
+- **TensorTEE: Unifying Heterogeneous TEE Granularity for Efficient Secure Collaborative Tensor Computing.**
+  2024 · TEE · [ASPLOS](https://doi.org/10.1145/3622781.3674168)
+  Yifan Hao, Xiaqing Li, Yuanbo Wen, Erhu Feng, Jianan Mu, Pengwei Jin, Tianyun Ma, Xinkai Song, Husheng Han, Zidong Du, Ling Liang, Xinyao Zheng, Qi Guo, Xing Hu
+
+- **TDXdown: Single-Stepping and Instruction Counting Attacks against Intel TDX.**
+  2024 · TEE · [ACM CCS](https://doi.org/10.1145/3658644.3690230)
+  Luca Wilke, Florian Sieck, Thomas Eisenbarth
+
+- **Specification and Verification of Strong Timing Isolation of Hardware Enclaves.**
+  2024 · TEE · [ACM CCS](https://doi.org/10.1145/3658644.3690203)
+  Clément Pit-Claudel, Thomas Bourgeat, Stella Lau, Adam Chlipala
+
+- **SoK: SGX.Fail: How Stuff Gets eXposed.**
+  2024 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00260)
+  Christina Garman, Stephan van Schaik, Eyal Ronen, Alexander Seto, Thomas Yurek, Bader AlBassam, Daniel Genkin, Yuval Yarom, Andrew Miller, Adam Batori
+
+- **Secure Similarity Queries Over Vertically Distributed Data via TEE-Enhanced Cloud Computing.**
+  2024 · TEE · [TIFS](https://doi.org/10.1109/TIFS.2024.3413630)
+  Hui Zhu, Jun Shao, Yunguo Guan, Rongxing Lu, Fengwei Wang, Songnian Zhang, Hui Li, Yandong Zheng
+
+- **Salus: A Practical Trusted Execution Environment for CPU-FPGA Heterogeneous Cloud Platforms.**
+  2024 · TEE · [ASPLOS](https://doi.org/10.1145/3622781.3674169)
+  Zhen Gu, Yiran Li, Le Su, Yijin Guan, Yanheng Lu, Dimin Niu, Sheng Wang, Yu Zou, Mingyu Gao, Feifei Li, Yuan Xie
+
+- **SGXFault: An Efficient Page Fault Handling Mechanism for SGX Enclaves.**
+  2024 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2023.3268169)
+  Omais Shafi Pandith
+
+- **SEV-Step A Single-Stepping Framework for AMD-SEV.**
+  2024 · TEE · [TCHES](https://doi.org/10.46586/TCHES.V2024.I1.180-206)
+  Anja Rabich, Luca Wilke, Jan Wichelmann, Thomas Eisenbarth
+
+- **Pandora: Principled Symbolic Validation of Intel SGX Enclave Runtimes.**
+  2024 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00090)
+  David F. Oswald, Jo Van Bulck, Lesly-Ann Daniel, Fritz Alder, Frank Piessens
+
+- **On (the Lack of) Code Confidentiality in Trusted Execution Environments.**
+  2024 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00259)
+  Daniele Lain, Ivan Puddu, Moritz Schneider, Stefano Boschetto, Srdjan Capkun
+
+- **No Privacy Left Outside: On the (In-)Security of TEE-Shielded DNN Partition for On-Device ML.**
+  2024 · TEE · [IEEE S&amp;P](https://doi.org/10.1109/SP54263.2024.00052)
+  Yao Guo, Bingyan Liu, Yifeng Cai, Chen Gong, Yuanyuan Yuan, Xiangqun Chen, Ding Li, Ziqi Zhang
+
+- **LDR: Secure and Efficient Linux Driver Runtime for Embedded TEE Systems.**
+  2024 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/ldr-secure-and-efficient-linux-driver-runtime-for-embedded-tee-systems/)
+  Haobo Li, Lan Luo, Xinhui Shao, Huaiyu Yan, Ping Jiang, Ming Yang, Kai Dong, Xinwen Fu, Junzhou Luo, Zhen Ling
+
+- **HyperTEE: A Decoupled TEE Architecture with Secure Enclave Management.**
+  2024 · TEE · [MICRO](https://doi.org/10.1109/MICRO61859.2024.00018)
+  Shijun Zhao, Dan Meng, Fengwei Zhang, Peinan Li, Yubiao Huang, Lutan Zhao, Yunkai Bai, Rui Hou, Michael C. Huang
+
+- **GroupCover: A Secure, Efficient and Scalable Inference Framework for On-device Model Protection based on TEEs.**
+  2024 · TEE · [series/jmlr](https://proceedings.mlr.press/v235/zhang24bn.html)
+  Tianyi Zhang, Zheng Zhang, Jianwei Liu, Yao Zhang, Ye Wu, Na Wang, Ziqi Zhang
+
+- **Gramine-TDX: A Lightweight OS Kernel for Confidential VMs.**
+  2024 · TEE · [ACM CCS](https://doi.org/10.1145/3658644.3690323)
+  Dmitrii Kuvaiskii, Dimitrios Stavrakakis, Cedric Xing, Kailun Qin, Pramod Bhatotia, Mona Vij
+
+- **GlobalConfusion: TrustZone Trusted Application 0-Days by Design.**
+  2024 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/busch-globalconfusion)
+  Marcel Busch, Philipp Mao, Mathias Payer
+
+- **Faults in Our Bus: Novel Bus Fault Attack to Break ARM TrustZone.**
+  2024 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/faults-in-our-bus-novel-bus-fault-attack-to-break-arm-trustzone/)
+  Nimish Mishra, Debdeep Mukhopadhyay, Anirban Chakraborty
+
+- **Ensuring State Continuity for Confidential Computing: A Blockchain-Based Approach.**
+  2024 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2024.3381973)
+  Yinqian Zhang, Jianyu Niu, Xiang Li, Wei Peng, Xiaokuan Zhang
+
+- **EnclaveFuzz: Finding Vulnerabilities in SGX Applications.**
+  2024 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/enclavefuzz-finding-vulnerabilities-in-sgx-applications/)
+  Liheng Chen, Baojian Chen, Zheyu Ma, Chao Zhang, Yuan Li, Zheming Li
+
+- **DeCloak: Enable Secure and Cheap Multi-Party Transactions on Legacy Blockchains by a Minimally Trusted TEE Network.**
+  2024 · TEE · [TIFS](https://doi.org/10.1109/TIFS.2023.3318935)
+  Yuchen Wu, Lei Wang, Hong Lei, Bangdao Chen, Yue Li, Qian Ren, Yingjun Wu
+
+- **Data Enclave: A Data-Centric Trusted Execution Environment.**
+  2024 · TEE · [HPCA](https://doi.org/10.1109/HPCA57654.2024.00026)
+  Yan Solihin, James Pangia, Xipeng Shen, Yuanchao Xu, Chencheng Ye
+
+- **CAGE: Complementing Arm CCA with GPU Extensions.**
+  2024 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/cage-complementing-arm-cca-with-gpu-extensions/)
+  Kevin Leach, Chenxu Wang, Shoumeng Yan, Fengwei Zhang, Yunjie Deng, Jiannong Cao, Zhenyu Ning, Zhengyu He
+
+- **Building a Lightweight Trusted Execution Environment for Arm GPUs.**
+  2024 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2023.3334277)
+  Kevin Leach, Shoumeng Yan, Fengwei Zhang, Zhengyu He, Chenxu Wang, Zhenyu Ning, Jin Li, Yunjie Deng, Jiannong Cao
+
+- **ACAI: Protecting Accelerator Execution with Arm Confidential Computing Architecture.**
+  2024 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity24/presentation/sridhara)
+  Shweta Shinde, Supraja Sridhara, Mark Kuhne, Benedict Schlüter, Andrin Bertschi, Fabio Aliberti
+
+- **A Quantum Computer Trusted Execution Environment.**
+  2024 · TEE · [HPCA](https://doi.org/10.1109/HPCA57654.2024.00051)
+  Sanjay Deshpande, Chuanqi Xu, Yao Lu, Theodoros Trochatos, Yongshan Ding, Jakub Szefer
+
+- **A Comprehensive Trusted Runtime for WebAssembly With Intel SGX.**
+  2024 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2023.3334516)
+  Marcelo Pasin, Giovanni Mazzeo, Darshan Vaydia, Valerio Schiavoni, Arne Hollum, Jämes Ménétrey, Pascal Felber
+
+### 2023
+
+- **Trust TEE?: Exploring the Impact of Trusted Execution Environments on Smart Home Privacy Norms.**
+  2023 · TEE · [PoPETs](https://doi.org/10.56553/POPETS-2023-0067)
+  Pratik Musale, Adam Lee
+
+- **Trust Beyond Border: Lightweight, Verifiable User Isolation for Protecting In-Enclave Services.**
+  2023 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2021.3138427)
+  XiaoFeng Wang, Dongdai Lin, Hongliang Tian, Hongbo Chen, Wenhao Wang, Weijie Liu
+
+- **TeeBench: Seamless Benchmarking in Trusted Execution Environments.**
+  2023 · TEE · [SIGMOD](https://doi.org/10.1145/3555041.3589726)
+  Jorge-Arnulfo Quiané-Ruiz, Tilman Dietzel, Kajetan Jeremi Maliszewski, Volker Markl
+
+- **TSC-VEE: A TrustZone-Based Smart Contract Virtual Execution Environment.**
+  2023 · TEE · [TPDS](https://doi.org/10.1109/TPDS.2023.3263882)
+  Tao Li, Youyang Qiao, Zhiyuan Zhou, Ye Lu, Yaozheng Fang, Xueshuo Xie, Zhaolong Jian, Dayi Yang
+
+- **TEESec: Pre-Silicon Vulnerability Discovery for Trusted Execution Environments.**
+  2023 · TEE · [ISCA](https://doi.org/10.1145/3579371.3589070)
+  Yuan Xiao, Radu Teodorescu, Kristin Barber, Moein Ghaniyoun, Yinqian Zhang
+
+- **TEE-based General-purpose Computational Backend for Secure Delegated Data Processing.**
+  2023 · TEE · [SIGMOD](https://doi.org/10.1145/3626757)
+  Sheng Wang, Jialin Li, Feifei Li, Kian-Lee Tan, Mo Sha
+
+- **T-Counter: Trustworthy and Efficient CPU Resource Measurement Using SGX in the Cloud.**
+  2023 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2022.3145814)
+  Chuntao Dong, Qingni Shen, Zhonghai Wu, Daoqing Yu, Xuhua Ding, Pengfei Wu, Wu Luo
+
+- **SymGX: Detecting Cross-boundary Pointer Vulnerabilities of SGX Applications via Static Symbolic Execution.**
+  2023 · TEE · [ACM CCS](https://doi.org/10.1145/3576915.3623213)
+  Shengjian Guo, Yuanpeng Wang, Yao Guo, Qinkun Bao, Ningyu He, Zhineng Zhong, Xiangqun Chen, Ziqi Zhang, Ding Li
+
+- **Shielding Graph for eXact Analytics With SGX.**
+  2023 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2023.3241164)
+  Lingchen Zhao, Qian Wang, Minxin Du, Peipei Jiang, Sherman S. M. Chow
+
+- **Safe and Practical GPU Computation in TrustZone.**
+  2023 · TEE · [EuroSys](https://doi.org/10.1145/3552326.3567483)
+  Felix Xiaozhu Lin, Heejin Park
+
+- **SHELTER: Extending Arm CCA with Isolation in User Space.**
+  2023 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/zhang-yiming)
+  Yuxin Hu, Shoumeng Yan, Fengwei Zhang, Haoyang Huang, Yiming Zhang, Zhengyu He, Zhenyu Ning, Xiapu Luo
+
+- **Root Crash Consistency of SGX-style Integrity Trees in Secure Non-Volatile Memory Systems.**
+  2023 · TEE · [HPCA](https://doi.org/10.1109/HPCA56546.2023.10071003)
+  Jianming Huang, Yu Hua
+
+- **Reusable Enclaves for Confidential Serverless Computing.**
+  2023 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/zhao-shixuan)
+  Guoxing Chen, Mengya Zhang, Shixuan Zhao, Pinshen Xu, Yinqian Zhang, Zhiqiang Lin
+
+- **Oops..! I Glitched It Again! How to Multi-Glitch the Glitching-Protections on ARM TrustZone-M.**
+  2023 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/sass)
+  Xhani Marvin Saß, Richard Mitev, Ahmad-Reza Sadeghi
+
+- **Olive: Oblivious Federated Learning on Trusted Execution Environment Against the Risk of Sparsification.**
+  2023 · TEE · [VLDB](https://doi.org/10.14778/3603581.3603583)
+  Yang Cao, Fumiyuki Kato, Masatoshi Yoshikawa
+
+- **MyTEE: Own the Trusted Execution Environment on Embedded Devices.**
+  2023 · TEE · [NDSS](https://www.ndss-symposium.org/ndss-paper/mytee-own-the-trusted-execution-environment-on-embedded-devices/)
+  Seung-Kyun Han, Jin Soo Jang
+
+- **EnigMap: External-Memory Oblivious Map for Secure Enclaves.**
+  2023 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/tinoco)
+  Sixiang Gao, Afonso Tinoco, Elaine Shi
+
+- **Enabling Secure and Efficient Data Analytics Pipeline Evolution with Trusted Execution Environment.**
+  2023 · TEE · [PVLDB](https://doi.org/10.14778/3603581.3603589)
+  Cong Yue, Zhiyong Huang, Haotian Gao, Tien Tuan Anh Dinh, Beng Chin Ooi
+
+- **ESMAC: Efficient and Secure Multi-Owner Access Control With TEE in Multi-Level Data Processing.**
+  2023 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2022.3215977)
+  Wenxiu Ding, Zheng Yan, Yaxing Chen, Zhiguo Wan, Yuxuan Cai, Dan Liu
+
+- **ENCIDER: Detecting Timing and Cache Side Channels in SGX Enclaves and Cryptographic APIs.**
+  2023 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2022.3160346)
+  Kevin R. B. Butler, Grant Hernandez, Tuba Yavuz, Jing (Dave) Tian, Farhaan Fowze, Ken Yihang Bai
+
+- **Cracking-Like Join for Trusted Execution Environments.**
+  2023 · TEE · [PVLDB](https://doi.org/10.14778/3598581.3598602)
+  Jorge-Arnulfo Quiané-Ruiz, Kajetan Jeremi Maliszewski, Volker Markl
+
+- **CVTEE: A Compatible Verified TEE Architecture With Enhanced Security.**
+  2023 · TEE · [TDSC](https://doi.org/10.1109/TDSC.2021.3133576)
+  Rui Chang, Xinliang Miao, Jianhong Zhao, Kui Ren, Shuang Cao, Liehui Jiang, Tao Wei, Yongwang Zhao
+
+- **Accelerating Extra Dimensional Page Walks for Confidential Computing.**
+  2023 · TEE · [MICRO](https://doi.org/10.1145/3613424.3614293)
+  Yubin Xia, Bicheng Yang, Haibo Chen, Dong Du
+
+- **AEX-Notify: Thwarting Precise Single-Stepping Attacks through Interrupt Awareness for Intel SGX Enclaves.**
+  2023 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/constable)
+  Yuan Xiao, Ilya Alexandrovich, Jo Van Bulck, Taesoo Kim, Xiang Cheng, Scott Constable, Cedric Xing, Mona Vij, Frank Piessens, Mark Silberstein
+
+- **A Verified Confidential Computing as a Service Framework for Privacy Preservation.**
+  2023 · TEE · [USENIX Security](https://www.usenix.org/conference/usenixsecurity23/presentation/chen-hongbo)
+  Kang Li, Mingshen Sun, XiaoFeng Wang, Haobin Hiroki Chen, Hongbo Chen, Zhaofeng Chen

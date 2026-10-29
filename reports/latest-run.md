@@ -1,14 +1,14 @@
 # 最近运行状态
 
-运行时间：2026-10-29T13:32:04+00:00
+运行时间：2026-10-29T13:39:32+00:00
 
 | 来源 | 状态 | 相关记录 | 说明 |
 |---|---|---:|---|
-| dblp | error | 0 | dblp: expected API data, received HTTP 202 HTML/challenge page |
+| dblp | ok | 451 |  |
 | arxiv | cached | 0 | Already completed today (UTC) |
 | eprint | cached | 0 | Already completed today (UTC) |
 
-去重论文：185；MPC 标签：153；TEE 标签：33。
+去重论文：634；MPC 标签：482；TEE 标签：154。
 
 待发送新增论文：0。
 

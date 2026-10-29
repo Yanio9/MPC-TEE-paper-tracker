@@ -1,8 +1,6 @@
 {
   "enrichment_errors": [],
-  "failed_sources": [
-    "dblp"
-  ],
+  "failed_sources": [],
   "pending": 0,
   "sources": {
     "arxiv": {
@@ -10,15 +8,18 @@
       "status": "cached"
     },
     "dblp": {
-      "message": "dblp: expected API data, received HTTP 202 HTML/challenge page",
-      "received_before_failure": 0,
-      "status": "error"
+      "baseline": true,
+      "matched": 451,
+      "new": 449,
+      "received": 627,
+      "since": "2026-09-28",
+      "status": "ok"
     },
     "eprint": {
       "message": "Already completed today (UTC)",
       "status": "cached"
     }
   },
-  "started_at": "2026-10-29T13:32:04+00:00",
-  "total_papers": 185
+  "started_at": "2026-10-29T13:39:32+00:00",
+  "total_papers": 634
 }
