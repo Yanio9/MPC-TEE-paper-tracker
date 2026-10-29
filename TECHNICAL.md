@@ -1,0 +1,67 @@
+# 运行与配置
+
+## 文件
+
+- `config.yaml`：领域关键词、匹配规则、来源、会议、时间范围、摘要与通知设置。
+- `src/sources.py`：DBLP、arXiv、IACR ePrint 采集与分页；HTTP 超时、限速、重试。
+- `src/core.py`：缩写消歧、相关性筛选、跨来源去重、缓存读写。
+- `src/runner.py`：独立来源扫描、成功时间、首轮基线、待发送队列。
+- `src/enrichment.py`：可选 Crossref 摘要补全与 Qwen 中文翻译。
+- `src/output.py`：按 MPC / TEE / MPC + TEE 生成目录与运行报告。
+- `scripts/publish_digest.py`：只向配置指定的当前仓库发送 Issue，并检测已发送的论文 ID。
+- `data/papers.json`：去重论文。`records` 保留各来源元数据，`aliases` 记录旧标题和 ID。
+- `data/state.json`：各来源成功时间、错误状态、待发送论文 ID。
+- `PAPERS.md`：自动生成的论文目录。
+- `reports/`：最近运行摘要、结构化报告和待发送摘要。
+
+## 扫描范围
+
+DBLP 每次完整扫描配置中的独立关键词 × 年份组合；多关键词 OR 使用 DBLP 的 `|`，精确缩写使用 `$`，不依赖已停用的短语操作符。API 的每页上限为 1000，使用 `f` 翻页，再按 DBLP key 的会议/期刊前缀过滤。原来的 FL 缓存没有导入。
+
+arXiv 标题/摘要检索按最近更新排序，直到翻过时间边界。每篇保留最早提交时间和版本更新时间；版本 ID 去除 `vN` 后去重。IACR ePrint 使用 OAI-PMH `from` / `until` 和 `resumptionToken`，可以回补较长中断期间的记录。超出页数上限会报错而非静默截断。
+
+预印本首次默认回溯 31 天。之后从该来源上次成功日期减去 3 天开始，缓解索引与时区边界延迟；停机多日后不会仅检查最近一天。首次成功扫描某来源不发送历史条目；可设 `notifications.notify_on_first_run: true` 改变此行为。
+
+## 状态与故障
+
+单个来源的扫描在内存中暂存，所有分页成功后才合并到持久化论文库并推进成功时间。失败来源保留旧数据与旧时间；另外两个来源继续运行。HTTP 429/5xx 使用退避和 Retry-After，DBLP 保持 6 秒加随机间隔，arXiv/ePrint 请求间隔至少约 3 秒。HTML/反爬页作为来源错误处理，不尝试绕过。
+
+写入顺序是论文、状态、展示文件。自动工作流先提交待发送队列，再发 Issue，再提交发送结果。若发 Issue 后提交失败，下次从 Issue 中的论文标记恢复，避免重复提醒。仅将论文标题等外部文本作为数据处理，不拼接进 shell 指令。
+
+所有推送均为普通 `git push origin HEAD:main`。冲突时工作流失败，保留报告供检查，不强制覆盖远端。并发运行通过 Actions concurrency 排队。
+
+## 配置示例
+
+完全排除明确提到联邦学习的论文：
+
+```yaml
+tracking:
+  exclude_federated_learning: true
+```
+
+更长的首轮预印本时间范围：
+
+```yaml
+tracking:
+  initial_lookback_days: 90
+```
+
+显式历史回补（ePrint 同一天成功刷新后仍会跳过）：
+
+```bash
+python -m src.main --sources arxiv,eprint --since 2026-01-01
+```
+
+在独立目录验证，不修改正式缓存：
+
+```bash
+python -m src.main --sources arxiv,eprint --output-dir .local-preview --no-enrich
+```
+
+若要从零开始，将 `data/papers.json` 和 `data/state.json` 备份后一起移出目录，再运行。只移除一个文件会造成论文数据与通知状态不一致，不推荐。
+
+## 通知及可见性
+
+仓库为公开仓库，提交的论文目录、摘要、状态与 Issue 也公开。`DASHSCOPE_API_KEY` 仅通过 GitHub Actions Secret 或本地环境变量提供；不提交 `.env`。程序不读取原作者邮箱、不向原作者仓库写入。改仓库名时需同步 `project.repository` 和 `watch.yml` 的仓库校验条件。
+
+GitHub cron 使用 UTC，`17 1 * * *` 对应北京时间 09:17。公开仓库长时间没有活动可能被 GitHub 暂停定时工作流，可在 Actions 中重新启用。实际执行情况以最近运行报告和 Actions 结果为准。

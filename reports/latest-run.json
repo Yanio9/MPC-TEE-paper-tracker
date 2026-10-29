@@ -1,0 +1,28 @@
+{
+  "enrichment_errors": [],
+  "failed_sources": [],
+  "pending": 0,
+  "sources": {
+    "arxiv": {
+      "baseline": true,
+      "matched": 134,
+      "new": 88,
+      "received": 421,
+      "since": "2026-09-28",
+      "status": "ok"
+    },
+    "dblp": {
+      "status": "not selected"
+    },
+    "eprint": {
+      "baseline": true,
+      "matched": 105,
+      "new": 97,
+      "received": 700,
+      "since": "2026-09-28",
+      "status": "ok"
+    }
+  },
+  "started_at": "2026-10-29T13:26:37+00:00",
+  "total_papers": 185
+}

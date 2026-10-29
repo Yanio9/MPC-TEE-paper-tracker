@@ -1,0 +1,162 @@
+# Personal MPC / TEE tracker. No generic federated-learning search.
+project:
+  name: MPC & TEE Paper Tracker
+  repository: Yanio9/MPC-TEE-paper-tracker
+  timezone: Asia/Shanghai
+  contact_email: ""
+tracking:
+  years_back: 3
+  years_ahead: 1
+  initial_lookback_days: 31
+  overlap_days: 3
+  # Keep relevant FL + MPC/TEE crossovers; true excludes explicit FL mentions.
+  exclude_federated_learning: false
+topics:
+  MPC:
+    name: 安全多方计算及相关密码协议
+    patterns:
+      - '\b(?:secure\s+)?multi\s*party\s+comput(?:ation|ing)\b'
+      - '\b(?:secure\s+)?(?:two|three|2|3)\s*party\s+comput(?:ation|ing)\b'
+      - '\bsecure\s+(?:function\s+)?(?:computation|computing|evaluation)\b'
+      - '\bgarbl(?:ed|ing)\s+(?:circuits?|schemes?|protocols?)\b'
+      - '\boblivious\s+transfer\b'
+      - '\bprivate\s+set\s+(?:intersection|union)\b'
+      - '\bsecret\s+sharing\b'
+    acronym_pattern: '\b(?:mpc|smpc|2pc|3pc)\b'
+    context_pattern: '\b(?:cryptograph\w*|secure|security|privacy|malicious|semi\s*honest|honest\s+majority|oblivious|garbl\w*)\b'
+    acronym_exclusions: ['model predictive control', 'model predictive controller', 'marginal propensity']
+    dblp_terms:
+      - 'multiparty|multi-party|two-party|three-party comput'
+      - 'secure comput'
+      - 'secure function evaluat'
+      - 'garbl circuit|scheme|protocol'
+      - 'oblivious transfer'
+      - 'private set intersection|union'
+      - 'secret sharing'
+      - 'MPC$|SMPC$|2PC$|3PC$'
+    arxiv_terms:
+      - '"multiparty computation"'
+      - '"multi-party computation"'
+      - '"multi party computation"'
+      - '"two-party computation"'
+      - '"three-party computation"'
+      - '"secure computation"'
+      - '"secure computing"'
+      - '"secure function evaluation"'
+      - '"garbled circuit"'
+      - '"garbled circuits"'
+      - '"oblivious transfer"'
+      - '"private set intersection"'
+      - '"private set union"'
+      - '"secret sharing"'
+      - 'MPC'
+      - 'SMPC'
+      - '2PC'
+      - '3PC'
+  TEE:
+    name: 可信执行环境与机密计算
+    patterns:
+      - '\btrusted\s+execution\s+environments?\b'
+      - '\bconfidential\s+computing\b'
+      - '\b(?:secure|trusted|hardware|sgx)\s+enclaves?\b'
+      - '\b(?:intel\s+)?sgx\b'
+      - '\b(?:intel\s+tdx|trust\s+domain\s+extensions?)\b'
+      - '\b(?:amd\s+sev|sev\s+snp|secure\s+encrypted\s+virtualization)\b'
+      - '\btrustzone\b'
+      - '\b(?:arm\s+cca|confidential\s+compute\s+architecture)\b'
+    acronym_pattern: '\b(?:tee|tees|tdx|sev|enclaves?)\b'
+    context_pattern: '\b(?:secure|security|trusted|confidential|attestation|hardware|intel|amd|isolation|side\s+channel)\b'
+    acronym_exclusions: ['transesophageal echocardiography', 'transoesophageal echocardiography', 'total energy expenditure']
+    dblp_terms:
+      - 'trusted execution'
+      - 'confidential comput'
+      - 'enclave'
+      - 'SGX$|TDX$|TEE$|TEEs$'
+      - 'SEV$|SEV-SNP$'
+      - 'TrustZone'
+      - 'secure encrypted virtualiz'
+      - 'ARM$ CCA$'
+    arxiv_terms:
+      - '"trusted execution"'
+      - '"confidential computing"'
+      - 'enclave'
+      - 'enclaves'
+      - 'SGX'
+      - 'TDX'
+      - 'TEE'
+      - 'SEV'
+      - '"SEV-SNP"'
+      - 'TrustZone'
+      - '"secure encrypted virtualization"'
+      - '"ARM CCA"'
+sources:
+  dblp:
+    enabled: true
+    url: https://dblp.org/search/publ/api
+    page_size: 1000
+    max_pages_per_query: 30
+    # Conservative pacing inherited from upstream: 6 seconds + jitter.
+    interval_seconds: 6
+    # DBLP key prefixes, checked after retrieval; {} means all venues.
+    venues:
+      conf/crypto: CRYPTO
+      conf/eurocrypt: EUROCRYPT
+      conf/asiacrypt: ASIACRYPT
+      conf/tcc: TCC
+      conf/pkc: PKC
+      conf/ches: CHES
+      conf/fse: FSE (Cryptography)
+      journals/joc: Journal of Cryptology
+      journals/tosc: ToSC
+      journals/tches: TCHES
+      conf/sp: IEEE S&P
+      conf/ccs: ACM CCS
+      conf/uss: USENIX Security
+      conf/ndss: NDSS
+      conf/pet: PETS
+      journals/popets: PoPETs
+      journals/tifs: TIFS
+      journals/tdsc: TDSC
+      conf/osdi: OSDI
+      conf/sosp: SOSP
+      conf/eurosys: EuroSys
+      conf/nsdi: NSDI
+      conf/isca: ISCA
+      conf/micro: MICRO
+      conf/hpca: HPCA
+      conf/asplos: ASPLOS
+      conf/mlsys: MLSys
+      conf/sigmod: SIGMOD
+      journals/pacmmod: PACMMOD / SIGMOD
+      journals/pvldb: PVLDB
+      conf/vldb: VLDB
+      conf/icde: ICDE
+      journals/tpds: TPDS
+      conf/focs: FOCS
+      conf/stoc: STOC
+      conf/icml: ICML
+      conf/nips: NeurIPS
+      conf/iclr: ICLR
+  arxiv:
+    enabled: true
+    url: https://export.arxiv.org/api/query
+    page_size: 100
+    max_pages_per_query: 100
+    interval_seconds: 3.1
+    query_batch_size: 6
+  eprint:
+    enabled: true
+    # Date windows + resumable pagination; no short RSS-feed truncation.
+    url: https://eprint.iacr.org/oai
+    interval_seconds: 3
+    max_pages: 1000
+enrichment:
+  fetch_missing_abstracts: true
+  max_abstracts_per_run: 20
+  translate_to_chinese: true
+  max_translations_per_run: 20
+  translation_model: qwen-mt-plus
+  translation_url: https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+notifications:
+  notify_on_first_run: false
+  max_papers_per_issue: 100

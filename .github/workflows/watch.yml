@@ -1,0 +1,88 @@
+name: Track MPC and TEE papers
+
+on:
+  workflow_dispatch:
+    inputs:
+      since:
+        description: 'Optional preprint backfill start date (YYYY-MM-DD)'
+        required: false
+        type: string
+  schedule:
+    # GitHub cron is UTC: 01:17 UTC = 09:17 Asia/Shanghai.
+    - cron: '17 1 * * *'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: personal-paper-tracker
+  cancel-in-progress: false
+
+jobs:
+  track:
+    if: github.repository == 'Yanio9/MPC-TEE-paper-tracker'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      PYTHONUTF8: '1'
+      DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Verify tracker
+        run: python -m unittest discover -s tests -v
+      - name: Collect papers
+        id: collect
+        continue-on-error: true
+        env:
+          BACKFILL_SINCE: ${{ inputs.since }}
+        run: |
+          args=()
+          if [ -n "$BACKFILL_SINCE" ]; then args+=(--since "$BACKFILL_SINCE"); fi
+          python -m src.main "${args[@]}"
+      - name: Persist results and pending notifications
+        if: always() && steps.collect.outcome != 'skipped'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data PAPERS.md reports
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update MPC and TEE paper library'
+            git push origin HEAD:main
+          fi
+      - name: Notify new papers
+        id: notify
+        if: steps.collect.outputs.pending != '' && steps.collect.outputs.pending != '0'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/publish_digest.py
+      - name: Save notification checkpoint
+        if: steps.notify.outcome == 'success'
+        run: |
+          git add data/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record delivered paper notifications'
+            git push origin HEAD:main
+          fi
+      - name: Publish run summary
+        if: always()
+        run: |
+          if [ -f reports/latest-run.md ]; then cat reports/latest-run.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: paper-tracker-reports
+          path: reports/
+          retention-days: 14
+      - name: Surface collection or notification failures
+        if: steps.collect.outcome == 'failure' || steps.notify.outcome == 'failure'
+        run: exit 1

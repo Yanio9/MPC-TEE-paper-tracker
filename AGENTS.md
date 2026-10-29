@@ -1,0 +1,32 @@
+# Agent guidance: MPC-TEE-paper-tracker
+
+This is Yanio9's independent personal MPC / TEE tracker. Modify only this repository. Do not open upstream PRs, push to upstream, import the original FL cache, or restore generic federated-learning queries.
+
+The LICENSE file is MIT (copyright 2026 Yuwen Yang). Preserve that notice and the README provenance. The old upstream AGENTS.md incorrectly said Apache; the license file is authoritative.
+
+## Architecture
+
+Python 3.11+, requests, PyYAML; standard-library XML parsing and unittest. Entry point: `python -m src.main`. All paths resolve against the repository or the explicit output directory, not the shell working directory.
+
+- `src/sources.py`: independent DBLP, arXiv Atom, ePrint OAI-PMH collectors. Fully paginate or report failure. Never silently truncate results or treat errors as empty responses.
+- `src/core.py`: topic rules, acronym disambiguation, identity merge. DOI, normalized title, stable source IDs and aliases prevent cross-source and version duplicates. Retain both topic labels and all source links.
+- `src/runner.py`: one transaction per source; update last-success only after the source completes. Preserve a failed source's checkpoint and continue other sources. First success per source creates a quiet baseline.
+- `src/output.py`: `PAPERS.md` and `reports/`; no venue-based output dropping.
+- `src/enrichment.py`: optional Crossref abstracts and optional Qwen translations; missing credentials must not break tracking. Never log credentials.
+- `scripts/publish_digest.py`: own-repository Issue notifications with recoverable paper-ID markers.
+
+## Behavior
+
+Both MPC and TEE always scan independently. No primary-keyword gating. Generic FL is excluded; a paper that also matches MPC/TEE is included unless the explicit FL exclusion is enabled. Avoid standalone MPC/TEE/SEV/TDX matches without appropriate context.
+
+DBLP window is `[current_year - years_back, current_year + years_ahead]`, defaults -3/+1. Preprints use source update dates, initially 31 days, then previous success minus a 3-day overlap. Revisions update metadata, not new-paper notifications.
+
+Keep DBLP request pacing at least 6 seconds plus 0.5–2.5 seconds jitter, and arXiv/ePrint at least 3 seconds. Respect Retry-After. Do not solve or bypass anti-bot challenges. ePrint refreshes at most once per day after a successful scan.
+
+The daily action runs at 01:17 UTC / 09:17 Asia/Shanghai, with contents and issues write permissions only. Use ordinary pushes, never force pushes. Persist the notification queue before posting Issues; detect already-posted markers on retry. Do not interpolate paper metadata into shell code.
+
+## Validation
+
+Run `python -m unittest discover -s tests -v` after behavioral changes. Add meaningful regression cases for classification, independent source execution, pagination, checkpoint failure, deduplication or notification recovery. Use a separate `--output-dir` for live probes. Network failure is not a successful zero-result test. `--dry-run` must not write any cache, output or notification files.
+
+Keep README.md and TECHNICAL.md synchronized with actual behavior. No subagents are required for this project.
