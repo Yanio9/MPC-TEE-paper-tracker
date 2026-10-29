@@ -22,6 +22,14 @@ def in_year_range(paper: dict, first: int, last: int) -> bool:
                for record in paper.get("records", []))
 
 
+def has_publication_record(paper: dict) -> bool:
+    return any(record["source"] == "dblp" for record in paper.get("records", []))
+
+
+def publication_allowed(paper: dict, config: dict) -> bool:
+    return not config.get("tracking", {}).get("publication_only", False) or has_publication_record(paper)
+
+
 def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]*>", " ", str(value or "")))).strip()
 

@@ -9,6 +9,8 @@ tracking:
   start_year: 2020
   years_ahead: 1
   overlap_days: 3
+  # Require a formal DBLP publication; preprint-only records are not tracked.
+  publication_only: true
   # Keep relevant FL + MPC/TEE crossovers; true excludes explicit FL mentions.
   exclude_federated_learning: false
 topics:
@@ -142,7 +144,7 @@ sources:
       conf/nips: NeurIPS
       conf/iclr: ICLR
   arxiv:
-    enabled: true
+    enabled: false
     url: https://export.arxiv.org/api/query
     page_size: 100
     backfill_page_size: 500
@@ -150,7 +152,7 @@ sources:
     interval_seconds: 3.1
     query_batch_size: 6
   eprint:
-    enabled: true
+    enabled: false
     # Date windows + resumable pagination; no short RSS-feed truncation.
     url: https://eprint.iacr.org/oai
     interval_seconds: 3

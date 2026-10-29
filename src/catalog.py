@@ -6,6 +6,8 @@ import hashlib
 import re
 from pathlib import Path
 
+from .core import has_publication_record, publication_allowed
+
 START = "<!-- PAPERS:START -->"
 END = "<!-- PAPERS:END -->"
 
@@ -29,10 +31,6 @@ def paper_date(paper: dict) -> str:
     published = [record for record in paper["records"] if record["source"] == "dblp"]
     records = published or paper["records"]
     return max((str(r.get("published") or r.get("year", "")) for r in records), default="")[:10]
-
-
-def has_publication_record(paper: dict) -> bool:
-    return any(record["source"] == "dblp" for record in paper["records"])
 
 
 def material_links(paper: dict) -> list[tuple[str, str]]:
@@ -78,6 +76,8 @@ def paper_groups(papers: dict, config: dict | None = None):
     order = {name: index for index, name in enumerate(dict.fromkeys(venues.values()))}
     groups = {}
     for identifier, paper in papers.items():
+        if not publication_allowed(paper, config or {}):
+            continue
         groups.setdefault(primary_venue(paper), []).append((identifier, paper))
     def group_order(item):
         published, label = item[0]
@@ -94,12 +94,17 @@ def paper_groups(papers: dict, config: dict | None = None):
 
 
 def render_tables(papers: dict, config: dict | None = None) -> str:
+    papers = {identifier: paper for identifier, paper in papers.items() if publication_allowed(paper, config or {})}
     published_count = sum(has_publication_record(paper) for paper in papers.values())
     groups = list(paper_groups(papers, config))
-    lines = [f"共 **{len(papers)}** 篇去重论文：会议/期刊记录 **{published_count}** 篇，"
-             f"仅预印本来源 **{len(papers) - published_count}** 篇。", "",
-             "预印本单独列出；尚未关联会议/期刊记录，不代表论文一定尚未发表。", "",
-             "按会议、期刊与预印本来源分组，组内按年份倒序；MPC / TEE 为方向标签。", ""]
+    if (config or {}).get("tracking", {}).get("publication_only", False):
+        lines = [f"共 **{len(papers)}** 篇去重论文，均已关联会议或期刊发表记录。", "",
+                 "按会议、期刊分组，组内按年份倒序；MPC / TEE 为方向标签。已发表论文附带的 arXiv / ePrint 链接作为全文入口保留。", ""]
+    else:
+        lines = [f"共 **{len(papers)}** 篇去重论文：会议/期刊记录 **{published_count}** 篇，"
+                 f"仅预印本来源 **{len(papers) - published_count}** 篇。", "",
+                 "预印本单独列出；尚未关联会议/期刊记录，不代表论文一定尚未发表。", "",
+                 "按会议、期刊与预印本来源分组，组内按年份倒序；MPC / TEE 为方向标签。", ""]
     for published, heading in ((True, "会议与期刊"), (False, "预印本")):
         links = [f"[{escaped(label)}（{len(selected)}）](#{slug})" for slug, label, formal, selected in groups if formal == published]
         if links:
@@ -158,7 +163,7 @@ function filterPapers(){
   let shown = 0;
   for(const item of rows){
     const row = item.row;
-    const matches = words.every(word => item.text.includes(word)) && (!year.value || row.dataset.year === year.value) && (!topic.value || row.dataset.topic === topic.value) && (!kind.value || row.dataset.kind === kind.value) && (!venue.value || row.dataset.venue === venue.value);
+    const matches = words.every(word => item.text.includes(word)) && (!year.value || row.dataset.year === year.value) && (!topic.value || row.dataset.topic === topic.value) && (!kind || !kind.value || row.dataset.kind === kind.value) && (!venue.value || row.dataset.venue === venue.value);
     row.hidden = !matches;
     if(matches) shown++;
   }
@@ -167,30 +172,38 @@ function filterPapers(){
 }
 let pending;
 search.addEventListener('input', () => {clearTimeout(pending);pending=setTimeout(filterPapers,150);});
-for(const element of [year,topic,kind,venue]) element.addEventListener('change',filterPapers);
+for(const element of [year,topic,kind,venue].filter(Boolean)) element.addEventListener('change',filterPapers);
 """
 
 
 def render_site(papers: dict, config: dict) -> str:
+    papers = {identifier: paper for identifier, paper in papers.items() if publication_allowed(paper, config)}
+    publication_only = config.get("tracking", {}).get("publication_only", False)
     repository = html.escape(config["project"]["repository"], quote=True)
     base = f"https://github.com/{repository}"
     groups = list(paper_groups(papers, config))
     venue_options = "".join(f'<option value="{html.escape(slug, quote=True)}">{html.escape(label)} ({len(selected)})</option>' for slug, label, _, selected in groups)
     years = sorted({paper_date(paper)[:4] for paper in papers.values()}, reverse=True)
     options = "".join(f'<option value="{html.escape(year, quote=True)}">{html.escape(year)}</option>' for year in years)
+    grouping = "会议、期刊" if publication_only else "会议、期刊与预印本来源"
+    venue_label_text = "会议 / 期刊" if publication_only else "会议 / 期刊 / 来源"
+    venue_all = "全部会议与期刊" if publication_only else "全部会议与来源"
+    kind_filter = '' if publication_only else '<label>发表记录<select id="kind"><option value="">全部来源</option><option value="published">会议 / 期刊</option><option value="preprint">仅预印本来源</option></select></label>'
+    note = ("仅收录已关联会议或期刊发表记录的论文。arXiv / ePrint 链接仅作为已发表论文的全文入口。" if publication_only else
+            "仅预印本来源表示尚未关联会议或期刊记录，不代表论文一定尚未发表。")
     parts = ['<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">',
              '<meta name="viewport" content="width=device-width,initial-scale=1">',
              '<title>MPC &amp; TEE 论文列表</title>', f'<style>{STYLE}</style></head><body><main>',
              '<h1>MPC &amp; TEE 论文列表</h1>',
-             f'<p class="lead">从 2020 年起追踪安全多方计算与可信执行环境。共 {len(papers)} 篇去重论文，按会议、期刊与预印本来源分组，组内按年份倒序。</p>',
+             f'<p class="lead">从 2020 年起追踪安全多方计算与可信执行环境。共 {len(papers)} 篇去重论文，按{grouping}分组，组内按年份倒序。</p>',
              f'<nav class="links"><a href="{base}">GitHub 仓库</a><a href="{base}/blob/main/GUIDE.md">收录与运行说明</a><a href="{base}/blob/main/reports/latest-run.md">最近更新状态</a></nav>',
              '<div class="filters"><label>搜索标题、作者、摘要<input id="search" type="search" placeholder="例如：oblivious transfer、SGX"></label>',
-             f'<label>会议 / 期刊 / 来源<select id="venue"><option value="">全部会议与来源</option>{venue_options}</select></label>',
+             f'<label>{venue_label_text}<select id="venue"><option value="">{venue_all}</option>{venue_options}</select></label>',
              f'<label>年份<select id="year"><option value="">全部年份</option>{options}</select></label>',
              '<label>方向<select id="topic"><option value="">全部方向</option><option value="mpc">MPC</option><option value="tee">TEE</option><option value="mpc-tee">MPC + TEE</option></select></label>',
-             '<label>发表记录<select id="kind"><option value="">全部来源</option><option value="published">会议 / 期刊</option><option value="preprint">仅预印本来源</option></select></label>',
+             kind_filter,
              f'<span id="result-count" role="status">显示 {len(papers)} / {len(papers)} 篇</span></div>',
-             '<p class="note">仅预印本来源表示尚未关联会议或期刊记录，不代表论文一定尚未发表。点击“作者与摘要”展开详情。</p>']
+             f'<p class="note">{note}点击“作者与摘要”展开详情。</p>']
     for slug, label, published, selected in groups:
         if not selected:
             continue

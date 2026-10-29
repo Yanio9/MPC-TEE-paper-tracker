@@ -9,7 +9,7 @@ from zoneinfo import ZoneInfo
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from src.core import read_json, write_json
+from src.core import read_json, write_json, publication_allowed
 from src.output import render_digest
 from src.runner import load_config
 
@@ -21,8 +21,11 @@ def publish(root: Path, config: dict, session) -> int:
     state_path = root / "data" / "state.json"
     state = read_json(state_path, {"schema_version": 1, "sources": {}, "pending": []})
     papers = read_json(root / "data" / "papers.json", {"papers": {}})["papers"]
-    pending = [identifier for identifier in state.get("pending", []) if identifier in papers]
+    pending = [identifier for identifier in state.get("pending", []) if identifier in papers and publication_allowed(papers[identifier], config)]
     if not pending:
+        if state.get("pending"):
+            state["pending"] = []
+            write_json(state_path, state)
         print("No new papers to notify.")
         return 0
     base = f"https://api.github.com/repos/{repository}/issues"

@@ -3,37 +3,23 @@
   "enrichment_errors": [],
   "failed_sources": [],
   "pending": 0,
-  "refresh": true,
+  "publication_only": true,
+  "refresh": false,
   "sources": {
     "arxiv": {
-      "baseline": false,
-      "matched": 5,
-      "new": 0,
-      "received": 29,
-      "since": "2026-10-26",
-      "status": "ok",
-      "until": "2026-10-29"
+      "message": "仅收录正式发表论文；预印本独立抓取已关闭",
+      "status": "disabled"
     },
     "dblp": {
-      "baseline": false,
-      "matched": 707,
-      "new": 0,
-      "received": 961,
-      "since": "2026-10-26",
-      "status": "ok",
-      "until": "2026-10-29"
+      "message": "Already completed today (UTC)",
+      "status": "cached"
     },
     "eprint": {
-      "baseline": false,
-      "matched": 9,
-      "new": 0,
-      "received": 79,
-      "since": "2026-10-26",
-      "status": "ok",
-      "until": "2026-10-29"
+      "message": "仅收录正式发表论文；预印本独立抓取已关闭",
+      "status": "disabled"
     }
   },
   "start_year": 2020,
-  "started_at": "2026-10-29T14:25:31+00:00",
-  "total_papers": 4650
+  "started_at": "2026-10-29T15:38:02+00:00",
+  "total_papers": 704
 }

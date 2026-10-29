@@ -225,6 +225,10 @@ class PipelineTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory(prefix=".local-test-", dir=ROOT)
         self.root = Path(self.temp.name)
         self.cfg = load_config(ROOT / "config.yaml")
+        # Exercise the optional collectors as well as the publication-only default.
+        self.cfg["tracking"]["publication_only"] = False
+        for source in self.cfg["sources"].values():
+            source["enabled"] = True
         self.cfg["enrichment"] = {}
 
     def tearDown(self):
@@ -327,6 +331,82 @@ class PipelineTests(unittest.TestCase):
         boundary["records"][0]["year"] = "2020"
         result = self.call({"arxiv": lambda *args: [old, boundary]}, selected=["arxiv"])
         self.assertEqual(result["total_papers"], 1)
+
+    def test_publication_only_removes_cached_preprints_but_preserves_fulltext_and_dblp_checkpoint(self):
+        linked = paper(source="dblp", identifier="conf/crypto/A26")
+        linked["records"].append({**paper()["records"][0], "url": "https://arxiv.org/abs/2610.00001"})
+        standalone = paper("Intel SGX security without a publication", source="eprint", identifier="2026/2")
+        self.call({"dblp": lambda *args: [linked], "arxiv": lambda *args: [], "eprint": lambda *args: [standalone]})
+        before = read_json(self.root / "data/papers.json", {})["papers"]
+        state_path = self.root / "data/state.json"
+        previous = read_json(state_path, {})
+        previous["pending"] = list(before)
+        write_json(state_path, previous)
+        kept_id = next(identifier for identifier, value in before.items() if value["title"] == linked["title"])
+        self.cfg = load_config(ROOT / "config.yaml")
+        def never(*args):
+            raise AssertionError("Cached DBLP and disabled preprints must not be fetched")
+        result = self.call({name: never for name in self.cfg["sources"]})
+        after = read_json(self.root / "data/papers.json", {})["papers"]
+        state = read_json(state_path, {})
+        self.assertEqual(after, {kept_id: before[kept_id]})
+        self.assertEqual(state["sources"], {"dblp": previous["sources"]["dblp"]})
+        self.assertEqual(state["pending"], [kept_id])
+        self.assertEqual(result["total_papers"], 1)
+        self.assertEqual(result["pending"], 1)
+        self.assertEqual(result["sources"]["arxiv"]["status"], "disabled")
+        self.assertEqual(result["sources"]["eprint"]["status"], "disabled")
+        self.assertIn("https://arxiv.org/abs/2610.00001", (self.root / "PAPERS.md").read_text(encoding="utf-8"))
+        self.assertNotIn(standalone["title"], (self.root / "reports/pending-digest.md").read_text(encoding="utf-8"))
+
+    def test_publication_policy_blocks_preprint_discovery_and_only_queues_publications(self):
+        self.cfg["tracking"]["publication_only"] = True
+        self.call({"dblp": lambda *args: []})
+        # Even accidentally enabled or explicitly selected preprint sources stay off.
+        result = self.call({"dblp": lambda *args: [paper(source="dblp"), paper("Secret sharing preprint")]},
+                           now=NOW + timedelta(days=1), selected=["dblp", "arxiv", "eprint"])
+        self.assertEqual(result["failed_sources"], [])
+        self.assertEqual(result["total_papers"], 1)
+        self.assertEqual(result["pending"], 1)
+        self.assertEqual(result["sources"]["arxiv"]["status"], "disabled")
+        self.assertEqual(result["sources"]["eprint"]["status"], "disabled")
+
+    def test_reenabling_preprints_rebuilds_a_quiet_2020_baseline(self):
+        self.cfg["tracking"]["publication_only"] = True
+        self.call({"dblp": lambda *args: []})
+        self.cfg["tracking"]["publication_only"] = False
+        windows = []
+        def backfill(config, client, upper, lower):
+            windows.append(lower)
+            return [paper("Historical secret sharing preprint")]
+        result = self.call({"arxiv": backfill, "eprint": lambda *args: []})
+        self.assertEqual(windows, [date(2020, 1, 1)])
+        self.assertTrue(result["sources"]["arxiv"]["baseline"])
+        self.assertEqual(result["total_papers"], 1)
+        self.assertEqual(result["pending"], 0)
+
+    def test_publication_only_outputs_filter_legacy_cache_and_queue(self):
+        self.cfg = load_config(ROOT / "config.yaml")
+        formal = paper("Published secure computation", source="dblp")
+        preprint = paper("Unlinked secret sharing preprint")
+        papers = {"formal": formal, "preprint": preprint}
+        write_outputs(self.root, papers, {"pending": ["formal", "preprint"]}, {"started_at": NOW.isoformat(), "sources": {}}, self.cfg)
+        for name in ("README.md", "PAPERS.md", "docs/index.html", "reports/pending-digest.md"):
+            content = (self.root / name).read_text(encoding="utf-8")
+            self.assertIn(formal["title"], content)
+            self.assertNotIn(preprint["title"], content)
+        website = render_site(papers, self.cfg)
+        self.assertIn("显示 1 / 1 篇", website)
+        self.assertNotIn('id="kind"', website)
+        self.assertNotIn('data-kind="preprint"', website)
+
+    def test_publication_only_notification_discards_old_preprint_queue_without_sending(self):
+        self.cfg = load_config(ROOT / "config.yaml")
+        write_json(self.root / "data/papers.json", {"papers": {"abc123": paper()}})
+        write_json(self.root / "data/state.json", {"pending": ["abc123"]})
+        with patch.dict(os.environ, {"GITHUB_REPOSITORY": self.cfg["project"]["repository"]}):
+            self.assertEqual(publish(self.root, self.cfg, None), 0)
+        self.assertEqual(read_json(self.root / "data/state.json", {})["pending"], [])
 
     def test_unknown_venue_still_renders(self):
         p = paper(source="dblp")
