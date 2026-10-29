@@ -18,7 +18,7 @@ Yanio9 的个人论文追踪器：**安全多方计算（MPC）与可信执行�
 
 | 来源 | 获取方式 | 默认范围 |
 |---|---|---|
-| DBLP | 官方搜索 API，逐年、分页检索，之后按会议/期刊过滤 | 当前年份 −3 至 +1；密码学、安全、系统、数据库及相关 ML 会议 |
+| DBLP | 官方 SPARQL API，按关键词、年份和会议/期刊分页查询 | 当前年份 −3 至 +1；密码学、安全、系统、数据库及相关 ML 会议 |
 | arXiv | 官方 Atom API，在标题和摘要中检索 | 首次回溯 31 天，此后从上次成功时间向前重叠 3 天；按更新日期分页 |
 | IACR ePrint | 官方 OAI-PMH，支持日期范围和续传令牌 | 首次回溯 31 天，此后增量扫描并重叠 3 天 |
 
@@ -71,4 +71,4 @@ python -m src.main --dry-run --no-enrich
 
 本项目基于 [youngfish42/FL-paper-update-tracker](https://github.com/youngfish42/FL-paper-update-tracker) 的工作流程思路改造，经 [Yanio9 的 fork](https://github.com/Yanio9/FL-paper-update-tracker) 获取，参考版本为 `90930fad44e2f177e85cb4f975a081523bd66277`。原项目基于 [beiyuouo/dblp-watcher](https://github.com/beiyuouo/dblp-watcher)。保留原作者 Yuwen Yang 的 [MIT License](LICENSE)。本仓库为独立个人版本，与原项目不存在自动合并关系。
 
-接口说明：[DBLP](https://dblp.org/faq/How+to+use+the+dblp+search+API.html)、[arXiv](https://info.arxiv.org/help/api/user-manual.html)、[IACR ePrint](https://eprint.iacr.org/rss/)。预印本摘要与元数据来自各来源；论文全文遵循各自许可，本仓库不下载全文 PDF。
+接口说明：[DBLP SPARQL](https://blog.dblp.org/2024/09/09/introducing-our-public-sparql-query-service/)、[DBLP 搜索 API](https://dblp.org/faq/How+to+use+the+dblp+search+API.html)、[arXiv](https://info.arxiv.org/help/api/user-manual.html)、[IACR ePrint](https://eprint.iacr.org/rss/)。预印本摘要与元数据来自各来源；论文全文遵循各自许可，本仓库不下载全文 PDF。

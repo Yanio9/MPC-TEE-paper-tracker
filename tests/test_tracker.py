@@ -10,7 +10,7 @@ from unittest.mock import patch
 from src.core import PaperStore, canonical_doi, classify, read_json, write_json
 from src.output import render_library
 from src.runner import load_config, run
-from src.sources import SourceError, collect_arxiv, collect_dblp, collect_eprint, parse_arxiv, parse_dblp, parse_eprint
+from src.sources import SourceError, collect_arxiv, collect_dblp, collect_eprint, parse_arxiv, parse_dblp, parse_eprint, parse_dblp_sparql, sparql_query
 from scripts.publish_digest import publish
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -159,6 +159,7 @@ class SourceTests(unittest.TestCase):
 
     def test_dblp_pagination_and_venue_filter(self):
         cfg = load_config(ROOT / "config.yaml")
+        cfg["sources"]["dblp"]["backend"] = "search"
         cfg["tracking"].update(years_back=0, years_ahead=0)
         cfg["topics"] = {"MPC": {"dblp_terms": ["secure comput"]}}
         def data(key):
@@ -173,6 +174,27 @@ class SourceTests(unittest.TestCase):
     def test_html_challenge_is_not_a_feed(self):
         with self.assertRaises(SourceError):
             parse_eprint("<html><body>Not a bot?</body></html>")
+
+    def test_sparql_authors_do_not_change_pagination_unit(self):
+        cfg = load_config(ROOT / "config.yaml")
+        cfg["sources"]["dblp"]["sparql_page_size"] = 1
+        base = {key: {"value": value} for key, value in {"paper": "https://dblp.org/rec/conf/crypto/A26", "title": "Secure computation",
+                  "year": "2026", "stream": "https://dblp.org/streams/conf/crypto", "doi": "https://doi.org/10.1234/test"}.items()}
+        rows = [{**base, "author": {"value": name}} for name in ("Alice", "Bob")]
+        client = Client([Response({"results": {"bindings": rows}}), Response({"results": {"bindings": []}})])
+        papers = list(collect_dblp(cfg, client, NOW.date()))
+        self.assertEqual(len(papers), 1)
+        self.assertEqual(papers[0]["authors"], ["Alice", "Bob"])
+        self.assertIn("OFFSET 1", client.calls[1][1]["query"])
+        self.assertIn('"2023"^^xsd:gYear', client.calls[0][1]["query"])
+
+    def test_sparql_query_contains_both_independent_topics(self):
+        cfg = load_config(ROOT / "config.yaml")
+        query = sparql_query(cfg, NOW.date(), 0)
+        self.assertIn("multiparty", query)
+        self.assertIn("SGX", query)
+        self.assertIn("streams/conf/crypto", query)
+        self.assertNotIn("federate", query)
 
 
 class PipelineTests(unittest.TestCase):

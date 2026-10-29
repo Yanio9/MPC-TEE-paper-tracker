@@ -92,6 +92,10 @@ topics:
 sources:
   dblp:
     enabled: true
+    # Official SPARQL API avoids relying on the currently challenged web search service.
+    backend: sparql
+    sparql_url: https://sparql.dblp.org/sparql
+    sparql_page_size: 500
     url: https://dblp.org/search/publ/api
     page_size: 1000
     max_pages_per_query: 30

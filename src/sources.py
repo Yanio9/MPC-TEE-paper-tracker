@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+import json
 import random
 import re
 import time
@@ -29,6 +30,8 @@ class HttpClient:
         self.session = requests.Session()
         user_agent = "MPC-TEE-paper-tracker/1.0 (+https://github.com/Yanio9/MPC-TEE-paper-tracker)"
         self.session.headers["User-Agent"] = user_agent + (f"; mailto:{contact}" if contact else "")
+        if name == "dblp":
+            self.session.headers["Accept"] = "application/sparql-results+json, application/json"
         self.last_call = 0.0
 
     def get(self, url: str, params: dict):
@@ -97,6 +100,11 @@ def parse_dblp(data: dict, venues: dict) -> tuple[list[dict], int, int]:
 
 def collect_dblp(config: dict, client, today, since=None):
     cfg = config["sources"]["dblp"]
+    if cfg.get("backend", "search") == "sparql":
+        yield from collect_dblp_sparql(config, client, today)
+        return
+    if cfg.get("backend", "search") != "search":
+        raise SourceError("Unknown DBLP backend")
     years = range(today.year - config["tracking"]["years_back"], today.year + config["tracking"]["years_ahead"] + 1)
     terms = list(dict.fromkeys(term for topic in config["topics"].values() for term in topic["dblp_terms"]))
     size = min(1000, cfg["page_size"])
@@ -116,6 +124,85 @@ def collect_dblp(config: dict, client, today, since=None):
                     raise SourceError(f"DBLP pagination stopped at {offset}/{total}: {query}")
             else:
                 raise SourceError(f"DBLP page limit reached: {query}; increase max_pages_per_query")
+
+
+def sparql_query(config: dict, today, offset: int) -> str:
+    """Translate the configured AND/OR/prefix terms to a broad title candidate query."""
+    cfg = config["sources"]["dblp"]
+    streams = cfg.get("venues", {})
+    if any(not re.fullmatch(r"(?:conf|journals)/[\w-]+", stream) for stream in streams):
+        raise ValueError("Invalid DBLP stream key")
+    values = "VALUES ?venue { " + " ".join(f"<https://dblp.org/streams/{stream}>" for stream in streams) + " }" if streams else ""
+    terms = list(dict.fromkeys(term for topic in config["topics"].values() for term in topic["dblp_terms"]))
+    expressions = []
+    for term in terms:
+        and_parts = []
+        for part in term.split():
+            alternatives = []
+            for token in part.split("|"):
+                exact = token.endswith("$")
+                token = token.removesuffix("$")
+                token = re.escape(token).replace(r"\-", "[^a-z0-9]?")
+                alternatives.append("(^|[^a-z0-9])" + token + ("([^a-z0-9]|$)" if exact else ""))
+            pattern = "|".join(alternatives)
+            and_parts.append(f"REGEX(STR(?candidateTitle), {json.dumps(pattern)}, \"i\")")
+        expressions.append("(" + " && ".join(and_parts) + ")")
+    if not expressions:
+        raise ValueError("DBLP requires at least one search term")
+    min_year = today.year - config["tracking"]["years_back"]
+    max_year = today.year + config["tracking"]["years_ahead"]
+    size = int(cfg.get("sparql_page_size", 500))
+    return f'''
+PREFIX dblp: <https://dblp.org/rdf/schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?paper ?title ?year ?stream ?doi ?ee ?author WHERE {{
+  {{ SELECT DISTINCT ?paper WHERE {{
+      {values}
+      ?paper dblp:publishedInStream ?venue ; dblp:title ?candidateTitle ; dblp:yearOfPublication ?candidateYear .
+      FILTER (?candidateYear >= "{min_year}"^^xsd:gYear && ?candidateYear <= "{max_year}"^^xsd:gYear)
+      FILTER ({" || ".join(expressions)})
+    }} ORDER BY ?paper LIMIT {size} OFFSET {int(offset)}
+  }}
+  ?paper dblp:title ?title ; dblp:yearOfPublication ?year ; dblp:publishedInStream ?stream .
+  OPTIONAL {{ ?paper dblp:doi ?doi }}
+  OPTIONAL {{ ?paper dblp:primaryDocumentPage ?ee }}
+  OPTIONAL {{ ?paper dblp:authoredBy ?person . ?person dblp:primaryCreatorName ?author }}
+}} ORDER BY ?paper
+'''
+
+
+def parse_dblp_sparql(data: dict, venues: dict) -> list[dict]:
+    rows = data["results"]["bindings"]
+    grouped = {}
+    for row in rows:
+        value = lambda key: row.get(key, {}).get("value", "")
+        url = value("paper")
+        if not url.startswith("https://dblp.org/rec/") or not value("title"):
+            raise SourceError("Incomplete DBLP SPARQL binding")
+        key = url.removeprefix("https://dblp.org/rec/")
+        stream = value("stream").removeprefix("https://dblp.org/streams/")
+        if key not in grouped:
+            grouped[key] = {"title": clean_text(value("title")), "abstract": "", "authors": [], "records": [{
+                "source": "dblp", "id": key, "year": value("year"), "updated": "", "doi": value("doi"),
+                "url": value("doi") or value("ee") or url, "venue": venues.get(stream, stream)}]}
+        if value("author") and value("author") not in grouped[key]["authors"]:
+            grouped[key]["authors"].append(clean_text(value("author")))
+    return list(grouped.values())
+
+
+def collect_dblp_sparql(config: dict, client, today):
+    cfg = config["sources"]["dblp"]
+    offset = 0
+    size = cfg.get("sparql_page_size", 500)
+    for _ in range(cfg["max_pages_per_query"]):
+        LOG.info("DBLP official SPARQL page at offset %s", offset)
+        data = client.get(cfg["sparql_url"], {"query": sparql_query(config, today, offset)}).json()
+        papers = parse_dblp_sparql(data, cfg.get("venues", {}))
+        yield from papers
+        if len(papers) < size:
+            return
+        offset += len(papers)
+    raise SourceError("DBLP SPARQL page limit reached; increase max_pages_per_query")
 
 
 def parse_arxiv(xml: str) -> tuple[list[dict], int]:

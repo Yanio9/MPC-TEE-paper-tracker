@@ -8,7 +8,7 @@ The LICENSE file is MIT (copyright 2026 Yuwen Yang). Preserve that notice and th
 
 Python 3.11+, requests, PyYAML; standard-library XML parsing and unittest. Entry point: `python -m src.main`. All paths resolve against the repository or the explicit output directory, not the shell working directory.
 
-- `src/sources.py`: independent DBLP, arXiv Atom, ePrint OAI-PMH collectors. Fully paginate or report failure. Never silently truncate results or treat errors as empty responses.
+- `src/sources.py`: independent DBLP, arXiv Atom, ePrint OAI-PMH collectors. DBLP defaults to its official SPARQL API, with a selectable legacy search backend. Paginate distinct publication IDs before joining authors; never count author rows as papers. Fully paginate or report failure. Never silently truncate results or treat errors as empty responses.
 - `src/core.py`: topic rules, acronym disambiguation, identity merge. DOI, normalized title, stable source IDs and aliases prevent cross-source and version duplicates. Retain both topic labels and all source links.
 - `src/runner.py`: one transaction per source; update last-success only after the source completes. Preserve a failed source's checkpoint and continue other sources. First success per source creates a quiet baseline.
 - `src/output.py`: `PAPERS.md` and `reports/`; no venue-based output dropping.
