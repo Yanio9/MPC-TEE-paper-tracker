@@ -63,7 +63,7 @@ def render_library(papers: dict, report: dict) -> str:
                 lines += [f"### {year}", ""]
                 previous_year = year
             lines += paper_lines(paper, include_abstract=True)
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def render_digest(papers: dict, identifiers: list[str], repository: str, limit: int) -> str:
