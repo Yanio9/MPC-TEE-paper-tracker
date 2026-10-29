@@ -1,14 +1,14 @@
 # 最近运行状态
 
-运行时间：2026-10-29T13:39:32+00:00
+运行时间：2026-10-29T14:02:45+00:00
 
 | 来源 | 状态 | 相关记录 | 说明 |
 |---|---|---:|---|
-| dblp | ok | 451 |  |
-| arxiv | cached | 0 | Already completed today (UTC) |
-| eprint | cached | 0 | Already completed today (UTC) |
+| dblp | ok | 707 |  |
+| arxiv | ok | 3484 |  |
+| eprint | ok | 2170 |  |
 
-去重论文：634；MPC 标签：482；TEE 标签：154。
+去重论文：4650；MPC 标签：3677；TEE 标签：1061。
 
 待发送新增论文：0。
 
