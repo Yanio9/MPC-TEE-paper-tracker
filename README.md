@@ -9,6 +9,8 @@ Yanio9 的个人论文追踪器：**安全多方计算（MPC）与可信执行�
 - **MPC**：安全多方/两方/三方计算、混淆电路、不经意传输、私有集合求交/并集、秘密共享。
 - **TEE**：可信执行环境、机密计算、Intel SGX/TDX、AMD SEV/SNP、TrustZone、ARM CCA，以及相关安全与远程证明研究。
 - 同时匹配的论文归入 **MPC + TEE**；匹配依据保存在数据与摘要展开栏中。
+- 多年论文目录较大时，`PAPERS.md` 展示年份与方向索引；论文、摘要及来源链接自动分存到 `papers/`，每页至多 150 篇。
+- 目录区分“含会议/期刊记录”与“仅预印本来源”；后者表示本工具尚未关联到正式发表记录，不代表论文一定尚未发表。
 
 **不会泛抓联邦学习论文。** `federate`、`FedAvg` 等原有检索条件已移除。联邦学习论文只有在标题或摘要符合 MPC/TEE 规则时才收录，例如“用 MPC 做隐私保护聚合”或“在 SGX 内执行联邦训练”。普通 FedAvg、非 IID、客户端选择等论文不会仅因涉及 FL 就被收录。
 
@@ -23,6 +25,15 @@ Yanio9 的个人论文追踪器：**安全多方计算（MPC）与可信执行�
 | IACR ePrint | 官方 OAI-PMH，支持日期范围和续传令牌 | 首次从 **2020-01-01** 回补，此后增量扫描并重叠 3 天 |
 
 DBLP 包括 CRYPTO、EUROCRYPT、ASIACRYPT、TCC、PKC、Journal of Cryptology、ToSC/TCHES，以及 S&P、CCS、USENIX Security、NDSS、PoPETs、OSDI、SOSP、EuroSys、ASPLOS 等，完整可编辑列表见 `config.yaml`。
+
+### 会议等级与领域重点
+
+正式发表来源采用精选白名单，综合通用等级与本领域的重要性，不设置统一的“仅 CCF A”门槛。密码学来源维护参考 [中国密码学会 CACR 目录（2025 年）](https://www.cacrnet.org.cn/site/content/1675.html)，不会把来源等级当成单篇论文的质量判断。无论来自哪个会议或期刊，都必须满足 MPC / TEE 主题筛选。
+
+- MPC 重点：CRYPTO（美密）、EUROCRYPT（欧密）、ASIACRYPT（亚密）、TCC、PKC、Journal of Cryptology，以及相关密码协议、隐私与实现领域来源。
+- TEE 重点：S&P、CCS、USENIX Security、NDSS，以及 OSDI、SOSP、EuroSys、ASPLOS 等系统与体系结构来源。
+- arXiv / IACR ePrint：独立保留早期发现渠道，不赋予会议等级；发现正式发表记录后合并链接。
+- ChinaCrypt（全国密码学术会议 / 中国密码学会年会）：列为个人重点补充关注来源，**当前尚未接入自动逐篇采集**，不计入已覆盖的 DBLP 来源。其 [2025 年官方征文通知](https://www.cacrnet.org.cn/site/content/1633.html) 区分未正式出版的会议交流资料与已在其他顶会顶刊发表的交流论文；后者应保留原发表出处，不能重复算作新的 ChinaCrypt 论文。
 
 三个来源独立执行。没有“第一个关键词有新论文，才扫描其余关键词”的限制。通过来源 ID、规范化 DOI、arXiv ID、ePrint ID 和规范化标题合并重复记录，保留不同来源链接。标题差异很大且无共享标识符的版本仍可能重复，需要人工核对。
 

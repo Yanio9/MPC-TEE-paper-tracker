@@ -8,7 +8,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from src.core import PaperStore, canonical_doi, classify, read_json, write_json, year_bounds
-from src.output import render_library
+from src.output import render_library, write_outputs
 from src.runner import load_config, run
 from src.sources import SourceError, collect_arxiv, collect_dblp, collect_eprint, parse_arxiv, parse_dblp, parse_eprint, parse_dblp_sparql, sparql_query
 from scripts.publish_digest import publish
@@ -296,6 +296,29 @@ class PipelineTests(unittest.TestCase):
         p = paper(source="dblp")
         p["records"][0]["venue"] = "New conference"
         self.assertIn("New conference", render_library({"p": p}, {}))
+
+    def test_large_library_pages_keep_all_papers_and_remove_stale_generated_files(self):
+        papers = {str(i): paper(title=f"Secure protocol {i:03d}", identifier=str(i), abstract="Abstract. " * 2500) for i in range(40)}
+        papers["0"]["records"][0].update(source="dblp", venue="CRYPTO")
+        report = {"started_at": NOW.isoformat(), "sources": {}}
+        write_outputs(self.root, papers, {"pending": []}, report, self.cfg)
+        pages = list((self.root / "papers").glob("*.md"))
+        self.assertGreater(len(pages), 1)
+        all_text = "\n".join(path.read_text(encoding="utf-8") for path in pages)
+        for value in papers.values():
+            self.assertEqual(all_text.count("**" + value["title"] + "**"), 1)
+        self.assertTrue(all(path.stat().st_size < 210_000 for path in pages))
+        published = [path for path in pages if "-published-" in path.name]
+        self.assertEqual(len(published), 1)
+        self.assertIn("Secure protocol 000", published[0].read_text(encoding="utf-8"))
+        self.assertNotIn("Secure protocol 001", published[0].read_text(encoding="utf-8"))
+        for path in pages:
+            self.assertIn(f"papers/{path.name}", (self.root / "PAPERS.md").read_text(encoding="utf-8"))
+        note = self.root / "papers/notes.md"
+        note.write_text("Personal notes", encoding="utf-8")
+        write_outputs(self.root, {}, {"pending": []}, report, self.cfg)
+        self.assertTrue(note.exists())
+        self.assertTrue(all(not path.exists() for path in pages))
 
     def test_notification_retry_recovers_sent_ids(self):
         p = paper()
