@@ -11,7 +11,8 @@ Python 3.11+, requests, PyYAML; standard-library XML parsing and unittest. Entry
 - `src/sources.py`: independent DBLP, arXiv Atom, ePrint OAI-PMH collectors. DBLP defaults to its official SPARQL API, with a selectable legacy search backend. Paginate distinct publication IDs before joining authors; never count author rows as papers. Fully paginate or report failure. Never silently truncate results or treat errors as empty responses.
 - `src/core.py`: topic rules, acronym disambiguation, identity merge. DOI, normalized title, stable source IDs and aliases prevent cross-source and version duplicates. Retain both topic labels and all source links.
 - `src/runner.py`: one transaction per source; update last-success only after the source completes. Preserve a failed source's checkpoint and continue other sources. First success per source creates a quiet baseline.
-- `src/output.py`: `PAPERS.md`, paginated historical archives in `papers/`, and `reports/`; no venue-based output dropping. Keep generated pages small enough to browse on GitHub, and only remove stale generated archive filenames inside `papers/`.
+- `src/catalog.py`: direct title/venue/year/material tables, a complete single-page HTML catalog, and marker-based README updates. The user explicitly prefers the original Awesome-FL direct-list layout; do not replace it with a page-count index or numbered pagination. Keep every matching paper visible in the complete list.
+- `src/output.py`: update the README paper block, `PAPERS.md`, `docs/index.html` and `reports/`. Preserve README content outside the generated markers. Only remove obsolete generated archive filenames inside `papers/`, never personal notes.
 - `src/enrichment.py`: optional Crossref abstracts and optional Qwen translations; missing credentials must not break tracking. Never log credentials.
 - `scripts/publish_digest.py`: own-repository Issue notifications with recoverable paper-ID markers.
 
@@ -24,6 +25,8 @@ The publication-year floor is fixed at `tracking.start_year: 2020`, with upper b
 Keep DBLP request pacing at least 6 seconds plus 0.5–2.5 seconds jitter, and arXiv/ePrint at least 3 seconds. Respect Retry-After. Do not solve or bypass anti-bot challenges. Automatic runs refresh the daily window at most once per day; explicitly requested historical backfills may query an older disjoint date interval on the same day. An explicit user-requested immediate refresh uses --refresh (workflow input refresh: true), retaining normal pacing and existing checkpoints while rechecking the incremental window. Retain completed coverage_start checkpoints and skip repeated same-day backfills that are already covered unless refresh was explicitly requested.
 
 The daily action runs at 01:17 UTC / 09:17 Asia/Shanghai, with contents and issues write permissions only. Use ordinary pushes, never force pushes. Persist the notification queue before posting Issues; detect already-posted markers on retry. Do not interpolate paper metadata into shell code.
+
+`pages.yml` publishes only this repository's generated `docs/` to GitHub Pages. It uses contents:read, pages:write and id-token:write. The workflow_run trigger is necessary because data commits made with GITHUB_TOKEN do not trigger a new push workflow. Always checkout main for deployment. GitHub truncates README rendering beyond 500 KiB; retain the full README tables and provide the complete single-page site rather than silently omitting papers. Keep full usage and source provenance in GUIDE.md.
 
 ## Validation
 

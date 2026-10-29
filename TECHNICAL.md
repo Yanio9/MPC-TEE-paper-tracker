@@ -7,12 +7,15 @@
 - `src/core.py`：缩写消歧、相关性筛选、跨来源去重、缓存读写。
 - `src/runner.py`：独立来源扫描、成功时间、首轮基线、待发送队列。
 - `src/enrichment.py`：可选 Crossref 摘要补全与 Qwen 中文翻译。
-- `src/output.py`：按 MPC / TEE / MPC + TEE 生成目录与运行报告。
+- `src/catalog.py`：生成 MPC / TEE / MPC + TEE 的直接论文表格及完整单页网页。
+- `src/output.py`：更新 README 自动生成区、完整论文列表、网页和运行报告。
 - `scripts/publish_digest.py`：只向配置指定的当前仓库发送 Issue，并检测已发送的论文 ID。
 - `data/papers.json`：去重论文。`records` 保留各来源元数据，`aliases` 记录旧标题和 ID。
 - `data/state.json`：各来源成功时间、错误状态、待发送论文 ID。
-- `PAPERS.md`：自动生成的论文目录；超过 400 KB 时改为年份与方向索引。
-- `papers/`：大目录的分页正文，每页至多 150 篇，并尽量控制在 200 KB 内；保留摘要、匹配依据与全部来源链接。生成器只清理此目录内符合命名规则的过期生成文件，保留其他笔记文件。
+- `README.md`：仓库首页直接展示论文表格；每日仅替换 `<!-- PAPERS:START -->` 与 `<!-- PAPERS:END -->` 之间的内容，保留其余手写说明。
+- `PAPERS.md`：同一批全部论文的直接列表，不再按页数分流。
+- `GUIDE.md`：完整的使用、收录范围与来源许可说明。
+- `docs/index.html`：全部论文的独立单页网页，保留作者与摘要，可按关键词、年份、方向和发表记录筛选。无需外部脚本或服务。
 - `reports/`：最近运行摘要、结构化报告和待发送摘要。
 
 ## 扫描范围
@@ -70,3 +73,9 @@ python -m src.main --sources arxiv,eprint --output-dir .local-preview --no-enric
 仓库为公开仓库，提交的论文目录、摘要、状态与 Issue 也公开。`DASHSCOPE_API_KEY` 仅通过 GitHub Actions Secret 或本地环境变量提供；不提交 `.env`。程序不读取原作者邮箱、不向原作者仓库写入。改仓库名时需同步 `project.repository` 和 `watch.yml` 的仓库校验条件。
 
 GitHub cron 使用 UTC，`17 1 * * *` 对应北京时间 09:17。公开仓库长时间没有活动可能被 GitHub 暂停定时工作流，可在 Actions 中重新启用。实际执行情况以最近运行报告和 Actions 结果为准。
+
+## 首页与完整网页
+
+按用户要求采用 Awesome-FL 的直接论文列表样式。GitHub 对 README 超过 500 KiB 的内容会截断，因此首页同时链接完整单页，生成器不会因此省略任何论文。旧 `papers/` 分页文件由生成器按严格文件名规则清理，其他笔记保留。
+
+GitHub Pages 使用自定义 Actions 工作流，发布目录为 `docs/`。`pages.yml` 既监听人工提交的页面变化，也通过 `workflow_run` 监听论文抓取完成，保证 GITHUB_TOKEN 提交的数据更新也会部署网页。部署仅使用主分支内容，不执行论文元数据中的代码。

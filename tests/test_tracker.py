@@ -8,6 +8,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from src.core import PaperStore, canonical_doi, classify, read_json, write_json, year_bounds
+from src.catalog import render_site, update_readme, paper_date
 from src.output import render_library, write_outputs
 from src.runner import load_config, run
 from src.sources import SourceError, collect_arxiv, collect_dblp, collect_eprint, parse_arxiv, parse_dblp, parse_eprint, parse_dblp_sparql, sparql_query
@@ -324,28 +325,60 @@ class PipelineTests(unittest.TestCase):
         p["records"][0]["venue"] = "New conference"
         self.assertIn("New conference", render_library({"p": p}, {}))
 
-    def test_large_library_pages_keep_all_papers_and_remove_stale_generated_files(self):
+    def test_publication_year_is_not_replaced_by_a_later_preprint(self):
+        p = paper()
+        p["records"].append({"source": "dblp", "id": "journals/popets/Example24", "year": "2024", "venue": "PoPETs", "url": "https://example.org/publication"})
+        self.assertEqual(paper_date(p), "2024")
+        self.assertIn("| PoPETs | 2024 |", render_library({"p": p}, {}))
+
+    def test_large_library_lists_every_paper_directly_and_preserves_notes(self):
         papers = {str(i): paper(title=f"Secure protocol {i:03d}", identifier=str(i), abstract="Abstract. " * 2500) for i in range(40)}
         papers["0"]["records"][0].update(source="dblp", venue="CRYPTO")
         report = {"started_at": NOW.isoformat(), "sources": {}}
-        write_outputs(self.root, papers, {"pending": []}, report, self.cfg)
-        pages = list((self.root / "papers").glob("*.md"))
-        self.assertGreater(len(pages), 1)
-        all_text = "\n".join(path.read_text(encoding="utf-8") for path in pages)
-        for value in papers.values():
-            self.assertEqual(all_text.count("**" + value["title"] + "**"), 1)
-        self.assertTrue(all(path.stat().st_size < 210_000 for path in pages))
-        published = [path for path in pages if "-published-" in path.name]
-        self.assertEqual(len(published), 1)
-        self.assertIn("Secure protocol 000", published[0].read_text(encoding="utf-8"))
-        self.assertNotIn("Secure protocol 001", published[0].read_text(encoding="utf-8"))
-        for path in pages:
-            self.assertIn(f"papers/{path.name}", (self.root / "PAPERS.md").read_text(encoding="utf-8"))
-        note = self.root / "papers/notes.md"
+        archive = self.root / "papers"
+        archive.mkdir()
+        note = archive / "notes.md"
         note.write_text("Personal notes", encoding="utf-8")
-        write_outputs(self.root, {}, {"pending": []}, report, self.cfg)
+        obsolete = archive / "2026-mpc-preprint-01.md"
+        obsolete.write_text("Old generated page", encoding="utf-8")
+        readme = self.root / "README.md"
+        readme.write_text("My introduction\n<!-- PAPERS:START -->\nOld generated list\n<!-- PAPERS:END -->\nMy closing notes\n", encoding="utf-8")
+        write_outputs(self.root, papers, {"pending": []}, report, self.cfg)
+        markdown = (self.root / "PAPERS.md").read_text(encoding="utf-8")
+        homepage = readme.read_text(encoding="utf-8")
+        website = (self.root / "docs/index.html").read_text(encoding="utf-8")
+        for value in papers.values():
+            self.assertEqual(markdown.count("| " + value["title"] + " |"), 1)
+            self.assertEqual(homepage.count("| " + value["title"] + " |"), 1)
+            self.assertEqual(website.count(value["title"]), 1)
+        self.assertEqual(website.count('data-kind="published"'), 1)
+        self.assertEqual(website.count('data-kind="preprint"'), 39)
+        self.assertNotIn("Abstract. Abstract.", homepage)
+        self.assertIn("Abstract. Abstract.", website)
+        self.assertTrue(homepage.startswith("My introduction"))
+        self.assertTrue(homepage.endswith("My closing notes\n"))
+        self.assertFalse(obsolete.exists())
         self.assertTrue(note.exists())
-        self.assertTrue(all(not path.exists() for path in pages))
+        write_outputs(self.root, {}, {"pending": []}, report, self.cfg)
+        self.assertNotIn("Secure protocol 000", readme.read_text(encoding="utf-8"))
+        self.assertTrue(note.exists())
+
+    def test_malformed_readme_markers_do_not_overwrite_notes(self):
+        path = self.root / "README.md"
+        original = "Personal notes\n<!-- PAPERS:START -->\nUnfinished edits"
+        path.write_text(original, encoding="utf-8")
+        with self.assertRaises(ValueError):
+            update_readme(path, "Replacement")
+        self.assertEqual(path.read_text(encoding="utf-8"), original)
+
+    def test_website_escapes_external_paper_text_and_rejects_script_links(self):
+        p = paper(title='<script>alert("title")</script>', abstract='<img src=x onerror=alert(1)>')
+        p["records"][0]["url"] = "javascript:alert(1)"
+        website = render_site({"p": p}, self.cfg)
+        self.assertNotIn('<script>alert("title")</script>', website)
+        self.assertNotIn('<img src=x', website)
+        self.assertNotIn('href="javascript:', website)
+        self.assertIn('&lt;script&gt;', website)
 
     def test_notification_retry_recovers_sent_ids(self):
         p = paper()
