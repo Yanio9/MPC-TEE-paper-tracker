@@ -1,11 +1,15 @@
 {
-  "pending": [],
+  "pending": [
+    "1f45e795d2b0be1f6119",
+    "c1395d75329462bf8f7f",
+    "da6a62dec0c9356f8905"
+  ],
   "schema_version": 1,
   "sources": {
     "dblp": {
       "coverage_start": "2020-01-01",
-      "last_attempt": "2026-10-29T14:25:31+00:00",
-      "last_success": "2026-10-29T14:25:31+00:00",
+      "last_attempt": "2026-10-30T07:13:40+00:00",
+      "last_success": "2026-10-30T07:13:40+00:00",
       "status": "ok"
     }
   }

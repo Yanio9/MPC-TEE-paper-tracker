@@ -2,11 +2,11 @@
 
 [仓库首页](README.md) · [运行与收录说明](GUIDE.md)
 
-共 **704** 篇去重论文，均已关联会议或期刊发表记录。
+共 **707** 篇去重论文，均已关联会议或期刊发表记录。
 
 按会议、期刊分组，组内按年份倒序；MPC / TEE 为方向标签。已发表论文附带的 arXiv / ePrint 链接作为全文入口保留。
 
-**会议与期刊**：[CRYPTO（75）](#venue-crypto) · [EUROCRYPT（75）](#venue-eurocrypt) · [ASIACRYPT（46）](#venue-asiacrypt) · [TCC（57）](#venue-tcc) · [PKC（15）](#venue-pkc) · [Journal of Cryptology（29）](#venue-journal-of-cryptology) · [TCHES（11）](#venue-tches) · [IEEE S&amp;P（43）](#venue-ieee-s-p) · [ACM CCS（47）](#venue-acm-ccs) · [USENIX Security（60）](#venue-usenix-security) · [NDSS（25）](#venue-ndss) · [PoPETs（34）](#venue-popets) · [TIFS（54）](#venue-tifs) · [TDSC（57）](#venue-tdsc) · [OSDI（2）](#venue-osdi) · [EuroSys（8）](#venue-eurosys) · [NSDI（2）](#venue-nsdi) · [ISCA（7）](#venue-isca) · [MICRO（5）](#venue-micro) · [HPCA（3）](#venue-hpca) · [ASPLOS（11）](#venue-asplos) · [SIGMOD（3）](#venue-sigmod) · [PACMMOD / SIGMOD（3）](#venue-pacmmod-sigmod) · [PVLDB（6）](#venue-pvldb) · [ICDE（3）](#venue-icde) · [TPDS（3）](#venue-tpds) · [FOCS（4）](#venue-focs) · [STOC（4）](#venue-stoc) · [ICML（4）](#venue-icml) · [NeurIPS（4）](#venue-neurips) · [ICLR（2）](#venue-iclr) · [conf/woot（2）](#venue-conf-woot)
+**会议与期刊**：[CRYPTO（75）](#venue-crypto) · [EUROCRYPT（75）](#venue-eurocrypt) · [ASIACRYPT（46）](#venue-asiacrypt) · [TCC（57）](#venue-tcc) · [PKC（15）](#venue-pkc) · [Journal of Cryptology（29）](#venue-journal-of-cryptology) · [TCHES（11）](#venue-tches) · [IEEE S&amp;P（43）](#venue-ieee-s-p) · [ACM CCS（47）](#venue-acm-ccs) · [USENIX Security（62）](#venue-usenix-security) · [NDSS（25）](#venue-ndss) · [PoPETs（34）](#venue-popets) · [TIFS（54）](#venue-tifs) · [TDSC（57）](#venue-tdsc) · [OSDI（5）](#venue-osdi) · [EuroSys（8）](#venue-eurosys) · [NSDI（2）](#venue-nsdi) · [ISCA（7）](#venue-isca) · [MICRO（5）](#venue-micro) · [HPCA（3）](#venue-hpca) · [ASPLOS（11）](#venue-asplos) · [SIGMOD（3）](#venue-sigmod) · [PACMMOD / SIGMOD（3）](#venue-pacmmod-sigmod) · [PVLDB（6）](#venue-pvldb) · [ICDE（3）](#venue-icde) · [TPDS（3）](#venue-tpds) · [FOCS（4）](#venue-focs) · [STOC（4）](#venue-stoc) · [ICML（4）](#venue-icml) · [NeurIPS（4）](#venue-neurips) · [ICLR（2）](#venue-iclr)
 
 <a id="venue-crypto"></a>
 
@@ -471,10 +471,12 @@
 
 <a id="venue-usenix-security"></a>
 
-## USENIX Security（60）
+## USENIX Security（62）
 
 | 论文标题 | 会议 / 期刊 / 来源 | 年份 | 方向 | 资源链接 |
 |---|---|---|---|---|
+| PowerHooK: Enabling Software-Based Power Side Channels Against AMD SEV Technologies via Transient-Execution Replay. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/woot26/presentation/oberhuber) |
+| DisARMed: Attacking ARM TrustZone from Userspace with Memory Aliasing. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/woot26/presentation/henes) |
 | Transparent Attested DNS for Confidential Computing Services. | USENIX Security | 2025 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity25/presentation/delignat-lavaud) · [arXiv](https://arxiv.org/abs/2503.14611) |
 | TLBlur: Compiler-Assisted Automated Hardening against Controlled Channels on Off-the-Shelf Intel SGX Platforms. | USENIX Security | 2025 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity25/presentation/vanoverloop) |
 | TDXploit: Novel Techniques for Single-Stepping and Cache Attacks on Intel TDX. | USENIX Security | 2025 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity25/presentation/rauscher) |
@@ -736,10 +738,13 @@
 
 <a id="venue-osdi"></a>
 
-## OSDI（2）
+## OSDI（5）
 
 | 论文标题 | 会议 / 期刊 / 来源 | 年份 | 方向 | 资源链接 |
 |---|---|---|---|---|
+| μUSB: Practical and Safe USB Driver Reuse for Arm TrustZone. | OSDI | 2026 | TEE | [论文](https://www.usenix.org/conference/osdi26/presentation/zhang-xuankai) |
+| Osprey: Transparent and Efficient Virtual Memory for Secure Computation. | OSDI | 2026 | MPC | [论文](https://www.usenix.org/conference/osdi26/presentation/liu-yicheng) |
+| Nested SEV: Secure and Generic SEV Support for Nested Virtualization. | OSDI | 2026 | TEE | [论文](https://www.usenix.org/conference/osdi26/presentation/takiguchi) |
 | Design and Verification of the Arm Confidential Compute Architecture. | OSDI | 2022 | TEE | [论文](https://www.usenix.org/conference/osdi22/presentation/li) |
 | MAGE: Nearly Zero-Cost Virtual Memory for Secure Computation. | OSDI | 2021 | MPC | [论文](https://www.usenix.org/conference/osdi21/presentation/kumar) · [arXiv](https://arxiv.org/abs/2106.14651) |
 
@@ -926,12 +931,3 @@
 |---|---|---|---|---|
 | SecP-Tuning: Efficient Privacy-Preserving Prompt Tuning for Large Language Models via MPC. | ICLR | 2026 | MPC | [论文](https://proceedings.iclr.cc/paper_files/paper/2026/hash/7f2e5d16c2c5ac161ce7aa44af35c0fe-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2506.15307) |
 | SelectFormer in Data Markets: Privacy-Preserving and Efficient Data Selection for Transformers with Multi-Party Computation. | ICLR | 2025 | MPC | [论文](https://openreview.net/forum?id=2cF3f9t31y) |
-
-<a id="venue-conf-woot"></a>
-
-## conf/woot（2）
-
-| 论文标题 | 会议 / 期刊 / 来源 | 年份 | 方向 | 资源链接 |
-|---|---|---|---|---|
-| PowerHooK: Enabling Software-Based Power Side Channels Against AMD SEV Technologies via Transient-Execution Replay. | conf/woot | 2026 | TEE | [论文](https://www.usenix.org/conference/woot26/presentation/oberhuber) |
-| DisARMed: Attacking ARM TrustZone from Userspace with Memory Aliasing. | conf/woot | 2026 | TEE | [论文](https://www.usenix.org/conference/woot26/presentation/henes) |
