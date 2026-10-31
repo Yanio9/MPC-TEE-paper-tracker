@@ -2,7 +2,7 @@
   "backfill": false,
   "enrichment_errors": [],
   "failed_sources": [],
-  "pending": 3,
+  "pending": 0,
   "publication_only": true,
   "refresh": false,
   "sources": {
@@ -13,11 +13,11 @@
     "dblp": {
       "baseline": false,
       "matched": 710,
-      "new": 3,
+      "new": 0,
       "received": 964,
-      "since": "2026-10-26",
+      "since": "2026-10-27",
       "status": "ok",
-      "until": "2026-10-30"
+      "until": "2026-10-31"
     },
     "eprint": {
       "message": "仅收录正式发表论文；预印本独立抓取已关闭",
@@ -25,6 +25,6 @@
     }
   },
   "start_year": 2020,
-  "started_at": "2026-10-30T07:13:40+00:00",
+  "started_at": "2026-10-31T07:02:15+00:00",
   "total_papers": 707
 }
