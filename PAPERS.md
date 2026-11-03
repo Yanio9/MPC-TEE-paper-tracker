@@ -2,11 +2,11 @@
 
 [仓库首页](README.md) · [运行与收录说明](GUIDE.md)
 
-共 **707** 篇去重论文，均已关联会议或期刊发表记录。
+共 **709** 篇去重论文，均已关联会议或期刊发表记录。
 
 按会议、期刊分组，组内按年份倒序；MPC / TEE 为方向标签。已发表论文附带的 arXiv / ePrint 链接作为全文入口保留。
 
-**会议与期刊**：[CRYPTO（75）](#venue-crypto) · [EUROCRYPT（75）](#venue-eurocrypt) · [ASIACRYPT（46）](#venue-asiacrypt) · [TCC（57）](#venue-tcc) · [PKC（15）](#venue-pkc) · [Journal of Cryptology（29）](#venue-journal-of-cryptology) · [TCHES（11）](#venue-tches) · [IEEE S&amp;P（43）](#venue-ieee-s-p) · [ACM CCS（47）](#venue-acm-ccs) · [USENIX Security（62）](#venue-usenix-security) · [NDSS（25）](#venue-ndss) · [PoPETs（34）](#venue-popets) · [TIFS（54）](#venue-tifs) · [TDSC（57）](#venue-tdsc) · [OSDI（5）](#venue-osdi) · [EuroSys（8）](#venue-eurosys) · [NSDI（2）](#venue-nsdi) · [ISCA（7）](#venue-isca) · [MICRO（5）](#venue-micro) · [HPCA（3）](#venue-hpca) · [ASPLOS（11）](#venue-asplos) · [SIGMOD（3）](#venue-sigmod) · [PACMMOD / SIGMOD（3）](#venue-pacmmod-sigmod) · [PVLDB（6）](#venue-pvldb) · [ICDE（3）](#venue-icde) · [TPDS（3）](#venue-tpds) · [FOCS（4）](#venue-focs) · [STOC（4）](#venue-stoc) · [ICML（4）](#venue-icml) · [NeurIPS（4）](#venue-neurips) · [ICLR（2）](#venue-iclr)
+**会议与期刊**：[CRYPTO（75）](#venue-crypto) · [EUROCRYPT（75）](#venue-eurocrypt) · [ASIACRYPT（46）](#venue-asiacrypt) · [TCC（57）](#venue-tcc) · [PKC（15）](#venue-pkc) · [Journal of Cryptology（29）](#venue-journal-of-cryptology) · [TCHES（11）](#venue-tches) · [IEEE S&amp;P（43）](#venue-ieee-s-p) · [ACM CCS（47）](#venue-acm-ccs) · [USENIX Security（62）](#venue-usenix-security) · [NDSS（25）](#venue-ndss) · [PoPETs（34）](#venue-popets) · [TIFS（54）](#venue-tifs) · [TDSC（57）](#venue-tdsc) · [OSDI（5）](#venue-osdi) · [SOSP（2）](#venue-sosp) · [EuroSys（8）](#venue-eurosys) · [NSDI（2）](#venue-nsdi) · [ISCA（7）](#venue-isca) · [MICRO（5）](#venue-micro) · [HPCA（3）](#venue-hpca) · [ASPLOS（11）](#venue-asplos) · [SIGMOD（3）](#venue-sigmod) · [PACMMOD / SIGMOD（3）](#venue-pacmmod-sigmod) · [PVLDB（6）](#venue-pvldb) · [ICDE（3）](#venue-icde) · [TPDS（3）](#venue-tpds) · [FOCS（4）](#venue-focs) · [STOC（4）](#venue-stoc) · [ICML（4）](#venue-icml) · [NeurIPS（4）](#venue-neurips) · [ICLR（2）](#venue-iclr)
 
 <a id="venue-crypto"></a>
 
@@ -747,6 +747,15 @@
 | Nested SEV: Secure and Generic SEV Support for Nested Virtualization. | OSDI | 2026 | TEE | [论文](https://www.usenix.org/conference/osdi26/presentation/takiguchi) |
 | Design and Verification of the Arm Confidential Compute Architecture. | OSDI | 2022 | TEE | [论文](https://www.usenix.org/conference/osdi22/presentation/li) |
 | MAGE: Nearly Zero-Cost Virtual Memory for Secure Computation. | OSDI | 2021 | MPC | [论文](https://www.usenix.org/conference/osdi21/presentation/kumar) · [arXiv](https://arxiv.org/abs/2106.14651) |
+
+<a id="venue-sosp"></a>
+
+## SOSP（2）
+
+| 论文标题 | 会议 / 期刊 / 来源 | 年份 | 方向 | 资源链接 |
+|---|---|---|---|---|
+| Pirateship: Append-Only Ledgers for (Mostly) Trusted Execution Environments. | SOSP | 2026 | TEE | [论文](https://doi.org/10.1145/3830418.3843903) |
+| CryptDough: A Unified Analytics Engine for Secure Multiparty Computation. | SOSP | 2026 | MPC | [论文](https://doi.org/10.1145/3830418.3843909) |
 
 <a id="venue-eurosys"></a>
 
