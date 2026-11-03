@@ -1,8 +1,5 @@
 {
-  "pending": [
-    "0b392d3d07b9bc014a21",
-    "c023118236ce09862b2a"
-  ],
+  "pending": [],
   "schema_version": 1,
   "sources": {
     "dblp": {
