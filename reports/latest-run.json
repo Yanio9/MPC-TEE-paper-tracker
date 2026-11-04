@@ -1,8 +1,10 @@
 {
   "backfill": false,
   "enrichment_errors": [],
-  "failed_sources": [],
-  "pending": 2,
+  "failed_sources": [
+    "dblp"
+  ],
+  "pending": 0,
   "publication_only": true,
   "refresh": false,
   "sources": {
@@ -11,13 +13,9 @@
       "status": "disabled"
     },
     "dblp": {
-      "baseline": false,
-      "matched": 712,
-      "new": 2,
-      "received": 966,
-      "since": "2026-10-30",
-      "status": "ok",
-      "until": "2026-11-03"
+      "message": "dblp: expected API data, received HTTP 502 HTML/challenge page",
+      "received_before_failure": 0,
+      "status": "error"
     },
     "eprint": {
       "message": "仅收录正式发表论文；预印本独立抓取已关闭",
@@ -25,6 +23,6 @@
     }
   },
   "start_year": 2020,
-  "started_at": "2026-11-03T07:57:53+00:00",
+  "started_at": "2026-11-04T07:32:24+00:00",
   "total_papers": 709
 }

@@ -9020,6 +9020,7 @@
     },
     "4b4a0c507107bf5fa33e": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:conf/isca/YangJ26",
         "doi:10.1109/isca66397.2026.00046",
@@ -9094,6 +9095,7 @@
     },
     "4c89795fb7a1277626d4": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:conf/ccs/Pitigalaarachchi25",
         "doi:10.1145/3719027.3765212",
@@ -9687,6 +9689,7 @@
     },
     "4eec365ac95df6caa608": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:journals/tdsc/DongWLYLYM23",
         "doi:10.1109/tdsc.2022.3152498",
@@ -9824,6 +9827,7 @@
     },
     "4f79f9b2c95ddcfe9291": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:journals/tifs/GuanGHTY26",
         "doi:10.1109/tifs.2026.3666890",
@@ -10176,6 +10180,7 @@
     },
     "526d76a044c8b42d4e4c": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:conf/eurocrypt/MajiNPY24",
         "doi:10.1007/978-3-031-58737-5_11",
@@ -10213,6 +10218,7 @@
     },
     "52bbfbcb8a33b99da9db": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:journals/tifs/LiBLLZ25",
         "doi:10.1109/tifs.2025.3639987",
@@ -10251,6 +10257,7 @@
     },
     "531d08ffc91461bc3152": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:conf/asiacrypt/WangSYGGL25",
         "doi:10.1007/978-981-95-5119-4_18",
@@ -10290,6 +10297,7 @@
     },
     "53bf295964ddab10cd0a": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:conf/eurocrypt/Nguyen25",
         "doi:10.1007/978-3-031-91101-9_3",
@@ -10504,6 +10512,7 @@
     },
     "54d3c4dc22e99e09945a": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:journals/tifs/LiuWYMCZL24",
         "doi:10.1109/tifs.2024.3428410",
@@ -10544,6 +10553,7 @@
     },
     "54e409cfc02f36dd05b6": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:conf/isca/GhaniyounB0ZT23",
         "doi:10.1145/3579371.3589070",
@@ -10582,6 +10592,7 @@
     },
     "556546c231c85d64cc8a": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:journals/tdsc/YanLSJYLF26",
         "doi:10.1109/tdsc.2026.3693739",
@@ -10660,6 +10671,7 @@
     },
     "57a66a45dadeb0406532": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:conf/ccs/0001PPSS24",
         "doi:10.1145/3658644.3691371",
@@ -10799,6 +10811,7 @@
     },
     "595c3db4bed392fe1338": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:conf/ccs/0002G0VJL25",
         "doi:10.1145/3719027.3765029",
@@ -10977,6 +10990,7 @@
     },
     "5b30b1fb27ab680ce49e": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:journals/tdsc/LongLLZQ26",
         "doi:10.1109/tdsc.2025.3629820",
@@ -11065,6 +11079,7 @@
     },
     "5c15916bde5499808193": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:journals/tdsc/ShadabZGAL24",
         "doi:10.1109/tdsc.2023.3324935",
@@ -11303,6 +11318,7 @@
     },
     "5da61af6d7096510b5b6": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:journals/tdsc/LinL26",
         "doi:10.1109/tdsc.2025.3605807",
@@ -11338,6 +11354,7 @@
     },
     "5dd17912c1b4f105fe2a": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:journals/tdsc/LingTTSSXQ25",
         "doi:10.1109/tdsc.2025.3599183",
@@ -11555,6 +11572,7 @@
     },
     "5f7a62495880cbc5403f": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:journals/tifs/NiuZLSSW26",
         "doi:10.1109/tifs.2026.3684841",
@@ -11594,6 +11612,7 @@
     },
     "5fb6fe0a3bdd432dd401": {
       "abstract": "",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:conf/sigmod/MaliszewskiDQM23",
         "doi:10.1145/3555041.3589726",
@@ -11769,7 +11788,8 @@
       ]
     },
     "60d67eedb764e9d0b3a0": {
-      "abstract": "",
+      "abstract": "Shortest distance computation is a fundamental problem in graph data analysis, with critical applications in financial fraud detection, website ranking, and social network analysis. In real-world settings, however, graph data is often distributed across multiple mutually untrusted organizations, making accurate shortest path computation under strict privacy constraints a major challenge. Existing solutions face two key limitations: (1) traditional distributed algorithms lack privacy protection; and (2) secure multi-party computation (MPC)-based methods, though privacy-preserving, suffer from high computational overhead and poor scalability, restricting them to graphs with only tens of thousands of nodes. To address these challenges, we propose PrivHop, a novel algorithm that integrates 2-hop labeling with MPC in a two-phase framework. In the offline phase, PrivHop constructs an optimized boundary graph index to reduce global queries to small-scale boundary graph queries. In the online phase, it introduces a privacy-aware dynamic pruning strategy based on differential privacy to substantially reduce iteration complexity with privacy guarantees. Extensive experiments on eight real-world datasets show that PrivHop preserves privacy while scaling to million-node graphs, achieving up to 10 6 x reductions in both runtime and communication compared to state-of-the-art methods.",
+      "abstract_checked_at": "2026-11-04T07:32:41.527549+00:00",
       "aliases": [
         "dblp:journals/pacmmod/WangZCDM26",
         "doi:10.1145/3786695",
@@ -11787,7 +11807,7 @@
       "last_seen": "2026-11-03T07:57:53+00:00",
       "matched_terms": {
         "MPC": [
-          "mpc (context)"
+          "secure multi party computation"
         ]
       },
       "records": [
