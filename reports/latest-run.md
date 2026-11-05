@@ -1,10 +1,10 @@
 # 最近运行状态
 
-运行时间：2026-11-04T07:32:24+00:00
+运行时间：2026-11-05T07:57:29+00:00
 
 | 来源 | 状态 | 相关记录 | 说明 |
 |---|---|---:|---|
-| dblp | error | 0 | dblp: expected API data, received HTTP 502 HTML/challenge page |
+| dblp | ok | 712 |  |
 | arxiv | disabled | 0 | 仅收录正式发表论文；预印本独立抓取已关闭 |
 | eprint | disabled | 0 | 仅收录正式发表论文；预印本独立抓取已关闭 |
 
