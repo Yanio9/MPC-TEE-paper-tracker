@@ -1,18 +1,5 @@
 {
-  "pending": [
-    "327c0c0257ec7bddb24c",
-    "335af072dc521a9481eb",
-    "43a0d07c66d42ef48114",
-    "556fb37e53d0de6cad61",
-    "5f663085a692a2db0622",
-    "7af6851c401e4de0c9e2",
-    "994d8812de385efc2ac8",
-    "9ef4cdf21619df4c5dab",
-    "a11e75630e53c7431bcd",
-    "c08815e8df4ec47639a3",
-    "d7610d3c7a57f45272c3",
-    "ff17a65ec9317e325300"
-  ],
+  "pending": [],
   "schema_version": 1,
   "sources": {
     "dblp": {
