@@ -12,11 +12,11 @@
 
 <!-- PAPERS:START -->
 
-共 **709** 篇去重论文，均已关联会议或期刊发表记录。
+共 **721** 篇去重论文，均已关联会议或期刊发表记录。
 
 按会议、期刊分组，组内按年份倒序；MPC / TEE 为方向标签。已发表论文附带的 arXiv / ePrint 链接作为全文入口保留。
 
-**会议与期刊**：[CRYPTO（75）](#venue-crypto) · [EUROCRYPT（75）](#venue-eurocrypt) · [ASIACRYPT（46）](#venue-asiacrypt) · [TCC（57）](#venue-tcc) · [PKC（15）](#venue-pkc) · [Journal of Cryptology（29）](#venue-journal-of-cryptology) · [TCHES（11）](#venue-tches) · [IEEE S&amp;P（43）](#venue-ieee-s-p) · [ACM CCS（47）](#venue-acm-ccs) · [USENIX Security（62）](#venue-usenix-security) · [NDSS（25）](#venue-ndss) · [PoPETs（34）](#venue-popets) · [TIFS（54）](#venue-tifs) · [TDSC（57）](#venue-tdsc) · [OSDI（5）](#venue-osdi) · [SOSP（2）](#venue-sosp) · [EuroSys（8）](#venue-eurosys) · [NSDI（2）](#venue-nsdi) · [ISCA（7）](#venue-isca) · [MICRO（5）](#venue-micro) · [HPCA（3）](#venue-hpca) · [ASPLOS（11）](#venue-asplos) · [SIGMOD（3）](#venue-sigmod) · [PACMMOD / SIGMOD（3）](#venue-pacmmod-sigmod) · [PVLDB（6）](#venue-pvldb) · [ICDE（3）](#venue-icde) · [TPDS（3）](#venue-tpds) · [FOCS（4）](#venue-focs) · [STOC（4）](#venue-stoc) · [ICML（4）](#venue-icml) · [NeurIPS（4）](#venue-neurips) · [ICLR（2）](#venue-iclr)
+**会议与期刊**：[CRYPTO（75）](#venue-crypto) · [EUROCRYPT（75）](#venue-eurocrypt) · [ASIACRYPT（46）](#venue-asiacrypt) · [TCC（57）](#venue-tcc) · [PKC（15）](#venue-pkc) · [Journal of Cryptology（29）](#venue-journal-of-cryptology) · [TCHES（11）](#venue-tches) · [IEEE S&amp;P（43）](#venue-ieee-s-p) · [ACM CCS（47）](#venue-acm-ccs) · [USENIX Security（74）](#venue-usenix-security) · [NDSS（25）](#venue-ndss) · [PoPETs（34）](#venue-popets) · [TIFS（54）](#venue-tifs) · [TDSC（57）](#venue-tdsc) · [OSDI（5）](#venue-osdi) · [SOSP（2）](#venue-sosp) · [EuroSys（8）](#venue-eurosys) · [NSDI（2）](#venue-nsdi) · [ISCA（7）](#venue-isca) · [MICRO（5）](#venue-micro) · [HPCA（3）](#venue-hpca) · [ASPLOS（11）](#venue-asplos) · [SIGMOD（3）](#venue-sigmod) · [PACMMOD / SIGMOD（3）](#venue-pacmmod-sigmod) · [PVLDB（6）](#venue-pvldb) · [ICDE（3）](#venue-icde) · [TPDS（3）](#venue-tpds) · [FOCS（4）](#venue-focs) · [STOC（4）](#venue-stoc) · [ICML（4）](#venue-icml) · [NeurIPS（4）](#venue-neurips) · [ICLR（2）](#venue-iclr)
 
 <a id="venue-crypto"></a>
 
@@ -481,11 +481,23 @@
 
 <a id="venue-usenix-security"></a>
 
-## USENIX Security（62）
+## USENIX Security（74）
 
 | 论文标题 | 会议 / 期刊 / 来源 | 年份 | 方向 | 资源链接 |
 |---|---|---|---|---|
+| XCFI: Comprehensive Control-Flow Integrity for Arm TrustZone-M. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/gu-yunju) |
+| UncoreBleed: AEX-Free, High-Resolution, and Low-Noise Side-Channel Attacks on SGX Enclaved Execution. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/chen-decheng) |
+| Unbalanced Fuzzy Private Set Intersection for L\_infinity Distance: Achieving Sublinear Communication with Large Set Size. | USENIX Security | 2026 | MPC | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/meng) |
+| Streaming Function Secret Sharing and Its Applications. | USENIX Security | 2026 | MPC | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/song-xiangfu) |
+| StackWarp: Breaking AMD SEV-SNP Integrity via Deterministic Stack-Pointer Manipulation through the CPU's Stack Engine. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-ruiyi) |
+| STALEUS: Breaking AMD SEV-SNP via Memory Incoherence. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/schlueter-2) |
+| SMASH: Scalable Maliciously Secure Hybrid Multi-party Computation Framework for Privacy-Preserving Large Language Models. | USENIX Security | 2026 | MPC | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/lv) |
 | PowerHooK: Enabling Software-Based Power Side Channels Against AMD SEV Technologies via Transient-Execution Replay. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/woot26/presentation/oberhuber) |
+| Memclave: Secure In-Memory Enclave for Untrusted Hosts. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/choudhari) |
+| M-Step: A Single-Stepping Framework for Side-Channel Analysis on TrustZone-M. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/rodrigues) |
+| Jailbreaking the AMD Secure Processor: Enabling Live Analysis of SEV-SNP's Undocumented Security Boundaries. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/shen) |
+| FABRICKED: Misconfiguring Infinity Fabric to Break AMD SEV-SNP. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/schlueter-1) |
+| Enhanced Private Set Union from Secret-shared Private Membership Test. | USENIX Security | 2026 | MPC | [论文](https://www.usenix.org/conference/usenixsecurity26/presentation/hao) |
 | DisARMed: Attacking ARM TrustZone from Userspace with Memory Aliasing. | USENIX Security | 2026 | TEE | [论文](https://www.usenix.org/conference/woot26/presentation/henes) |
 | Transparent Attested DNS for Confidential Computing Services. | USENIX Security | 2025 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity25/presentation/delignat-lavaud) · [arXiv](https://arxiv.org/abs/2503.14611) |
 | TLBlur: Compiler-Assisted Automated Hardening against Controlled Channels on Off-the-Shelf Intel SGX Platforms. | USENIX Security | 2025 | TEE | [论文](https://www.usenix.org/conference/usenixsecurity25/presentation/vanoverloop) |
