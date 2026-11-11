@@ -12,11 +12,11 @@
 
 <!-- PAPERS:START -->
 
-共 **721** 篇去重论文，均已关联会议或期刊发表记录。
+共 **723** 篇去重论文，均已关联会议或期刊发表记录。
 
 按会议、期刊分组，组内按年份倒序；MPC / TEE 为方向标签。已发表论文附带的 arXiv / ePrint 链接作为全文入口保留。
 
-**会议与期刊**：[CRYPTO（75）](#venue-crypto) · [EUROCRYPT（75）](#venue-eurocrypt) · [ASIACRYPT（46）](#venue-asiacrypt) · [TCC（57）](#venue-tcc) · [PKC（15）](#venue-pkc) · [Journal of Cryptology（29）](#venue-journal-of-cryptology) · [TCHES（11）](#venue-tches) · [IEEE S&amp;P（43）](#venue-ieee-s-p) · [ACM CCS（47）](#venue-acm-ccs) · [USENIX Security（74）](#venue-usenix-security) · [NDSS（25）](#venue-ndss) · [PoPETs（34）](#venue-popets) · [TIFS（54）](#venue-tifs) · [TDSC（57）](#venue-tdsc) · [OSDI（5）](#venue-osdi) · [SOSP（2）](#venue-sosp) · [EuroSys（8）](#venue-eurosys) · [NSDI（2）](#venue-nsdi) · [ISCA（7）](#venue-isca) · [MICRO（5）](#venue-micro) · [HPCA（3）](#venue-hpca) · [ASPLOS（11）](#venue-asplos) · [SIGMOD（3）](#venue-sigmod) · [PACMMOD / SIGMOD（3）](#venue-pacmmod-sigmod) · [PVLDB（6）](#venue-pvldb) · [ICDE（3）](#venue-icde) · [TPDS（3）](#venue-tpds) · [FOCS（4）](#venue-focs) · [STOC（4）](#venue-stoc) · [ICML（4）](#venue-icml) · [NeurIPS（4）](#venue-neurips) · [ICLR（2）](#venue-iclr)
+**会议与期刊**：[CRYPTO（75）](#venue-crypto) · [EUROCRYPT（75）](#venue-eurocrypt) · [ASIACRYPT（46）](#venue-asiacrypt) · [TCC（59）](#venue-tcc) · [PKC（15）](#venue-pkc) · [Journal of Cryptology（29）](#venue-journal-of-cryptology) · [TCHES（11）](#venue-tches) · [IEEE S&amp;P（43）](#venue-ieee-s-p) · [ACM CCS（47）](#venue-acm-ccs) · [USENIX Security（74）](#venue-usenix-security) · [NDSS（25）](#venue-ndss) · [PoPETs（34）](#venue-popets) · [TIFS（54）](#venue-tifs) · [TDSC（57）](#venue-tdsc) · [OSDI（5）](#venue-osdi) · [SOSP（2）](#venue-sosp) · [EuroSys（8）](#venue-eurosys) · [NSDI（2）](#venue-nsdi) · [ISCA（7）](#venue-isca) · [MICRO（5）](#venue-micro) · [HPCA（3）](#venue-hpca) · [ASPLOS（11）](#venue-asplos) · [SIGMOD（3）](#venue-sigmod) · [PACMMOD / SIGMOD（3）](#venue-pacmmod-sigmod) · [PVLDB（6）](#venue-pvldb) · [ICDE（3）](#venue-icde) · [TPDS（3）](#venue-tpds) · [FOCS（4）](#venue-focs) · [STOC（4）](#venue-stoc) · [ICML（4）](#venue-icml) · [NeurIPS（4）](#venue-neurips) · [ICLR（2）](#venue-iclr)
 
 <a id="venue-crypto"></a>
 
@@ -237,10 +237,12 @@
 
 <a id="venue-tcc"></a>
 
-## TCC（57）
+## TCC（59）
 
 | 论文标题 | 会议 / 期刊 / 来源 | 年份 | 方向 | 资源链接 |
 |---|---|---|---|---|
+| Constant-Round MPC Protocols with Fall-Back Security. | TCC | 2027 | MPC | [论文](https://doi.org/10.1007/978-3-032-43617-7_1) |
+| (Im)possibility of Asynchronous MPC with Honest Majority over Blockchains. | TCC | 2027 | MPC | [论文](https://doi.org/10.1007/978-3-032-43617-7_4) |
 | Simplified PIR and CDS Protocols and Improved Linear Secret-Sharing Schemes. | TCC | 2026 | MPC | [论文](https://doi.org/10.1007/978-3-032-12293-3_12) · [ePrint](https://eprint.iacr.org/2024/1599) |
 | Pseudorandom Correlation Functions for Garbled Circuits. | TCC | 2026 | MPC | [论文](https://doi.org/10.1007/978-3-032-12293-3_15) · [ePrint](https://eprint.iacr.org/2025/2325) |
 | Polynomial Secret Sharing Schemes and Algebraic Matroids. | TCC | 2026 | MPC | [论文](https://doi.org/10.1007/978-3-032-12293-3_14) · [ePrint](https://eprint.iacr.org/2025/368) |
