@@ -1,8 +1,10 @@
 {
   "backfill": false,
-  "enrichment_errors": [],
+  "enrichment_errors": [
+    "Crossref 10.13154/tches.v2020.i1.321-347: SourceError"
+  ],
   "failed_sources": [],
-  "pending": 0,
+  "pending": 5,
   "publication_only": true,
   "refresh": false,
   "sources": {
@@ -12,12 +14,12 @@
     },
     "dblp": {
       "baseline": false,
-      "matched": 726,
-      "new": 0,
-      "received": 985,
-      "since": "2026-11-13",
+      "matched": 731,
+      "new": 5,
+      "received": 993,
+      "since": "2026-11-14",
       "status": "ok",
-      "until": "2026-11-17"
+      "until": "2026-11-18"
     },
     "eprint": {
       "message": "仅收录正式发表论文；预印本独立抓取已关闭",
@@ -25,6 +27,6 @@
     }
   },
   "start_year": 2020,
-  "started_at": "2026-11-17T09:16:21+00:00",
-  "total_papers": 723
+  "started_at": "2026-11-18T08:36:02+00:00",
+  "total_papers": 728
 }
